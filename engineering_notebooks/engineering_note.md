@@ -6,8 +6,7 @@
 3. images
 
 4. The platform:
-OS/Hosting: ?
-Data Storage: SQL, Amazon cloud?
+Data Storage: SQL, Amazon cloud
 Application Server: Java
 
 5. The core functionality:
