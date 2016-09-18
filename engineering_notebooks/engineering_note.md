@@ -3,7 +3,7 @@
 
 2. Music fans, people who want to find something new to listen to, vinyl collectors, appreciators of art.
 
-3.
+3. images
 
 4. The platform:
 OS/Hosting: ?
