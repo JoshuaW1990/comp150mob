@@ -1,2 +1,2 @@
 # comp150mob
-semester project for comp150 mob
+The aim of this project is to build an app named PocketCritic for Android smartphones.
