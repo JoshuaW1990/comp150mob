@@ -20,14 +20,11 @@ public class ArtisitsActivity extends AppCompatActivity {
                 startActivity(launchactivity);
             }
         });
-        final Button button2 = (Button) findViewById(R.id.button2);
-        button2.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Perform action on click
-                Intent launchactivity= new Intent(ArtisitsActivity.this,ActivitybioActivity.class);
-                startActivity(launchactivity);
-            }
-        });
 
+    }
+
+    public void more_albums(View view) {
+        Intent launchactivity2 = new Intent(ArtisitsActivity.this, AlbumlistActivity.class);
+        startActivity(launchactivity2);
     }
 }
