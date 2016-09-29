@@ -18,7 +18,7 @@ public class ActivitybioActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Perform action on click
-                Intent launchactivity= new Intent(ActivitybioActivity.this,MainActivity.class);
+                Intent launchactivity= new Intent(ActivitybioActivity.this,ArtisitsActivity.class);
                 startActivity(launchactivity);
             }
         });
