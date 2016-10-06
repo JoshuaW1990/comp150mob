@@ -9,6 +9,5 @@ Use the regular expression to search the specific part for the image address:
 ## 10/06/2016
 1. Use the python crawler to extract the information of albums, artists,
    including the url of the image and the category
-2. Export the result in a csv file
-3. Convert the csv file into JSON file
-4. Import the JSON file into firebase.
+2. Export the JSON file
+3. Import the JSON file into firebase.
