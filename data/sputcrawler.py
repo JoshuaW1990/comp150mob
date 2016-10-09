@@ -154,6 +154,8 @@ class MusicSpiderBandList:
         items = soup.find_all('a', href = re.compile("/bands/"))
         count = 0
         for item in items:
+            if count == 100:
+                break
             count += 1
             bandName = item.contents[0]
             if isEnglish(bandName):
@@ -177,20 +179,18 @@ def isEnglish(s):
     try:
         string = s.encode('iso-8859-1')
         string.decode('ascii')
+        for ch in string:
+            if ch == '#' or ch == '$' or ch == '[' or ch == ']' or ch == '.' or ch == '/':
+                return False
+            else:
+                continue
+        return True
     except UnicodeDecodeError:
         return False
     else:
         return True
-"""
-spider = MusicSpiderBandList()
-spider.getAllBands()
 
-
-jsonarray = json.dumps(spider.bandList)
-parsed = json.loads(jsonarray)
-#print json.dumps(parsed, indent=4, sort_keys=True)
-"""
-for i in range(0, 26):
+for i in range(0, 1):
     spider = MusicSpiderBandList()
     spider.getBandList(i)
     ch = chr(ord('a') + i)
