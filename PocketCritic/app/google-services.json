@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "971026212095",
+    "firebase_url": "https://pocketcritic-5bfbf.firebaseio.com",
+    "project_id": "pocketcritic-5bfbf",
+    "storage_bucket": "pocketcritic-5bfbf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:971026212095:android:13214fbb51e0a332",
+        "android_client_info": {
+          "package_name": "cs.tufts.edu.pocketcritic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "971026212095-6q5c6ee0ullvvpah03c8qch93iq95co2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrv56eASrCFiA4vz5i6k2ZtqsBgOXPFJI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
