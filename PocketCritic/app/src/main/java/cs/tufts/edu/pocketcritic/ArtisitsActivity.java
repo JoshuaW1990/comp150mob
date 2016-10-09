@@ -12,8 +12,8 @@ public class ArtisitsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.artisits);
-        final Button button1 = (Button) findViewById(R.id.button1);
-        button1.setOnClickListener(new View.OnClickListener() {
+        final Button BioButton = (Button) findViewById(R.id.BioButton);
+        BioButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Perform action on click
                 Intent launchactivity= new Intent(ArtisitsActivity.this,ActivitybioActivity.class);
