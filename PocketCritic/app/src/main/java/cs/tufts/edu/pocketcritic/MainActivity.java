@@ -15,11 +15,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final Button button = (Button) findViewById(R.id.button5);
+        final Button button = (Button) findViewById(R.id.loginpage);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Perform action on click
-                Intent launchactivity= new Intent(MainActivity.this,ArtisitsActivity.class);
+                Intent launchactivity= new Intent(MainActivity.this,LoginActivity.class);
                 startActivity(launchactivity);
             }
         });
