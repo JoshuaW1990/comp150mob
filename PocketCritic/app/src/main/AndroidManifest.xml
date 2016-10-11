@@ -3,9 +3,8 @@
     package="cs.tufts.edu.pocketcritic">
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-    <uses-permission android:name="android.permission.READ_PROFILE" />
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -24,7 +23,9 @@
         <activity android:name=".ActivitybioActivity" />
         <activity android:name=".AlbumlistActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".NavigationActivity"></activity>
+        <activity android:name=".NavigationActivity" />
     </application>
+
+
 
 </manifest>

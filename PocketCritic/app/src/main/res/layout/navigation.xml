@@ -30,7 +30,14 @@
             <TextView
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:text="List A"
+                android:text="@string/artistlistA"
+                android:textSize="24sp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="LIST B"
                 android:textSize="24sp"
                 android:textAlignment="center" />
 
