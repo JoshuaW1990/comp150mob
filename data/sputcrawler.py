@@ -13,6 +13,7 @@ import cleantool
 class MusicSpiderAlbumInfo:
     def __init__(self):
         self.baseURL = "http://www.sputnikmusic.com"
+        self.rating = 0
         self.imageURL = None
 
     # Obtain the page from an url
@@ -33,24 +34,25 @@ class MusicSpiderAlbumInfo:
         if len(items) == 0:
             return None
         item = items[0]
-        url = item['src']
-        if not url.startswith('/'):
-            url = '/' + url
-        url = self.baseURL + url
-        return url
-
+        imgURL = item['src']
+        if not imgURL.startswith('http'):
+            if not imgURL.startswith('/'):
+                imgURL = '/' + imgURL
+            imgURL = self.baseURL + imgURL
+        self.imageURL = imgURL
 
     # Main function
     def getDetail(self, url):
         page = self.getPage(url)
         #print url
-        self.imageURL = self.getCover(page)
+        self.getCover(page)
 
 
 class MusicSpiderBandInfo:
     def __init__(self):
         self.baseURL = "http://www.sputnikmusic.com"
         self.imageURL = None
+        self.genres = []
         self.bandBio = None
         self.tool = cleantool.CleanTool()
         self.albumList = dict()
@@ -73,8 +75,10 @@ class MusicSpiderBandInfo:
         items = soup.find_all('img', style="padding: 5px; margin-bottom:3px;")
         assert(len(items) == 1)
         item = items[0]
-        ImgSrc = self.baseURL + item['src']
-        return ImgSrc
+        imgURL = item['src']
+        if not imgURL.startswith("http"):
+            imgURL = self.baseURL + imgURL
+        return imgURL
 
     # Obtain the artist bio
     def getArtistBio(self, page):
@@ -109,12 +113,22 @@ class MusicSpiderBandInfo:
             try:
                 AlbumName = item.contents[0].contents[0]
                 if isEnglish(AlbumName):
-                    self.albumList[AlbumName.encode("iso-8859-1")] = spider.imageURL
+                    self.albumList[AlbumName.encode("iso-8859-1")] = [spider.rating, spider.imageURL]
                 else:
                     continue
             except:
                 continue
 
+    # Obtain the genre of the artist
+    def getGenre(self, page):
+        soup = BeautifulSoup(page, "lxml", from_encoding="iso-8859-1")
+        items = soup.find_all('a', href = re.compile('genre/'))
+        for item in items:
+            tag = item.contents[0]
+            if not isEnglish(tag):
+                continue
+            else:
+                self.genres.append(tag)
 
     # Main function
     def getDetail(self, url):
@@ -122,6 +136,7 @@ class MusicSpiderBandInfo:
         self.imageURL = self.getArtistImg(page)
         self.bandBio = self.getArtistBio(page)
         self.getAlbumList(page)
+        self.getGenre(page)
 
 
 class MusicSpiderBandList:
@@ -129,6 +144,7 @@ class MusicSpiderBandList:
         self.baseURL = "http://www.sputnikmusic.com"
         self.siteURL = "http://www.sputnikmusic.com/bandlist.php?letter="
         self.bandList = dict()
+        self.rating = 0
 
     # Obtain the page from an url
     def getPage(self, url):
@@ -163,11 +179,13 @@ class MusicSpiderBandList:
             else:
                 continue
             print "storing the information for the", count, "th band: ", bandName
-            bandURL = self.baseURL + item['href']
+            bandURL = item['href']
+            if not bandURL.startswith("http"):
+                bandURL = self.baseURL + bandURL
             #print bandName, ": ", bandURL
             spider = MusicSpiderBandInfo()
             spider.getDetail(bandURL)
-            self.bandList[bandName] = [spider.imageURL, spider.bandBio, spider.albumList]
+            self.bandList[bandName] = [spider.imageURL, spider.genres, spider.bandBio, spider.albumList]
 
 
 
