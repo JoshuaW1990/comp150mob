@@ -4,4 +4,5 @@ The aim of this project is to build an app named PocketCritic for Android smartp
 
 TODO list:
 - [ ] Complete the albume list: listview or adapterview
+- [ ] Network permission
 - [ ] data and the web sever
