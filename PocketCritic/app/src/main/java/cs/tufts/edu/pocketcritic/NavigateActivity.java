@@ -1,64 +1,51 @@
 package cs.tufts.edu.pocketcritic;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.SearchView;
-import android.widget.SearchView.OnQueryTextListener;
+import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
-import android.content.Intent;
-import android.util.Log;
+import android.widget.Button;
+import android.view.View;
 
-import cs.tufts.edu.pocketcritic.models.Artist;
+
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class NavigationActivity extends AppCompatActivity {
+import cs.tufts.edu.pocketcritic.models.Artist;
 
-    // Initialization
-    private SearchView searchview;
-    private TextView textview;
+public class NavigateActivity extends AppCompatActivity
+    implements View.OnClickListener {
+
+    private EditText searchInfo;
+    private Button searchButton;
 
     FirebaseDatabase database;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.navigation);
+        setContentView(R.layout.navigate);
 
-        searchview = (SearchView) findViewById(R.id.search);
-        searchview.setQueryHint("Artist Name");
-
+        // user id
         Intent intent = getIntent();
         String username = intent.getStringExtra("username");
+        setUserID(username);
 
-        textview = (TextView) findViewById(R.id.userid);
-        textview.setText(username);
+        // edit views
+        searchInfo = (EditText) findViewById(R.id.navigate_searchinfo);
 
-        // Set listener
-        searchview.setOnQueryTextListener(new OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                SearchArtist(query);
-                Toast.makeText(getBaseContext(), query, Toast.LENGTH_SHORT).show();
-                return false;
-            }
+        // click listeners
+        searchButton = (Button) findViewById(R.id.navigate_searchButton);
+        searchButton.setOnClickListener(this);
 
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                SearchArtist(newText);
-                Toast.makeText(getBaseContext(), newText, Toast.LENGTH_SHORT).show();
-                return false;
-            }
-        });
     }
 
-    private void SearchArtist(String query) {
+    public void doSearch() {
+        String query = searchInfo.getText().toString();
         database = FirebaseDatabase.getInstance();
         DatabaseReference ref = database.getReference("demoDatabase").child(query);
         ref.addValueEventListener(new ValueEventListener() {
@@ -78,6 +65,12 @@ public class NavigationActivity extends AppCompatActivity {
                 System.out.println("The read failed: " + databaseError.getCode());
             }
         });
+
+    }
+
+    private void setUserID(String username) {
+        TextView textview = (TextView) findViewById(R.id.navigate_userid);
+        textview.setText(username);
     }
 
     private void onSearchSuccess(Artist artist) {
@@ -88,7 +81,15 @@ public class NavigationActivity extends AppCompatActivity {
         finish();
     }
 
-
-
-
+    @Override
+    public void onClick(View v) {
+        int id = v.getId();
+        if (id == R.id.navigate_searchButton) {
+            doSearch();
+        }
+        else
+        {
+            System.out.println("error when searching!");
+        }
+    }
 }

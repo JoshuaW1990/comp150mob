@@ -18,6 +18,9 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import cs.tufts.edu.pocketcritic.models.User;
 
 public class LoginActivity extends BaseActivity implements
         View.OnClickListener {
@@ -32,6 +35,10 @@ public class LoginActivity extends BaseActivity implements
     private FirebaseAuth mAuth;
     // [END declare_auth]
 
+    // [START declare for database]
+    private DatabaseReference mDatabase;
+    // [END declare for database]
+
     // [START declare_auth_listener]
     private FirebaseAuth.AuthStateListener mAuthListener;
     // [END declare_auth_listener]
@@ -40,6 +47,10 @@ public class LoginActivity extends BaseActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
+
+        // Firebase login
+        mAuth = FirebaseAuth.getInstance();
+        mDatabase = FirebaseDatabase.getInstance().getReference();
 
         // Find views
         mEmailField = (EditText) findViewById(R.id.account_email);
@@ -59,8 +70,7 @@ public class LoginActivity extends BaseActivity implements
             }
         });
 
-        // Firebase login
-        mAuth = FirebaseAuth.getInstance();
+
 
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -119,6 +129,9 @@ public class LoginActivity extends BaseActivity implements
                             Toast.makeText(LoginActivity.this, R.string.auth_failed,
                                     Toast.LENGTH_SHORT).show();
                         }
+                        else {
+                            onAuthSuccess(task.getResult().getUser());
+                        }
 
                         // [START_EXCLUDE]
                         hideProgressDialog();
@@ -151,6 +164,11 @@ public class LoginActivity extends BaseActivity implements
                             Toast.makeText(LoginActivity.this, R.string.auth_failed,
                                     Toast.LENGTH_SHORT).show();
                         }
+                        else {
+                            onAuthSuccess(task.getResult().getUser());
+                        }
+
+                        hideProgressDialog();
 
                     }
                 });
@@ -194,5 +212,41 @@ public class LoginActivity extends BaseActivity implements
             signIn(mEmailField.getText().toString(), mPasswordField.getText().toString());
         }
     }
+
+
+    // Behavior after sign in or sign up
+    private void onAuthSuccess(FirebaseUser user) {
+        String username = usernameFromEmail(user.getEmail());
+
+        // Write new user
+        writeNewUser(user.getUid(), username, user.getEmail());
+
+        // Go to Navigation activity
+
+        Intent intent = new Intent(this, NavigateActivity.class);
+        intent.putExtra("username", username);
+        startActivity(intent);
+        finish();
+
+    }
+
+    private String usernameFromEmail(String email) {
+        if (email.contains("@"))
+        {
+            return email.split("@")[0];
+        }
+        else
+        {
+            return email;
+        }
+    }
+
+    // [START basic_write]
+    private void writeNewUser(String userId, String name, String email) {
+        User user = new User(name, email);
+
+        mDatabase.child("users").child(userId).setValue(user);
+    }
+    // [END basic_write]
 
 }

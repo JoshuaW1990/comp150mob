@@ -17,14 +17,12 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/beatles"
-            android:id="@+id/BandImage"
+            android:id="@+id/artist_BandImage"
             android:layout_weight="10.14" />
         <TextView
-            android:text="The Beatles"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/artistName"
+            android:id="@+id/artist_artistName"
             android:padding="5dp"
             android:textSize="20dp"
             android:gravity="center_horizontal"

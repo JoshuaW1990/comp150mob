@@ -24,8 +24,7 @@
         <activity android:name=".AlbumlistActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".NavigationActivity" />
+        <activity android:name=".NavigateActivity"></activity>
     </application>
-
-
 
 </manifest>
