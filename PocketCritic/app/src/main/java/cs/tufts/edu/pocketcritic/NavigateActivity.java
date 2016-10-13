@@ -16,6 +16,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import cs.tufts.edu.pocketcritic.models.Artist;
+import cs.tufts.edu.pocketcritic.models.Album;
 
 public class NavigateActivity extends AppCompatActivity
     implements View.OnClickListener {
@@ -44,20 +45,33 @@ public class NavigateActivity extends AppCompatActivity
 
     }
 
+
     public void doSearch() {
         String query = searchInfo.getText().toString();
+        Artist artist = new Artist();
+        System.out.println("doSearch function: query");
+        artist.searchArtist(query);
+        System.out.println(artist.bandName);
+        onSearchSuccess(artist);
+        /*
         database = FirebaseDatabase.getInstance();
         DatabaseReference ref = database.getReference("demoDatabase").child(query);
         ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 String bandName = (String) dataSnapshot.getKey();
-                String imageURL;
-                String bio;
-                imageURL = (String) dataSnapshot.child("0").getValue();
-                bio = (String) dataSnapshot.child("2").getValue();
-                Artist artist = new Artist(bandName, imageURL, bio);
-                onSearchSuccess(artist);
+                String imageURL = (String) dataSnapshot.child("0").getValue();
+                String[] genres = (String[]) dataSnapshot.child("1").getValue();
+                String bio = (String) dataSnapshot.child("2").getValue();
+                String[] albumNames = (String[]) dataSnapshot.child("3").getValue();
+                if (bio == null) {
+                    System.out.println("wrong search");
+                }
+                else {
+
+                    Artist artist = new Artist(bandName, genres, imageURL, bio, );
+                    onSearchSuccess(artist);
+                }
             }
 
             @Override
@@ -65,8 +79,11 @@ public class NavigateActivity extends AppCompatActivity
                 System.out.println("The read failed: " + databaseError.getCode());
             }
         });
-
+        */
     }
+
+
+
 
     private void setUserID(String username) {
         TextView textview = (TextView) findViewById(R.id.navigate_userid);
@@ -75,8 +92,9 @@ public class NavigateActivity extends AppCompatActivity
 
     private void onSearchSuccess(Artist artist) {
         Intent intent = new Intent(this, ArtisitsActivity.class);
-        String[] strings = new String[] {artist.bandName, artist.imageURL, artist.bio};
-        intent.putExtra("artistinfo", strings);
+        System.out.println("in onSearchSuccess function");
+        System.out.println(artist.bandName);
+        intent.putExtra("artistinfo", artist.bandName);
         startActivity(intent);
         finish();
     }

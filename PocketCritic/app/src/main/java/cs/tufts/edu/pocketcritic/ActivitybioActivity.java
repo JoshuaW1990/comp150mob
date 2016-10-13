@@ -5,22 +5,45 @@ import android.os.Bundle;
 import android.view.View;
 import android.content.Intent;
 import android.widget.Button;
+import android.widget.TextView;
 import android.app.Activity;
 
-public class ActivitybioActivity extends AppCompatActivity {
+import cs.tufts.edu.pocketcritic.models.Artist;
+
+public class ActivitybioActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private Button back;
+    private TextView textview;
+    String[] strings = {null, null};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activitybio);
 
-        final Button button = (Button) findViewById(R.id.button4);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Perform action on click
-                Intent launchactivity= new Intent(ActivitybioActivity.this,ArtisitsActivity.class);
-                startActivity(launchactivity);
-            }
-        });
+        // Obtain the artist data
+        Intent intent = getIntent();
+        strings = intent.getStringArrayExtra("artistinfo");
+
+        // back button
+        back = (Button) findViewById(R.id.artistbio_back);
+        back.setOnClickListener(this);
+
+        // Set the text content: artist bio
+        textview = (TextView) findViewById(R.id.artistbio_bio);
+        textview.setText(strings[1]);
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        int id = v.getId();
+        if (id == R.id.artistbio_back) {
+            Intent intent = new Intent(ActivitybioActivity.this, ArtisitsActivity.class);
+            intent.putExtra("artistinfo", strings[0]);
+            startActivity(intent);
+            finish();
+        }
     }
 }

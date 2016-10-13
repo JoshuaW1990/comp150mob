@@ -13,10 +13,10 @@ import org.w3c.dom.Text;
 import cs.tufts.edu.pocketcritic.models.Artist;
 import cs.tufts.edu.pocketcritic.support.DownloadImageTask;
 
-public class ArtisitsActivity extends AppCompatActivity {
-    ImageView bandimage;
+public class ArtisitsActivity extends AppCompatActivity implements View.OnClickListener {
     TextView bandname;
-    private Button artistBio;
+    private Button artistbio;
+    Artist artist;
 
 
     @Override
@@ -25,41 +25,49 @@ public class ArtisitsActivity extends AppCompatActivity {
         setContentView(R.layout.artisits);
 
 
+        // Obtain the artist data
         Intent intent = getIntent();
-        String[] strings = intent.getStringArrayExtra("artistinfo");
-        Artist artist = new Artist(strings[0], strings[1], strings[2]);
+        String artistName = intent.getStringExtra("artistinfo");
+        System.out.println("artist info page");
+        artist = new Artist();
+        artist.searchArtist(artistName);
+        System.out.println("back to artist info page");
 
+        // Set the band name and the band image
         setBandname(artist);
-        System.out.println("Open the artist info image");
-        setBandimage(artist); // Bug is here
+        setBandimage(artist);
 
+        // Set the artist bio button
+        artistbio = (Button) findViewById(R.id.artists_bio);
+        artistbio.setOnClickListener(this);
 
-        final Button BioButton = (Button) findViewById(R.id.BioButton);
-        BioButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Perform action on click
-                Intent launchactivity= new Intent(ArtisitsActivity.this,ActivitybioActivity.class);
-                startActivity(launchactivity);
-            }
-        });
 
     }
 
 
     private void setBandimage(Artist artist) {
-        System.out.println("Start to set band image");
-        new DownloadImageTask((ImageView) findViewById(R.id.artist_BandImage)).execute(artist.imageURL);
-        System.out.println("finish to set band image");
+        new DownloadImageTask((ImageView) findViewById(R.id.artists_BandImage)).execute(artist.imageURL);
     }
 
 
     private void setBandname(Artist artist) {
-        bandname = (TextView) findViewById(R.id.artist_artistName);
+        bandname = (TextView) findViewById(R.id.artists_artistName);
         bandname.setText(artist.bandName);
     }
 
     public void more_albums(View view) {
         Intent launchactivity2 = new Intent(ArtisitsActivity.this, AlbumlistActivity.class);
         startActivity(launchactivity2);
+    }
+
+    @Override
+    public void onClick(View v) {
+        int id = v.getId();
+        if (id == R.id.artists_bio) {
+            Intent intent = new Intent(ArtisitsActivity.this, ActivitybioActivity.class);
+            String[] strings = {artist.bandName, artist.bio};
+            intent.putExtra("artistinfo", strings);
+            startActivity(intent);
+        }
     }
 }

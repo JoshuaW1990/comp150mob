@@ -22,18 +22,18 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Back"
-                android:id="@+id/button4"
+                android:text="@string/back"
+                android:id="@+id/artistbio_back"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true" />
         </RelativeLayout>
 
         <TextView
-            android:text="This should be the beatls!"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="32sp" />
+            android:textSize="32sp"
+            android:id="@+id/artistbio_bio" />
 
     </LinearLayout>
 

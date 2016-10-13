@@ -17,12 +17,12 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/artist_BandImage"
+            android:id="@+id/artists_BandImage"
             android:layout_weight="10.14" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/artist_artistName"
+            android:id="@+id/artists_artistName"
             android:padding="5dp"
             android:textSize="20dp"
             android:gravity="center_horizontal"
@@ -37,10 +37,10 @@
 
 
             <Button
-                android:text="Artist Bio"
+                android:text="@string/artists_bio"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/BioButton"
+                android:id="@+id/artists_bio"
                 android:layout_weight="1"/>
 
             <ImageView

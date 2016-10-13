@@ -65,7 +65,7 @@ public class LoginActivity extends BaseActivity implements
         BioButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Perform action on click
-                Intent launchactivity= new Intent(LoginActivity.this,NavigationActivity.class);
+                Intent launchactivity= new Intent(LoginActivity.this, NavigateActivity.class);
                 startActivity(launchactivity);
             }
         });

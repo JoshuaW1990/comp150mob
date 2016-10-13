@@ -20,6 +20,8 @@
     <string name="artistlistA">LIST A</string>
     <string name="title_activity_artistsinfo">ArtistsinfoActivity</string>
     <string name="search_hint">artist name</string>
+    <string name="artists_bio">ARTIST BIO</string>>
+    <string name="back">BACK</string>>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
