@@ -17,6 +17,7 @@
     <string name="title_activity_test">TestActivity</string>
     <string name="loading">Loading…</string>
     <string name="auth_failed">Authentication failed</string>
+    <string name="search_failed">Not Found</string>
     <string name="artistlistA">LIST A</string>
     <string name="title_activity_artistsinfo">ArtistsinfoActivity</string>
     <string name="search_hint">artist name</string>

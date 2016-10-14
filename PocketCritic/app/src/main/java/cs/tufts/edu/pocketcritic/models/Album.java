@@ -5,4 +5,17 @@ package cs.tufts.edu.pocketcritic.models;
  */
 
 public class Album {
+    public String albumName;
+    public long albumRating;
+    public String albumCoverImageURL;
+
+    public Album() {
+
+    }
+
+    public Album(String name, long rating, String url) {
+        this.albumName = name;
+        this.albumRating = rating;
+        this.albumCoverImageURL = url;
+    }
 }

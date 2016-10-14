@@ -7,6 +7,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Button;
 import android.view.View;
+import android.widget.Toast;
 
 
 import com.google.firebase.database.DataSnapshot;
@@ -15,7 +16,11 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import cs.tufts.edu.pocketcritic.models.Artist;
+import cs.tufts.edu.pocketcritic.models.Album;
 
 public class NavigateActivity extends AppCompatActivity
     implements View.OnClickListener {
@@ -51,13 +56,19 @@ public class NavigateActivity extends AppCompatActivity
         ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
+                if(dataSnapshot.exists())
+                    onSearchSuccess();
+                else
+                    Toast.makeText(NavigateActivity.this, R.string.search_failed,
+                            Toast.LENGTH_SHORT).show();
+                /*
                 String bandName = (String) dataSnapshot.getKey();
                 String imageURL;
                 String bio;
                 imageURL = (String) dataSnapshot.child("0").getValue();
                 bio = (String) dataSnapshot.child("2").getValue();
                 Artist artist = new Artist(bandName, imageURL, bio);
-                onSearchSuccess(artist);
+                */
             }
 
             @Override
@@ -73,10 +84,49 @@ public class NavigateActivity extends AppCompatActivity
         textview.setText(username);
     }
 
-    private void onSearchSuccess(Artist artist) {
+    public void searchAlbums(Artist artist) {
+        System.out.println("Search albums");
+        System.out.println(artist.bandName);
+        database = FirebaseDatabase.getInstance();
+        DatabaseReference ref = database.getReference("demoDatabase").child(artist.bandName).child("3");
+        ref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                System.out.println("flag");
+                List<Album> albums = new ArrayList<Album>();
+                for (DataSnapshot child: dataSnapshot.getChildren())
+                {
+                    String albumName = child.getKey();
+                    long albumRating = (long) child.child("0").getValue();
+                    String albumURL = (String) child.child("1").getValue();
+                    Album album = new Album(albumName, albumRating, albumURL);
+                    albums.add(album);
+                    System.out.println(album.albumName);
+                    System.out.print(album.albumRating);
+                    System.out.println(album.albumCoverImageURL);
+                }
+                if (albums.size() == 0) {
+                    System.out.println("Not found");
+                }
+                else
+                {
+                    //onSearchSuccess(artist, );
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                System.out.println("The read failed: " + databaseError.getCode());
+            }
+        });
+    }
+
+    private void onSearchSuccess() {
         Intent intent = new Intent(this, ArtisitsActivity.class);
-        String[] strings = new String[] {artist.bandName, artist.imageURL, artist.bio};
-        intent.putExtra("artistinfo", strings);
+        //String[] strings = new String[] {artist.bandName, artist.imageURL, artist.bio};
+
+        String query = searchInfo.getText().toString();
+        intent.putExtra("artistinfo", query);
         startActivity(intent);
         finish();
     }

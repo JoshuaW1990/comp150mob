@@ -7,16 +7,24 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import org.w3c.dom.Text;
 
 import cs.tufts.edu.pocketcritic.models.Artist;
 import cs.tufts.edu.pocketcritic.support.DownloadImageTask;
 
-public class ArtisitsActivity extends AppCompatActivity {
-    ImageView bandimage;
-    TextView bandname;
+public class ArtisitsActivity extends AppCompatActivity implements View.OnClickListener {
     private Button artistBio;
+    String artistName;
+    FirebaseDatabase database;
+    String artistIntro;
 
 
     @Override
@@ -26,40 +34,79 @@ public class ArtisitsActivity extends AppCompatActivity {
 
 
         Intent intent = getIntent();
-        String[] strings = intent.getStringArrayExtra("artistinfo");
-        Artist artist = new Artist(strings[0], strings[1], strings[2]);
+        artistName = intent.getStringExtra("artistinfo");
 
-        setBandname(artist);
-        System.out.println("Open the artist info image");
-        setBandimage(artist); // Bug is here
+        SetView(artistName);
 
 
-        final Button BioButton = (Button) findViewById(R.id.BioButton);
-        BioButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Perform action on click
-                Intent launchactivity= new Intent(ArtisitsActivity.this,ActivitybioActivity.class);
-                startActivity(launchactivity);
+        artistBio = (Button) findViewById(R.id.artist_Bio);
+        artistBio.setOnClickListener(this);
+
+        //back = (Button) findViewById(R.id.artist_back);
+        //back.setOnClickListener(this);
+    }
+
+    private void SetView(String artistName) {
+        database = FirebaseDatabase.getInstance();
+        DatabaseReference ref = database.getReference("demoDatabase").child(artistName);
+        ref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String bandName = (String) dataSnapshot.getKey();
+                String imageURL;
+                String bio;
+                imageURL = (String) dataSnapshot.child("0").getValue();
+                bio = (String) dataSnapshot.child("2").getValue();
+                Artist artist = new Artist(bandName, imageURL, bio);
+                System.out.println(artist.bandName);
+                setArtist(artist);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                System.out.println("The read failed: " + databaseError.getCode());
             }
         });
+    }
 
+    public void setArtist(Artist artist) {
+        setBandimage(artist.imageURL);
+        setBandname(artist.bandName);
+        artistIntro = artist.bio;
     }
 
 
-    private void setBandimage(Artist artist) {
-        System.out.println("Start to set band image");
-        new DownloadImageTask((ImageView) findViewById(R.id.artist_BandImage)).execute(artist.imageURL);
-        System.out.println("finish to set band image");
+    private void setBandimage(String imageURL) {
+        new DownloadImageTask((ImageView) findViewById(R.id.artist_BandImage)).execute(imageURL);
     }
 
 
-    private void setBandname(Artist artist) {
-        bandname = (TextView) findViewById(R.id.artist_artistName);
-        bandname.setText(artist.bandName);
+    private void setBandname(String bandName) {
+        TextView bandname = (TextView) findViewById(R.id.artist_artistName);
+        bandname.setText(bandName);
     }
 
     public void more_albums(View view) {
         Intent launchactivity2 = new Intent(ArtisitsActivity.this, AlbumlistActivity.class);
         startActivity(launchactivity2);
+    }
+
+    @Override
+    public void onClick(View v) {
+        int id = v.getId();
+        if (id == R.id.artist_Bio) {
+            Intent intent = new Intent(ArtisitsActivity.this, ActivitybioActivity.class);
+            String[] strings = {artistName, artistIntro};
+            intent.putExtra("artistinfo", strings);
+            startActivity(intent);
+            finish();
+        }
+        /*
+        else if (id == R.id.artist_back) {
+            Intent intent = new Intent(ArtisitsActivity.this, NavigateActivity.class);
+            startActivity(intent);
+            finish();
+        }
+        */
     }
 }
