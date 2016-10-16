@@ -17,11 +17,15 @@ import com.google.firebase.database.ValueEventListener;
 
 import org.w3c.dom.Text;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import cs.tufts.edu.pocketcritic.models.Artist;
+import cs.tufts.edu.pocketcritic.models.Album;
 import cs.tufts.edu.pocketcritic.support.DownloadImageTask;
 
 public class ArtisitsActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button artistBio;
+    Button artistBio;
     String artistName;
     FirebaseDatabase database;
     String artistIntro;
@@ -60,6 +64,19 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
                 Artist artist = new Artist(bandName, imageURL, bio);
                 System.out.println(artist.bandName);
                 setArtist(artist);
+                DataSnapshot albumList = dataSnapshot.child("3");
+                List<Album> albums = new ArrayList<Album>();
+                for (DataSnapshot child: albumList.getChildren())
+                {
+                    String albumName = child.getKey();
+                    long albumRating = (long) child.child("0").getValue();
+                    String albumCoverURL = (String) child.child("1").getValue();
+                    Album neoAlbum = new Album(albumName, albumRating, albumCoverURL);
+                    albums.add(neoAlbum);
+                    System.out.println(neoAlbum.albumName);
+                    System.out.println(neoAlbum.albumCoverImageURL);
+                }
+
             }
 
             @Override
