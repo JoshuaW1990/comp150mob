@@ -53,7 +53,7 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
     private void SetView(String artistName) {
         database = FirebaseDatabase.getInstance();
         DatabaseReference ref = database.getReference("demoDatabase").child(artistName);
-        ref.addValueEventListener(new ValueEventListener() {
+        ref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 String bandName = (String) dataSnapshot.getKey();
@@ -62,7 +62,7 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
                 imageURL = (String) dataSnapshot.child("0").getValue();
                 bio = (String) dataSnapshot.child("2").getValue();
                 Artist artist = new Artist(bandName, imageURL, bio);
-                System.out.println(artist.bandName);
+                System.out.println(artist.bandName); // DEBUGGING
                 setArtist(artist);
                 DataSnapshot albumList = dataSnapshot.child("3");
                 List<Album> albums = new ArrayList<Album>();
@@ -73,15 +73,16 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
                     String albumCoverURL = (String) child.child("1").getValue();
                     Album neoAlbum = new Album(albumName, albumRating, albumCoverURL);
                     albums.add(neoAlbum);
-                    System.out.println(neoAlbum.albumName);
-                    System.out.println(neoAlbum.albumCoverImageURL);
+                    System.out.println(neoAlbum.albumName); // DEBUGGING
+                    System.out.println(neoAlbum.albumCoverImageURL); // DEBUGGING
                 }
 
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-                System.out.println("The read failed: " + databaseError.getCode());
+                String message = "Server error. Refresh page";
+                Toast.makeText(ArtisitsActivity.this, message, Toast.LENGTH_SHORT).show();
             }
         });
     }
