@@ -16,8 +16,9 @@
 
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="240dp"
+            android:layout_gravity="center_horizontal"
             android:id="@+id/artist_BandImage"
             android:layout_weight="10.14" />
         <TextView
@@ -57,116 +58,28 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="240dp"
-            android:id="@+id/artist_albums">
-
-        </LinearLayout>
-
-
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="240dp"
-            android:layout_weight="2">
-
+            android:layout_height="wrap_content"
+            android:id="@+id/artist_albumRoot">
 
             <LinearLayout
                 android:orientation="vertical"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/album3"
-                    android:id="@+id/albumImage3" />
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:text="Yellow Submarine"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:id="@+id/albumName3"
-                        android:textColor="#000000"
-                        android:gravity="center_horizontal"
-                        android:layout_weight="1" />
-
-                    <TextView
-                        android:text="Rating: 3.0"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:id="@+id/albumRating3"
-                        android:textColor="#000000"
-                        android:gravity="center_horizontal"
-                        android:layout_weight="1" />
-
-                </LinearLayout>
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:id="@+id/artist_albums">
 
             </LinearLayout>
-
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="201dp"
-                    app:srcCompat="@drawable/album4"
-                    android:id="@+id/albumImage4" />
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-
-                    <TextView
-                        android:text="The Beatles"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:textColor="#000000"
-                        android:gravity="center_horizontal"
-                        android:id="@+id/albumName4"
-                        android:layout_weight="1" />
-
-
-
-                    <TextView
-                        android:text="Rating: 4.4"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center_horizontal"
-                        android:textColor="#000000"
-                        android:id="@+id/albumRating4"
-                        android:layout_weight="1" />
-
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
 
         </LinearLayout>
 
-
+        <!--
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="More Albums"
             android:id="@+id/moreAlbums"
             android:onClick="more_albums"/>
+
+
 
         <LinearLayout
             android:orientation="vertical"
@@ -228,7 +141,8 @@
                 android:id="@+id/moreArtists"/>
 
 
-        </LinearLayout>>
+        </LinearLayout>
+        -->
 
     </LinearLayout>
 

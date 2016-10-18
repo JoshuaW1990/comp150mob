@@ -2,6 +2,7 @@ package cs.tufts.edu.pocketcritic;
 
 import android.app.ActionBar;
 import android.content.Intent;
+import android.support.design.widget.AppBarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,7 @@ import android.widget.TextView;
 import android.widget.LinearLayout;
 import android.content.Context;
 import android.widget.Toast;
+
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -112,30 +114,30 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
             album2.setOrientation(LinearLayout.HORIZONTAL);
             album2.setLayoutParams(param_album2);
             LinearLayout.LayoutParams param_album1 = new LinearLayout.LayoutParams(240, ActionBar.LayoutParams.MATCH_PARENT);
-            LinearLayout.LayoutParams param_albumDescrip = new LinearLayout.LayoutParams(240, 120);
+
 
             for (int i = 0; i < albums.size(); i++)
             {
-
+                // Add two albums view
                 LinearLayout album1 = new LinearLayout(this);
                 album1.setLayoutParams(param_album1);
                 album1.setOrientation(LinearLayout.VERTICAL);
-                ImageView albumCover = new ImageView(this);
-                //albumCover.getLayoutParams().width = ActionBar.LayoutParams.MATCH_PARENT;
-                //albumCover.getLayoutParams().height = ActionBar.LayoutParams.WRAP_CONTENT;
-                //albumCover.setImageResource(R.drawable.album1);
+
                 Album album = albums.get(i);
+
+                // Add album cover
+                ImageView albumCover = new ImageView(this);
                 new DownloadImageTask(albumCover).execute(album.albumCoverImageURL);
                 album1.addView(albumCover);
 
+
+                // Add album description: album name, album rating
                 LinearLayout albumDescrip = new LinearLayout(this);
-                //albumDescrip.setLayoutParams(param_albumDescrip);
                 albumDescrip.setOrientation(LinearLayout.VERTICAL);
+
                 TextView albumName = new TextView(this);
                 albumName.setText(album.albumName);
                 albumName.setGravity(View.TEXT_ALIGNMENT_GRAVITY);
-                //albumName.setGravity();
-                //albumName.getLayoutParams().height = 60;
                 TextView albumRating = new TextView(this);
                 albumRating.setText("rating");
                 albumRating.setGravity(View.TEXT_ALIGNMENT_GRAVITY);
@@ -144,25 +146,22 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
                 album1.addView(albumDescrip);
 
                 album2.addView(album1);
-
             }
 
             parent.addView(album2);
+            // Add the more albums button
 
-            /*
-            LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            LinearLayout parent = (LinearLayout) findViewById(R.id.artist_albums);
-            View album1 = inflater.inflate(R.layout.artist_album1, null);
-            TextView albumName = (TextView) album1.findViewById(R.id.artist_albumName);
-            TextView albumRating = (TextView) album1.findViewById(R.id.artist_albumRating);
-            albumName.setText("Let it be");
-            albumRating.setText("Rating 3.9");
-            Album album = albums.get(0);
-            new DownloadImageTask((ImageView) findViewById(R.id.artist_albumImage)).execute(album.albumCoverImageURL);
-            parent.addView(album1);
-
-            setContentView(parent);
-            */
+            System.out.println("number of albums:");
+            System.out.println(albums.size());
+            if (albums.size() > 2)
+            {
+                System.out.println("Add the button");
+                Button moreAlbums = new Button(this);
+                moreAlbums.setText("More Albums");
+                moreAlbums.setId(R.id.artist_moreAlbums);
+                LinearLayout mainParent = (LinearLayout) findViewById(R.id.artist_albumRoot);
+                mainParent.addView(moreAlbums);
+            }
 
         }
     }
@@ -178,10 +177,12 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
         bandname.setText(bandName);
     }
 
+    /*
     public void more_albums(View view) {
         Intent launchactivity2 = new Intent(ArtisitsActivity.this, AlbumlistActivity.class);
         startActivity(launchactivity2);
     }
+    */
 
     @Override
     public void onClick(View v) {
