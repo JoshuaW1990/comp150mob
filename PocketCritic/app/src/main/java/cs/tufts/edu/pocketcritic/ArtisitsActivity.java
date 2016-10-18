@@ -35,6 +35,7 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
     String artistName;
     FirebaseDatabase database;
     String artistIntro;
+    List<Album> albumList;
 
 
     @Override
@@ -51,6 +52,8 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
 
         artistBio = (Button) findViewById(R.id.artist_Bio);
         artistBio.setOnClickListener(this);
+
+        albumList = new ArrayList<Album>();
 
         //back = (Button) findViewById(R.id.artist_back);
         //back.setOnClickListener(this);
@@ -86,6 +89,7 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
                 }
                 
                 setAlbums(albums);
+                saveAlbumList(albums);
             }
 
             @Override
@@ -161,6 +165,7 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
                 moreAlbums.setId(R.id.artist_moreAlbums);
                 LinearLayout mainParent = (LinearLayout) findViewById(R.id.artist_albumRoot);
                 mainParent.addView(moreAlbums);
+                moreAlbums.setOnClickListener(this);
             }
 
         }
@@ -175,6 +180,26 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
     private void setBandname(String bandName) {
         TextView bandname = (TextView) findViewById(R.id.artist_artistName);
         bandname.setText(bandName);
+    }
+
+
+    private void saveAlbumList(List<Album> albums) {
+        System.out.println("enter saveAlbumList function");
+        System.out.println(albumList.size());
+        if (albumList.size() > 0)
+        {
+            albumList.clear();
+        }
+        for (Album album: albums)
+        {
+            Album neoAlbum = new Album(album.albumName, album.albumRating, album.albumCoverImageURL);
+            albumList.add(neoAlbum);
+            System.out.println(neoAlbum.albumName);
+            System.out.println(albumList.size());
+        }
+        System.out.println("Get all albums");
+        System.out.println(albumList.get(0).albumName);
+        System.out.println("exit saveAlbumList function");
     }
 
     /*
@@ -194,12 +219,12 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
             startActivity(intent);
             finish();
         }
-        /*
-        else if (id == R.id.artist_back) {
-            Intent intent = new Intent(ArtisitsActivity.this, NavigateActivity.class);
+        else if (id == R.id.artist_moreAlbums) {
+            Intent intent = new Intent(ArtisitsActivity.this, AlbumlistActivity.class);
+            intent.putExtra("albuminfo", artistName);
             startActivity(intent);
             finish();
         }
-        */
+
     }
 }
