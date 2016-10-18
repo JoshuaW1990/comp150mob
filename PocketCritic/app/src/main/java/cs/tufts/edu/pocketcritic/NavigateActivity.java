@@ -84,42 +84,7 @@ public class NavigateActivity extends AppCompatActivity
         textview.setText(username);
     }
 
-    public void searchAlbums(Artist artist) {
-        System.out.println("Search albums");
-        System.out.println(artist.bandName);
-        database = FirebaseDatabase.getInstance();
-        DatabaseReference ref = database.getReference("demoDatabase").child(artist.bandName).child("3");
-        ref.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                System.out.println("flag");
-                List<Album> albums = new ArrayList<Album>();
-                for (DataSnapshot child: dataSnapshot.getChildren())
-                {
-                    String albumName = child.getKey();
-                    long albumRating = (long) child.child("0").getValue();
-                    String albumURL = (String) child.child("1").getValue();
-                    Album album = new Album(albumName, albumRating, albumURL);
-                    albums.add(album);
-                    System.out.println(album.albumName);
-                    System.out.print(album.albumRating);
-                    System.out.println(album.albumCoverImageURL);
-                }
-                if (albums.size() == 0) {
-                    System.out.println("Not found");
-                }
-                else
-                {
-                    //onSearchSuccess(artist, );
-                }
-            }
 
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                System.out.println("The read failed: " + databaseError.getCode());
-            }
-        });
-    }
 
     private void onSearchSuccess() {
         Intent intent = new Intent(this, ArtisitsActivity.class);
