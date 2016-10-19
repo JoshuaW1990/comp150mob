@@ -29,6 +29,7 @@ import java.util.List;
 import cs.tufts.edu.pocketcritic.models.Artist;
 import cs.tufts.edu.pocketcritic.models.Album;
 import cs.tufts.edu.pocketcritic.support.DownloadImageTask;
+import cs.tufts.edu.pocketcritic.support.RetrieveFromFirebase;
 
 public class ArtisitsActivity extends AppCompatActivity implements View.OnClickListener {
     Button artistBio;
@@ -75,9 +76,9 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
                 setArtist(artist);
 
                 DataSnapshot albumList = dataSnapshot.child("3");
-
-                List<Album> albums = new ArrayList<Album>();
-                for (DataSnapshot child: albumList.getChildren())
+                new RetrieveFromFirebase(ArtisitsActivity.this).execute(albumList);
+                /*List<Album> albums = new ArrayList<Album>();
+                /for (DataSnapshot child: albumList.getChildren())
                 {
                     String albumName = child.getKey();
                     long albumRating = (long) child.child("0").getValue();
@@ -90,6 +91,7 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
                 
                 setAlbums(albums);
                 saveAlbumList(albums);
+                */
             }
 
             @Override
@@ -183,7 +185,7 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
     }
 
 
-    private void saveAlbumList(List<Album> albums) {
+    public void saveAlbumList(List<Album> albums) {
         System.out.println("enter saveAlbumList function");
         System.out.println(albumList.size());
         if (albumList.size() > 0)
