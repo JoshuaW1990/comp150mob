@@ -84,12 +84,12 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
                     String albumCoverURL = (String) child.child("1").getValue();
                     Album neoAlbum = new Album(albumName, albumRating, albumCoverURL);
                     albums.add(neoAlbum);
-                    System.out.println(neoAlbum.albumName); // DEBUGGING
-                    System.out.println(neoAlbum.albumCoverImageURL); // DEBUGGING
+                    System.out.println(neoAlbum.albumName);
+                    System.out.println(neoAlbum.albumCoverImageURL);
                 }
                 
                 setAlbums(albums);
-                saveAlbumList(albums);
+                //saveAlbumList(albums);
             }
 
             @Override
@@ -202,12 +202,7 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
         System.out.println("exit saveAlbumList function");
     }
 
-    /*
-    public void more_albums(View view) {
-        Intent launchactivity2 = new Intent(ArtisitsActivity.this, AlbumlistActivity.class);
-        startActivity(launchactivity2);
-    }
-    */
+
 
     @Override
     public void onClick(View v) {
@@ -221,7 +216,7 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
         }
         else if (id == R.id.artist_moreAlbums) {
             Intent intent = new Intent(ArtisitsActivity.this, AlbumlistActivity.class);
-            intent.putExtra("albuminfo", artistName);
+            intent.putExtra("artistName", artistName);
             startActivity(intent);
             finish();
         }
