@@ -90,12 +90,11 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
                 }
                 
                 setAlbums(albums);
-<<<<<<< HEAD
+
                 saveAlbumList(albums);
                 */
-=======
+
                 //saveAlbumList(albums);
->>>>>>> origin/experimental
             }
 
             @Override
