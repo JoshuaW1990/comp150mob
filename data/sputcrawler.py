@@ -170,8 +170,6 @@ class MusicSpiderBandList:
         items = soup.find_all('a', href = re.compile("/bands/"))
         count = 0
         for item in items:
-            if count == 100:
-                break
             count += 1
             bandName = item.contents[0]
             if isEnglish(bandName):
