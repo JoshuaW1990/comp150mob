@@ -4,7 +4,11 @@ package cs.tufts.edu.pocketcritic.models;
  * Created by junwang on 10/12/16.
  */
 
-public class Album {
+
+
+import java.io.Serializable;
+
+public class Album implements Serializable {
     public String albumName;
     public long albumRating;
     public String albumCoverImageURL;
@@ -18,4 +22,5 @@ public class Album {
         this.albumRating = rating;
         this.albumCoverImageURL = url;
     }
+
 }

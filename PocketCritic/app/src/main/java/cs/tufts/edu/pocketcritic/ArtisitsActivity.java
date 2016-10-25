@@ -20,9 +20,11 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Picasso;
 
 import org.w3c.dom.Text;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -122,7 +124,7 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
             LinearLayout album2 = new LinearLayout(this);
             album2.setOrientation(LinearLayout.HORIZONTAL);
             album2.setLayoutParams(param_album2);
-            LinearLayout.LayoutParams param_album1 = new LinearLayout.LayoutParams(240, ActionBar.LayoutParams.MATCH_PARENT);
+            LinearLayout.LayoutParams param_album1 = new LinearLayout.LayoutParams(240, 360);
 
 
             for (int i = 0; i < albums.size(); i++)
@@ -132,10 +134,14 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
                 album1.setLayoutParams(param_album1);
                 album1.setOrientation(LinearLayout.VERTICAL);
 
+
                 Album album = albums.get(i);
 
                 // Add album cover
                 ImageView albumCover = new ImageView(this);
+
+
+
                 new DownloadImageTask(albumCover).execute(album.albumCoverImageURL);
                 album1.addView(albumCover);
 
@@ -178,7 +184,8 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
 
 
     private void setBandimage(String imageURL) {
-        new DownloadImageTask((ImageView) findViewById(R.id.artist_BandImage)).execute(imageURL);
+//        new DownloadImageTask((ImageView) findViewById(R.id.artist_BandImage)).execute(imageURL);
+        Picasso.with(this).load(imageURL).into((ImageView) findViewById(R.id.artist_BandImage));
     }
 
 
@@ -221,7 +228,7 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
         }
         else if (id == R.id.artist_moreAlbums) {
             Intent intent = new Intent(ArtisitsActivity.this, AlbumlistActivity.class);
-            intent.putExtra("artistName", artistName);
+            intent.putExtra("albumlist", (Serializable) albumList);
             startActivity(intent);
             finish();
         }
