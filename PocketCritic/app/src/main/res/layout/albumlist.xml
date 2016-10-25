@@ -5,9 +5,19 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cs.tufts.edu.pocketcritic.AlbumlistActivity">>
+    tools:context="cs.tufts.edu.pocketcritic.AlbumlistActivity"
+    tools:ignore="ExtraText">>
 
 
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/albumList_toolbar" />
+
+    <!--
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="20dp">
@@ -22,11 +32,14 @@
             android:onClick="back"/>
 
     </RelativeLayout>
+    -->
 
     <ListView
         android:id="@+id/albumList_listview"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"/>
+
+
 
 </LinearLayout>
 

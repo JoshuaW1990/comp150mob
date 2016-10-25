@@ -12,7 +12,7 @@ public class ActivitybioActivity extends AppCompatActivity implements View.OnCli
 
     private TextView textview;
     private Button back;
-    String[] artistinfo;
+    String artistintro;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,10 +20,10 @@ public class ActivitybioActivity extends AppCompatActivity implements View.OnCli
         setContentView(R.layout.activitybio);
 
         Intent intent = getIntent();
-        artistinfo = intent.getStringArrayExtra("artistinfo");
+        artistintro = intent.getStringExtra("artistinfo");
 
         textview = (TextView) findViewById(R.id.artistbio_intro);
-        textview.setText(artistinfo[1]);
+        textview.setText(artistintro);
 
         back = (Button) findViewById(R.id.artistbio_back);
         back.setOnClickListener(this);
@@ -33,9 +33,6 @@ public class ActivitybioActivity extends AppCompatActivity implements View.OnCli
     public void onClick(View v) {
         int id = v.getId();
         if (id == R.id.artistbio_back) {
-            Intent intent = new Intent(ActivitybioActivity.this, ArtisitsActivity.class);
-            intent.putExtra("artistinfo", artistinfo[0]);
-            startActivity(intent);
             finish();
         }
 

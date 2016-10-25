@@ -38,6 +38,11 @@ public class NavigateActivity extends AppCompatActivity
         // user id
         Intent intent = getIntent();
         String username = intent.getStringExtra("username");
+        if(username == null) {
+            Intent login_intent = new Intent(NavigateActivity.this, LoginActivity.class);
+            startActivity(login_intent);
+            finish();
+        }
         setUserID(username);
 
         // edit views
@@ -93,7 +98,6 @@ public class NavigateActivity extends AppCompatActivity
         String query = searchInfo.getText().toString();
         intent.putExtra("artistinfo", query);
         startActivity(intent);
-        finish();
     }
 
     @Override

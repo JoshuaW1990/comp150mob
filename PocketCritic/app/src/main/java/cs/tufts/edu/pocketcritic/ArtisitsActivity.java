@@ -221,16 +221,13 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
         int id = v.getId();
         if (id == R.id.artist_Bio) {
             Intent intent = new Intent(ArtisitsActivity.this, ActivitybioActivity.class);
-            String[] strings = {artistName, artistIntro};
-            intent.putExtra("artistinfo", strings);
+            intent.putExtra("artistinfo", artistIntro);
             startActivity(intent);
-            finish();
         }
         else if (id == R.id.artist_moreAlbums) {
             Intent intent = new Intent(ArtisitsActivity.this, AlbumlistActivity.class);
             intent.putExtra("albumlist", (Serializable) albumList);
             startActivity(intent);
-            finish();
         }
 
     }
