@@ -139,10 +139,10 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
 
                 // Add album cover
                 ImageView albumCover = new ImageView(this);
+                Picasso.with(this).load(album.albumCoverImageURL).into(albumCover);
 
 
-
-                new DownloadImageTask(albumCover).execute(album.albumCoverImageURL);
+                //new DownloadImageTask(albumCover).execute(album.albumCoverImageURL);
                 album1.addView(albumCover);
 
 

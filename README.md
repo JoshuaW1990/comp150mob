@@ -3,8 +3,6 @@ The aim of this project is to build an app named PocketCritic for Android smartp
 
 
 TODO list:
-- [X] Network permission
-- [X] Import data and the web sever
-- [X] Connect account to the database
-- [ ] Allow to search the artist by band name
-- [ ] Allow to search by the child node
+- [ ] Add multiple threads to fix the error: skipped XX frames.
+- [ ] Add the function that users can like or dislike an artist.
+- [ ] Add the function that users can rate the albums.
