@@ -25,6 +25,9 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".NavigationActivity" />
         <activity android:name=".NavigateActivity"></activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="caf810954f358a2c70a15aae13fd2d49a326d47d" />
     </application>
 
 </manifest>
