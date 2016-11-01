@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/ArtisitsActivity.java</file>
+    <line>33</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/ArtisitsActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import cs.tufts.edu.pocketcritic.support.DownloadImageTask;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/ArtisitsActivity.java</file>
+    <line>25</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/ArtisitsActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import org.w3c.dom.Text;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/ArtisitsActivity.java</file>
+    <line>14</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/ArtisitsActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import android.content.Context;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/ArtisitsActivity.java</file>
+    <line>9</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/ArtisitsActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import android.view.LayoutInflater;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/ArtisitsActivity.java</file>
+    <line>5</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/ArtisitsActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import android.support.design.widget.AppBarLayout;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/ActivitybioActivity.java</file>
+    <line>8</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/ActivitybioActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import android.app.Activity;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/AlbumlistActivity.java</file>
+    <line>11</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/AlbumlistActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import com.google.firebase.database.FirebaseDatabase;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/AlbumlistActivity.java</file>
+    <line>7</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/AlbumlistActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import android.widget.Button;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/support/RetrieveFromFirebase.java</file>
+    <line>8</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic.support</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/support/RetrieveFromFirebase.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import java.io.InputStream;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/support/RetrieveFromFirebase.java</file>
+    <line>4</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic.support</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/support/RetrieveFromFirebase.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import android.util.Log;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/LoginActivity.java</file>
+    <line>13</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/LoginActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import android.widget.TextView;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/LoginActivity.java</file>
+    <line>5</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/LoginActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import android.support.v7.app.AppCompatActivity;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/LoginActivity.java</file>
+    <line>3</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/LoginActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import android.app.Activity;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/NavigateActivity.java</file>
+    <line>23</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/NavigateActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import cs.tufts.edu.pocketcritic.models.Album;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/NavigateActivity.java</file>
+    <line>22</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/NavigateActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import cs.tufts.edu.pocketcritic.models.Artist;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/NavigateActivity.java</file>
+    <line>20</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/NavigateActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import java.util.List;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/NavigateActivity.java</file>
+    <line>19</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/NavigateActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import java.util.ArrayList;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/support/DownloadImageTask.java</file>
+    <line>13</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic.support</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/support/DownloadImageTask.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import android.view.View;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/support/DownloadImageTask.java</file>
+    <line>9</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic.support</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/support/DownloadImageTask.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import java.net.URL;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/models/Artist.java</file>
+    <line>3</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic.models</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/models/Artist.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import java.util.*;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/models/Artist.java</file>
+    <line>5</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic.models</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/models/Artist.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import cs.tufts.edu.pocketcritic.models.Album;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/support/CommonAdapter.java</file>
+    <line>7</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic.support</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/support/CommonAdapter.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import android.support.v7.widget.RecyclerView.ViewHolder;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/support/CommonAdapter.java</file>
+    <line>4</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic.support</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/support/CommonAdapter.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import android.support.v7.widget.RecyclerView;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/NavigationActivity.java</file>
+    <line>11</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/NavigationActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import android.util.Log;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/NavigationActivity.java</file>
+    <line>5</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/NavigationActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import android.view.View;&lt;/code&gt; #loc</description>
+  </problem>
+</problems>
+

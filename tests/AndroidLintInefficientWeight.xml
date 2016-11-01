@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/activitybio.xml</file>
+    <line>32</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/activitybio.xml" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Inefficient layout weight</problem_class>
+    <hints />
+    <description>&lt;html&gt;Use a &lt;code&gt;layout_height&lt;/code&gt; of &lt;code&gt;0dp&lt;/code&gt; instead of &lt;code&gt;wrap_content&lt;/code&gt; for better performance&lt;/html&gt;</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/album_listview.xml</file>
+    <line>30</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/album_listview.xml" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Inefficient layout weight</problem_class>
+    <hints />
+    <description>&lt;html&gt;Use a &lt;code&gt;layout_height&lt;/code&gt; of &lt;code&gt;0dp&lt;/code&gt; instead of &lt;code&gt;50dp&lt;/code&gt; for better performance&lt;/html&gt;</description>
+  </problem>
+</problems>
+
