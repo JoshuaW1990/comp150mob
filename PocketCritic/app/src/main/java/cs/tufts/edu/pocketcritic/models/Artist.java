@@ -1,8 +1,5 @@
 package cs.tufts.edu.pocketcritic.models;
 
-import java.util.*;
-
-import cs.tufts.edu.pocketcritic.models.Album;
 /**
  * Created by junwang on 10/12/16.
  */

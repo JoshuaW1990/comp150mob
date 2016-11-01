@@ -2,18 +2,14 @@ package cs.tufts.edu.pocketcritic;
 
 import android.app.ActionBar;
 import android.content.Intent;
-import android.support.design.widget.AppBarLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.LayoutInflater;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.LinearLayout;
-import android.content.Context;
+import android.widget.TextView;
 import android.widget.Toast;
-
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -22,15 +18,12 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
-import org.w3c.dom.Text;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import cs.tufts.edu.pocketcritic.models.Artist;
 import cs.tufts.edu.pocketcritic.models.Album;
-import cs.tufts.edu.pocketcritic.support.DownloadImageTask;
+import cs.tufts.edu.pocketcritic.models.Artist;
 import cs.tufts.edu.pocketcritic.support.RetrieveFromFirebase;
 
 public class ArtisitsActivity extends AppCompatActivity implements View.OnClickListener {
@@ -68,7 +61,7 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
         ref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                String bandName = (String) dataSnapshot.getKey();
+                String bandName = dataSnapshot.getKey();
                 String imageURL;
                 String bio;
                 imageURL = (String) dataSnapshot.child("0").getValue();
@@ -172,7 +165,7 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
             {
                 System.out.println("Add the button");
                 Button moreAlbums = new Button(this);
-                moreAlbums.setText("More Albums");
+                moreAlbums.setText("moreAlbums");
                 moreAlbums.setId(R.id.artist_moreAlbums);
                 LinearLayout mainParent = (LinearLayout) findViewById(R.id.artist_albumRoot);
                 mainParent.addView(moreAlbums);

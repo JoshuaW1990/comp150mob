@@ -13,7 +13,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login Page"
+        android:text="@string/login_page"
         android:id="@+id/loginpage"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />

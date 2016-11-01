@@ -1,15 +1,13 @@
 package cs.tufts.edu.pocketcritic.support;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+import android.util.SparseArray;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.support.v7.widget.RecyclerView.ViewHolder;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.util.SparseArray;
-import android.view.LayoutInflater;
 
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
@@ -75,7 +73,7 @@ public abstract class CommonAdapter<T> extends BaseAdapter {
 
     /**
      * Methods need to be rewritten
-     * @param holder
+     * @param holder: holds stuff
      * @param item: the item in the list for now
      * @param position: the index for now
      */

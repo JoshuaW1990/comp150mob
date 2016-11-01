@@ -1,5 +1,6 @@
 package cs.tufts.edu.pocketcritic;
 
+import android.annotation.SuppressLint;
 import android.support.v7.app.AppCompatActivity;
 import android.app.ProgressDialog;
 import android.support.annotation.VisibleForTesting;
@@ -8,6 +9,7 @@ import android.support.annotation.VisibleForTesting;
 /**
  * Created by junwang on 10/11/16.
  */
+@SuppressLint("Registered")
 public class BaseActivity extends AppCompatActivity
 {
 

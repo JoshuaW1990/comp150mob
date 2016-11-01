@@ -40,19 +40,17 @@
 
 
             <Button
-                android:text="Artist Bio"
+                android:text="@string/artist_bio"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/artist_Bio"
-                android:layout_weight="1"/>
+                android:id="@+id/artist_Bio" />
 
             <ImageView
                 android:contentDescription="@string/likeOrdislike"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/likeordislike"
-                android:id="@+id/VoteButtonsImage"
-                android:layout_weight="1" />
+                android:id="@+id/VoteButtonsImage" />
 
         </LinearLayout>
 

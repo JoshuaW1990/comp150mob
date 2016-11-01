@@ -1,21 +1,20 @@
 package cs.tufts.edu.pocketcritic;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.SearchView;
 import android.widget.SearchView.OnQueryTextListener;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.content.Intent;
-import android.util.Log;
 
-import cs.tufts.edu.pocketcritic.models.Artist;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import cs.tufts.edu.pocketcritic.models.Artist;
 
 public class NavigationActivity extends AppCompatActivity {
 
@@ -64,7 +63,7 @@ public class NavigationActivity extends AppCompatActivity {
         ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                String bandName = (String) dataSnapshot.getKey();
+                String bandName = dataSnapshot.getKey();
                 String imageURL;
                 String bio;
                 imageURL = (String) dataSnapshot.child("0").getValue();

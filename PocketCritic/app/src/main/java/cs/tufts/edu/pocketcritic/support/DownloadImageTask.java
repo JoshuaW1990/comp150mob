@@ -5,15 +5,13 @@ package cs.tufts.edu.pocketcritic.support;
  * http://stackoverflow.com/questions/2471935/how-to-load-an-imageview-by-url-in-android
  */
 
-import java.io.InputStream;
-import java.net.URL;
-
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.view.View;
-import android.widget.ImageView;
-import android.util.Log;
 import android.os.AsyncTask;
+import android.util.Log;
+import android.widget.ImageView;
+
+import java.io.InputStream;
 
 public class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
 

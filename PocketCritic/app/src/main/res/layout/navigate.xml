@@ -22,18 +22,19 @@
         android:id="@+id/navigate_searchinfo" />
 
     <Button
-        android:text="Search"
+        android:text="@string/search"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/navigate_searchinfo"
         android:id="@+id/navigate_searchButton"
+        android:layout_toEndOf="@id/navigate_searchinfo"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:textSize="10sp" />
 
     <TextView
-        android:text="TextView"
+        android:text="@string/textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

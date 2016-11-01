@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.content.Intent;
 import android.widget.Button;
-import android.app.Activity;
 import android.widget.TextView;
 
 public class ActivitybioActivity extends AppCompatActivity implements View.OnClickListener {
