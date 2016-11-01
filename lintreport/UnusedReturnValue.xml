@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/support/CommonAdapter.java</file>
+    <line>115</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic.support</package>
+    <entry_point TYPE="method" FQNAME="cs.tufts.edu.pocketcritic.support.CommonAdapter.ViewHolder cs.tufts.edu.pocketcritic.support.CommonAdapter.ViewHolder setText(int id, java.lang.String txt)" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Method can be void</problem_class>
+    <hints />
+    <description>Return value of the method is never used</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/support/CommonAdapter.java</file>
+    <line>121</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic.support</package>
+    <entry_point TYPE="method" FQNAME="cs.tufts.edu.pocketcritic.support.CommonAdapter.ViewHolder cs.tufts.edu.pocketcritic.support.CommonAdapter.ViewHolder setImage(int id, java.lang.String url, com.squareup.picasso.Callback callback)" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Method can be void</problem_class>
+    <hints />
+    <description>Return value of the method is never used</description>
+  </problem>
+</problems>
+

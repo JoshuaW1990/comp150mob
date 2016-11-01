@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/ArtisitsActivity.java</file>
+    <line>29</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="class" FQNAME="cs.tufts.edu.pocketcritic.ArtisitsActivity" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Class is not instantiated.</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/ActivitybioActivity.java</file>
+    <line>10</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="class" FQNAME="cs.tufts.edu.pocketcritic.ActivitybioActivity" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Class is not instantiated.</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/MainActivity.java</file>
+    <line>14</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="class" FQNAME="cs.tufts.edu.pocketcritic.MainActivity" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Class is not instantiated.</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/AlbumlistActivity.java</file>
+    <line>16</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="class" FQNAME="cs.tufts.edu.pocketcritic.AlbumlistActivity" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Class is not instantiated.</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/test/java/cs/tufts/edu/pocketcritic/ExampleUnitTest.java</file>
+    <line>12</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="method" FQNAME="cs.tufts.edu.pocketcritic.ExampleUnitTest void addition_isCorrect()" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Method is never used.</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/test/java/cs/tufts/edu/pocketcritic/ExampleUnitTest.java</file>
+    <line>10</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="class" FQNAME="cs.tufts.edu.pocketcritic.ExampleUnitTest" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Class is not instantiated.</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/androidTest/java/cs/tufts/edu/pocketcritic/ApplicationTest.java</file>
+    <line>9</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="class" FQNAME="cs.tufts.edu.pocketcritic.ApplicationTest" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Class is not instantiated.</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/androidTest/java/cs/tufts/edu/pocketcritic/ApplicationTest.java</file>
+    <line>10</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="method" FQNAME="cs.tufts.edu.pocketcritic.ApplicationTest ApplicationTest()" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Constructor is never used.</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/LoginActivity.java</file>
+    <line>23</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="class" FQNAME="cs.tufts.edu.pocketcritic.LoginActivity" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Class is not instantiated.</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/BaseActivity.java</file>
+    <line>13</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="class" FQNAME="cs.tufts.edu.pocketcritic.BaseActivity" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Neither the class nor its implementation are ever instantiated.</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/NavigateActivity.java</file>
+    <line>18</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="class" FQNAME="cs.tufts.edu.pocketcritic.NavigateActivity" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Class is not instantiated.</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/NavigationActivity.java</file>
+    <line>19</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="class" FQNAME="cs.tufts.edu.pocketcritic.NavigationActivity" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Class is not instantiated.</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/ArtisitsActivity.java</file>
+    <line>29</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="class" FQNAME="cs.tufts.edu.pocketcritic.ArtisitsActivity" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Class is not instantiated.</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/ActivitybioActivity.java</file>
+    <line>10</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="class" FQNAME="cs.tufts.edu.pocketcritic.ActivitybioActivity" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Class is not instantiated.</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/MainActivity.java</file>
+    <line>14</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="class" FQNAME="cs.tufts.edu.pocketcritic.MainActivity" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Class is not instantiated.</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/AlbumlistActivity.java</file>
+    <line>16</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="class" FQNAME="cs.tufts.edu.pocketcritic.AlbumlistActivity" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Class is not instantiated.</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/test/java/cs/tufts/edu/pocketcritic/ExampleUnitTest.java</file>
+    <line>10</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="class" FQNAME="cs.tufts.edu.pocketcritic.ExampleUnitTest" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Class is not instantiated.</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/LoginActivity.java</file>
+    <line>23</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="class" FQNAME="cs.tufts.edu.pocketcritic.LoginActivity" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Class is not instantiated.</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/BaseActivity.java</file>
+    <line>13</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="class" FQNAME="cs.tufts.edu.pocketcritic.BaseActivity" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Neither the class nor its implementation are ever instantiated.</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/NavigateActivity.java</file>
+    <line>18</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="class" FQNAME="cs.tufts.edu.pocketcritic.NavigateActivity" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Class is not instantiated.</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/NavigationActivity.java</file>
+    <line>19</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="class" FQNAME="cs.tufts.edu.pocketcritic.NavigationActivity" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Class is not instantiated.</description>
+  </problem>
+</problems>
+

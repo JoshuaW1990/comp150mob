@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/ArtisitsActivity.java</file>
+    <line>52</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="method" FQNAME="cs.tufts.edu.pocketcritic.ArtisitsActivity void onCreate(android.os.Bundle savedInstanceState)" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Explicit type can be replaced with &lt;&gt;</problem_class>
+    <description>Explicit type argument Album can be replaced with &lt;&gt;</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/support/RetrieveFromFirebase.java</file>
+    <line>25</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic.support</package>
+    <entry_point TYPE="method" FQNAME="cs.tufts.edu.pocketcritic.support.RetrieveFromFirebase RetrieveFromFirebase(cs.tufts.edu.pocketcritic.ArtisitsActivity activity)" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Explicit type can be replaced with &lt;&gt;</problem_class>
+    <description>Explicit type argument Album can be replaced with &lt;&gt;</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/models/User.java</file>
+    <line>39</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic.models</package>
+    <entry_point TYPE="method" FQNAME="cs.tufts.edu.pocketcritic.models.User User(java.lang.String username, java.lang.String email)" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Explicit type can be replaced with &lt;&gt;</problem_class>
+    <description>Explicit type argument String can be replaced with &lt;&gt;</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/models/User.java</file>
+    <line>40</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic.models</package>
+    <entry_point TYPE="method" FQNAME="cs.tufts.edu.pocketcritic.models.User User(java.lang.String username, java.lang.String email)" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Explicit type can be replaced with &lt;&gt;</problem_class>
+    <description>Explicit type argument String can be replaced with &lt;&gt;</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/models/User.java</file>
+    <line>41</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic.models</package>
+    <entry_point TYPE="method" FQNAME="cs.tufts.edu.pocketcritic.models.User User(java.lang.String username, java.lang.String email)" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Explicit type can be replaced with &lt;&gt;</problem_class>
+    <description>Explicit type argument String, Long can be replaced with &lt;&gt;</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/support/CommonAdapter.java</file>
+    <line>89</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic.support</package>
+    <entry_point TYPE="method" FQNAME="cs.tufts.edu.pocketcritic.support.CommonAdapter.ViewHolder ViewHolder(android.content.Context context, android.view.View convertView, android.view.ViewGroup parent, int itemResId)" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Explicit type can be replaced with &lt;&gt;</problem_class>
+    <description>Explicit type argument View can be replaced with &lt;&gt;</description>
+  </problem>
+</problems>
+

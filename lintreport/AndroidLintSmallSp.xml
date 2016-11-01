@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/navigate.xml</file>
+    <line>34</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/navigate.xml" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Text size is too small</problem_class>
+    <hints />
+    <description>&lt;html&gt;Avoid using sizes smaller than &lt;code&gt;12sp&lt;/code&gt;: &lt;code&gt;10sp&lt;/code&gt;&lt;/html&gt;</description>
+  </problem>
+</problems>
+
