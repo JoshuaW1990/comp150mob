@@ -210,7 +210,7 @@ public class ArtisitsActivity extends AppCompatActivity implements View.OnClickL
             System.out.println(albumList.size());
         }
         System.out.println("Get all albums");
-        System.out.println(albumList.get(0).albumName);
+        //System.out.println(albumList.get(0).albumName);
         System.out.println("exit saveAlbumList function");
     }
 

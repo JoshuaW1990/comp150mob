@@ -108,6 +108,7 @@ public class NavigateActivity extends AppCompatActivity
         }
         else
         {
+
             System.out.println("error when searching!");
         }
     }
