@@ -31,7 +31,7 @@
         android:layout_toEndOf="@id/navigate_searchinfo"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:textSize="10sp" />
+        android:textSize="12sp" />
 
     <TextView
         android:text="@string/textview"
