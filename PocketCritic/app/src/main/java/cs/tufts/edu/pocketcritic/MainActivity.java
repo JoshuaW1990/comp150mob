@@ -16,12 +16,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import android.app.Fragment;
-import android.app.FragmentManager;
 
 import com.crashlytics.android.Crashlytics;
 import cs.tufts.edu.pocketcritic.fragment.SearchFragment;
 import cs.tufts.edu.pocketcritic.fragment.RecommendFragment;
-import cs.tufts.edu.pocketcritic.fragment.ArtistFragment;
 import io.fabric.sdk.android.Fabric;
 
 public class MainActivity extends AppCompatActivity
@@ -99,11 +97,11 @@ public class MainActivity extends AppCompatActivity
             Fragment fragment = new RecommendFragment();
             getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
 
-        } else if (id == R.id.nav_artist) {
-            Fragment fragment = new ArtistFragment();
-            getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
-
-        } else if (id == R.id.nav_albums) {
+//        } else if (id == R.id.nav_artist) {
+//            Fragment fragment = new ArtistFragment();
+//            getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
+//
+//        } else if (id == R.id.nav_albums) {
 
         } else if (id == R.id.nav_share) {
 

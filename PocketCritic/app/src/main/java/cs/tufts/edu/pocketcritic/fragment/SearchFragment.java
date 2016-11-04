@@ -1,6 +1,11 @@
 package cs.tufts.edu.pocketcritic.fragment;
 
+import cs.tufts.edu.pocketcritic.ListActivity;
+import cs.tufts.edu.pocketcritic.ListArtistsActivity;
+import cs.tufts.edu.pocketcritic.MainActivity;
 import cs.tufts.edu.pocketcritic.R;
+
+import android.content.Intent;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -24,6 +29,8 @@ import cs.tufts.edu.pocketcritic.support.SpotifyInterface;
 import cs.tufts.edu.pocketcritic.support.SpotifyApi;
 import cs.tufts.edu.pocketcritic.model.Artist;
 
+import java.io.Serializable;
+
 import java.util.List;
 
 /**
@@ -39,6 +46,8 @@ public class SearchFragment extends Fragment
     private SpotifyApi spotifyApi;
     private SpotifyInterface spotifyInterface;
 
+    private String queryString;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -47,6 +56,7 @@ public class SearchFragment extends Fragment
 
         // edit views
         searchInfo = (EditText) view.findViewById(R.id.search_searchinfo);
+
 
         // click listeners
         searchButton = (Button) view.findViewById(R.id.search_searchButton);
@@ -62,8 +72,9 @@ public class SearchFragment extends Fragment
     public void doSearch() {
         System.out.println("do search here by spotify");
         System.out.println(searchInfo.getText().toString());
+        queryString = generateQueryString(searchInfo.getText().toString());
 
-        query();
+        queryByRxJava();
 
 
     }
@@ -73,12 +84,11 @@ public class SearchFragment extends Fragment
     }
 
     private void queryByRxJava() {
-        String searchText = generateQueryString(searchInfo.getText().toString());
-        if (searchText.isEmpty()) {
+        if (queryString.isEmpty()) {
             Toast.makeText(getActivity(), "Please input artist name", Toast.LENGTH_SHORT).show();
             return;
         }
-        spotifyInterface.getSpotifyResult(searchText, "artist")
+        spotifyInterface.getSpotifyResult(queryString, "artist")
                 .subscribeOn(Schedulers.newThread())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Observer<Artist>() {
@@ -93,13 +103,11 @@ public class SearchFragment extends Fragment
                     @Override
                     public void onNext(Artist result) {
                         if (result != null) {
-                            List< Artist.ArtistsBean.ItemsBean > items = result.getArtists().getItems();
-                            for (Artist.ArtistsBean.ItemsBean item: items) {
-                                List<Artist.ArtistsBean.ItemsBean.ImagesBean> imageURLs = item.getImages();
-                                for(Artist.ArtistsBean.ItemsBean.ImagesBean image: imageURLs) {
-                                    String imageURL = image.getUrl();
-                                    System.out.println(imageURL);
-                                }
+                            List< Artist.ArtistsBean.ItemsBean > artists = result.getArtists().getItems();
+                            if (artists.size() == 0) {
+                                Toast.makeText(getActivity(), "Not Found", Toast.LENGTH_SHORT).show();
+                            } else {
+                                onSearchSuccess();
                             }
                         }
                     }
@@ -107,41 +115,50 @@ public class SearchFragment extends Fragment
     }
 
 
-    private void query() {
-        String searchText = generateQueryString(searchInfo.getText().toString());
-        System.out.println(searchText);
-        if (searchText.isEmpty()) {
-            Toast.makeText(getActivity(), "Please input artist name", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        Call<Artist> call = spotifyInterface.getResult(searchText, "artist");
-        call.enqueue(new Callback<Artist>() {
-            @Override
-            public void onResponse(Call<Artist> call, Response<Artist> response) {
-                if (response.isSuccessful()) {
-                    Artist result = response.body();
-                    if (result != null) {
-                        List< Artist.ArtistsBean.ItemsBean > items = result.getArtists().getItems();
-                        for (Artist.ArtistsBean.ItemsBean item: items) {
-                            List<Artist.ArtistsBean.ItemsBean.ImagesBean> imageURLs = item.getImages();
-                            for(Artist.ArtistsBean.ItemsBean.ImagesBean image: imageURLs) {
-                                String imageURL = image.getUrl();
-                                System.out.println(imageURL);
-                            }
-                        }
-                    }
-                }
-            }
-
-            @Override
-            public void onFailure(Call<Artist> call, Throwable t) {
-
-            }
-        });
-    }
+//    private void query() {
+//        String searchText = generateQueryString(searchInfo.getText().toString());
+//        System.out.println(searchText);
+//        if (searchText.isEmpty()) {
+//            Toast.makeText(getActivity(), "Please input artist name", Toast.LENGTH_SHORT).show();
+//            return;
+//        }
+//        Call<Artist> call = spotifyInterface.getResult(searchText, "artist");
+//        call.enqueue(new Callback<Artist>() {
+//            @Override
+//            public void onResponse(Call<Artist> call, Response<Artist> response) {
+//                if (response.isSuccessful()) {
+//                    Artist result = response.body();
+//                    if (result != null) {
+//                        List< Artist.ArtistsBean.ItemsBean > items = result.getArtists().getItems();
+//                        for (Artist.ArtistsBean.ItemsBean item: items) {
+//                            List<Artist.ArtistsBean.ItemsBean.ImagesBean> imageURLs = item.getImages();
+//                            for(Artist.ArtistsBean.ItemsBean.ImagesBean image: imageURLs) {
+//                                String imageURL = image.getUrl();
+//                                System.out.println(imageURL);
+//                            }
+//                        }
+//                    }
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(Call<Artist> call, Throwable t) {
+//
+//            }
+//        });
+//    }
 
 
     private void onSearchSuccess() {
+
+        Intent intent = new Intent(getActivity(), ListArtistsActivity.class);
+        intent.putExtra("queryString", queryString);
+
+
+        //intent.putExtra("artists", "test");
+        startActivity(intent);
+        System.out.println("On search success!");
+
     }
 
     @Override
@@ -152,7 +169,6 @@ public class SearchFragment extends Fragment
         }
         else
         {
-
             System.out.println("error when searching!");
         }
     }
