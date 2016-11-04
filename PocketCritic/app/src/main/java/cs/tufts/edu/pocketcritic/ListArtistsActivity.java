@@ -14,6 +14,7 @@ import android.widget.ListView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -185,6 +186,15 @@ public class ListArtistsActivity extends AppCompatActivity {
                 }
                 holder.setText(R.id.artist_name, artist.getName());
                 holder.setText(R.id.artist_rating, Long.toString(artist.getPopularity()));
+                ImageView imgView = holder.getView(R.id.artist_img);
+                imgView.setClickable(true);
+                imgView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                                .setAction("Action", null).show();
+                    }
+                });
             }
         });
 
