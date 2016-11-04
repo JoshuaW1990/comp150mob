@@ -12,6 +12,7 @@ apply plugin: 'io.fabric'
 
 repositories {
     maven { url 'https://maven.fabric.io/public' }
+    mavenCentral()
 }
 
 
@@ -39,10 +40,16 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.5@aar') {
+        transitive = true;
+    }
+
+
+
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support:design:24.2.1'
     compile 'com.android.support:support-v4:24.2.1'
-
     compile 'com.squareup.okhttp3:okhttp:3.2.0'
     compile 'com.squareup.retrofit2:retrofit:2.0.2'
     compile 'com.squareup.retrofit2:converter-gson:2.0.2'
@@ -50,14 +57,14 @@ dependencies {
     compile 'io.reactivex:rxandroid:1.1.0'
     compile 'com.google.code.gson:gson:2.6.2'
     compile 'com.jakewharton:butterknife:7.0.1'
-
     compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.google.firebase:firebase-core:9.8.0'
+    compile 'com.google.firebase:firebase-database:9.8.0'
+    compile 'com.google.firebase:firebase-auth:9.8.0'
 
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    
     testCompile 'junit:junit:4.12'
-    compile('com.crashlytics.sdk.android:crashlytics:2.6.5@aar') {
-        transitive = true;
-    }
-
-
-
 }
+
+apply plugin: 'com.google.gms.google-services'

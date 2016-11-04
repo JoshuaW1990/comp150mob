@@ -33,6 +33,10 @@
         <activity
             android:name=".ListArtistsActivity"
             android:label="@string/title_activity_list_artists"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ArtistScrollingActivity"
+            android:label="@string/title_activity_artist_scrolling"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

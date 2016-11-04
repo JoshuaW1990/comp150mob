@@ -8,10 +8,8 @@ import java.util.List;
  */
 
 public class ArtistSimple {
-    public String bandName;
     public String imageURL;
-    public List<String> genres;
-    public String id;
+    public String name;
     public int popularity;
 
 
@@ -19,16 +17,9 @@ public class ArtistSimple {
         // Default constructor
     }
 
-    public ArtistSimple(String bandName, String imageURL, List<String> genres, String id, int popularity) {
-        this.bandName = bandName;
+    public ArtistSimple(String name, String imageURL, int popularity) {
         this.imageURL = imageURL;
-        this.id = id;
+        this.name = name;
         this.popularity = popularity;
-        this.genres = new ArrayList<String>();
-        for (String genre: genres) {
-            String neoGenre = new String(genre);
-            this.genres.add(neoGenre);
-
-        }
     }
 }

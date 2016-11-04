@@ -14,6 +14,8 @@ import android.widget.ListView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
+
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -179,26 +181,64 @@ public class ListArtistsActivity extends AppCompatActivity {
         listView.setAdapter(new CommonAdapter< Artist.ArtistsBean.ItemsBean >(this, artistList, R.layout.artist_listview) {
             @Override
             public void convert(ViewHolder holder, Artist.ArtistsBean.ItemsBean artist, int position) {
-                if (artist.getImages().size() == 0) {
+                int size = artist.getImages().size();
+                if (size == 0) {
                     holder.setImage(R.id.artist_img, R.drawable.androidicon, null);
                 } else {
-                    holder.setImage(R.id.artist_img, artist.getImages().get(0).getUrl(), null);
+                    holder.setImage(R.id.artist_img, artist.getImages().get(size - 1).getUrl(), null);
                 }
                 holder.setText(R.id.artist_name, artist.getName());
                 holder.setText(R.id.artist_rating, Long.toString(artist.getPopularity()));
                 ImageView imgView = holder.getView(R.id.artist_img);
                 imgView.setClickable(true);
-                imgView.setOnClickListener(new View.OnClickListener() {
+
+
+//                imgView.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+//                        Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                                .setAction("Action", null).show();
+//                    }
+//                });
+
+                imgView.setOnClickListener(new ListButtonOnClickListener(artist.getId()) {
                     @Override
                     public void onClick(View view) {
-                        Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        Snackbar.make(view, this.idnumber, Snackbar.LENGTH_LONG)
                                 .setAction("Action", null).show();
+                        Intent intent = new Intent(ListArtistsActivity.this, ArtistScrollingActivity.class);
+                        intent.putExtra("searchId", this.idnumber);
+
+
+                        //intent.putExtra("artists", "test");
+                        startActivity(intent);
+                        System.out.println("On search success!");
                     }
                 });
+
+
             }
         });
 
     }
+
+    public class ListButtonOnClickListener implements OnClickListener
+    {
+
+        String idnumber;
+        public ListButtonOnClickListener(String idnumber) {
+            this.idnumber = idnumber;
+        }
+
+        @Override
+        public void onClick(View v)
+        {
+            //Do your stuff
+        }
+
+    };
+
+
 
 
 }
