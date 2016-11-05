@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Nov 05 19:09:37 EDT 2016
+#Sat Nov 05 19:37:54 EDT 2016
 210.set=ANDROID_RESOURCE
 282.file=/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/res/resources-debug.ap_/res/layout/select_dialog_item_material.xml
 14.set=ANDROID_RESOURCE
