@@ -14,10 +14,6 @@ public class SpotifyApi {
     public static final String BASE_URL = "https://api.spotify.com";
 
 
-    /**
-     * 获取PhoneApi实例
-     * @return
-     */
     public static SpotifyApi getApi(){
         return ApiHolder.spotifyApi;
     }

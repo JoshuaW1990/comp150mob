@@ -1,6 +1,7 @@
 package cs.tufts.edu.pocketcritic.fragment;
 
 import cs.tufts.edu.pocketcritic.ListActivity;
+import cs.tufts.edu.pocketcritic.ListAlbumsActivity;
 import cs.tufts.edu.pocketcritic.ListArtistsActivity;
 import cs.tufts.edu.pocketcritic.MainActivity;
 import cs.tufts.edu.pocketcritic.R;
@@ -26,8 +27,11 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
 import cs.tufts.edu.pocketcritic.support.SpotifyInterface;
+import cs.tufts.edu.pocketcritic.support.SpotifyInterfaceAlbum;
 import cs.tufts.edu.pocketcritic.support.SpotifyApi;
+import cs.tufts.edu.pocketcritic.support.SpotifyApiAlbum;
 import cs.tufts.edu.pocketcritic.model.Artist;
+import cs.tufts.edu.pocketcritic.model.Album;
 
 import java.io.Serializable;
 
@@ -41,10 +45,13 @@ public class SearchFragment extends Fragment
         implements View.OnClickListener {
 
     private EditText searchInfo;
-    private Button searchButton;
+    private Button searchArtist;
+    private Button searchAlbum;
 
     private SpotifyApi spotifyApi;
+    private SpotifyApiAlbum spotifyApiAlbum;
     private SpotifyInterface spotifyInterface;
+    private SpotifyInterfaceAlbum spotifyInterfaceAlbum;
 
     private String queryString;
 
@@ -59,22 +66,36 @@ public class SearchFragment extends Fragment
 
 
         // click listeners
-        searchButton = (Button) view.findViewById(R.id.search_searchButton);
-        searchButton.setOnClickListener(this);
+        searchArtist = (Button) view.findViewById(R.id.search_searchArtist);
+        searchArtist.setOnClickListener(this);
+        searchAlbum = (Button) view.findViewById(R.id.search_searchAlbum);
+        searchAlbum.setOnClickListener(this);
 
         spotifyApi = SpotifyApi.getApi();
         spotifyInterface = spotifyApi.getService();
+        spotifyApiAlbum = SpotifyApiAlbum.getApi();
+        spotifyInterfaceAlbum = spotifyApiAlbum.getService();
 
         return view;
 
     }
 
-    public void doSearch() {
+    public void ArtistSearch() {
         System.out.println("do search here by spotify");
         System.out.println(searchInfo.getText().toString());
         queryString = generateQueryString(searchInfo.getText().toString());
 
-        queryByRxJava();
+        queryByRxJavaArtist();
+
+
+    }
+
+    public void AlbumSearch() {
+        System.out.println("do search here by spotify");
+        System.out.println(searchInfo.getText().toString());
+        queryString = generateQueryString(searchInfo.getText().toString());
+
+        queryByRxJavaAlbum();
 
 
     }
@@ -83,7 +104,7 @@ public class SearchFragment extends Fragment
         return str.replaceAll("\\s+","+");
     }
 
-    private void queryByRxJava() {
+    private void queryByRxJavaArtist() {
         if (queryString.isEmpty()) {
             Toast.makeText(getActivity(), "Please input artist name", Toast.LENGTH_SHORT).show();
             return;
@@ -107,12 +128,45 @@ public class SearchFragment extends Fragment
                             if (artists.size() == 0) {
                                 Toast.makeText(getActivity(), "Not Found", Toast.LENGTH_SHORT).show();
                             } else {
-                                onSearchSuccess();
+                                onSearchArtistSuccess();
                             }
                         }
                     }
                 });
     }
+
+
+    private void queryByRxJavaAlbum() {
+        if (queryString.isEmpty()) {
+            Toast.makeText(getActivity(), "Please input album name", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        spotifyInterfaceAlbum.getSpotifyResult(queryString, "album")
+                .subscribeOn(Schedulers.newThread())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Observer<Album>() {
+                    @Override
+                    public void onCompleted() {
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+                    }
+
+                    @Override
+                    public void onNext(Album result) {
+                        if (result != null) {
+                            List< Album.AlbumsBean.ItemsBean > albums = result.getAlbums().getItems();
+                            if (albums.size() == 0) {
+                                Toast.makeText(getActivity(), "Not Found", Toast.LENGTH_SHORT).show();
+                            } else {
+                                onSearchAlbumSuccess();
+                            }
+                        }
+                    }
+                });
+    }
+
 
 
 //    private void query() {
@@ -149,7 +203,7 @@ public class SearchFragment extends Fragment
 //    }
 
 
-    private void onSearchSuccess() {
+    private void onSearchArtistSuccess() {
 
         Intent intent = new Intent(getActivity(), ListArtistsActivity.class);
         intent.putExtra("queryString", queryString);
@@ -161,14 +215,25 @@ public class SearchFragment extends Fragment
 
     }
 
+    private void onSearchAlbumSuccess() {
+
+        Intent intent = new Intent(getActivity(), ListAlbumsActivity.class);
+        intent.putExtra("queryString", queryString);
+
+        startActivity(intent);
+        System.out.println("On search success!");
+
+    }
+
     @Override
     public void onClick(View v) {
         int id = v.getId();
-        if (id == R.id.search_searchButton) {
-            doSearch();
+        if (id == R.id.search_searchArtist) {
+            ArtistSearch();
         }
-        else
+        else if (id == R.id.search_searchAlbum)
         {
+            AlbumSearch();
             System.out.println("error when searching!");
         }
     }

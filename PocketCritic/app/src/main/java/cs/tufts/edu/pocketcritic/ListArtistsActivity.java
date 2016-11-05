@@ -175,8 +175,8 @@ public class ListArtistsActivity extends AppCompatActivity {
 
     private void displayListView(List<Artist.ArtistsBean.ItemsBean> artistList) {
 
-        ListView listView = (ListView) findViewById(R.id.albumList_listview);
-        Picasso.with(this).setIndicatorsEnabled(true);
+        ListView listView = (ListView) findViewById(R.id.artistList_listview);
+        Picasso.with(this).setIndicatorsEnabled(false);
 
         listView.setAdapter(new CommonAdapter< Artist.ArtistsBean.ItemsBean >(this, artistList, R.layout.artist_listview) {
             @Override
@@ -188,7 +188,7 @@ public class ListArtistsActivity extends AppCompatActivity {
                     holder.setImage(R.id.artist_img, artist.getImages().get(size - 1).getUrl(), null);
                 }
                 holder.setText(R.id.artist_name, artist.getName());
-                holder.setText(R.id.artist_rating, Long.toString(artist.getPopularity()));
+                holder.setText(R.id.artist_rating, Integer.toString(artist.getPopularity()));
                 ImageView imgView = holder.getView(R.id.artist_img);
                 imgView.setClickable(true);
 

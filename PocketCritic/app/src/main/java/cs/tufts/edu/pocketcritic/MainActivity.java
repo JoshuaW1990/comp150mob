@@ -93,19 +93,19 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_search) {
             Fragment fragment = new SearchFragment();
             getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
-        } else if (id == R.id.nav_recommend) {
-            Fragment fragment = new RecommendFragment();
-            getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
-
+//        } else if (id == R.id.nav_recommend) {
+//            Fragment fragment = new RecommendFragment();
+//            getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
+//
 //        } else if (id == R.id.nav_artist) {
 //            Fragment fragment = new ArtistFragment();
 //            getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
 //
 //        } else if (id == R.id.nav_albums) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_logout) {
+//
+//        } else if (id == R.id.nav_share) {
+//
+//        } else if (id == R.id.nav_logout) {
 
         }
 
