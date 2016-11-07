@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity
 //            getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
 //
 //
-        } else if (id == R.id.login) {
+        } else if (id == R.id.loginImage) {
             Fragment fragment = new LoginFragment();
             getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
 //        } else if (id == R.id.nav_logout) {

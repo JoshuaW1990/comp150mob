@@ -5,29 +5,29 @@
     density="hdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="710150033243449"
+    timestamp="712344363919676"
     token="-6413240218718524528"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="16415" />
+        duration="98681" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="7807" />
+        duration="37826" />
     <task
         name="verifier"
-        duration="3374" />
+        duration="36175" />
 
     <artifact
         location="/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="710150033243449"
+        timestamp="712344363919676"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/outputs/apk/app-debug.apk"
