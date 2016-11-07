@@ -2,7 +2,6 @@ package cs.tufts.edu.pocketcritic.fragment;
 
 import android.app.Fragment;
 import android.app.ProgressDialog;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
@@ -235,7 +234,8 @@ public class LoginFragment extends Fragment
         // Write new user
         writeNewUser(user.getUid(), username, user.getEmail());
 
-        // Go to Search fragment..work in progress
+        // Go to Search fragment
+
 
         System.out.println("Success for login!");
 
