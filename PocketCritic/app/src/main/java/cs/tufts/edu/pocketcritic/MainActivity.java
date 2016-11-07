@@ -42,12 +42,13 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        ImageView img = (ImageView) findViewById(R.id.loginImage);
-        img.setOnClickListener(new OnClickListener() {
-            public void onClick(View v) {
-                System.out.println("Click Worked");
-            }
-        });
+//        ImageView img = (ImageView) findViewById(R.id.loginImage);
+//        //img.setClickable(true);
+//        img.setOnClickListener(new OnClickListener() {
+//            public void onClick(View v) {
+//                System.out.println("Click Worked");
+//            }
+//        });
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -108,11 +109,12 @@ public class MainActivity extends AppCompatActivity
 //            getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
 //
 //
-        } else if (id == R.id.login) {
+//        }
+
+        } else if (id == R.id.nav_login) {
+            System.out.println("Works!");
             Fragment fragment = new LoginFragment();
             getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
-//        } else if (id == R.id.nav_logout) {
-
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

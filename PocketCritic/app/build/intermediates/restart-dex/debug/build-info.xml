@@ -1,37 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     abi="x86"
-    api-level="23"
+    api-level="24"
     density="hdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="709054108194575"
-    token="-6413240218718524528"
-    verifier="FULL_BUILD_REQUESTED" >
+    timestamp="157401529109104"
+    token="-9212577258475521643"
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="22723" />
+        duration="1220" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="76" />
     <task
         name="instant-run-transform"
-        duration="633" />
+        duration="138" />
     <task
         name="verifier"
-        duration="66" />
+        duration="10" />
 
     <artifact
-        location="/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
+        location="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
     <build
-        timestamp="709054108194575"
+        timestamp="156300411911385"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/outputs/apk/app-debug.apk"
+            location="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="157355973216559"
+        verifier="FIELD_REMOVED" >
+        <artifact
+            location="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="157401529109104"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>
