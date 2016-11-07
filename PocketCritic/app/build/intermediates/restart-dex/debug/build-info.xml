@@ -5,29 +5,69 @@
     density="hdpi"
     format="8"
     plugin-version="2.2.2"
+<<<<<<< HEAD
     timestamp="159684485052949"
+=======
+<<<<<<< HEAD
+    timestamp="712344363919676"
+    token="-6413240218718524528"
+    verifier="FULL_BUILD_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="98681" />
+=======
+    timestamp="157401529109104"
+>>>>>>> origin/spotify
     token="-9212577258475521643"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
+<<<<<<< HEAD
         duration="7597" />
+=======
+        duration="1220" />
+>>>>>>> origin/spotify
+>>>>>>> origin/spotify
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
+<<<<<<< HEAD
         duration="2506" />
     <task
         name="verifier"
         duration="606" />
+=======
+<<<<<<< HEAD
+        duration="37826" />
+    <task
+        name="verifier"
+        duration="36175" />
+=======
+        duration="138" />
+    <task
+        name="verifier"
+        duration="10" />
+>>>>>>> origin/spotify
+>>>>>>> origin/spotify
 
     <artifact
         location="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
     <build
+<<<<<<< HEAD
         timestamp="159684485052949"
+=======
+<<<<<<< HEAD
+        timestamp="712344363919676"
+=======
+        timestamp="156300411911385"
+>>>>>>> origin/spotify
+>>>>>>> origin/spotify
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/outputs/apk/app-debug.apk"

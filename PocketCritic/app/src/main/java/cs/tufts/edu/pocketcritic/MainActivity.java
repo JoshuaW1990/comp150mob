@@ -42,6 +42,15 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
+<<<<<<< HEAD
+        ImageView img = (ImageView) findViewById(R.id.loginImage);
+        img.setClickable(true);
+        img.setOnClickListener(new OnClickListener() {
+            public void onClick(View v) {
+                System.out.println("Click Worked");
+            }
+        });
+=======
 //        ImageView img = (ImageView) findViewById(R.id.loginImage);
 //        //img.setClickable(true);
 //        img.setOnClickListener(new OnClickListener() {
@@ -49,6 +58,7 @@ public class MainActivity extends AppCompatActivity
 //                System.out.println("Click Worked");
 //            }
 //        });
+>>>>>>> origin/spotify
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -109,10 +119,14 @@ public class MainActivity extends AppCompatActivity
 //            getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
 //
 //
+<<<<<<< HEAD
+        } else if (id == R.id.loginImage) {
+=======
 //        }
 
         } else if (id == R.id.nav_login) {
             System.out.println("Works!");
+>>>>>>> origin/spotify
             Fragment fragment = new LoginFragment();
             getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
         }

@@ -1,9 +1,21 @@
 #Internal package file, do not edit.
+<<<<<<< HEAD
 #Sun Nov 06 23:59:32 EST 2016
+=======
+<<<<<<< HEAD
+#Sun Nov 06 23:04:11 EST 2016
+20.base=/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/res/resources-debug.ap_
+143.base=/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.crashlytics.sdk.android-answers-1.3.10_de64fd5f05d23fff0a00b599d707986073dddeea
+340.file=/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_spinner_textfield_background_material.xml
+53.base=/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/res/resources-debug.ap_
+=======
+#Sun Nov 06 23:01:34 EST 2016
+>>>>>>> origin/spotify
 20.base=/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/res/resources-debug.ap_
 143.base=/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/res/resources-debug.ap_
 340.file=/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_ic_menu_overflow_material.xml
 53.base=/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-9.8.0_1c62ee27172ace87d40c4640edd8b4c46fb26069
+>>>>>>> origin/spotify
 66.set=ANDROID_RESOURCE
 317.set=DEX
 356.base=/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/res/resources-debug.ap_

@@ -15,9 +15,13 @@
     <string name="title_activity_list">ListActivity</string>
     <string name="title_activity_list_artists">ListArtistsActivity</string>
     <string name="title_activity_artist_scrolling">ArtistScrollingActivity</string>
+<<<<<<< HEAD
 
     <string name="title_activity_list_albums">ListAlbumsActivity</string>
 
+=======
+    <string name="title_activity_list_albums">ListAlbumsActivity</string>
+>>>>>>> origin/spotify
     <!-- Strings related to login -->
     <string name="loading">Loading…</string>
     <string name="auth_failed">Authentication failed</string>
