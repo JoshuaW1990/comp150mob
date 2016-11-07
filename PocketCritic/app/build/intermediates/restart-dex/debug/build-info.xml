@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     abi="x86"
-    api-level="24"
+    api-level="23"
     density="hdpi"
     format="8"
+<<<<<<< Updated upstream
     plugin-version="2.2.1"
     timestamp="118343736978659"
     token="-9212577258475521643"
@@ -12,11 +13,22 @@
     <task
         name="javac"
         duration="5249" />
+=======
+    plugin-version="2.2.2"
+    timestamp="678778894734480"
+    token="-6413240218718524528"
+    verifier="FULL_BUILD_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="26099" />
+>>>>>>> Stashed changes
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
+<<<<<<< Updated upstream
         duration="409" />
     <task
         name="verifier"
@@ -37,9 +49,22 @@
 
     <build
         timestamp="117644657873214"
+=======
+        duration="7966" />
+    <task
+        name="verifier"
+        duration="141" />
+
+    <artifact
+        location="/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
+
+    <build
+        timestamp="678778894734480"
+>>>>>>> Stashed changes
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/outputs/apk/app-debug.apk"
+            location="/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
