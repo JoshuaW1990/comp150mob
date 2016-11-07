@@ -6,6 +6,9 @@
     </shared>
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="cdb626c0-6c79-4106-b130-4fbdf5b4a72d" name="Default" comment="" />
+=======
     <list default="true" id="cdb626c0-6c79-4106-b130-4fbdf5b4a72d" name="Default" comment="">
 <<<<<<< Updated upstream
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
@@ -650,6 +653,7 @@
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
     </list>
+>>>>>>> origin/spotify
     <ignored path="PocketCritic.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
