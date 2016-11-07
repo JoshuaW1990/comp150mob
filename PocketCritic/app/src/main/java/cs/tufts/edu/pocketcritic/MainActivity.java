@@ -1,25 +1,25 @@
 package cs.tufts.edu.pocketcritic;
 
+import android.app.Fragment;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.design.widget.NavigationView;
-
+import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-
-import android.app.Fragment;
+import android.view.View;
+import android.widget.ImageView;
+import android.view.View.OnClickListener;
 
 import com.crashlytics.android.Crashlytics;
+
+import cs.tufts.edu.pocketcritic.fragment.LoginFragment;
 import cs.tufts.edu.pocketcritic.fragment.SearchFragment;
-import cs.tufts.edu.pocketcritic.fragment.RecommendFragment;
 import io.fabric.sdk.android.Fabric;
 
 public class MainActivity extends AppCompatActivity
@@ -41,6 +41,14 @@ public class MainActivity extends AppCompatActivity
                         .setAction("Action", null).show();
             }
         });
+
+        ImageView img = (ImageView) findViewById(R.id.loginImage);
+        img.setOnClickListener(new OnClickListener() {
+            public void onClick(View v) {
+                System.out.println("Click Worked");
+            }
+        });
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -99,14 +107,10 @@ public class MainActivity extends AppCompatActivity
 //            Fragment fragment = new RecommendFragment();
 //            getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
 //
-//        } else if (id == R.id.nav_artist) {
-//            Fragment fragment = new ArtistFragment();
-//            getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
 //
-//        } else if (id == R.id.nav_albums) {
-//
-//        } else if (id == R.id.nav_share) {
-//
+        } else if (id == R.id.login) {
+            Fragment fragment = new LoginFragment();
+            getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
 //        } else if (id == R.id.nav_logout) {
 
         }
