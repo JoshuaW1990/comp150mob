@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Nov 06 23:01:34 EST 2016
+#Sun Nov 06 23:59:32 EST 2016
 20.base=/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/res/resources-debug.ap_
 143.base=/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/res/resources-debug.ap_
 340.file=/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_ic_menu_overflow_material.xml
