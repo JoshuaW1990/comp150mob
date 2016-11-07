@@ -842,7 +842,7 @@ int id action_menu_presenter 0x7f0c0003
 int id action_mode_bar 0x7f0c006d
 int id action_mode_bar_stub 0x7f0c006c
 int id action_mode_close_button 0x7f0c0051
-int id action_settings 0x7f0c00d7
+int id action_settings 0x7f0c00d8
 int id action_text 0x7f0c00bd
 int id actions 0x7f0c00cb
 int id activity_chooser_view_content 0x7f0c0052
@@ -953,8 +953,9 @@ int id messenger_send_button 0x7f0c00b4
 int id middle 0x7f0c0035
 int id mini 0x7f0c0033
 int id multiply 0x7f0c001b
-int id nav_logout 0x7f0c00d6
-int id nav_search 0x7f0c00d5
+int id nav_login 0x7f0c00d5
+int id nav_logout 0x7f0c00d7
+int id nav_search 0x7f0c00d6
 int id nav_view 0x7f0c0080
 int id navigate 0x7f0c00b7
 int id navigate_searchButton 0x7f0c00b9

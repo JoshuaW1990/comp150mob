@@ -6,6 +6,9 @@
             <!--android:id="@+id/nav_recommend"-->
             <!--android:title="Recommend" />-->
         <item
+            android:id="@+id/nav_login"
+            android:title="Login" />
+        <item
             android:id="@+id/nav_search"
             android:title="Search" />
         <!--<item-->
