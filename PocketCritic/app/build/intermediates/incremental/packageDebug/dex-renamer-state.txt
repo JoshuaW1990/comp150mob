@@ -1,4 +1,14 @@
+<<<<<<< Updated upstream
 #Mon Nov 07 15:56:47 EST 2016
 base.0=/Users/alexjackson/Desktop/Tufts 2016-2017/Mobile/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
 file.0=/Users/alexjackson/Desktop/Tufts 2016-2017/Mobile/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+=======
+#Mon Nov 07 14:30:41 EST 2016
+base.0=/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_68c5713eb33382dda9ce0dcd662dfaf9fc6ba413
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_31e8f04ab375c02b755521abf172d742931adb62/classes.dex
+base.1=/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_31e8f04ab375c02b755521abf172d742931adb62
+file.0=/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_68c5713eb33382dda9ce0dcd662dfaf9fc6ba413/classes.dex
+>>>>>>> Stashed changes
