@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity
         });
 
         ImageView img = (ImageView) findViewById(R.id.loginImage);
+        img.setClickable(true);
         img.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 System.out.println("Click Worked");
