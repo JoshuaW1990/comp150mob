@@ -1,8 +1,13 @@
 <component name="libraryTable">
   <library name="firebase-database-connection-9.6.1">
     <CLASSES>
+<<<<<<< HEAD:PocketCritic/.idea/libraries/firebase_database_connection_9_6_1.xml
       <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.6.1/res" />
       <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.6.1/jars/classes.jar!/" />
+=======
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.8.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.8.0/res" />
+>>>>>>> origin/spotify:PocketCritic/.idea/libraries/firebase_database_connection_9_8_0.xml
     </CLASSES>
     <JAVADOC />
     <SOURCES />
