@@ -334,13 +334,13 @@
                     "endOffset": 1842
                 },
                 "from": {
-                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/values-bn/values.xml",
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-bn/values.xml",
                     "position": {
                         "startLine": 4,
-                        "startColumn": 0,
-                        "startOffset": 283,
-                        "endColumn": 106,
-                        "endOffset": 389
+                        "startColumn": 4,
+                        "startOffset": 340,
+                        "endColumn": 110,
+                        "endOffset": 446
                     }
                 }
             },
@@ -353,13 +353,13 @@
                     "endOffset": 2033
                 },
                 "from": {
-                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/values-bn/values.xml",
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-bn/values.xml",
                     "position": {
                         "startLine": 5,
-                        "startColumn": 0,
-                        "startOffset": 390,
+                        "startColumn": 4,
+                        "startOffset": 451,
                         "endColumn": 190,
-                        "endOffset": 580
+                        "endOffset": 637
                     }
                 }
             },
@@ -372,13 +372,13 @@
                     "endOffset": 2163
                 },
                 "from": {
-                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/values-bn/values.xml",
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-bn/values.xml",
                     "position": {
                         "startLine": 6,
-                        "startColumn": 0,
-                        "startOffset": 581,
-                        "endColumn": 125,
-                        "endOffset": 706
+                        "startColumn": 4,
+                        "startOffset": 642,
+                        "endColumn": 129,
+                        "endOffset": 767
                     }
                 }
             },
@@ -391,13 +391,13 @@
                     "endOffset": 2276
                 },
                 "from": {
-                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/values-bn/values.xml",
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-bn/values.xml",
                     "position": {
                         "startLine": 7,
-                        "startColumn": 0,
-                        "startOffset": 707,
-                        "endColumn": 108,
-                        "endOffset": 815
+                        "startColumn": 4,
+                        "startOffset": 772,
+                        "endColumn": 112,
+                        "endOffset": 880
                     }
                 }
             },
@@ -406,17 +406,17 @@
                     "startLine": 23,
                     "startColumn": 4,
                     "startOffset": 2281,
-                    "endColumn": 195,
-                    "endOffset": 2472
+                    "endColumn": 198,
+                    "endOffset": 2475
                 },
                 "from": {
-                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/values-bn/values.xml",
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-bn/values.xml",
                     "position": {
                         "startLine": 8,
-                        "startColumn": 0,
-                        "startOffset": 816,
-                        "endColumn": 195,
-                        "endOffset": 1011
+                        "startColumn": 4,
+                        "startOffset": 885,
+                        "endColumn": 198,
+                        "endOffset": 1079
                     }
                 }
             },
@@ -424,18 +424,18 @@
                 "to": {
                     "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 2477,
-                    "endColumn": 123,
-                    "endOffset": 2596
+                    "startOffset": 2480,
+                    "endColumn": 204,
+                    "endOffset": 2680
                 },
                 "from": {
-                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/values-bn/values.xml",
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-bn/values.xml",
                     "position": {
                         "startLine": 9,
-                        "startColumn": 0,
-                        "startOffset": 1012,
-                        "endColumn": 119,
-                        "endOffset": 1131
+                        "startColumn": 4,
+                        "startOffset": 1084,
+                        "endColumn": 204,
+                        "endOffset": 1284
                     }
                 }
             },
@@ -443,18 +443,18 @@
                 "to": {
                     "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 2601,
-                    "endColumn": 132,
-                    "endOffset": 2729
+                    "startOffset": 2685,
+                    "endColumn": 123,
+                    "endOffset": 2804
                 },
                 "from": {
-                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/values-bn/values.xml",
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-bn/values.xml",
                     "position": {
                         "startLine": 10,
-                        "startColumn": 0,
-                        "startOffset": 1132,
-                        "endColumn": 128,
-                        "endOffset": 1260
+                        "startColumn": 4,
+                        "startOffset": 1289,
+                        "endColumn": 123,
+                        "endOffset": 1408
                     }
                 }
             },
@@ -462,18 +462,18 @@
                 "to": {
                     "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 2734,
-                    "endColumn": 210,
-                    "endOffset": 2940
+                    "startOffset": 2809,
+                    "endColumn": 132,
+                    "endOffset": 2937
                 },
                 "from": {
-                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/res/values-bn/values.xml",
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-bn/values.xml",
                     "position": {
-                        "startLine": 4,
-                        "startColumn": 0,
-                        "startOffset": 285,
-                        "endColumn": 210,
-                        "endOffset": 495
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 1413,
+                        "endColumn": 132,
+                        "endOffset": 1541
                     }
                 }
             },
@@ -481,18 +481,18 @@
                 "to": {
                     "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 2945,
-                    "endColumn": 203,
-                    "endOffset": 3144
+                    "startOffset": 2942,
+                    "endColumn": 265,
+                    "endOffset": 3203
                 },
                 "from": {
-                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/values-bn/values.xml",
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/res/values-bn/values.xml",
                     "position": {
-                        "startLine": 11,
-                        "startColumn": 0,
-                        "startOffset": 1261,
-                        "endColumn": 203,
-                        "endOffset": 1464
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 343,
+                        "endColumn": 265,
+                        "endOffset": 604
                     }
                 }
             },
@@ -500,18 +500,18 @@
                 "to": {
                     "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 3149,
-                    "endColumn": 110,
-                    "endOffset": 3255
+                    "startOffset": 3208,
+                    "endColumn": 250,
+                    "endOffset": 3454
                 },
                 "from": {
-                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/values-bn/values.xml",
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-bn/values.xml",
                     "position": {
                         "startLine": 12,
-                        "startColumn": 0,
-                        "startOffset": 1465,
-                        "endColumn": 106,
-                        "endOffset": 1571
+                        "startColumn": 4,
+                        "startOffset": 1546,
+                        "endColumn": 250,
+                        "endOffset": 1792
                     }
                 }
             },
@@ -519,18 +519,18 @@
                 "to": {
                     "startLine": 29,
                     "startColumn": 4,
-                    "startOffset": 3260,
-                    "endColumn": 186,
-                    "endOffset": 3442
+                    "startOffset": 3459,
+                    "endColumn": 122,
+                    "endOffset": 3577
                 },
                 "from": {
-                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/values-bn/values.xml",
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-bn/values.xml",
                     "position": {
                         "startLine": 13,
-                        "startColumn": 0,
-                        "startOffset": 1572,
-                        "endColumn": 186,
-                        "endOffset": 1758
+                        "startColumn": 4,
+                        "startOffset": 1797,
+                        "endColumn": 122,
+                        "endOffset": 1915
                     }
                 }
             },
@@ -538,18 +538,18 @@
                 "to": {
                     "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 3447,
-                    "endColumn": 129,
-                    "endOffset": 3572
+                    "startOffset": 3582,
+                    "endColumn": 110,
+                    "endOffset": 3688
                 },
                 "from": {
-                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/values-bn/values.xml",
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-bn/values.xml",
                     "position": {
                         "startLine": 14,
-                        "startColumn": 0,
-                        "startOffset": 1759,
-                        "endColumn": 125,
-                        "endOffset": 1884
+                        "startColumn": 4,
+                        "startOffset": 1920,
+                        "endColumn": 110,
+                        "endOffset": 2026
                     }
                 }
             },
@@ -557,18 +557,18 @@
                 "to": {
                     "startLine": 31,
                     "startColumn": 4,
-                    "startOffset": 3577,
-                    "endColumn": 192,
-                    "endOffset": 3765
+                    "startOffset": 3693,
+                    "endColumn": 186,
+                    "endOffset": 3875
                 },
                 "from": {
-                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/values-bn/values.xml",
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-bn/values.xml",
                     "position": {
                         "startLine": 15,
-                        "startColumn": 0,
-                        "startOffset": 1885,
-                        "endColumn": 192,
-                        "endOffset": 2077
+                        "startColumn": 4,
+                        "startOffset": 2031,
+                        "endColumn": 186,
+                        "endOffset": 2213
                     }
                 }
             },
@@ -576,18 +576,18 @@
                 "to": {
                     "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 3770,
-                    "endColumn": 178,
-                    "endOffset": 3944
+                    "startOffset": 3880,
+                    "endColumn": 129,
+                    "endOffset": 4005
                 },
                 "from": {
-                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/values-bn/values.xml",
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-bn/values.xml",
                     "position": {
                         "startLine": 16,
-                        "startColumn": 0,
-                        "startOffset": 2078,
-                        "endColumn": 174,
-                        "endOffset": 2252
+                        "startColumn": 4,
+                        "startOffset": 2218,
+                        "endColumn": 129,
+                        "endOffset": 2343
                     }
                 }
             },
@@ -595,18 +595,18 @@
                 "to": {
                     "startLine": 33,
                     "startColumn": 4,
-                    "startOffset": 3949,
-                    "endColumn": 89,
-                    "endOffset": 4034
+                    "startOffset": 4010,
+                    "endColumn": 192,
+                    "endOffset": 4198
                 },
                 "from": {
-                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/values-bn/values.xml",
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-bn/values.xml",
                     "position": {
                         "startLine": 17,
-                        "startColumn": 0,
-                        "startOffset": 2253,
-                        "endColumn": 85,
-                        "endOffset": 2338
+                        "startColumn": 4,
+                        "startOffset": 2348,
+                        "endColumn": 192,
+                        "endOffset": 2536
                     }
                 }
             },
@@ -614,18 +614,18 @@
                 "to": {
                     "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 4039,
-                    "endColumn": 95,
-                    "endOffset": 4130
+                    "startOffset": 4203,
+                    "endColumn": 132,
+                    "endOffset": 4331
                 },
                 "from": {
-                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/values-bn/values.xml",
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-bn/values.xml",
                     "position": {
                         "startLine": 18,
-                        "startColumn": 0,
-                        "startOffset": 2339,
-                        "endColumn": 91,
-                        "endOffset": 2430
+                        "startColumn": 4,
+                        "startOffset": 2541,
+                        "endColumn": 132,
+                        "endOffset": 2669
                     }
                 }
             },
@@ -633,18 +633,18 @@
                 "to": {
                     "startLine": 35,
                     "startColumn": 4,
-                    "startOffset": 4135,
-                    "endColumn": 117,
-                    "endOffset": 4248
+                    "startOffset": 4336,
+                    "endColumn": 178,
+                    "endOffset": 4510
                 },
                 "from": {
-                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/values-bn/values.xml",
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-bn/values.xml",
                     "position": {
                         "startLine": 19,
-                        "startColumn": 0,
-                        "startOffset": 2431,
-                        "endColumn": 113,
-                        "endOffset": 2544
+                        "startColumn": 4,
+                        "startOffset": 2674,
+                        "endColumn": 178,
+                        "endOffset": 2848
                     }
                 }
             },
@@ -652,9 +652,66 @@
                 "to": {
                     "startLine": 36,
                     "startColumn": 4,
-                    "startOffset": 4253,
+                    "startOffset": 4515,
+                    "endColumn": 89,
+                    "endOffset": 4600
+                },
+                "from": {
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-bn/values.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 2853,
+                        "endColumn": 89,
+                        "endOffset": 2938
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 4605,
+                    "endColumn": 100,
+                    "endOffset": 4701
+                },
+                "from": {
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-bn/values.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 2943,
+                        "endColumn": 100,
+                        "endOffset": 3039
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 4706,
+                    "endColumn": 122,
+                    "endOffset": 4824
+                },
+                "from": {
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-bn/values.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 3044,
+                        "endColumn": 122,
+                        "endOffset": 3162
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 4829,
                     "endColumn": 66,
-                    "endOffset": 4315
+                    "endOffset": 4891
                 },
                 "from": {
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/values-bn/values-bn.xml",
