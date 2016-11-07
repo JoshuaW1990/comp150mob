@@ -6,13 +6,5 @@
 
   Do NOT modify, delete, or commit to source control!
 -->
-<<<<<<< HEAD
-<string tools:ignore="UnusedResources,TypographyDashes" name="com.crashlytics.android.build_id" translatable="false">eee9909f-494f-4912-a95d-4b6722f56b2d</string>
-=======
-<<<<<<< HEAD
-<string tools:ignore="UnusedResources,TypographyDashes" name="com.crashlytics.android.build_id" translatable="false">3707221e-c9f4-4a37-82f9-32db0d5025c7</string>
-=======
-<string tools:ignore="UnusedResources,TypographyDashes" name="com.crashlytics.android.build_id" translatable="false">cc249ec0-0165-4e1b-bbbd-ffdfe6911838</string>
->>>>>>> origin/spotify
->>>>>>> origin/spotify
+<string tools:ignore="UnusedResources,TypographyDashes" name="com.crashlytics.android.build_id" translatable="false">fea2387a-5a5f-46f5-ab0b-acaf68c9046d</string>
 </resources>

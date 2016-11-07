@@ -5,73 +5,59 @@
     density="hdpi"
     format="8"
     plugin-version="2.2.2"
-<<<<<<< HEAD
-    timestamp="159684485052949"
-=======
-<<<<<<< HEAD
-    timestamp="712344363919676"
-    token="-6413240218718524528"
-    verifier="FULL_BUILD_REQUESTED" >
-
-    <task
-        name="javac"
-        duration="98681" />
-=======
-    timestamp="157401529109104"
->>>>>>> origin/spotify
+    timestamp="161886240769057"
     token="-9212577258475521643"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="FIELD_TYPE_CHANGE" >
 
     <task
         name="javac"
-<<<<<<< HEAD
-        duration="7597" />
-=======
-        duration="1220" />
->>>>>>> origin/spotify
->>>>>>> origin/spotify
+        duration="3948" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-<<<<<<< HEAD
-        duration="2506" />
+        duration="463" />
     <task
         name="verifier"
-        duration="606" />
-=======
-<<<<<<< HEAD
-        duration="37826" />
-    <task
-        name="verifier"
-        duration="36175" />
-=======
-        duration="138" />
-    <task
-        name="verifier"
-        duration="10" />
->>>>>>> origin/spotify
->>>>>>> origin/spotify
+        duration="23" />
 
     <artifact
-        location="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
+        location="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+        type="RESOURCES" />
+    <artifact
+        location="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
+        type="DEX" />
+    <artifact
+        location="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
+        type="DEX" />
 
     <build
-<<<<<<< HEAD
-        timestamp="159684485052949"
-=======
-<<<<<<< HEAD
-        timestamp="712344363919676"
-=======
-        timestamp="156300411911385"
->>>>>>> origin/spotify
->>>>>>> origin/spotify
+        timestamp="160692732796578"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="161150854336235"
+        verifier="FIELD_REMOVED" >
+        <artifact
+            location="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="161886240769057"
+        verifier="FIELD_TYPE_CHANGE" >
+        <artifact
+            location="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

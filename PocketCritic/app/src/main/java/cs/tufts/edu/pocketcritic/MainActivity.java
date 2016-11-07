@@ -33,32 +33,16 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
-<<<<<<< HEAD
-        ImageView img = (ImageView) findViewById(R.id.loginImage);
-        img.setClickable(true);
-        img.setOnClickListener(new OnClickListener() {
-            public void onClick(View v) {
-                System.out.println("Click Worked");
-            }
-        });
-=======
-//        ImageView img = (ImageView) findViewById(R.id.loginImage);
-//        //img.setClickable(true);
-//        img.setOnClickListener(new OnClickListener() {
-//            public void onClick(View v) {
-//                System.out.println("Click Worked");
+//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
 //            }
 //        });
->>>>>>> origin/spotify
+
+
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -119,14 +103,10 @@ public class MainActivity extends AppCompatActivity
 //            getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
 //
 //
-<<<<<<< HEAD
-        } else if (id == R.id.loginImage) {
-=======
-//        }
+
 
         } else if (id == R.id.nav_login) {
             System.out.println("Works!");
->>>>>>> origin/spotify
             Fragment fragment = new LoginFragment();
             getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
         }

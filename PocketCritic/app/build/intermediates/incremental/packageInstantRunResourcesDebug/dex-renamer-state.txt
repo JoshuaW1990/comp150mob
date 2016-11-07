@@ -1,9 +1,1 @@
-<<<<<<< HEAD
-#Sun Nov 06 23:56:14 EST 2016
-=======
-<<<<<<< HEAD
-#Sun Nov 06 23:00:18 EST 2016
-=======
-#Sun Nov 06 23:15:41 EST 2016
->>>>>>> origin/spotify
->>>>>>> origin/spotify
+#Mon Nov 07 00:32:20 EST 2016

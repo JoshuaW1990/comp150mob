@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.widget.Button;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -35,6 +36,10 @@ public class LoginFragment extends Fragment
     // Initialization
     private EditText mEmailField;
     private EditText mPasswordField;
+
+    private Button loginButton;
+    private Button signupButton;
+
 
     // [START declare_auth]
     private FirebaseAuth mAuth;
@@ -73,7 +78,7 @@ public class LoginFragment extends Fragment
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.recommend, container, false);
+        View view = inflater.inflate(R.layout.login, container, false);
 
         // Firebase login
         mAuth = FirebaseAuth.getInstance();
@@ -84,8 +89,10 @@ public class LoginFragment extends Fragment
         mPasswordField = (EditText) view.findViewById(R.id.account_password);
 
         // Find buttons
-        view.findViewById(R.id.login).setOnClickListener(this);
-        view.findViewById(R.id.signup).setOnClickListener(this);
+        loginButton = (Button) view.findViewById(R.id.login);
+        signupButton = (Button) view.findViewById(R.id.signup);
+        loginButton.setOnClickListener(this);
+        signupButton.setOnClickListener(this);
 
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -218,15 +225,7 @@ public class LoginFragment extends Fragment
 
 
 
-    @Override
-    public void onClick(View v) {
-        int i = v.getId();
-        if (i == R.id.signup) {
-            createAccount(mEmailField.getText().toString(), mPasswordField.getText().toString());
-        } else if (i == R.id.login) {
-            signIn(mEmailField.getText().toString(), mPasswordField.getText().toString());
-        }
-    }
+
 
 
     // Behavior after sign in or sign up
@@ -237,6 +236,8 @@ public class LoginFragment extends Fragment
         writeNewUser(user.getUid(), username, user.getEmail());
 
         // Go to Search fragment..work in progress
+
+        System.out.println("Success for login!");
 
     }
 
@@ -253,11 +254,22 @@ public class LoginFragment extends Fragment
 
     // [START basic_write]
     private void writeNewUser(String userId, String name, String email) {
-        cs.tufts.edu.pocketcritic.models.User user = new cs.tufts.edu.pocketcritic.models.User(name, email);
+        cs.tufts.edu.pocketcritic.model.User user = new cs.tufts.edu.pocketcritic.model.User(name, email);
 
         mDatabase.child("users").child(userId).setValue(user);
     }
     // [END basic_write]
 
+
+    @Override
+    public void onClick(View v) {
+        int i = v.getId();
+        if (i == R.id.signup) {
+            createAccount(mEmailField.getText().toString(), mPasswordField.getText().toString());
+        } else if (i == R.id.login) {
+            signIn(mEmailField.getText().toString(), mPasswordField.getText().toString());
+        }
+    }
+
 }
-}
+
