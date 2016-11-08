@@ -1,6 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #Mon Nov 07 20:13:39 EST 2016
 base.0=/Users/alexjackson/Desktop/Tufts 2016-2017/Mobile/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+=======
+#Mon Nov 07 20:25:23 EST 2016
+base.0=/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_28423a772a025ba313d0a19d527b042fe8cebd24
+renamed.1=classes2.dex
+>>>>>>> origin/spotify
 =======
 #Mon Nov 07 20:25:23 EST 2016
 base.0=/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_28423a772a025ba313d0a19d527b042fe8cebd24

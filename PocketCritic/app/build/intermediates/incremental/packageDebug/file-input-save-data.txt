@@ -1,5 +1,6 @@
 #Internal package file, do not edit.
 <<<<<<< HEAD
+<<<<<<< HEAD
 #Mon Nov 07 16:02:27 EST 2016
 210.set=ANDROID_RESOURCE
 282.file=/Users/alexjackson/Desktop/Tufts 2016-2017/Mobile/comp150mob/PocketCritic/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_list_longpressed_holo.9.png
@@ -7,6 +8,8 @@
 180.file=/Users/alexjackson/Desktop/Tufts 2016-2017/Mobile/comp150mob/PocketCritic/app/build/intermediates/res/resources-debug.ap_/res/layout-v21/notification_template_icon_group.xml
 368.set=ANDROID_RESOURCE
 =======
+=======
+>>>>>>> origin/spotify
 #Mon Nov 07 20:25:28 EST 2016
 20.base=/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/res/resources-debug.ap_
 143.base=/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/res/resources-debug.ap_
@@ -22,6 +25,9 @@
 236.file=/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/res/resources-debug.ap_/res/layout-v21/notification_action_tombstone.xml
 8.base=/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/res/resources-debug.ap_
 407.file=/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/res/resources-debug.ap_/res/layout-v17/notification_template_lines_media.xml
+<<<<<<< HEAD
+>>>>>>> origin/spotify
+=======
 >>>>>>> origin/spotify
 118.set=ANDROID_RESOURCE
 0.set=ANDROID_RESOURCE

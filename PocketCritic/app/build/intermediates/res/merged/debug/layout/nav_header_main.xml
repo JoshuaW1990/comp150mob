@@ -10,15 +10,23 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:weightSum="1">
 
     <ImageView
+<<<<<<< HEAD
         android:id="@+id/navhead_userimage"
+=======
+<<<<<<< HEAD
+        android:id="@+id/loginImage"
+        android:src="@drawable/vinyl_record1"
+=======
+        android:id="@+id/navhead_userimage"
+>>>>>>> origin/spotify
+>>>>>>> origin/spotify
         android:clickable="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        app:srcCompat="@android:drawable/sym_def_app_icon" />
+        android:layout_width="85dp"
+        android:layout_height="80dp" />
 
     <TextView
         android:id="@+id/navhead_username"
