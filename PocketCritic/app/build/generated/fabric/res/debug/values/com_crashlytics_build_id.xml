@@ -6,5 +6,25 @@
 
   Do NOT modify, delete, or commit to source control!
 -->
+<<<<<<< HEAD
 <string tools:ignore="UnusedResources,TypographyDashes" name="com.crashlytics.android.build_id" translatable="false">935c6e80-bfb8-40ad-bc35-c4d7ac61607a</string>
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+<string tools:ignore="UnusedResources,TypographyDashes" name="com.crashlytics.android.build_id" translatable="false">30a3705f-38d2-4bcf-aa64-9c3898caa935</string>
+=======
+<<<<<<< Updated upstream
+<string tools:ignore="UnusedResources,TypographyDashes" name="com.crashlytics.android.build_id" translatable="false">22c65042-fe15-41c7-80bc-cf256b910b01</string>
+=======
+<string tools:ignore="UnusedResources,TypographyDashes" name="com.crashlytics.android.build_id" translatable="false">4c6dee4d-6987-4d29-a1d0-1f2206a26bb7</string>
+>>>>>>> Stashed changes
+>>>>>>> origin/spotify
+=======
+<string tools:ignore="UnusedResources,TypographyDashes" name="com.crashlytics.android.build_id" translatable="false">7ba4ad9f-46ae-4e04-8b72-2a6c8703af85</string>
+>>>>>>> Stashed changes
+=======
+<string tools:ignore="UnusedResources,TypographyDashes" name="com.crashlytics.android.build_id" translatable="false">c3ded113-bd6c-4c80-8632-05bb917c1a19</string>
+>>>>>>> Stashed changes
+>>>>>>> origin/spotify
 </resources>

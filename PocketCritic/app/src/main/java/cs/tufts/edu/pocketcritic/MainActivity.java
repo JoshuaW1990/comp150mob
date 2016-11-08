@@ -14,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.view.View.OnClickListener;
 
 import com.crashlytics.android.Crashlytics;
@@ -89,6 +90,14 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
+
+    public void setUserName(String username, String useremail) {
+        TextView name = (TextView) findViewById(R.id.navhead_username);
+        TextView email = (TextView) findViewById(R.id.navhead_useremail);
+        name.setText(username);
+        email.setText(useremail);
+    }
+
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -103,6 +112,7 @@ public class MainActivity extends AppCompatActivity
 //            getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
 //
 //
+
 
 
         } else if (id == R.id.nav_login) {
