@@ -17,8 +17,8 @@
         android:id="@+id/navhead_userimage"
         android:src="@drawable/vinyl_record1"
         android:clickable="true"
-        android:layout_width="85dp"
-        android:layout_height="80dp" />
+        android:layout_width="62dp"
+        android:layout_height="60dp" />
 
     <TextView
         android:id="@+id/navhead_username"

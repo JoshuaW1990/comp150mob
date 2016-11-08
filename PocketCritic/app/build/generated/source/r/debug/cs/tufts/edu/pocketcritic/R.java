@@ -3143,12 +3143,12 @@ containing a value of this type.
         public static final int fixed=0x7f0c0042;
         public static final int home=0x7f0c0004;
         public static final int homeAsUp=0x7f0c000f;
+        public static final int home_imageView=0x7f0c00b0;
         public static final int icon=0x7f0c0057;
         public static final int icon_group=0x7f0c00ca;
         public static final int icon_only=0x7f0c003d;
         public static final int ifRoom=0x7f0c003a;
         public static final int image=0x7f0c0054;
-        public static final int imageView=0x7f0c00b0;
         public static final int info=0x7f0c00c6;
         public static final int inline=0x7f0c0049;
         public static final int item_touch_helper_previous_elevation=0x7f0c0005;
