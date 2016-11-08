@@ -243,8 +243,7 @@ public class LoginFragment extends Fragment
         writeNewUser(user.getUid(), username, user.getEmail());
 
         // Go to Search fragment
-
-
+        
         System.out.println("Success for login!");
 
     }
