@@ -1,7 +1,10 @@
 -- Merging decision tree log ---
 manifest
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 ADDED from /Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:2:1-47:12
 	package
 		ADDED from /Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:3:5-40
@@ -308,6 +311,7 @@ activity#com.facebook.CustomTabMainActivity
 ADDED from [com.facebook.android:facebook-android-sdk:4.17.0] /Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/AndroidManifest.xml:37:9-71
 	android:name
 		ADDED from [com.facebook.android:facebook-android-sdk:4.17.0] /Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/AndroidManifest.xml:37:19-68
+<<<<<<< Updated upstream
 =======
 ADDED from /Users/alexjackson/Desktop/Tufts 2016-2017/Mobile/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:2:1-47:12
 =======
@@ -622,4 +626,6 @@ ADDED from [com.facebook.android:facebook-android-sdk:4.17.0] /Users/Eric/comp15
 >>>>>>> origin/spotify
 =======
 		ADDED from [com.facebook.android:facebook-android-sdk:4.17.0] /Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/AndroidManifest.xml:37:19-68
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

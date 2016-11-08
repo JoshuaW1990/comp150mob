@@ -1,6 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< Updated upstream
-<merger version="3"><dataSet config="main"><source path="/Users/alexjackson/Desktop/Tufts 2016-2017/Mobile/comp150mob/PocketCritic/app/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/alexjackson/Desktop/Tufts 2016-2017/Mobile/comp150mob/PocketCritic/app/src/debug/jniLibs"/></dataSet></merger>
-=======
-<merger version="3"><dataSet config="main"><source path="/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/src/debug/jniLibs"/></dataSet></merger>
->>>>>>> Stashed changes
+<merger version="3"><dataSet config="main"><source path="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/debug/jniLibs"/></dataSet></merger>
