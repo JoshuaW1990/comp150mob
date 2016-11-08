@@ -162,6 +162,8 @@ public class LoginFragment extends Fragment
                         }
                         else {
                             onAuthSuccess(task.getResult().getUser());
+                            Fragment fragment = new SearchFragment();
+                            getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
                         }
 
                         // [START_EXCLUDE]
