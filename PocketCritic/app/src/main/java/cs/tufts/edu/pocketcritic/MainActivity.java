@@ -19,6 +19,9 @@ import android.view.View.OnClickListener;
 
 import com.crashlytics.android.Crashlytics;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 import cs.tufts.edu.pocketcritic.fragment.LoginFragment;
 import cs.tufts.edu.pocketcritic.fragment.SearchFragment;
 import io.fabric.sdk.android.Fabric;
@@ -105,8 +108,14 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_search) {
-            Fragment fragment = new SearchFragment();
-            getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
+            if (FirebaseAuth.getInstance().getCurrentUser()!= null) {
+                Fragment fragment = new SearchFragment();
+                getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
+            } else {
+                Fragment fragment = new LoginFragment();
+                getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
+            }
+
 //        } else if (id == R.id.nav_recommend) {
 //            Fragment fragment = new RecommendFragment();
 //            getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
@@ -119,6 +128,14 @@ public class MainActivity extends AppCompatActivity
             System.out.println("Works!");
             Fragment fragment = new LoginFragment();
             getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
+        } else if (id == R.id.nav_logout) {
+            FirebaseAuth.getInstance().signOut();
+            Fragment fragment = new LoginFragment();
+            getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
+            TextView username = (TextView) findViewById(R.id.navhead_username);
+            TextView useremail = (TextView) findViewById(R.id.navhead_useremail);
+            username.setText("username");
+            useremail.setText("user email");
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

@@ -245,16 +245,13 @@ public class LoginFragment extends Fragment
         writeNewUser(user.getUid(), username, user.getEmail());
 
         // Go to Search fragment
-<<<<<<< Updated upstream
-        
-=======
+
         TextView nav_username = (TextView) getActivity().findViewById(R.id.navhead_username);
         TextView nav_email = (TextView) getActivity().findViewById(R.id.navhead_useremail);
 
         nav_username.setText(username);
         nav_email.setText(user_email);
 
->>>>>>> Stashed changes
         System.out.println("Success for login!");
 
     }
