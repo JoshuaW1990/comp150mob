@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.Toast;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -237,13 +238,23 @@ public class LoginFragment extends Fragment
 
     // Behavior after sign in or sign up
     private void onAuthSuccess(FirebaseUser user) {
-        String username = usernameFromEmail(user.getEmail());
+        String user_email = user.getEmail();
+        String username = usernameFromEmail(user_email);
 
         // Write new user
         writeNewUser(user.getUid(), username, user.getEmail());
 
         // Go to Search fragment
+<<<<<<< Updated upstream
         
+=======
+        TextView nav_username = (TextView) getActivity().findViewById(R.id.navhead_username);
+        TextView nav_email = (TextView) getActivity().findViewById(R.id.navhead_useremail);
+
+        nav_username.setText(username);
+        nav_email.setText(user_email);
+
+>>>>>>> Stashed changes
         System.out.println("Success for login!");
 
     }

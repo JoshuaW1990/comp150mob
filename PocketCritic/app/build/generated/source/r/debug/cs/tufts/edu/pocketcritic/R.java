@@ -3139,7 +3139,6 @@ containing a value of this type.
         public static final int fill_horizontal=0x7f0c0031;
         public static final int fill_vertical=0x7f0c0027;
         public static final int fixed=0x7f0c0042;
-        public static final int headerEmail=0x7f0c00b6;
         public static final int home=0x7f0c0004;
         public static final int homeAsUp=0x7f0c000f;
         public static final int icon=0x7f0c0057;
@@ -3158,7 +3157,6 @@ containing a value of this type.
         public static final int listMode=0x7f0c000b;
         public static final int list_item=0x7f0c0056;
         public static final int login=0x7f0c00b2;
-        public static final int loginImage=0x7f0c00b5;
         public static final int media_actions=0x7f0c00be;
         public static final int messenger_send_button=0x7f0c00b4;
         public static final int middle=0x7f0c0035;
@@ -3168,6 +3166,9 @@ containing a value of this type.
         public static final int nav_logout=0x7f0c00d4;
         public static final int nav_search=0x7f0c00d3;
         public static final int nav_view=0x7f0c0080;
+        public static final int navhead_useremail=0x7f0c00b7;
+        public static final int navhead_userimage=0x7f0c00b5;
+        public static final int navhead_username=0x7f0c00b6;
         public static final int navigation_header_container=0x7f0c00aa;
         public static final int never=0x7f0c003b;
         public static final int never_display=0x7f0c004c;
@@ -3202,9 +3203,9 @@ containing a value of this type.
         public static final int search_go_btn=0x7f0c007c;
         public static final int search_mag_icon=0x7f0c0077;
         public static final int search_plate=0x7f0c0078;
-        public static final int search_searchAlbum=0x7f0c00cf;
+        public static final int search_searchAlbum=0x7f0c00d0;
         public static final int search_searchArtist=0x7f0c00d1;
-        public static final int search_searchinfo=0x7f0c00d0;
+        public static final int search_searchinfo=0x7f0c00cf;
         public static final int search_src_text=0x7f0c0079;
         public static final int search_voice_btn=0x7f0c007d;
         public static final int select_dialog_listview=0x7f0c007e;
@@ -3231,7 +3232,6 @@ containing a value of this type.
         public static final int text=0x7f0c00cd;
         public static final int text2=0x7f0c00cb;
         public static final int textSpacerNoButtons=0x7f0c0062;
-        public static final int textView=0x7f0c00b7;
         public static final int text_input_password_toggle=0x7f0c00af;
         public static final int time=0x7f0c00c3;
         public static final int title=0x7f0c0058;
