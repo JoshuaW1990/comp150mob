@@ -2,9 +2,7 @@ package cs.tufts.edu.pocketcritic;
 
 import android.app.Fragment;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -12,12 +10,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.ImageView;
-import android.view.View.OnClickListener;
 
 import com.crashlytics.android.Crashlytics;
 
+import cs.tufts.edu.pocketcritic.fragment.ImageFragment;
 import cs.tufts.edu.pocketcritic.fragment.LoginFragment;
 import cs.tufts.edu.pocketcritic.fragment.SearchFragment;
 import io.fabric.sdk.android.Fabric;
@@ -43,7 +39,8 @@ public class MainActivity extends AppCompatActivity
 //        });
 
 
-
+        Fragment fragment = new ImageFragment();
+        getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
