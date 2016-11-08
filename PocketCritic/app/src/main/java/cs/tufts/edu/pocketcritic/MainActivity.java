@@ -10,23 +10,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-<<<<<<< HEAD
-=======
+
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.view.View.OnClickListener;
->>>>>>> origin/spotify
+
 
 import com.crashlytics.android.Crashlytics;
 
-<<<<<<< HEAD
+
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-=======
+
 import cs.tufts.edu.pocketcritic.fragment.ImageFragment;
->>>>>>> origin/spotify
 import cs.tufts.edu.pocketcritic.fragment.LoginFragment;
 import cs.tufts.edu.pocketcritic.fragment.SearchFragment;
 import io.fabric.sdk.android.Fabric;

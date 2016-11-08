@@ -14,22 +14,8 @@
     android:weightSum="1">
 
     <ImageView
-<<<<<<< HEAD
-<<<<<<< HEAD
         android:id="@+id/navhead_userimage"
-=======
-<<<<<<< HEAD
-=======
->>>>>>> origin/spotify
-        android:id="@+id/loginImage"
         android:src="@drawable/vinyl_record1"
-=======
-        android:id="@+id/navhead_userimage"
->>>>>>> origin/spotify
-<<<<<<< HEAD
->>>>>>> origin/spotify
-=======
->>>>>>> origin/spotify
         android:clickable="true"
         android:layout_width="85dp"
         android:layout_height="80dp" />
