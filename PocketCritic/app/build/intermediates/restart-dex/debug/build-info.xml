@@ -1,23 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     abi="x86"
-    api-level="24"
+    api-level="23"
     density="hdpi"
     format="8"
     plugin-version="2.2.2"
+<<<<<<< HEAD
     timestamp="170844019569272"
+=======
+<<<<<<< Updated upstream
+    timestamp="169850851878557"
+>>>>>>> origin/spotify
     token="-9212577258475521643"
+=======
+    timestamp="726960361081531"
+    token="-6413240218718524528"
+>>>>>>> Stashed changes
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
+<<<<<<< HEAD
         duration="6702" />
+=======
+<<<<<<< Updated upstream
+        duration="7339" />
+=======
+        duration="5892" />
+>>>>>>> Stashed changes
+>>>>>>> origin/spotify
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
+<<<<<<< HEAD
         duration="1915" />
+=======
+<<<<<<< Updated upstream
+        duration="2215" />
+>>>>>>> origin/spotify
     <task
         name="verifier"
         duration="279" />
@@ -27,10 +49,27 @@
         type="MAIN" />
 
     <build
+<<<<<<< HEAD
         timestamp="170844019569272"
+=======
+        timestamp="169850851878557"
+=======
+        duration="723" />
+    <task
+        name="verifier"
+        duration="45" />
+
+    <artifact
+        location="/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
+
+    <build
+        timestamp="726960361081531"
+>>>>>>> Stashed changes
+>>>>>>> origin/spotify
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/outputs/apk/app-debug.apk"
+            location="/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
 
