@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 #Sun Oct 16 18:26:40 EDT 2016
+=======
+#Wed Nov 09 22:25:12 EST 2016
+>>>>>>> newSpotify

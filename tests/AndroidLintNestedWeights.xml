@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/artisits.xml</file>
+    <line>47</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/artisits.xml" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nested layout weights</problem_class>
+    <hints />
+    <description>&lt;html&gt;Nested weights are bad for performance&lt;/html&gt;</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/album_listview.xml</file>
+    <line>40</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/album_listview.xml" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nested layout weights</problem_class>
+    <hints />
+    <description>&lt;html&gt;Nested weights are bad for performance&lt;/html&gt;</description>
+  </problem>
+</problems>
+

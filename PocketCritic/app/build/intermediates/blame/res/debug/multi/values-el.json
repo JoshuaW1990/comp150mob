@@ -11,7 +11,11 @@
                     "endOffset": 218
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-el/values-el.xml",
+=======
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-el/values-el.xml",
+>>>>>>> newSpotify
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +34,11 @@
                     "endOffset": 326
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-el/values-el.xml",
+=======
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-el/values-el.xml",
+>>>>>>> newSpotify
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -49,7 +57,11 @@
                     "endOffset": 449
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-el/values-el.xml",
+=======
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-el/values-el.xml",
+>>>>>>> newSpotify
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -68,7 +80,11 @@
                     "endOffset": 560
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-el/values-el.xml",
+=======
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-el/values-el.xml",
+>>>>>>> newSpotify
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -87,7 +103,11 @@
                     "endOffset": 677
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-el/values-el.xml",
+=======
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-el/values-el.xml",
+>>>>>>> newSpotify
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -106,7 +126,11 @@
                     "endOffset": 762
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-el/values-el.xml",
+=======
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-el/values-el.xml",
+>>>>>>> newSpotify
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -125,7 +149,11 @@
                     "endOffset": 867
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-el/values-el.xml",
+=======
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-el/values-el.xml",
+>>>>>>> newSpotify
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -144,7 +172,11 @@
                     "endOffset": 993
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-el/values-el.xml",
+=======
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-el/values-el.xml",
+>>>>>>> newSpotify
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -163,7 +195,11 @@
                     "endOffset": 1081
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-el/values-el.xml",
+=======
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-el/values-el.xml",
+>>>>>>> newSpotify
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -182,7 +218,11 @@
                     "endOffset": 1167
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-el/values-el.xml",
+=======
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-el/values-el.xml",
+>>>>>>> newSpotify
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -201,7 +241,11 @@
                     "endOffset": 1252
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-el/values-el.xml",
+=======
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-el/values-el.xml",
+>>>>>>> newSpotify
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -220,7 +264,11 @@
                     "endOffset": 1363
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-el/values-el.xml",
+=======
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-el/values-el.xml",
+>>>>>>> newSpotify
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -239,7 +287,11 @@
                     "endOffset": 1473
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-el/values-el.xml",
+=======
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-el/values-el.xml",
+>>>>>>> newSpotify
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -258,7 +310,11 @@
                     "endOffset": 1575
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-el/values-el.xml",
+=======
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-el/values-el.xml",
+>>>>>>> newSpotify
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -277,7 +333,11 @@
                     "endOffset": 1686
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-el/values-el.xml",
+=======
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-el/values-el.xml",
+>>>>>>> newSpotify
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -296,7 +356,11 @@
                     "endOffset": 1795
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-el/values-el.xml",
+=======
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-el/values-el.xml",
+>>>>>>> newSpotify
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -315,7 +379,11 @@
                     "endOffset": 1903
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-el/values-el.xml",
+=======
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-el/values-el.xml",
+>>>>>>> newSpotify
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -334,7 +402,11 @@
                     "endOffset": 2026
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-el/values-el.xml",
+=======
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-el/values-el.xml",
+>>>>>>> newSpotify
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -353,7 +425,11 @@
                     "endOffset": 2126
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-el/values-el.xml",
+=======
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-el/values-el.xml",
+>>>>>>> newSpotify
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -368,8 +444,336 @@
                     "startLine": 21,
                     "startColumn": 4,
                     "startOffset": 2131,
+<<<<<<< HEAD
                     "endColumn": 112,
                     "endOffset": 2239
+=======
+                    "endColumn": 200,
+                    "endOffset": 2327
+                },
+                "from": {
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/values-el/values-el.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 200,
+                        "endOffset": 251
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 2332,
+                    "endColumn": 127,
+                    "endOffset": 2455
+                },
+                "from": {
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/values-el/values-el.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 256,
+                        "endColumn": 127,
+                        "endOffset": 379
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 2460,
+                    "endColumn": 129,
+                    "endOffset": 2585
+                },
+                "from": {
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/values-el/values-el.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 384,
+                        "endColumn": 129,
+                        "endOffset": 509
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 2590,
+                    "endColumn": 95,
+                    "endOffset": 2681
+                },
+                "from": {
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/values-el/values-el.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 514,
+                        "endColumn": 95,
+                        "endOffset": 605
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 2686,
+                    "endColumn": 69,
+                    "endOffset": 2751
+                },
+                "from": {
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/values-el/values-el.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 610,
+                        "endColumn": 69,
+                        "endOffset": 675
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 2756,
+                    "endColumn": 74,
+                    "endOffset": 2826
+                },
+                "from": {
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/values-el/values-el.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 680,
+                        "endColumn": 74,
+                        "endOffset": 750
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 2831,
+                    "endColumn": 57,
+                    "endOffset": 2884
+                },
+                "from": {
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/values-el/values-el.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 755,
+                        "endColumn": 57,
+                        "endOffset": 808
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 2889,
+                    "endColumn": 70,
+                    "endOffset": 2955
+                },
+                "from": {
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/values-el/values-el.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 813,
+                        "endColumn": 70,
+                        "endOffset": 879
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 2960,
+                    "endColumn": 72,
+                    "endOffset": 3028
+                },
+                "from": {
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/values-el/values-el.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 884,
+                        "endColumn": 72,
+                        "endOffset": 952
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 3033,
+                    "endColumn": 91,
+                    "endOffset": 3120
+                },
+                "from": {
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/values-el/values-el.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 957,
+                        "endColumn": 91,
+                        "endOffset": 1044
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 3125,
+                    "endColumn": 76,
+                    "endOffset": 3197
+                },
+                "from": {
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/values-el/values-el.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1049,
+                        "endColumn": 76,
+                        "endOffset": 1121
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 3202,
+                    "endColumn": 76,
+                    "endOffset": 3274
+                },
+                "from": {
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/values-el/values-el.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1126,
+                        "endColumn": 76,
+                        "endOffset": 1198
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 3279,
+                    "endColumn": 91,
+                    "endOffset": 3366
+                },
+                "from": {
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/values-el/values-el.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1203,
+                        "endColumn": 91,
+                        "endOffset": 1290
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 3371,
+                    "endColumn": 108,
+                    "endOffset": 3475
+                },
+                "from": {
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/values-el/values-el.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1295,
+                        "endColumn": 108,
+                        "endOffset": 1399
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 3480,
+                    "endColumn": 66,
+                    "endOffset": 3542
+                },
+                "from": {
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/values-el/values-el.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1404,
+                        "endColumn": 66,
+                        "endOffset": 1466
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 3547,
+                    "endColumn": 70,
+                    "endOffset": 3613
+                },
+                "from": {
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/values-el/values-el.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1471,
+                        "endColumn": 70,
+                        "endOffset": 1537
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 3618,
+                    "endColumn": 148,
+                    "endOffset": 3762
+                },
+                "from": {
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/values-el/values-el.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1542,
+                        "endColumn": 148,
+                        "endOffset": 1686
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 3767,
+                    "endColumn": 112,
+                    "endOffset": 3875
+>>>>>>> newSpotify
                 },
                 "from": {
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-el/values.xml",
@@ -384,11 +788,19 @@
             },
             {
                 "to": {
+<<<<<<< HEAD
                     "startLine": 22,
                     "startColumn": 4,
                     "startOffset": 2244,
                     "endColumn": 217,
                     "endOffset": 2457
+=======
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 3880,
+                    "endColumn": 217,
+                    "endOffset": 4093
+>>>>>>> newSpotify
                 },
                 "from": {
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-el/values.xml",
@@ -403,11 +815,19 @@
             },
             {
                 "to": {
+<<<<<<< HEAD
                     "startLine": 23,
                     "startColumn": 4,
                     "startOffset": 2462,
                     "endColumn": 133,
                     "endOffset": 2591
+=======
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 4098,
+                    "endColumn": 133,
+                    "endOffset": 4227
+>>>>>>> newSpotify
                 },
                 "from": {
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-el/values.xml",
@@ -422,11 +842,19 @@
             },
             {
                 "to": {
+<<<<<<< HEAD
                     "startLine": 24,
                     "startColumn": 4,
                     "startOffset": 2596,
                     "endColumn": 112,
                     "endOffset": 2704
+=======
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 4232,
+                    "endColumn": 112,
+                    "endOffset": 4340
+>>>>>>> newSpotify
                 },
                 "from": {
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-el/values.xml",
@@ -441,11 +869,19 @@
             },
             {
                 "to": {
+<<<<<<< HEAD
                     "startLine": 25,
                     "startColumn": 4,
                     "startOffset": 2709,
                     "endColumn": 239,
                     "endOffset": 2944
+=======
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 4345,
+                    "endColumn": 239,
+                    "endOffset": 4580
+>>>>>>> newSpotify
                 },
                 "from": {
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-el/values.xml",
@@ -460,11 +896,19 @@
             },
             {
                 "to": {
+<<<<<<< HEAD
                     "startLine": 26,
                     "startColumn": 4,
                     "startOffset": 2949,
                     "endColumn": 238,
                     "endOffset": 3183
+=======
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 4585,
+                    "endColumn": 238,
+                    "endOffset": 4819
+>>>>>>> newSpotify
                 },
                 "from": {
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-el/values.xml",
@@ -479,11 +923,19 @@
             },
             {
                 "to": {
+<<<<<<< HEAD
                     "startLine": 27,
                     "startColumn": 4,
                     "startOffset": 3188,
                     "endColumn": 126,
                     "endOffset": 3310
+=======
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 4824,
+                    "endColumn": 126,
+                    "endOffset": 4946
+>>>>>>> newSpotify
                 },
                 "from": {
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-el/values.xml",
@@ -498,11 +950,19 @@
             },
             {
                 "to": {
+<<<<<<< HEAD
                     "startLine": 28,
                     "startColumn": 4,
                     "startOffset": 3315,
                     "endColumn": 133,
                     "endOffset": 3444
+=======
+                    "startLine": 45,
+                    "startColumn": 4,
+                    "startOffset": 4951,
+                    "endColumn": 133,
+                    "endOffset": 5080
+>>>>>>> newSpotify
                 },
                 "from": {
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-el/values.xml",
@@ -517,11 +977,19 @@
             },
             {
                 "to": {
+<<<<<<< HEAD
                     "startLine": 29,
                     "startColumn": 4,
                     "startOffset": 3449,
                     "endColumn": 298,
                     "endOffset": 3743
+=======
+                    "startLine": 46,
+                    "startColumn": 4,
+                    "startOffset": 5085,
+                    "endColumn": 298,
+                    "endOffset": 5379
+>>>>>>> newSpotify
                 },
                 "from": {
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/res/values-el/values.xml",
@@ -536,11 +1004,19 @@
             },
             {
                 "to": {
+<<<<<<< HEAD
                     "startLine": 30,
                     "startColumn": 4,
                     "startOffset": 3748,
                     "endColumn": 281,
                     "endOffset": 4025
+=======
+                    "startLine": 47,
+                    "startColumn": 4,
+                    "startOffset": 5384,
+                    "endColumn": 281,
+                    "endOffset": 5661
+>>>>>>> newSpotify
                 },
                 "from": {
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-el/values.xml",
@@ -555,11 +1031,19 @@
             },
             {
                 "to": {
+<<<<<<< HEAD
                     "startLine": 31,
                     "startColumn": 4,
                     "startOffset": 4030,
                     "endColumn": 124,
                     "endOffset": 4150
+=======
+                    "startLine": 48,
+                    "startColumn": 4,
+                    "startOffset": 5666,
+                    "endColumn": 124,
+                    "endOffset": 5786
+>>>>>>> newSpotify
                 },
                 "from": {
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-el/values.xml",
@@ -574,11 +1058,19 @@
             },
             {
                 "to": {
+<<<<<<< HEAD
                     "startLine": 32,
                     "startColumn": 4,
                     "startOffset": 4155,
                     "endColumn": 109,
                     "endOffset": 4260
+=======
+                    "startLine": 49,
+                    "startColumn": 4,
+                    "startOffset": 5791,
+                    "endColumn": 109,
+                    "endOffset": 5896
+>>>>>>> newSpotify
                 },
                 "from": {
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-el/values.xml",
@@ -593,11 +1085,19 @@
             },
             {
                 "to": {
+<<<<<<< HEAD
                     "startLine": 33,
                     "startColumn": 4,
                     "startOffset": 4265,
                     "endColumn": 200,
                     "endOffset": 4461
+=======
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 5901,
+                    "endColumn": 200,
+                    "endOffset": 6097
+>>>>>>> newSpotify
                 },
                 "from": {
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-el/values.xml",
@@ -612,11 +1112,19 @@
             },
             {
                 "to": {
+<<<<<<< HEAD
                     "startLine": 34,
                     "startColumn": 4,
                     "startOffset": 4466,
                     "endColumn": 130,
                     "endOffset": 4592
+=======
+                    "startLine": 51,
+                    "startColumn": 4,
+                    "startOffset": 6102,
+                    "endColumn": 130,
+                    "endOffset": 6228
+>>>>>>> newSpotify
                 },
                 "from": {
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-el/values.xml",
@@ -631,11 +1139,19 @@
             },
             {
                 "to": {
+<<<<<<< HEAD
                     "startLine": 35,
                     "startColumn": 4,
                     "startOffset": 4597,
                     "endColumn": 236,
                     "endOffset": 4829
+=======
+                    "startLine": 52,
+                    "startColumn": 4,
+                    "startOffset": 6233,
+                    "endColumn": 236,
+                    "endOffset": 6465
+>>>>>>> newSpotify
                 },
                 "from": {
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-el/values.xml",
@@ -650,11 +1166,19 @@
             },
             {
                 "to": {
+<<<<<<< HEAD
                     "startLine": 36,
                     "startColumn": 4,
                     "startOffset": 4834,
                     "endColumn": 136,
                     "endOffset": 4966
+=======
+                    "startLine": 53,
+                    "startColumn": 4,
+                    "startOffset": 6470,
+                    "endColumn": 136,
+                    "endOffset": 6602
+>>>>>>> newSpotify
                 },
                 "from": {
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-el/values.xml",
@@ -669,11 +1193,19 @@
             },
             {
                 "to": {
+<<<<<<< HEAD
                     "startLine": 37,
                     "startColumn": 4,
                     "startOffset": 4971,
                     "endColumn": 174,
                     "endOffset": 5141
+=======
+                    "startLine": 54,
+                    "startColumn": 4,
+                    "startOffset": 6607,
+                    "endColumn": 174,
+                    "endOffset": 6777
+>>>>>>> newSpotify
                 },
                 "from": {
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-el/values.xml",
@@ -688,11 +1220,19 @@
             },
             {
                 "to": {
+<<<<<<< HEAD
                     "startLine": 38,
                     "startColumn": 4,
                     "startOffset": 5146,
                     "endColumn": 98,
                     "endOffset": 5240
+=======
+                    "startLine": 55,
+                    "startColumn": 4,
+                    "startOffset": 6782,
+                    "endColumn": 98,
+                    "endOffset": 6876
+>>>>>>> newSpotify
                 },
                 "from": {
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-el/values.xml",
@@ -707,11 +1247,19 @@
             },
             {
                 "to": {
+<<<<<<< HEAD
                     "startLine": 39,
                     "startColumn": 4,
                     "startOffset": 5245,
                     "endColumn": 91,
                     "endOffset": 5332
+=======
+                    "startLine": 56,
+                    "startColumn": 4,
+                    "startOffset": 6881,
+                    "endColumn": 91,
+                    "endOffset": 6968
+>>>>>>> newSpotify
                 },
                 "from": {
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-el/values.xml",
@@ -726,11 +1274,19 @@
             },
             {
                 "to": {
+<<<<<<< HEAD
                     "startLine": 40,
                     "startColumn": 4,
                     "startOffset": 5337,
                     "endColumn": 111,
                     "endOffset": 5444
+=======
+                    "startLine": 57,
+                    "startColumn": 4,
+                    "startOffset": 6973,
+                    "endColumn": 111,
+                    "endOffset": 7080
+>>>>>>> newSpotify
                 },
                 "from": {
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-el/values.xml",
@@ -745,6 +1301,7 @@
             },
             {
                 "to": {
+<<<<<<< HEAD
                     "startLine": 41,
                     "startColumn": 4,
                     "startOffset": 5449,
@@ -753,6 +1310,35 @@
                 },
                 "from": {
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-el/values-el.xml",
+=======
+                    "startLine": 58,
+                    "startColumn": 4,
+                    "startOffset": 7085,
+                    "endColumn": 63,
+                    "endOffset": 7144
+                },
+                "from": {
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/values-el/values-el.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1691,
+                        "endColumn": 63,
+                        "endOffset": 1750
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 59,
+                    "startColumn": 4,
+                    "startOffset": 7149,
+                    "endColumn": 84,
+                    "endOffset": 7229
+                },
+                "from": {
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-el/values-el.xml",
+>>>>>>> newSpotify
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -764,6 +1350,7 @@
             },
             {
                 "to": {
+<<<<<<< HEAD
                     "startLine": 42,
                     "startColumn": 4,
                     "startOffset": 5534,
@@ -772,6 +1359,16 @@
                 },
                 "from": {
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-el/values-el.xml",
+=======
+                    "startLine": 60,
+                    "startColumn": 4,
+                    "startOffset": 7234,
+                    "endColumn": 100,
+                    "endOffset": 7330
+                },
+                "from": {
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-el/values-el.xml",
+>>>>>>> newSpotify
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,

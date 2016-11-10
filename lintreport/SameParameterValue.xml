@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/support/CommonAdapter.java</file>
+    <line>121</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic.support</package>
+    <entry_point TYPE="method" FQNAME="cs.tufts.edu.pocketcritic.support.CommonAdapter.ViewHolder cs.tufts.edu.pocketcritic.support.CommonAdapter.ViewHolder setImage(int id, java.lang.String url, com.squareup.picasso.Callback callback)" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Actual method parameter is the same constant</problem_class>
+    <hints>
+      <hint value="id cs.tufts.edu.pocketcritic.R.id.album_img" />
+    </hints>
+    <description>Actual value of parameter '&lt;code&gt;id&lt;/code&gt;' is always '&lt;code&gt;cs.tufts.edu.pocketcritic.R.id.album_img&lt;/code&gt;'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/support/CommonAdapter.java</file>
+    <line>121</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic.support</package>
+    <entry_point TYPE="method" FQNAME="cs.tufts.edu.pocketcritic.support.CommonAdapter.ViewHolder cs.tufts.edu.pocketcritic.support.CommonAdapter.ViewHolder setImage(int id, java.lang.String url, com.squareup.picasso.Callback callback)" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Actual method parameter is the same constant</problem_class>
+    <hints>
+      <hint value="callback null" />
+    </hints>
+    <description>Actual value of parameter '&lt;code&gt;callback&lt;/code&gt;' is always '&lt;code&gt;null&lt;/code&gt;'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/support/CommonAdapter.java</file>
+    <line>29</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic.support</package>
+    <entry_point TYPE="method" FQNAME="cs.tufts.edu.pocketcritic.support.CommonAdapter CommonAdapter(android.content.Context context, java.util.List&lt;T&gt; data, int itemResId)" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Actual method parameter is the same constant</problem_class>
+    <hints>
+      <hint value="itemResId cs.tufts.edu.pocketcritic.R.layout.album_listview" />
+    </hints>
+    <description>Actual value of parameter '&lt;code&gt;itemResId&lt;/code&gt;' is always '&lt;code&gt;cs.tufts.edu.pocketcritic.R.layout.album_listview&lt;/code&gt;'</description>
+  </problem>
+</problems>
+

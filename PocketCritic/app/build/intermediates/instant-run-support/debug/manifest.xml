@@ -8,8 +8,12 @@
         android:minSdkVersion="15"
         android:targetSdkVersion="24" />
 
+<<<<<<< HEAD
     <!-- To auto-complete the email text field in the login form with the user's emails -->
 
+=======
+    <uses-permission android:name="android.permission.INTERNET" />
+>>>>>>> newSpotify
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -28,13 +32,21 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
+<<<<<<< HEAD
         <activity android:name="cs.tufts.edu.pocketcritic.MainActivity" >
+=======
+        <activity
+            android:name="cs.tufts.edu.pocketcritic.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+>>>>>>> newSpotify
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name="cs.tufts.edu.pocketcritic.ArtisitsActivity" />
         <activity android:name="cs.tufts.edu.pocketcritic.ActivitybioActivity" />
         <activity android:name="cs.tufts.edu.pocketcritic.AlbumlistActivity" />
@@ -55,6 +67,29 @@
             android:authorities="cs.tufts.edu.pocketcritic.firebaseinitprovider"
             android:exported="false"
             android:initOrder="100" />
+=======
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="caf810954f358a2c70a15aae13fd2d49a326d47d" />
+
+        <activity
+            android:name="cs.tufts.edu.pocketcritic.ListActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cs.tufts.edu.pocketcritic.ListArtistsActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cs.tufts.edu.pocketcritic.ArtistScrollingActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cs.tufts.edu.pocketcritic.ListAlbumsActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+>>>>>>> newSpotify
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
@@ -104,6 +139,34 @@
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
+<<<<<<< HEAD
+=======
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="cs.tufts.edu.pocketcritic.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@style/com_facebook_activity_theme" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true" >
+        </activity>
+        <activity android:name="com.facebook.CustomTabMainActivity" />
+>>>>>>> newSpotify
     </application>
 
 </manifest>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/activitybio.xml</file>
+    <line>27</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/activitybio.xml" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Using left/right instead of start/end attributes</problem_class>
+    <hints />
+    <description>&lt;html&gt;Consider adding &lt;code&gt;android:layout_alignParentStart=&quot;true&quot;&lt;/code&gt; to better support right-to-left layouts&lt;/html&gt;</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/navigate.xml</file>
+    <line>29</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/navigate.xml" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Using left/right instead of start/end attributes</problem_class>
+    <hints />
+    <description>&lt;html&gt;Consider adding &lt;code&gt;android:layout_toEndOf=&quot;@+id/navigate_searchinfo&quot;&lt;/code&gt; to better support right-to-left layouts&lt;/html&gt;</description>
+  </problem>
+</problems>
+

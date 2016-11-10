@@ -11,7 +11,11 @@
                     "endOffset": 163
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-ldltr-v21/values-ldltr-v21.xml",
+=======
+                    "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-ldltr-v21/values-ldltr-v21.xml",
+>>>>>>> newSpotify
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

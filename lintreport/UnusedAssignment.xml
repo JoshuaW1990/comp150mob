@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/AlbumlistActivity.java</file>
+    <line>59</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="method" FQNAME="cs.tufts.edu.pocketcritic.AlbumlistActivity void onClick(android.view.View v)" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused assignment</problem_class>
+    <description>Variable &lt;code&gt;id&lt;/code&gt; is never used</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/support/CommonAdapter.java</file>
+    <line>92</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic.support</package>
+    <entry_point TYPE="method" FQNAME="cs.tufts.edu.pocketcritic.support.CommonAdapter.ViewHolder ViewHolder(android.content.Context context, android.view.View convertView, android.view.ViewGroup parent, int itemResId)" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused assignment</problem_class>
+    <description>The value mConvertView assigned to &lt;code&gt;convertView&lt;/code&gt; is never used</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/support/CommonAdapter.java</file>
+    <line>97</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic.support</package>
+    <entry_point TYPE="method" FQNAME="cs.tufts.edu.pocketcritic.support.CommonAdapter.ViewHolder cs.tufts.edu.pocketcritic.support.CommonAdapter.ViewHolder newInstance(android.content.Context context, android.view.View convertView, android.view.ViewGroup parent, int itemResId)" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused assignment</problem_class>
+    <description>Variable &lt;code&gt;holder&lt;/code&gt; initializer &lt;code&gt;null&lt;/code&gt; is redundant</description>
+  </problem>
+</problems>
+

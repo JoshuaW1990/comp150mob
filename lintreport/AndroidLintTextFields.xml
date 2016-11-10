@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/login.xml</file>
+    <line>29</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/login.xml" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Missing inputType or hint</problem_class>
+    <hints />
+    <description>&lt;html&gt;The view name (&lt;code&gt;@+id/account_email&lt;/code&gt;) suggests this is an e-mail address, but it does not include '&lt;code&gt;textEmail&lt;/code&gt;' in the &lt;code&gt;inputType&lt;/code&gt;&lt;/html&gt;</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/login.xml</file>
+    <line>43</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/login.xml" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Missing inputType or hint</problem_class>
+    <hints />
+    <description>&lt;html&gt;The view name (&lt;code&gt;@+id/account_password&lt;/code&gt;) suggests this is a password, but it does not include '&lt;code&gt;textPassword&lt;/code&gt;' in the &lt;code&gt;inputType&lt;/code&gt;&lt;/html&gt;</description>
+  </problem>
+</problems>
+

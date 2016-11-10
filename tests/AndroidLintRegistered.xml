@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/BaseActivity.java</file>
+    <line>11</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/BaseActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Class is not registered in the manifest</problem_class>
+    <hints />
+    <description>&lt;html&gt;The &lt;code&gt;&amp;lt;activity&gt; cs.tufts.edu.pocketcritic.BaseActivity&lt;/code&gt; is not registered in the manifest&lt;/html&gt;</description>
+  </problem>
+</problems>
+

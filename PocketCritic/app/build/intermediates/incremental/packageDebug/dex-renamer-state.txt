@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #Sun Oct 16 18:28:13 EDT 2016
+=======
+#Wed Nov 09 22:26:10 EST 2016
+>>>>>>> newSpotify
 base.0=/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_28423a772a025ba313d0a19d527b042fe8cebd24
 renamed.1=classes2.dex
 renamed.0=classes.dex

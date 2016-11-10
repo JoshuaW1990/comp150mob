@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/support/RetrieveFromFirebase.java</file>
+    <line>13</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic.support</package>
+    <entry_point TYPE="class" FQNAME="cs.tufts.edu.pocketcritic.support.RetrieveFromFirebase" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Default File Template Usage</problem_class>
+    <description>Default File template</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/BaseActivity.java</file>
+    <line>8</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="class" FQNAME="cs.tufts.edu.pocketcritic.BaseActivity" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Default File Template Usage</problem_class>
+    <description>Default File template</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/models/Album.java</file>
+    <line>3</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic.models</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/models/Album.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Default File Template Usage</problem_class>
+    <description>Default File template</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/models/Artist.java</file>
+    <line>6</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic.models</package>
+    <entry_point TYPE="class" FQNAME="cs.tufts.edu.pocketcritic.models.Artist" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Default File Template Usage</problem_class>
+    <description>Default File template</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/models/User.java</file>
+    <line>5</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic.models</package>
+    <entry_point TYPE="class" FQNAME="cs.tufts.edu.pocketcritic.models.User" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Default File Template Usage</problem_class>
+    <description>Default File template</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/support/CommonAdapter.java</file>
+    <line>20</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic.support</package>
+    <entry_point TYPE="class" FQNAME="cs.tufts.edu.pocketcritic.support.CommonAdapter" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Default File Template Usage</problem_class>
+    <description>Default File template</description>
+  </problem>
+</problems>
+

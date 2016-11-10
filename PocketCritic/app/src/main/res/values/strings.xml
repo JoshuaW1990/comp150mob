@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">PocketCritic</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="search">SEARCH</string>
+
+    <string name="textview">Artist Name</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="title_activity_list_artists">ListArtistsActivity</string>
+    <string name="title_activity_artist_scrolling">ArtistScrollingActivity</string>
+
+    <string name="title_activity_list_albums">ListAlbumsActivity</string>
+
+    <!-- Strings related to login -->
+    <string name="loading">Loading…</string>
+    <string name="auth_failed">Authentication failed</string>
+    <string name="search_failed">Not Found</string>
+    <string name="albumCover">album cover</string>
+    <string name="artistImage">artist image</string>
+    <string name="likeOrdislike">like or dislike(temporary)</string>
+    <string name="login_page">Login Page</string>
+    <string name="rating">rating</string>
+    <string name="artist_bio">Artist Bio</string>
+    <string name="email">Email</string>
+    <string name="back">Back</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">forgot password</string>
+    <string name="fb_login">Login with Facebook</string>
+    <string name="signup">SIGN UP</string>
+    <string name="password">password</string>>
+</resources>

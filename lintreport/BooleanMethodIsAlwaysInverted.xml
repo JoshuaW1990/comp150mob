@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/LoginActivity.java</file>
+    <line>180</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="method" FQNAME="cs.tufts.edu.pocketcritic.LoginActivity boolean validateForm()" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Boolean method is always inverted</problem_class>
+    <hints />
+    <description>Boolean method &lt;code&gt;validateForm&lt;/code&gt; is always inverted</description>
+  </problem>
+</problems>
+

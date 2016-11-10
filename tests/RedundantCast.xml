@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/ArtisitsActivity.java</file>
+    <line>71</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="method" FQNAME="cs.tufts.edu.pocketcritic.ArtisitsActivity$1 void onDataChange(com.google.firebase.database.DataSnapshot dataSnapshot)" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant type cast</problem_class>
+    <description>Casting &lt;code&gt;dataSnapshot.getKey()&lt;/code&gt; to &lt;code&gt;String&lt;/code&gt; is redundant</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/NavigationActivity.java</file>
+    <line>67</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic</package>
+    <entry_point TYPE="method" FQNAME="cs.tufts.edu.pocketcritic.NavigationActivity$2 void onDataChange(com.google.firebase.database.DataSnapshot dataSnapshot)" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant type cast</problem_class>
+    <description>Casting &lt;code&gt;dataSnapshot.getKey()&lt;/code&gt; to &lt;code&gt;String&lt;/code&gt; is redundant</description>
+  </problem>
+</problems>
+

@@ -21,12 +21,20 @@
     android:layout_height="64dp"
     android:orientation="horizontal"
     >
+<<<<<<< HEAD
     <ImageView android:id="@+id/icon"
         android:layout_width="@dimen/notification_large_icon_width"
         android:layout_height="@dimen/notification_large_icon_width"
         android:scaleType="centerCrop"
         />
     <include layout="@layout/notification_template_lines"
+=======
+    <include layout="@layout/notification_template_icon_group"
+        android:layout_width="@dimen/notification_large_icon_width"
+        android:layout_height="@dimen/notification_large_icon_height"
+    />
+    <include layout="@layout/notification_template_lines_media"
+>>>>>>> newSpotify
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"/>

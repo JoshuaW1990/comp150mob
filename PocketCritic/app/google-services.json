@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "379084225540",
+    "firebase_url": "https://neopocketcrtitic.firebaseio.com",
+    "project_id": "neopocketcrtitic",
+    "storage_bucket": "neopocketcrtitic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379084225540:android:13214fbb51e0a332",
+        "android_client_info": {
+          "package_name": "cs.tufts.edu.pocketcritic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "379084225540-cabvtpg368lte82vulmartsuqhdq3mui.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cs.tufts.edu.pocketcritic",
+            "certificate_hash": "4152F75C0F096B93F43A577662366F26B0EB623A"
+          }
+        },
+        {
+          "client_id": "379084225540-1o6pb2ljj74vmf8o2aakdgdj5p0gi0uv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn16xD2nfpNZ6WcWFftj8exbk8Xb7JUzk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "379084225540-1o6pb2ljj74vmf8o2aakdgdj5p0gi0uv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

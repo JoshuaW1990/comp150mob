@@ -4,30 +4,50 @@
     api-level="24"
     density="hdpi"
     format="8"
+<<<<<<< HEAD
     plugin-version="2.2.1"
     timestamp="98967893773145"
+=======
+    plugin-version="2.2.2"
+    timestamp="252032477362544"
+>>>>>>> newSpotify
     token="-9212577258475521643"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
+<<<<<<< HEAD
         duration="10423" />
+=======
+        duration="4121" />
+>>>>>>> newSpotify
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
+<<<<<<< HEAD
         duration="2665" />
     <task
         name="verifier"
         duration="217" />
+=======
+        duration="884" />
+    <task
+        name="verifier"
+        duration="174" />
+>>>>>>> newSpotify
 
     <artifact
         location="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
     <build
+<<<<<<< HEAD
         timestamp="98967893773145"
+=======
+        timestamp="252032477362544"
+>>>>>>> newSpotify
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/outputs/apk/app-debug.apk"

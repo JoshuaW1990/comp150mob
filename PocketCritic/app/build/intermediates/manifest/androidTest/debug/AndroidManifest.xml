@@ -1,16 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     package="cs.tufts.edu.pocketcritic.test">
 
     <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="24" />
+=======
+    package="cs.tufts.edu.pocketcritic.test" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="24" />
+
+    <instrumentation
+        android:name="android.support.test.runner.AndroidJUnitRunner"
+        android:functionalTest="false"
+        android:handleProfiling="false"
+        android:label="Tests for cs.tufts.edu.pocketcritic"
+        android:targetPackage="cs.tufts.edu.pocketcritic" />
+>>>>>>> newSpotify
 
     <application>
         <uses-library android:name="android.test.runner" />
     </application>
 
+<<<<<<< HEAD
     <instrumentation android:name="android.test.InstrumentationTestRunner"
                      android:targetPackage="cs.tufts.edu.pocketcritic"
                      android:handleProfiling="false"
                      android:functionalTest="false"
                      android:label="Tests for cs.tufts.edu.pocketcritic"/>
 </manifest>
+=======
+</manifest>
+>>>>>>> newSpotify

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/support/CommonAdapter.java</file>
+    <line>88</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic.support</package>
+    <entry_point TYPE="method" FQNAME="cs.tufts.edu.pocketcritic.support.CommonAdapter.ViewHolder ViewHolder(android.content.Context context, android.view.View convertView, android.view.ViewGroup parent, int itemResId)" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused method parameters</problem_class>
+    <hints>
+      <hint value="convertView" />
+    </hints>
+    <description>Parameter &lt;code&gt;convertView&lt;/code&gt; is not used  in either this method or any of its derived methods</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/cs/tufts/edu/pocketcritic/support/CommonAdapter.java</file>
+    <line>80</line>
+    <module>app</module>
+    <package>cs.tufts.edu.pocketcritic.support</package>
+    <entry_point TYPE="method" FQNAME="cs.tufts.edu.pocketcritic.support.CommonAdapter void convert(cs.tufts.edu.pocketcritic.support.CommonAdapter.ViewHolder holder, T item, int position)" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused method parameters</problem_class>
+    <hints>
+      <hint value="position" />
+    </hints>
+    <description>Parameter &lt;code&gt;position&lt;/code&gt; is not used in any implementation</description>
+  </problem>
+</problems>
+
