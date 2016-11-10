@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/app_bar_height"
         android:fitsSystemWindows="true"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:theme="@android:style/Theme.Translucent.NoTitleBar">
 
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/artist_collapsing_toolbar_layout"
@@ -45,8 +45,10 @@
                     android:minHeight="50dp"
                     android:gravity="center_horizontal"
                     android:id="@+id/artist_page_name"
+                    android:textSize="20sp"
                     android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true" />
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/holo_blue_light" />
             </RelativeLayout>
 
             <android.support.v7.widget.Toolbar

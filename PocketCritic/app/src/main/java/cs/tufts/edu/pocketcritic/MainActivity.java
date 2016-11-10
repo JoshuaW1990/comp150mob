@@ -10,11 +10,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.WindowManager;
+import android.view.Window;
+
 
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.view.View.OnClickListener;
+import android.widget.Toast;
+
 
 
 import com.crashlytics.android.Crashlytics;
@@ -36,7 +41,11 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Fabric.with(this, new Crashlytics());
+
+
         setContentView(R.layout.activity_main);
+
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -50,7 +59,10 @@ public class MainActivity extends AppCompatActivity
 //        });
 
 
-        Fragment fragment = new ImageFragment();
+//        Fragment fragment = new ImageFragment();
+//        getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
+
+        Fragment fragment = new LoginFragment();
         getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -129,9 +141,14 @@ public class MainActivity extends AppCompatActivity
 
 
         } else if (id == R.id.nav_login) {
-            System.out.println("Works!");
-            Fragment fragment = new LoginFragment();
-            getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
+            if (FirebaseAuth.getInstance().getCurrentUser()!= null) {
+                Toast.makeText(this, "You have all ready logged in", Toast.LENGTH_SHORT).show();
+            } else {
+                System.out.println("Works!");
+                Fragment fragment = new LoginFragment();
+                getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
+            }
+
         } else if (id == R.id.nav_logout) {
             FirebaseAuth.getInstance().signOut();
             Fragment fragment = new LoginFragment();

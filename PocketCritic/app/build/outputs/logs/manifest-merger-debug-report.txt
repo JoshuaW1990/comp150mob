@@ -92,7 +92,7 @@ ADDED from /Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/An
 activity#cs.tufts.edu.pocketcritic.ListActivity
 ADDED from /Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:29:9-32:59
 	android:label
-		ADDED from /Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:31:13-56
+		ADDED from /Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:31:13-45
 	android:theme
 		ADDED from /Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:32:13-56
 	android:name
@@ -100,7 +100,7 @@ ADDED from /Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/An
 activity#cs.tufts.edu.pocketcritic.ListArtistsActivity
 ADDED from /Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:33:9-36:59
 	android:label
-		ADDED from /Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:35:13-64
+		ADDED from /Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:35:13-45
 	android:theme
 		ADDED from /Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:36:13-56
 	android:name
@@ -108,7 +108,7 @@ ADDED from /Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/An
 activity#cs.tufts.edu.pocketcritic.ArtistScrollingActivity
 ADDED from /Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:37:9-40:59
 	android:label
-		ADDED from /Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:39:13-68
+		ADDED from /Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:39:13-29
 	android:theme
 		ADDED from /Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:40:13-56
 	android:name
@@ -116,7 +116,7 @@ ADDED from /Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/An
 activity#cs.tufts.edu.pocketcritic.ListAlbumsActivity
 ADDED from /Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:41:9-44:68
 	android:label
-		ADDED from /Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:43:13-63
+		ADDED from /Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:43:13-45
 	android:theme
 		ADDED from /Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:44:13-56
 	android:name

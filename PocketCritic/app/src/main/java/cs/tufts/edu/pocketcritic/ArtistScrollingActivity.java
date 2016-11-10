@@ -1,6 +1,7 @@
 package cs.tufts.edu.pocketcritic;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -62,6 +63,7 @@ public class ArtistScrollingActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.artist_scrolling);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -193,9 +195,10 @@ public class ArtistScrollingActivity extends AppCompatActivity {
     }
 
     private void initView(ArtistSimple artist) {
-//        CollapsingToolbarLayout collapsingToolbar =
-//                (CollapsingToolbarLayout) findViewById(R.id.artist_collapsing_toolbar_layout);
-//        collapsingToolbar.setTitle(artist.name);
+        CollapsingToolbarLayout collapsingToolbar =
+                (CollapsingToolbarLayout) findViewById(R.id.artist_collapsing_toolbar_layout);
+        //collapsingToolbar.setCollapsedTitleTextColor(Color.TRANSPARENT);
+
         TextView textView = (TextView) findViewById(R.id.artist_page_name);
         textView.setText(artist.name);
         ImageView imgView = (ImageView) findViewById(R.id.artist_page_img);

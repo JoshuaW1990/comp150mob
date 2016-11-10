@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Nov 09 20:25:34 EST 2016
+#Wed Nov 09 22:26:14 EST 2016
 20.base=/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/res/resources-debug.ap_
 143.base=/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/res/resources-debug.ap_
 340.file=/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/res/resources-debug.ap_/res/color-v11/abc_background_cache_hint_selector_material_light.xml

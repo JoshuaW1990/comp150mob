@@ -44,19 +44,19 @@
 
         <activity
             android:name="cs.tufts.edu.pocketcritic.ListActivity"
-            android:label="@string/title_activity_list"
+            android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="cs.tufts.edu.pocketcritic.ListArtistsActivity"
-            android:label="@string/title_activity_list_artists"
+            android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="cs.tufts.edu.pocketcritic.ArtistScrollingActivity"
-            android:label="@string/title_activity_artist_scrolling"
+            android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="cs.tufts.edu.pocketcritic.ListAlbumsActivity"
-            android:label="@string/title_activity_list_albums"
+            android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <receiver

@@ -328,12 +328,12 @@
         "source": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable-xhdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/com_facebook_tooltip_blue_bottomnub.png",
-        "source": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
-    },
-    {
         "merged": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_text_light_pressed.9.png",
         "source": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/drawable-xhdpi-v4/common_google_signin_btn_text_light_pressed.9.png"
+    },
+    {
+        "merged": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/com_facebook_tooltip_blue_bottomnub.png",
+        "source": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
     },
     {
         "merged": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png",

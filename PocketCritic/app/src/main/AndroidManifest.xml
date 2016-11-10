@@ -28,19 +28,19 @@
 
         <activity
             android:name=".ListActivity"
-            android:label="@string/title_activity_list"
+            android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ListArtistsActivity"
-            android:label="@string/title_activity_list_artists"
+            android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ArtistScrollingActivity"
-            android:label="@string/title_activity_artist_scrolling"
+            android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ListAlbumsActivity"
-            android:label="@string/title_activity_list_albums"
+            android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
