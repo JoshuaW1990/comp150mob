@@ -151,7 +151,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="05d803d7586fbc5c01c0e2b7595de3a26eb4d159">
+        sha1="c87de1f66e9332dcb70ac593e531b15c108fe2a2">
         <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_fce7ad50144c158e4d51a88208020eb6c97044b0/classes.dex" />
     </item>
     <item
@@ -250,7 +250,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="85e5790a8072737f1de3104cee352c753f1275cf">
+        sha1="b13812cac69db5d920d4eaf588e9e9de37a02124">
         <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_28423a772a025ba313d0a19d527b042fe8cebd24/classes.dex" />
     </item>
     <item

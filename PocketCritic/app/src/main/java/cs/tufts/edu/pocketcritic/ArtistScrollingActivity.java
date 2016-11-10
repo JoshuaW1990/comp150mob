@@ -7,12 +7,13 @@ import android.util.Log;
 import android.widget.ListView;
 import android.widget.Toast;
 import android.widget.ImageView;
-
+import android.widget.TextView;
 
 //import android.app.Fragment;
 //import android.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+
 
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -81,14 +82,14 @@ public class ArtistScrollingActivity extends AppCompatActivity {
         searchDatabaseById();
 
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//            }
+//        });
     }
 
 
@@ -138,8 +139,8 @@ public class ArtistScrollingActivity extends AppCompatActivity {
                     initView(artist);
                 }
                 else {
-                    Toast.makeText(ArtistScrollingActivity.this, "Not found",
-                            Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(ArtistScrollingActivity.this, "Not found",
+//                            Toast.LENGTH_SHORT).show();
                     System.out.println("not foud");
                     searchSpotifyById();
                     //System.out.println(singleartist.getName());
@@ -192,9 +193,11 @@ public class ArtistScrollingActivity extends AppCompatActivity {
     }
 
     private void initView(ArtistSimple artist) {
-        CollapsingToolbarLayout collapsingToolbar =
-                (CollapsingToolbarLayout) findViewById(R.id.artist_collapsing_toolbar_layout);
-        collapsingToolbar.setTitle(artist.name);
+//        CollapsingToolbarLayout collapsingToolbar =
+//                (CollapsingToolbarLayout) findViewById(R.id.artist_collapsing_toolbar_layout);
+//        collapsingToolbar.setTitle(artist.name);
+        TextView textView = (TextView) findViewById(R.id.artist_page_name);
+        textView.setText(artist.name);
         ImageView imgView = (ImageView) findViewById(R.id.artist_page_img);
         Picasso.with(this).load(artist.imageURL).into(imgView);
 
