@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="1e14ebe1cda8491f152083e752ca5bf73cd37bff">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.6.1_53a6f2344ebad9ab87edbce0d5506191f4aae15a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.0_4751c8bf8e8edcc35e66b1e02e3921720869da43/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="60d7b23621d31e6f42f4f76f16af467e57a20cda">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_4a9188cceee9265e0a960bda0dbd327bcb2c7a7c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="4a36600281a648769411ef642c331851732bf29e">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.6.1_01cf1f8ceab5807626cb244b4499a9c83914f025/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_20f377dbf3e17dd3cbff858cf72160503e9422e8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.0/support-annotations-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.0_ac54c41be68aea98cb7d5cbc0adde92c6c8c7a10/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c84e216d9bf618464d6b9564d71d9a656433e7c4">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.0_856bf4c1b3c5e2b694c085bdb18b219daa8f83d6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="1ef72e72bc0d05602c366582afa9439f58bb31d6">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.6.1_29099c066cbe4311107529d2677e92c60004cb85/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f9b41622897665678d31d78e57a361cb0cebcb0d">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.0_d9a5a217f2ba90f4e5f7098dc1a03f82b5449939/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b75ecdd04a37d31b4a0da2729fc5c558962a529b">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-9.6.1_f824ff377b09be7e6299fbd00bc1ac0cb5b37853/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ac8365c87591065db07f7bac8551504504832cd4">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-9.6.1_e2c8240fbaaa2261479e3adb600f0a48cd6b4398/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a1c351dc10b92d638da57f3a6513f87cfbdc9f83">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.6.1_d87f9bc0f802dc7c5795a61ad685a59c303e2ef2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="23eb0d2998a782213b56168cbf23a0688b9111d9">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.2.0_f1aa0023e48fbd5d30c435a36995748eeaab268b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fcc945a86ebcbf527429acb8216ec7dae2c06417">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.0_64309f5d050bcdf37cc3f39cb922ad83ecff37bd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6e02e34594ebe9c0501ffda8dd48497f81b82977">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_49b15ec68e563a506a02e3b7f7169531b6cd27d0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d8bd2268fdcbfd52c76ade65d9900cd8def93a44">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.0_b7fa8c248a978528dbe41d52099d02f51030e3d4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="045be695d968dd707691cc55d23746dbf8cf569a">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_d33336a330714017ba5c77f848a5dc8655e72c8a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0efd1b44f47c134fb245914a1d54a55adbfc2f8d">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.6.1_c7038d51794745babd306cf8f71fc48573f9cda2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="74b2ca6abb4a48c29174db3d2d7753ba8d09f92d">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_fce7ad50144c158e4d51a88208020eb6c97044b0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_50ba6d00756c2d50009d333d19ca1e382540e946/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6ffe8b28ab61e5ee92ab9431a220379790c71ddf">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-module-9.6.1_c21bc3888b0561a7f97658894ce9ddf719205ae9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2a18547ea91d258866d132c2a763185f15b01b25">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-9.6.1_6b4888b396997753e5ad6ebc37e85a102f4df0b5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.0_fb87a5256fde75ef78ed83ae027d4348986e9f72/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c755536e5a100d9c76c8ea0b72f76c018f7a9de2">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.0_43579c5660596ea6f38b161e4919ed269bc54c85/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="77558e74bb2056ef38516296f13a27c4c4fc3e5c">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-common-9.6.1_609fa3ef6ee0035fab12ce5bbf77244c7f5bc70e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="beac40bcc8a320a896dd15f5109cfcaea5e1e0e3">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.0_69c79499397f048a0ed947c1d09ff053e8f27e83/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="45f5eda279825ff470e3f51019d374d1ef61e000">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.0_22c26387351f4c75fcba7e35e35b6729d236daca/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="af7582c6b327449c6d32518e6a10307860b7b5d6">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.6.1_871366dc42809b4423ec7b91e73b6fce8454d7aa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0a5a00d5fe4bb48fd278c4020cef893ddc119f32">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_28423a772a025ba313d0a19d527b042fe8cebd24/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.6.1_a4f6f2390bcd24687a9702d2020cf7179c8cd35b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c3c638be6e650b165ab9ae144857b64e82787fad">
+        <dex dex="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.0_ba17128df538e417964ca666127e6f83ec92ae00/classes.dex" />
+    </item>
+
+</items>
