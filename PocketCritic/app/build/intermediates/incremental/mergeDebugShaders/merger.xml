@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/alexjackson/Desktop/Tufts 2016-2017/Mobile/comp150mob/PocketCritic/app/src/main/shaders"/></dataSet><dataSet config="debug"><source path="/Users/alexjackson/Desktop/Tufts 2016-2017/Mobile/comp150mob/PocketCritic/app/src/debug/shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/shaders"/></dataSet><dataSet config="debug"><source path="/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/debug/shaders"/></dataSet></merger>

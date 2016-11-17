@@ -128,11 +128,44 @@ public class ListAlbumsActivity extends AppCompatActivity {
                 holder.setText(R.id.album_name, album.getName());
                 holder.setText(R.id.album_artist, album.getArtists().get(0).getName());
 
+                ImageView imgView = holder.getView(R.id.album_img);
+                imgView.setClickable(true);
+
+                imgView.setOnClickListener(new ListButtonOnClickListener(album.getId()) {
+                    @Override
+                    public void onClick(View view) {
+                        Snackbar.make(view, this.idnumber, Snackbar.LENGTH_LONG)
+                                .setAction("Action", null).show();
+                        Intent intent = new Intent(ListAlbumsActivity.this, AlbumScrollingActivity.class);
+                        intent.putExtra("searchId", this.idnumber);
+
+
+                        //intent.putExtra("artists", "test");
+                        startActivity(intent);
+                        System.out.println("On search success!");
+                    }
+                });
 
             }
         });
 
     }
+
+    public class ListButtonOnClickListener implements View.OnClickListener
+    {
+
+        String idnumber;
+        public ListButtonOnClickListener(String idnumber) {
+            this.idnumber = idnumber;
+        }
+
+        @Override
+        public void onClick(View v)
+        {
+            //Do your stuff
+        }
+
+    };
 
 
 

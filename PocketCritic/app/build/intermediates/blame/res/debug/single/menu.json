@@ -4,20 +4,12 @@
         "source": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/res/menu/menu_artist_scrolling.xml"
     },
     {
-        "merged": "/Users/alexjackson/Desktop/Tufts 2016-2017/Mobile/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/menu/main.xml",
-        "source": "/Users/alexjackson/Desktop/Tufts 2016-2017/Mobile/comp150mob/PocketCritic/app/src/main/res/menu/main.xml"
-    },
-    {
         "merged": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/menu/activity_main_drawer.xml",
         "source": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/res/menu/activity_main_drawer.xml"
     },
     {
-        "merged": "/Users/alexjackson/Desktop/Tufts 2016-2017/Mobile/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/menu/menu_artist_scrolling.xml",
-        "source": "/Users/alexjackson/Desktop/Tufts 2016-2017/Mobile/comp150mob/PocketCritic/app/src/main/res/menu/menu_artist_scrolling.xml"
-    },
-    {
-        "merged": "/Users/alexjackson/Desktop/Tufts 2016-2017/Mobile/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/menu/activity_main_drawer.xml",
-        "source": "/Users/alexjackson/Desktop/Tufts 2016-2017/Mobile/comp150mob/PocketCritic/app/src/main/res/menu/activity_main_drawer.xml"
+        "merged": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/menu/menu_album_scrolling.xml",
+        "source": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/res/menu/menu_album_scrolling.xml"
     },
     {
         "merged": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/menu/main.xml",
