@@ -1,7 +1,31 @@
 [
     {
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+        "merged": "/Users/alexjackson/Desktop/Tufts 2016-2017/Mobile/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/anim-v21/design_appbar_state_list_animator.xml",
+        "source": "/Users/alexjackson/Desktop/Tufts 2016-2017/Mobile/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/anim-v21/design_appbar_state_list_animator.xml"
+    },
+    {
+        "merged": "/Users/alexjackson/Desktop/Tufts 2016-2017/Mobile/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/alexjackson/Desktop/Tufts 2016-2017/Mobile/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/anim-v21/design_bottom_sheet_slide_in.xml"
+=======
+        "merged": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/anim-v21/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/anim-v21/design_bottom_sheet_slide_out.xml"
+>>>>>>> Stashed changes
+    },
+    {
+>>>>>>> origin/newSpotify
         "merged": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/anim-v21/design_appbar_state_list_animator.xml",
         "source": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/anim-v21/design_appbar_state_list_animator.xml"
+    },
+    {
+        "merged": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/anim-v21/design_appbar_state_list_animator.xml",
+        "source": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/anim-v21/design_appbar_state_list_animator.xml"
     },
     {
         "merged": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",

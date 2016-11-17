@@ -1,5 +1,40 @@
 [
     {
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+        "outputFile": "/Users/alexjackson/Desktop/Tufts 2016-2017/Mobile/comp150mob/PocketCritic/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
+=======
+        "outputFile": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
+>>>>>>> Stashed changes
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 112,
+                    "endOffset": 163
+                },
+                "from": {
+<<<<<<< Updated upstream
+                    "file": "/Users/alexjackson/Desktop/Tufts 2016-2017/Mobile/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-ldltr-v21/values-ldltr-v21.xml",
+=======
+                    "file": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-ldltr-v21/values-ldltr-v21.xml",
+>>>>>>> Stashed changes
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 112,
+                        "endOffset": 163
+                    }
+                }
+            }
+        ]
+    },
+    {
+>>>>>>> origin/newSpotify
         "outputFile": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
         "map": [
             {

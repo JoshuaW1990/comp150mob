@@ -22,5 +22,40 @@
                 }
             }
         ]
+<<<<<<< HEAD
+=======
+    },
+    {
+<<<<<<< Updated upstream
+        "outputFile": "/Users/alexjackson/Desktop/Tufts 2016-2017/Mobile/comp150mob/PocketCritic/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
+=======
+        "outputFile": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
+>>>>>>> Stashed changes
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 57,
+                    "endOffset": 108
+                },
+                "from": {
+<<<<<<< Updated upstream
+                    "file": "/Users/alexjackson/Desktop/Tufts 2016-2017/Mobile/comp150mob/PocketCritic/app/src/main/res/values-w820dp/dimens.xml",
+=======
+                    "file": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/src/main/res/values-w820dp/dimens.xml",
+>>>>>>> Stashed changes
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 291,
+                        "endColumn": 57,
+                        "endOffset": 344
+                    }
+                }
+            }
+        ]
+>>>>>>> origin/newSpotify
     }
 ]
