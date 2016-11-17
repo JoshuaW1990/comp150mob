@@ -1,2 +1,2 @@
 # comp150mob
-The aim of this project is to build an app named PocketCritic for Android smartphones.
+This repository contains the source code for PocketCritic, an album rating app for Android smartphones.
