@@ -1,4 +1,4 @@
-#Thu Nov 10 11:36:37 EST 2016
+#Wed Nov 16 18:59:13 EST 2016
 base.0=/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_28423a772a025ba313d0a19d527b042fe8cebd24
 renamed.1=classes2.dex
 renamed.0=classes.dex
