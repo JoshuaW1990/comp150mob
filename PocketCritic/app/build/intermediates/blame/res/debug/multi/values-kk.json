@@ -372,7 +372,11 @@
                     "endOffset": 3170
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-kk/values.xml",
+=======
+                    "file": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-kk/values.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,

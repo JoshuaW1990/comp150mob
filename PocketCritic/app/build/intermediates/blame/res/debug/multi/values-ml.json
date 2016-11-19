@@ -714,7 +714,11 @@
                     "endOffset": 5121
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/values-ml/values-ml.xml",
+=======
+                    "file": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/values-ml/values-ml.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,

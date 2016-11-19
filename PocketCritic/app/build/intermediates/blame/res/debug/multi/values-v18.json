@@ -1,6 +1,10 @@
 [
     {
+<<<<<<< Updated upstream
         "outputFile": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml",
+=======
+        "outputFile": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml",
+>>>>>>> Stashed changes
         "map": [
             {
                 "to": {
@@ -11,7 +15,11 @@
                     "endOffset": 99
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-v18/values-v18.xml",
+=======
+                    "file": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-v18/values-v18.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

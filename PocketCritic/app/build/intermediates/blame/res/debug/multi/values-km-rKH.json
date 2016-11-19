@@ -391,7 +391,11 @@
                     "endOffset": 2181
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-km-rKH/values-km-rKH.xml",
+=======
+                    "file": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-km-rKH/values-km-rKH.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,

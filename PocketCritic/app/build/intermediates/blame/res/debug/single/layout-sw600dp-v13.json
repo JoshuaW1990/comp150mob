@@ -1,6 +1,11 @@
 [
     {
+<<<<<<< Updated upstream
         "merged": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/layout-sw600dp-v13/design_layout_snackbar.xml",
         "source": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout-sw600dp-v13/design_layout_snackbar.xml"
+=======
+        "merged": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/layout-sw600dp-v13/design_layout_snackbar.xml",
+        "source": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout-sw600dp-v13/design_layout_snackbar.xml"
+>>>>>>> Stashed changes
     }
 ]

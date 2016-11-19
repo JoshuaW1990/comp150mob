@@ -372,7 +372,11 @@
                     "endOffset": 2072
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
