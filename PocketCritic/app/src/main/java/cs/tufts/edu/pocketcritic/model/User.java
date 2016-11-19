@@ -38,6 +38,8 @@ public class User {
         this.rated_albums = new HashMap<String, Long>();
 
         //test
+//        this.liked_artists.put("ArtistID", "The Beatles");
+//        this.disliked_artists.put("ArtistID", "Justin Bieber");
     }
 }
 
