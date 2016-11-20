@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     abi="x86"
-    api-level="23"
+    api-level="24"
     density="hdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="905052320369726"
-    token="-6413240218718524528"
+    timestamp="7200588560831"
+    token="-5786597304403162123"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="165937" />
+        duration="6077" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="26487" />
+        duration="2139" />
     <task
         name="verifier"
-        duration="12531" />
+        duration="453" />
 
     <artifact
-        location="/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/outputs/apk/app-debug.apk"
+        location="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="905052320369726"
+        timestamp="7200588560831"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/outputs/apk/app-debug.apk"
+            location="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
 

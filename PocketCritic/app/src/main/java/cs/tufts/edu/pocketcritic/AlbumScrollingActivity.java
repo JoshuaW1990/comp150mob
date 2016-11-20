@@ -14,6 +14,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -58,6 +60,38 @@ public class AlbumScrollingActivity extends AppCompatActivity {
 
 
         searchDatabaseById();
+
+        FloatingActionButton upvote = (FloatingActionButton) findViewById(R.id.upvote);
+        upvote.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FirebaseAuth mFirebaseAuth;
+                mFirebaseAuth = FirebaseAuth.getInstance();
+                FirebaseUser mFirebaseUser = mFirebaseAuth.getCurrentUser();
+                String userID = mFirebaseUser.getUid();
+
+                database = FirebaseDatabase.getInstance();
+                DatabaseReference myRef = database.getReference("users").child(userID).child("LikedArtists");
+                myRef.setValue(searchId);
+
+            }
+        });
+
+        FloatingActionButton downvote = (FloatingActionButton) findViewById(R.id.downvote);
+        downvote.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FirebaseAuth mFirebaseAuth;
+                mFirebaseAuth = FirebaseAuth.getInstance();
+                FirebaseUser mFirebaseUser = mFirebaseAuth.getCurrentUser();
+                String userID = mFirebaseUser.getUid();
+
+                database = FirebaseDatabase.getInstance();
+                DatabaseReference myRef = database.getReference("users").child(userID).child("DisLikedArtists");
+                myRef.setValue(searchId);
+
+            }
+        });
 
     }
 

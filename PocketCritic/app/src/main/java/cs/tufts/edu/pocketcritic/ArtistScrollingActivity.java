@@ -4,6 +4,24 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
+
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.util.Log;
+
+import android.widget.ListView;
+import android.widget.Toast;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+
+import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.design.widget.FloatingActionButton;
+
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -23,12 +41,16 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import cs.tufts.edu.pocketcritic.fragment.ArtistAlbumListFragment;
+import cs.tufts.edu.pocketcritic.fragment.ArtistCommentListFragment;
 import cs.tufts.edu.pocketcritic.model.Album;
 import cs.tufts.edu.pocketcritic.model.ArtistSimple;
 import cs.tufts.edu.pocketcritic.model.SingleArtist;
 import cs.tufts.edu.pocketcritic.support.CommonAdapter;
+import cs.tufts.edu.pocketcritic.support.PagerAdapter;
 import cs.tufts.edu.pocketcritic.support.SpotifyApiAlbum;
 import cs.tufts.edu.pocketcritic.support.SpotifyArtistApi;
 import cs.tufts.edu.pocketcritic.support.SpotifyArtistInterface;
@@ -74,10 +96,12 @@ public class ArtistScrollingActivity extends AppCompatActivity {
         spotifyAlbumInterface = spotifyAbumApi.getService();
 
 
+
+
         searchDatabaseById();
 
 
-        FloatingActionButton upvote = (FloatingActionButton) findViewById(R.id.upvote);
+        FloatingActionButton upvote = (FloatingActionButton) findViewById(R.id.artist_upvote);
         upvote.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -87,24 +111,8 @@ public class ArtistScrollingActivity extends AppCompatActivity {
                 String userID = mFirebaseUser.getUid();
 
                 database = FirebaseDatabase.getInstance();
-                DatabaseReference myRef = database.getReference("users").child(userID).child("LikedArtists");
-                myRef.setValue(searchId);
-
-            }
-        });
-
-        FloatingActionButton downvote = (FloatingActionButton) findViewById(R.id.downvote);
-        downvote.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FirebaseAuth mFirebaseAuth;
-                mFirebaseAuth = FirebaseAuth.getInstance();
-                FirebaseUser mFirebaseUser = mFirebaseAuth.getCurrentUser();
-                String userID = mFirebaseUser.getUid();
-
-                database = FirebaseDatabase.getInstance();
-                DatabaseReference myRef = database.getReference("users").child(userID).child("DisLikedArtists");
-                myRef.setValue(searchId);
+                DatabaseReference myRef = database.getReference("userLiked").child(userID).child(searchId);
+                myRef.setValue(0);
 
             }
         });
@@ -144,7 +152,7 @@ public class ArtistScrollingActivity extends AppCompatActivity {
 
         myRef.setValue("1");
 
-        myRef = database.getReference("test").child(searchId);
+        myRef = database.getReference("artists").child(searchId);
 
         // Read from the database
         myRef.addValueEventListener(new ValueEventListener() {
@@ -211,70 +219,66 @@ public class ArtistScrollingActivity extends AppCompatActivity {
     }
 
     private void initView(ArtistSimple artist) {
-        CollapsingToolbarLayout collapsingToolbar =
-                (CollapsingToolbarLayout) findViewById(R.id.artist_collapsing_toolbar_layout);
-        //collapsingToolbar.setCollapsedTitleTextColor(Color.TRANSPARENT);
 
         TextView textView = (TextView) findViewById(R.id.artist_page_name);
         textView.setText(artist.name);
         ImageView imgView = (ImageView) findViewById(R.id.artist_page_img);
         Picasso.with(this).load(artist.imageURL).into(imgView);
 
-        queryByRxJava(artist.name);
+
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.artist_tablayout);
+        ViewPager viewPager = (ViewPager) findViewById(R.id.artist_pager);
+
+        BaseFragmentPagerAdapter adapter = new BaseFragmentPagerAdapter(getSupportFragmentManager());
+        adapter.addFragment(new ArtistAlbumListFragment(), "Albums", artist.name, false);
+        adapter.addFragment(new ArtistCommentListFragment(), "Comments", artist.name, false);
+        viewPager.setAdapter(adapter);
+        tabLayout.setupWithViewPager(viewPager);
+
 
     }
 
 
 
-    private void queryByRxJava(String artistName) {
-        String queryString = generateQueryString(artistName);
-        spotifyAlbumInterface.getSpotifyResult(queryString, "album")
-                .subscribeOn(Schedulers.newThread())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Observer<Album>() {
-                    @Override
-                    public void onCompleted() {
-                    }
 
-                    @Override
-                    public void onError(Throwable e) {
-                    }
 
-                    @Override
-                    public void onNext(Album result) {
-                        if (result != null) {
-                            List<Album.AlbumsBean.ItemsBean> albumList = result.getAlbums().getItems();
-                            System.out.println("number of albums: ");
-                            System.out.println(albumList.size());
-                            for (Album.AlbumsBean.ItemsBean album: albumList) {
-                                System.out.println(album.getName());
-                            }
-                            displayListView(albumList);
+    public  class BaseFragmentPagerAdapter extends FragmentPagerAdapter {
+        private final List<Fragment> mFragments = new ArrayList<>();
+        private final List<String> mFragmentTitles = new ArrayList<>();
+        private String databaseInfo;
 
-                        }
-                    }
-                });
-    }
+        public BaseFragmentPagerAdapter(FragmentManager fm) {
+            super(fm);
+        }
 
-    private void displayListView(List<Album.AlbumsBean.ItemsBean> albumList) {
+        public void addFragment(Fragment fragment, String title, String data) {
+            addFragment(fragment, title, data, true);
+        }
 
-        ListView listView = (ListView) findViewById(R.id.artist_albumList);
-        Picasso.with(this).setIndicatorsEnabled(false);
+        public void addFragment(Fragment fragment, String title, String data, boolean hasOptionsMenu) {
+            Bundle bundle=new Bundle();
+            bundle.putString("searchInfo",data);
+            fragment.setHasOptionsMenu(hasOptionsMenu);
+            fragment.setArguments(bundle);
+            mFragments.add(fragment);
+            mFragmentTitles.add(title);
+            databaseInfo = data;
+        }
 
-        listView.setAdapter(new CommonAdapter< Album.AlbumsBean.ItemsBean >(this, albumList, R.layout.artist_albumlistview) {
-            @Override
-            public void convert(ViewHolder holder, Album.AlbumsBean.ItemsBean album, int position) {
-                int size = album.getImages().size();
-                if (size == 0) {
-                    holder.setImage(R.id.artist_album_img, R.drawable.placeholder_image, null);
-                } else {
-                    holder.setImage(R.id.artist_album_img, album.getImages().get(size - 1).getUrl(), null);
-                }
-                holder.setText(R.id.artist_album_name, album.getName());
+        @Override
+        public Fragment getItem(int position) {
+            return mFragments.get(position);
+        }
 
-            }
-        });
+        @Override
+        public int getCount() {
+            return mFragments.size();
+        }
 
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return mFragmentTitles.get(position);
+        }
     }
 
 
