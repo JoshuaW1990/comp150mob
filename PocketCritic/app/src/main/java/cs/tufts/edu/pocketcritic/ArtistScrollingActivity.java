@@ -42,12 +42,16 @@ import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import cs.tufts.edu.pocketcritic.fragment.ArtistAlbumListFragment;
 import cs.tufts.edu.pocketcritic.fragment.ArtistCommentListFragment;
+import cs.tufts.edu.pocketcritic.fragment.ArtistGenreListFragment;
 import cs.tufts.edu.pocketcritic.model.Album;
 import cs.tufts.edu.pocketcritic.model.ArtistSimple;
+import cs.tufts.edu.pocketcritic.model.Genre;
 import cs.tufts.edu.pocketcritic.model.SingleArtist;
 import cs.tufts.edu.pocketcritic.support.CommonAdapter;
 import cs.tufts.edu.pocketcritic.support.PagerAdapter;
@@ -153,7 +157,7 @@ public class ArtistScrollingActivity extends AppCompatActivity {
 
     private void searchDatabaseById() {
         database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("testArtist").child(searchId);
+        DatabaseReference myRef = database.getReference("artists").child(searchId);
 
 
         // Read from the database
@@ -189,9 +193,9 @@ public class ArtistScrollingActivity extends AppCompatActivity {
                 if (response.isSuccessful()) {
                     SingleArtist result = response.body();
                     if (result != null) {
-                        DatabaseReference myRef = database.getReference("testArtist").child(searchId);
+                        DatabaseReference myRef = database.getReference("artists").child(searchId);
                         String name = result.getName();
-                        int popularity = result.getPopularity();
+                        int popularity = 0;
                         String imageURL;
                         if (result.getImages().size() > 0) {
                             imageURL = result.getImages().get(0).getUrl();
@@ -199,6 +203,13 @@ public class ArtistScrollingActivity extends AppCompatActivity {
                             imageURL = "None";
                         }
                         ArtistSimple artist = new ArtistSimple(name, imageURL, popularity);
+                        List<String> genres = result.getGenres();
+                        for (String i : genres) {
+                            Genre genre = new Genre(1);
+                            genre.userRecord.put("Spotify", Boolean.TRUE);
+                            artist.genres.put(i,genre);
+                        }
+
                         myRef.setValue(artist);
                         initView(artist, searchId);
                     }
@@ -224,8 +235,9 @@ public class ArtistScrollingActivity extends AppCompatActivity {
         ViewPager viewPager = (ViewPager) findViewById(R.id.artist_pager);
 
         BaseFragmentPagerAdapter adapter = new BaseFragmentPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new ArtistAlbumListFragment(), "Albums", artist.name, false);
+        adapter.addFragment(new ArtistAlbumListFragment(), "Albums", artist.name, false);  // may have bugs
         adapter.addFragment(new ArtistCommentListFragment(), "Comments", artistId, false);
+        adapter.addFragment(new ArtistGenreListFragment(), "Genres", artistId, false);
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
 

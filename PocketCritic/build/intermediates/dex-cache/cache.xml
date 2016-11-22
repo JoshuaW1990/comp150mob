@@ -250,7 +250,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="84366751259f0ca45fbe5913bfabae8d117eef63">
+        sha1="a3f4fc8796c69ce2c016e3e1789007fadb939142">
         <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_df2c1186948d8ede4744e84e71a4922831575441/classes.dex" />
     </item>
     <item
@@ -376,7 +376,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="cc62f9fe5d56b4f143ad585d553aef630875bcb2">
+        sha1="9ef024a8bd10a9ed22556fafcfa0a7cd80d8317b">
         <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6809d9c4136058c2fafc3b5a224ab45d2ea220a6/classes.dex" />
     </item>
     <item

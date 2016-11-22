@@ -99,7 +99,7 @@ public class NewCommentActivity extends AppCompatActivity {
                                     Toast.LENGTH_SHORT).show();
                         } else {
                             // Write new post
-                            writeNewPost(userId, user.username, title, body);
+                            writeNewPost(userId, searchId, user.username, title, body);
                         }
 
                         // Finish this Activity, back to the stream
@@ -129,7 +129,7 @@ public class NewCommentActivity extends AppCompatActivity {
         }
     }
 
-    private void writeNewPost(String userId, String username, String title, String body) {
+    private void writeNewPost(String userId, String itemId, String username, String title, String body) {
         // Create new post at /user-posts/$userid/$postid and at
         // /posts/$postid simultaneously
         String key = mDatabase.child("testPost").child(searchId).push().getKey();
@@ -137,7 +137,7 @@ public class NewCommentActivity extends AppCompatActivity {
         Map<String, Object> commentValue = comment.toMap();
 
         Map<String, Object> childUpdates = new HashMap<>();
-        childUpdates.put("/testPost/" + key, commentValue);
+        childUpdates.put("/testPost/" + itemId + "/" + key, commentValue);
         childUpdates.put("/user-posts/" + userId + "/" + key, commentValue);
 
         mDatabase.updateChildren(childUpdates);

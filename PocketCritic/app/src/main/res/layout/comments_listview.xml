@@ -11,7 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <RelativeLayout
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -19,28 +21,35 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/comment_author_img"
-                app:srcCompat="@drawable/user_48" />
+                app:srcCompat="@drawable/ic_action_account_circle_40" />
 
             <TextView
                 android:text="TextView"
+                style="@style/Base.TextAppearance.AppCompat.Small"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/comment_author_img"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
                 android:id="@+id/comment_author_name" />
 
 
-        </RelativeLayout>
+        </LinearLayout>
 
         <TextView
             android:text="TextView"
-            android:layout_width="match_parent"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textStyle="bold"
             android:id="@+id/comment_content" />
 
         <TextView
             android:text="TextView"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:id="@+id/comment_title" />
 
     </LinearLayout>

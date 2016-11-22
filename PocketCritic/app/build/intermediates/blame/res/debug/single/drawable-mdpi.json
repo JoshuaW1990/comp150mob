@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_toggle_star_24.png",
+        "source": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/res/drawable-mdpi/ic_toggle_star_24.png"
+    },
+    {
+        "merged": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/drawable-mdpi/firebase_lockup_400.png",
+        "source": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/res/drawable-mdpi/firebase_lockup_400.png"
+    },
+    {
+        "merged": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_action_account_circle_40.png",
+        "source": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/res/drawable-mdpi/ic_action_account_circle_40.png"
+    },
+    {
+        "merged": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_navigation_check_24.png",
+        "source": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/res/drawable-mdpi/ic_navigation_check_24.png"
+    },
+    {
+        "merged": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_toggle_star_outline_24.png",
+        "source": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/res/drawable-mdpi/ic_toggle_star_outline_24.png"
+    },
+    {
+        "merged": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_image_edit.png",
+        "source": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/res/drawable-mdpi/ic_image_edit.png"
+    }
+]

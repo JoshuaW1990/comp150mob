@@ -50,6 +50,7 @@ public class ArtistCommentListFragment extends Fragment {
         searchId = getArguments().getString("searchInfo");
 
 
+
 //        mRecyclerView = (RecyclerView) view.findViewById(R.id.artist_page_recycler_view);
 //
 //        // use this setting to improve performance if you know that changes
@@ -80,6 +81,9 @@ public class ArtistCommentListFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
         mManager = new LinearLayoutManager(getActivity());
+        mManager.setReverseLayout(true);
+        mManager.setStackFromEnd(true);
+
         mRecycler.setLayoutManager(mManager);
 
         Query postsQuery = mDatabase.child("testPost").child(searchId).limitToFirst(10);
@@ -96,7 +100,7 @@ public class ArtistCommentListFragment extends Fragment {
     }
 
 
-    public class CommentsViewHolder extends RecyclerView.ViewHolder {
+    public static class CommentsViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
         TextView mAuthorName;
         TextView mCommentTitle;
