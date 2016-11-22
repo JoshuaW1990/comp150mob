@@ -45,7 +45,8 @@
         <activity
             android:name=".AlbumScrollingActivity"
             android:label=""
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".NewCommentActivity"></activity>
     </application>
 
 </manifest>

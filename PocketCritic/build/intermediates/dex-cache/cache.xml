@@ -3,12 +3,201 @@
 
     <item
         is-multidex="true"
-        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_2980e3a797988c168bbe667fbe1b3c7e3277f44d/classes.dex" />
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_259bd0a4cd0ac1ca696d71393c6c7423237ec3ce/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-24.2.1_9c19e976620f40ea0fd6f4e9a51eeffc7390ddba/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_0cfe1af75846100df604a078f1c1a41e8698c709/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/adapter-rxjava/2.0.2/a60c039ba54c73d1133b72178e1b04133c73d13d/adapter-rxjava-2.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a60c039ba54c73d1133b72178e1b04133c73d13d">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/adapter-rxjava-2.0.2_ea270f5a790d494cebf89114a752d0e9acf3f5e5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_7aaad4c38c26249bfb270d1df972794a97b591bc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="77558e74bb2056ef38516296f13a27c4c4fc3e5c">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-common-9.6.1_2a005106629afbf2c2e9963ece962f5e4d2d1844/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_a38a51331be9edad58374ac84c066396dc3f7b04/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ac8365c87591065db07f7bac8551504504832cd4">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-9.6.1_dffc7d45b4256078890010f0743313b150bafa27/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.2.1_625a5ed547e8eae3d7f4404b0aabe149bd2ff0ef/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_e7e99456eccdbc40638f805ebfc07487c50004d1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_0fb7cb50202ba052db7c6146d5a94d0a889108bf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.1_8eec665c339076d0936fd62e23a9a83b85a8769f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_03ef87a356b99aeb44cf3844f4fd3fbe5da9a4ec/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="af7582c6b327449c6d32518e6a10307860b7b5d6">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.6.1_26146f5bdeb81ef86682f9cb673a4b169649b12f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_0d995324158695840d5f2dbabd8c8e3c52026378/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.1.1/b494968f6050d494de55dc3ce005e59c7eb40012/rxjava-1.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b494968f6050d494de55dc3ce005e59c7eb40012">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/rxjava-1.1.1_4679ac4aa6129d5f3e43572dc964037c4c57e1cc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.6.0_9d9afe3e11909619726139d340597a10d371cf5a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_35462b498473b8aae0298c5b18cd5b2b025bee74/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.0.2/43eeae0b9fb087bb3194ba59ab63a38a32fbf3e/retrofit-2.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="043eeae0b9fb087bb3194ba59ab63a38a32fbf3e">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.0.2_d8c117200058942c61903465a6922bfdff6a5a63/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.2.0/f7873a2ebde246a45c2a8d6f3247108b4c88a879/okhttp-3.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.2.0_5171f5903f182b04b27b18c79bb8eac5eef22410/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.6.1_cf8f229bdd8f0eb32e1b5cc7a6d4ef0383505442/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.14/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a319fd4d548ba4cc9511561d37109ba922bfbf6a">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/io.fabric.sdk.android-fabric-1.3.14_2e04ef39e6b914b7336b08587a20068d711accfd/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -18,15 +207,6 @@
         revision="24.0.2"
         sha1="6ffe8b28ab61e5ee92ab9431a220379790c71ddf">
         <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-module-9.6.1_bf446120c577e817bb354d0a9a6cea0b0fade290/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.0_6971f2549d2aa1754cc191b9130d194d6b14d8bb/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -48,66 +228,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar"
+        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.0_da1704919138e3f08d07cd5fbff12eed048702d5/classes.dex" />
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_87491b65e504e546587fa7fd88919d351b127491/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/junwang/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_0cfe1af75846100df604a078f1c1a41e8698c709/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/junwang/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.0_1f8ed5c0f7cbb66c67fa3cd42ec7f0fa4a1b3e1d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.0_b57a6c26a449499adf94b399867c4bc920590ad0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_c1d7a3a7ab96dd6d9c2cbe1a25be837cb6d1ea61/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/junwang/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/adapter-rxjava/2.0.2/a60c039ba54c73d1133b72178e1b04133c73d13d/adapter-rxjava-2.0.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="a60c039ba54c73d1133b72178e1b04133c73d13d">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/adapter-rxjava-2.0.2_ea270f5a790d494cebf89114a752d0e9acf3f5e5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_bfdba8127925df73ef071c468096ffc8e72847b5/classes.dex" />
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_dae1e39060533cbc431007ffad2fecc9915669bb/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -115,17 +250,8 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="1037175918c3bbff9508a2cb1466409f5fdb976c">
+        sha1="84366751259f0ca45fbe5913bfabae8d117eef63">
         <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_df2c1186948d8ede4744e84e71a4922831575441/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="77558e74bb2056ef38516296f13a27c4c4fc3e5c">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-common-9.6.1_2a005106629afbf2c2e9963ece962f5e4d2d1844/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -156,48 +282,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.6.1/jars/classes.jar"
+        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="ac8365c87591065db07f7bac8551504504832cd4">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-9.6.1_dffc7d45b4256078890010f0743313b150bafa27/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.2.1_625a5ed547e8eae3d7f4404b0aabe149bd2ff0ef/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_8984f7fd9976285fa4c44376c2531e2c4cd57950/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/junwang/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-tasks-1.4.0_e74fed5e8c7b6a3afc0bffd64bc4f77de3904b71/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.0_e3a61779963186033b60d90c23ef58a8a66826c9/classes.dex" />
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_89b4835a727fa36d7d158bbf89353114abf1e950/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -219,15 +309,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.0_805f124f541a02daa3fa8ac60250e3af6fdf88a4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -237,39 +318,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.0/jars/classes.jar"
+        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="8a372c4191f80489770a231f7be4820b204b886a">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-25.0.0_df5c56bed7063fbf8c14b5ed0eaffe76c7d398ef/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_d9b7d3db5401f9ecb41e9ab3123622e4887a2af1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.0_3c3a3aa29f6fe450ada75f5d5296e71d0b90fe6e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/junwang/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-applinks-1.4.0_d747b83e2298d292c8dee8a262c5369aafb9a2da/classes.dex" />
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_91214648e0670a88da1aad4843ef27783b74aa25/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -282,24 +336,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="26674000177e45447a0326a6ad84612761199a13">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.0_54a32e0c46f236996094c4d5f9f0551cb1a1a07b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.1_8eec665c339076d0936fd62e23a9a83b85a8769f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.10/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -309,12 +345,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
+        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.0_d96c33a83abff6c6520e48c4dd51b0be90017e85/classes.dex" />
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_7b401737f1c5ac0bd669d31310a56ed1f42fbb0d/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -327,15 +363,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="af7582c6b327449c6d32518e6a10307860b7b5d6">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.6.1_26146f5bdeb81ef86682f9cb673a4b169649b12f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.6.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -345,57 +372,30 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/junwang/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.1.1/b494968f6050d494de55dc3ce005e59c7eb40012/rxjava-1.1.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="b494968f6050d494de55dc3ce005e59c7eb40012">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/rxjava-1.1.1_4679ac4aa6129d5f3e43572dc964037c4c57e1cc/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="cf939be6cd1cd1f902e92e8f2d6da16b292f27c5">
+        sha1="cc62f9fe5d56b4f143ad585d553aef630875bcb2">
         <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6809d9c4136058c2fafc3b5a224ab45d2ea220a6/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/customtabs/25.0.0/jars/classes.jar"
+        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="94ba691efc31bf53264db0716d9c9ec03843ea31">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-customtabs-25.0.0_16ad5f09820e4eb019d4d5d9dc7f981aaa98d6b7/classes.dex" />
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_cd1743f4c1a6e6f105512e1f9de7af656f3d63ff/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/junwang/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="98476622f10715998eacf9240d6b479f12c66143">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.6.0_9d9afe3e11909619726139d340597a10d371cf5a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/junwang/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.0.2/43eeae0b9fb087bb3194ba59ab63a38a32fbf3e/retrofit-2.0.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="043eeae0b9fb087bb3194ba59ab63a38a32fbf3e">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.0.2_d8c117200058942c61903465a6922bfdff6a5a63/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="23c7c34bfb3cdc0599d49e581486b179bc6b2eee">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.facebook.android-facebook-android-sdk-4.17.0_f1fc8726384704e5e8307efe1c67aeceb9378877/classes.dex" />
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_90e113ac6ad71b324f7be25982d44eddd50d8dfb/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -417,24 +417,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/junwang/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.2.0/f7873a2ebde246a45c2a8d6f3247108b4c88a879/okhttp-3.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.2.0_5171f5903f182b04b27b18c79bb8eac5eef22410/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.6.1_cf8f229bdd8f0eb32e1b5cc7a6d4ef0383505442/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics/2.6.5/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -444,21 +426,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.14/jars/classes.jar"
+        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.firebaseui/firebase-ui-database/0.6.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="a319fd4d548ba4cc9511561d37109ba922bfbf6a">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/io.fabric.sdk.android-fabric-1.3.14_2e04ef39e6b914b7336b08587a20068d711accfd/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
-        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.0_3664c90c0731c7edc53a7d93b98fb5a0f9c8dcd2/classes.dex" />
+        sha1="a3a0e05009f5b1d19f0cabdfe7d5453a9184e1c6">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.firebaseui-firebase-ui-database-0.6.1_83b20be4574d5f35ab7ce483da647dc861184297/classes.dex" />
     </item>
 
 </items>

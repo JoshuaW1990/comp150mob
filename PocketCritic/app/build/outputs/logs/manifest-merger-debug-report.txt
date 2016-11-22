@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:2:1-51:12
+ADDED from /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:2:1-52:12
 	package
 		ADDED from /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:3:5-40
 		INJECTED from /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml
@@ -23,10 +23,11 @@ MERGED from [io.fabric.sdk.android:fabric:1.3.14] /Users/junwang/Documents/Githu
 MERGED from [com.google.firebase:firebase-analytics:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:20:5-66
 MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.1/AndroidManifest.xml:20:5-66
 MERGED from [com.google.firebase:firebase-iid:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:20:5-66
+MERGED from [com.firebaseui:firebase-ui-database:0.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.firebaseui/firebase-ui-database/0.6.1/AndroidManifest.xml:11:5-67
 	android:name
 		ADDED from /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:8:5-49:19
+ADDED from /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:8:5-50:19
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.6.5] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics/2.6.5/AndroidManifest.xml:11:5-20
 MERGED from [com.crashlytics.sdk.android:beta:1.2.2] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/beta/1.2.2/AndroidManifest.xml:11:5-20
 MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.14] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics-core/2.3.14/AndroidManifest.xml:11:5-20
@@ -40,21 +41,20 @@ MERGED from [com.google.firebase:firebase-iid:9.6.1] /Users/junwang/Documents/Gi
 MERGED from [com.google.firebase:firebase-auth:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.6.1/AndroidManifest.xml:19:5-20:19
 MERGED from [com.google.firebase:firebase-auth-common:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.6.1/AndroidManifest.xml:19:5-20:19
 MERGED from [com.google.android.gms:play-services-base:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/AndroidManifest.xml:18:5-20:19
+MERGED from [com.android.support:cardview-v7:24.2.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.2.1/AndroidManifest.xml:22:5-20
+MERGED from [com.firebaseui:firebase-ui-database:0.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.firebaseui/firebase-ui-database/0.6.1/AndroidManifest.xml:13:5-17:19
+MERGED from [com.android.support:appcompat-v7:24.2.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.2.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:24.2.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/AndroidManifest.xml:23:5-20
 MERGED from [com.google.firebase:firebase-common:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.1/AndroidManifest.xml:4:5-7:19
 MERGED from [com.google.android.gms:play-services-tasks:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.6.1/AndroidManifest.xml:4:5-19
 MERGED from [com.google.android.gms:play-services-basement:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/AndroidManifest.xml:19:5-21:19
-MERGED from [com.facebook.android:facebook-android-sdk:4.17.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/AndroidManifest.xml:28:5-38:19
-MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:25.0.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.0.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.0.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.0.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.0.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.0.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:25.0.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:cardview-v7:25.0.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:customtabs:25.0.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/customtabs/25.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-compat:25.0.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.2.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:24.2.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/AndroidManifest.xml:25:5-20
 	android:label
 		ADDED from /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:11:9-41
 	android:supportsRtl
@@ -122,13 +122,17 @@ ADDED from /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/
 	android:name
 		ADDED from /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:42:13-47
 activity#cs.tufts.edu.pocketcritic.AlbumScrollingActivity
-ADDED from /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:45:9-48:68
+ADDED from /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:45:9-48:59
 	android:label
 		ADDED from /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:47:13-29
 	android:theme
 		ADDED from /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:48:13-56
 	android:name
 		ADDED from /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:46:13-51
+activity#cs.tufts.edu.pocketcritic.NewCommentActivity
+ADDED from /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:49:9-65
+	android:name
+		ADDED from /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:49:19-53
 uses-sdk
 INJECTED from /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.6.5] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics/2.6.5/AndroidManifest.xml:7:5-43
@@ -142,30 +146,29 @@ MERGED from [com.google.firebase:firebase-core:9.6.1] /Users/junwang/Documents/G
 MERGED from [com.google.firebase:firebase-analytics:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:17:5-42
 MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.1/AndroidManifest.xml:17:5-42
 MERGED from [com.google.firebase:firebase-iid:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-database:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.6.1/AndroidManifest.xml:3:5-42
-MERGED from [com.google.firebase:firebase-database-connection:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.6.1/AndroidManifest.xml:3:5-42
 MERGED from [com.google.firebase:firebase-auth:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.6.1/AndroidManifest.xml:17:5-42
 MERGED from [com.google.firebase:firebase-auth-common:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.6.1/AndroidManifest.xml:17:5-42
 MERGED from [com.google.firebase:firebase-auth-module:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.6.1/AndroidManifest.xml:3:5-42
 MERGED from [com.google.android.gms:play-services-base:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/AndroidManifest.xml:17:5-42
+MERGED from [com.android.support:cardview-v7:24.2.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.2.1/AndroidManifest.xml:20:5-43
+MERGED from [com.firebaseui:firebase-ui-database:0.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.firebaseui/firebase-ui-database/0.6.1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:24.2.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:24.2.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:24.2.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:recyclerview-v7:24.2.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-database:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.6.1/AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-database-connection:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.6.1/AndroidManifest.xml:3:5-42
 MERGED from [com.google.firebase:firebase-common:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.1/AndroidManifest.xml:3:5-42
 MERGED from [com.google.android.gms:play-services-tasks:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.6.1/AndroidManifest.xml:3:5-42
 MERGED from [com.google.android.gms:play-services-basement:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:recyclerview-v7:24.2.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.facebook.android:facebook-android-sdk:4.17.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:25.0.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.0.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.0.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.0.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.0.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:animated-vector-drawable:25.0.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.0.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:cardview-v7:25.0.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:customtabs:25.0.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/customtabs/25.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:25.0.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-v4:24.2.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:24.2.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:24.2.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:24.2.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:24.2.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:24.2.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:25.0.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:24.2.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml
@@ -280,6 +283,13 @@ ADDED from [com.google.android.gms:play-services-base:9.6.1] /Users/junwang/Docu
 		ADDED from [com.google.android.gms:play-services-base:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/AndroidManifest.xml:19:86-145
 	android:name
 		ADDED from [com.google.android.gms:play-services-base:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/AndroidManifest.xml:19:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.firebaseui:firebase-ui-database:0.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.firebaseui/firebase-ui-database/0.6.1/AndroidManifest.xml:14:9-16:69
+MERGED from [com.google.android.gms:play-services-basement:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.firebaseui:firebase-ui-database:0.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.firebaseui/firebase-ui-database/0.6.1/AndroidManifest.xml:16:13-66
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-database:0.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.firebaseui/firebase-ui-database/0.6.1/AndroidManifest.xml:15:13-58
 provider#com.google.firebase.provider.FirebaseInitProvider
 ADDED from [com.google.firebase:firebase-common:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.1/AndroidManifest.xml:6:9-175
 	android:authorities
@@ -290,27 +300,3 @@ ADDED from [com.google.firebase:firebase-common:9.6.1] /Users/junwang/Documents/
 		ADDED from [com.google.firebase:firebase-common:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.1/AndroidManifest.xml:6:150-173
 	android:name
 		ADDED from [com.google.firebase:firebase-common:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.1/AndroidManifest.xml:6:79-124
-meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/AndroidManifest.xml:20:9-121
-	android:value
-		ADDED from [com.google.android.gms:play-services-basement:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/AndroidManifest.xml:20:66-119
-	android:name
-		ADDED from [com.google.android.gms:play-services-basement:9.6.1] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/AndroidManifest.xml:20:20-65
-activity#com.facebook.FacebookActivity
-ADDED from [com.facebook.android:facebook-android-sdk:4.17.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/AndroidManifest.xml:29:9-32:66
-	android:configChanges
-		ADDED from [com.facebook.android:facebook-android-sdk:4.17.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/AndroidManifest.xml:31:13-96
-	android:theme
-		ADDED from [com.facebook.android:facebook-android-sdk:4.17.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/AndroidManifest.xml:32:13-63
-	android:name
-		ADDED from [com.facebook.android:facebook-android-sdk:4.17.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/AndroidManifest.xml:30:13-57
-activity#com.facebook.CustomTabActivity
-ADDED from [com.facebook.android:facebook-android-sdk:4.17.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/AndroidManifest.xml:33:9-36:20
-	android:exported
-		ADDED from [com.facebook.android:facebook-android-sdk:4.17.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/AndroidManifest.xml:35:13-36
-	android:name
-		ADDED from [com.facebook.android:facebook-android-sdk:4.17.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/AndroidManifest.xml:34:13-58
-activity#com.facebook.CustomTabMainActivity
-ADDED from [com.facebook.android:facebook-android-sdk:4.17.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/AndroidManifest.xml:37:9-71
-	android:name
-		ADDED from [com.facebook.android:facebook-android-sdk:4.17.0] /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/AndroidManifest.xml:37:19-68

@@ -86,8 +86,7 @@ public class ArtistScrollingActivity extends AppCompatActivity {
         Intent intent = getIntent();
         searchId = intent.getStringExtra("searchId");
 
-        System.out.println("come to artist page");
-        System.out.println(searchId);
+
 
         spotifyArtistApi = SpotifyArtistApi.getApi();
         spotifyArtistInterface = spotifyArtistApi.getService();
@@ -116,6 +115,16 @@ public class ArtistScrollingActivity extends AppCompatActivity {
 
             }
         });
+
+        FloatingActionButton postComment = (FloatingActionButton) findViewById(R.id.artist_fab_new_comment);
+        postComment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ArtistScrollingActivity.this, NewCommentActivity.class);
+                intent.putExtra("searchId", searchId);
+                startActivity(intent);
+            }
+        });
     }
 
 
@@ -141,38 +150,24 @@ public class ArtistScrollingActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private String generateQueryString(String str) {
-        return str.replaceAll("\\s+","+");
-    }
-
 
     private void searchDatabaseById() {
         database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("message");
+        DatabaseReference myRef = database.getReference("testArtist").child(searchId);
 
-        myRef.setValue("1");
-
-        myRef = database.getReference("artists").child(searchId);
 
         // Read from the database
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if(dataSnapshot.exists()) {
-                    String value = dataSnapshot.getKey();
-                    Log.d(TAG, "Value is: " + value);
                     ArtistSimple artist = dataSnapshot.getValue(ArtistSimple.class);
-                    initView(artist);
+                    initView(artist, searchId);
                 }
                 else {
-//                    Toast.makeText(ArtistScrollingActivity.this, "Not found",
-//                            Toast.LENGTH_SHORT).show();
-                    System.out.println("not foud");
                     searchSpotifyById();
-                    //System.out.println(singleartist.getName());
                 }
-                // This method is called once with the initial value and again
-                // whenever data at this location is updated.
+
 
             }
 
@@ -194,8 +189,7 @@ public class ArtistScrollingActivity extends AppCompatActivity {
                 if (response.isSuccessful()) {
                     SingleArtist result = response.body();
                     if (result != null) {
-                        System.out.println(result.getName());
-                        DatabaseReference myRef = database.getReference("test").child(searchId);
+                        DatabaseReference myRef = database.getReference("testArtist").child(searchId);
                         String name = result.getName();
                         int popularity = result.getPopularity();
                         String imageURL;
@@ -206,7 +200,7 @@ public class ArtistScrollingActivity extends AppCompatActivity {
                         }
                         ArtistSimple artist = new ArtistSimple(name, imageURL, popularity);
                         myRef.setValue(artist);
-                        initView(artist);
+                        initView(artist, searchId);
                     }
                 }
             }
@@ -218,7 +212,7 @@ public class ArtistScrollingActivity extends AppCompatActivity {
         });
     }
 
-    private void initView(ArtistSimple artist) {
+    private void initView(ArtistSimple artist, String artistId) {
 
         TextView textView = (TextView) findViewById(R.id.artist_page_name);
         textView.setText(artist.name);
@@ -231,7 +225,7 @@ public class ArtistScrollingActivity extends AppCompatActivity {
 
         BaseFragmentPagerAdapter adapter = new BaseFragmentPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new ArtistAlbumListFragment(), "Albums", artist.name, false);
-        adapter.addFragment(new ArtistCommentListFragment(), "Comments", artist.name, false);
+        adapter.addFragment(new ArtistCommentListFragment(), "Comments", artistId, false);
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
 
