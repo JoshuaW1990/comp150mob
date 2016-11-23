@@ -12,7 +12,7 @@ public class ArtistSimple {
     public String imageURL;
     public String name;
     public int popularity;
-    public Map<String, Object> genres = new HashMap<>();
+    public Map<String, Integer> genres = new HashMap<>();
 
 
     public ArtistSimple() {

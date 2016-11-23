@@ -32,6 +32,14 @@
         "source": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_btn_check_material.xml"
     },
     {
+        "merged": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/drawable/tag_bg.xml",
+        "source": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/res/drawable/tag_bg.xml"
+    },
+    {
+        "merged": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/drawable/normal_bg.xml",
+        "source": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/res/drawable/normal_bg.xml"
+    },
+    {
         "merged": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light.xml",
         "source": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/drawable/common_google_signin_btn_text_light.xml"
     },
@@ -148,8 +156,8 @@
         "source": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_tab_indicator_material.xml"
     },
     {
-        "merged": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/drawable/user_48.png",
-        "source": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/res/drawable/user_48.png"
+        "merged": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/drawable/text_color.xml",
+        "source": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/res/drawable/text_color.xml"
     },
     {
         "merged": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
@@ -158,6 +166,10 @@
     {
         "merged": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/drawable/placeholder_image.jpg",
         "source": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/res/drawable/placeholder_image.jpg"
+    },
+    {
+        "merged": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/drawable/checked_bg.xml",
+        "source": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/res/drawable/checked_bg.xml"
     },
     {
         "merged": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",

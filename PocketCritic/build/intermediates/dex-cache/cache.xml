@@ -39,12 +39,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.zhy/flowlayout-lib/1.0.3/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fdaede6c3d2da36ba042f9db05a60d303e04045f">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.zhy-flowlayout-lib-1.0.3_e8923b1c0da19f9049d663ddcaf89bd5679f8b9f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
         <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_7aaad4c38c26249bfb270d1df972794a97b591bc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.anton46/collection-picker/1.0.2/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6ea945ab5dfcc63fa17ca2f0800023ff038a599f">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.anton46-collection-picker-1.0.2_9561130eeb4d366cf2c65d863e754ad6e4da852c/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -250,7 +268,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="a3f4fc8796c69ce2c016e3e1789007fadb939142">
+        sha1="8bc6a61a3be1e2921b0a388de1ffc301233c7729">
         <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_df2c1186948d8ede4744e84e71a4922831575441/classes.dex" />
     </item>
     <item
@@ -376,7 +394,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="9ef024a8bd10a9ed22556fafcfa0a7cd80d8317b">
+        sha1="ab401a212e429b91fa3ce540930a9d4301c197e9">
         <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6809d9c4136058c2fafc3b5a224ab45d2ea220a6/classes.dex" />
     </item>
     <item

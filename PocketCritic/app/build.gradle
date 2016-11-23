@@ -68,6 +68,10 @@ dependencies {
 
     compile 'com.firebaseui:firebase-ui-database:0.6.1'
 
+    compile 'com.zhy:flowlayout-lib:1.0.3'
+
+    compile 'com.anton46:collection-picker:1.0.2'
+
 
     
     testCompile 'junit:junit:4.12'

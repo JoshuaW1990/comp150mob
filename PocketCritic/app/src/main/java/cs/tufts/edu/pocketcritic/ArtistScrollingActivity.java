@@ -78,6 +78,7 @@ public class ArtistScrollingActivity extends AppCompatActivity {
     private SpotifyApiAlbum spotifyAbumApi;
     private SpotifyInterfaceAlbum spotifyAlbumInterface;
     private static final String TAG = "ArtistInfo";
+    private String userID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,6 +90,8 @@ public class ArtistScrollingActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         searchId = intent.getStringExtra("searchId");
+
+        database = FirebaseDatabase.getInstance();
 
 
 
@@ -111,12 +114,26 @@ public class ArtistScrollingActivity extends AppCompatActivity {
                 FirebaseAuth mFirebaseAuth;
                 mFirebaseAuth = FirebaseAuth.getInstance();
                 FirebaseUser mFirebaseUser = mFirebaseAuth.getCurrentUser();
-                String userID = mFirebaseUser.getUid();
+                userID = mFirebaseUser.getUid();
 
-                database = FirebaseDatabase.getInstance();
+
                 DatabaseReference myRef = database.getReference("userLiked").child(userID).child(searchId);
-                myRef.setValue(0);
+                ValueEventListener userRecordListener = new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        if (!dataSnapshot.exists()) {
+                            writeUsersLike();
+                        }
+                    }
 
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+                        // Getting Post failed, log a message
+                        Log.w(TAG, "loadRecord:onCancelled", databaseError.toException());
+                        // ...
+                    }
+                };
+                myRef.addListenerForSingleValueEvent(userRecordListener);
             }
         });
 
@@ -132,34 +149,30 @@ public class ArtistScrollingActivity extends AppCompatActivity {
     }
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
+    private void writeUsersLike() {
+        // Add user like
+        DatabaseReference myRef = database.getReference("userLiked").child(userID).child(searchId);
+        myRef.setValue(0);
+
+        // Add popularity
+        myRef = database.getReference("artists").child(searchId).child("popularity");
+        myRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                Long popularity = (Long) dataSnapshot.getValue();
+                DatabaseReference tmpRef = database.getReference("artists").child(searchId).child("popularity");
+                tmpRef.setValue(popularity + 1);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
     }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
 
     private void searchDatabaseById() {
-        database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("artists").child(searchId);
-
-
         // Read from the database
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -171,8 +184,6 @@ public class ArtistScrollingActivity extends AppCompatActivity {
                 else {
                     searchSpotifyById();
                 }
-
-
             }
 
             @Override
@@ -193,25 +204,7 @@ public class ArtistScrollingActivity extends AppCompatActivity {
                 if (response.isSuccessful()) {
                     SingleArtist result = response.body();
                     if (result != null) {
-                        DatabaseReference myRef = database.getReference("artists").child(searchId);
-                        String name = result.getName();
-                        int popularity = 0;
-                        String imageURL;
-                        if (result.getImages().size() > 0) {
-                            imageURL = result.getImages().get(0).getUrl();
-                        } else {
-                            imageURL = "None";
-                        }
-                        ArtistSimple artist = new ArtistSimple(name, imageURL, popularity);
-                        List<String> genres = result.getGenres();
-                        for (String i : genres) {
-                            Genre genre = new Genre(1);
-                            genre.userRecord.put("Spotify", Boolean.TRUE);
-                            artist.genres.put(i,genre);
-                        }
-
-                        myRef.setValue(artist);
-                        initView(artist, searchId);
+                        writeDatatoDatabase(result);
                     }
                 }
             }
@@ -222,6 +215,50 @@ public class ArtistScrollingActivity extends AppCompatActivity {
             }
         });
     }
+
+    private void writeDatatoDatabase(SingleArtist artist) {
+        // Get the data to form the class of ArtistSimple
+        String name = artist.getName();
+        int popularity = 0;
+        String imageURL;
+        if (artist.getImages().size() > 0) {
+            imageURL = artist.getImages().get(0).getUrl();
+        } else {
+            imageURL = "None";
+        }
+        ArtistSimple artistSimple = new ArtistSimple(name, imageURL, popularity);
+        // Get genre list of the artist
+        List<String> genres = artist.getGenres();
+        for (final String genreName : genres) {
+            artistSimple.genres.put(genreName,0);
+            final DatabaseReference myRef = database.getReference("artists").child(searchId).child("popularity");
+            myRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    Long popularity = (Long) dataSnapshot.getValue();
+                    writePopularityToGenre(genreName, popularity);
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+
+                }
+            });
+        }
+        // Write the data to the artists database
+        DatabaseReference myRef = database.getReference("artists").child(searchId);
+        myRef.setValue(artistSimple);
+        initView(artistSimple, searchId);
+    }
+
+    private void writePopularityToGenre(String genreName, Long popularity) {
+        // Use the listener to get the popularity
+        System.out.println("writePopularityToGenre");
+        DatabaseReference myRef = database.getReference().child("genre-artist").child(genreName).child(searchId);
+        System.out.println(genreName);
+        myRef.setValue(popularity);
+    }
+
 
     private void initView(ArtistSimple artist, String artistId) {
 
@@ -237,7 +274,7 @@ public class ArtistScrollingActivity extends AppCompatActivity {
         BaseFragmentPagerAdapter adapter = new BaseFragmentPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new ArtistAlbumListFragment(), "Albums", artist.name, false);  // may have bugs
         adapter.addFragment(new ArtistCommentListFragment(), "Comments", artistId, false);
-        adapter.addFragment(new ArtistGenreListFragment(), "Genres", artistId, false);
+        //adapter.addFragment(new ArtistGenreListFragment(), "Genres", artistId, false);
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
 

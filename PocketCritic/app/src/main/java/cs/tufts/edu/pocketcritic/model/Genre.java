@@ -9,20 +9,21 @@ import java.util.Map;
 
 public class Genre {
 
+    public String genreName;
     public int popularity;
-    public Map<String, Boolean> userRecord = new HashMap<>();
+    public Map<String, Integer> artists = new HashMap<>();
 
     public Genre() {}
 
-    public Genre(int popularity) {
+    public Genre(String genreName, int popularity) {
+        this.genreName = genreName;
         this.popularity = popularity;
     }
 
     public Map<String, Object> toMap() {
         HashMap<String, Object> result = new HashMap<>();
         result.put("popularity", popularity);
-        result.put("userRecrod", userRecord);
-
+        result.put("artists", artists);
         return result;
     }
 

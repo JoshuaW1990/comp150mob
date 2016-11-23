@@ -41,7 +41,6 @@ public class ArtistAlbumListFragment extends Fragment {
         spotifyAbumApi = SpotifyApiAlbum.getApi();
         spotifyAlbumInterface = spotifyAbumApi.getService();
 
-        System.out.println(artistName);
         queryByRxJava(artistName);
 
         return view;
@@ -53,7 +52,6 @@ public class ArtistAlbumListFragment extends Fragment {
 
     private void queryByRxJava(String searchInfo) {
         String queryString = generateQueryString(searchInfo);
-        System.out.println(queryString);
         spotifyAlbumInterface.getSpotifyResult(queryString, "album")
                 .subscribeOn(Schedulers.newThread())
                 .observeOn(AndroidSchedulers.mainThread())
@@ -72,9 +70,6 @@ public class ArtistAlbumListFragment extends Fragment {
                             List<Album.AlbumsBean.ItemsBean> albumList = result.getAlbums().getItems();
                             System.out.println("number of albums: ");
                             System.out.println(albumList.size());
-                            for (Album.AlbumsBean.ItemsBean album: albumList) {
-                                System.out.println(album.getName());
-                            }
                             displayListView(albumList);
 
                         }
