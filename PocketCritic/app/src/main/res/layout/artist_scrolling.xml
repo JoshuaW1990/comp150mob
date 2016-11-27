@@ -89,15 +89,40 @@
     </android.support.v4.view.ViewPager>
 
 
-
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/artist_upvote"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/fab_margin"
-        app:layout_anchor="@id/app_bar"
-        app:layout_anchorGravity="bottom|end"
-        app:srcCompat="@drawable/btn_rating_star_off_focused_holo_light" />
+        app:layout_anchor="@+id/artist_pager"
+        app:layout_anchorGravity="top|left"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:layout_gravity="top|right"
+        app:backgroundTint="@android:color/background_light" />
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/upvote"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="@dimen/fab_margin"-->
+        <!--app:layout_anchor="@+id/app_bar"-->
+        <!--app:srcCompat="@android:drawable/ic_input_add"-->
+        <!--app:backgroundTint="@android:color/white"-->
+        <!--app:rippleColor="@android:color/white"-->
+        <!--app:layout_anchorGravity="bottom|center_horizontal"-->
+        <!--android:layout_gravity="bottom|left" />-->
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/downvote"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:clickable="true"-->
+        <!--app:fabSize="mini"-->
+        <!--app:srcCompat="@android:drawable/ic_delete"-->
+        <!--app:layout_anchor="@+id/include"-->
+        <!--app:layout_anchorGravity="top|center_horizontal"-->
+        <!--android:layout_gravity="bottom|right"-->
+        <!--app:backgroundTint="@android:color/white" />-->
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/artist_fab_new_comment"
@@ -107,9 +132,9 @@
         android:layout_alignParentRight="true"
         android:layout_margin="16dp"
         app:srcCompat="@android:drawable/ic_menu_edit"
-        app:layout_anchor="@+id/artist_pager"
-        app:layout_anchorGravity="center_vertical|right"
-        android:layout_gravity="bottom|left" />
+        app:layout_anchor="@+id/app_bar"
+        app:layout_anchorGravity="bottom|right"
+        android:layout_gravity="top|left" />
 
 
 </android.support.design.widget.CoordinatorLayout>

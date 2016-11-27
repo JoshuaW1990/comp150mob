@@ -371,8 +371,8 @@ public final class R {
 		public static final int icon = 0x7f0c004c;
 		public static final int ifRoom = 0x7f0c003a;
 		public static final int image = 0x7f0c0049;
-		public static final int item_icon = 0x7f0c00ac;
-		public static final int item_name = 0x7f0c00ab;
+		public static final int item_icon = 0x7f0c00ad;
+		public static final int item_name = 0x7f0c00ac;
 		public static final int listMode = 0x7f0c000b;
 		public static final int list_item = 0x7f0c004b;
 		public static final int middle = 0x7f0c0035;

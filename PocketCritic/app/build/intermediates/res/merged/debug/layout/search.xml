@@ -27,22 +27,22 @@
         android:layout_gravity="center_horizontal"/>
 
     <Button
-        android:text="search album"
-        android:layout_width="wrap_content"
-        android:fontFamily="sans-serif"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:id="@+id/search_searchAlbum"
-        android:textSize="12sp"
-        android:layout_gravity="center_horizontal"/>
-
-    <Button
         android:text="search artist"
         android:layout_width="wrap_content"
         android:fontFamily="sans-serif"
+        android:layout_marginTop="12dp"
         android:layout_height="wrap_content"
         android:id="@+id/search_searchArtist"
         android:textSize="12sp"
         android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:text="search album"
+        android:layout_width="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_searchAlbum"
+        android:textSize="12sp"
+        android:layout_gravity="center_horizontal"/>
 
 </LinearLayout>

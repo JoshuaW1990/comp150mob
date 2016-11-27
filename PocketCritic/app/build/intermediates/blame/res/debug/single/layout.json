@@ -28,12 +28,12 @@
         "source": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/notification_template_media.xml"
     },
     {
-        "merged": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/layout/artist_tabalbumlist.xml",
-        "source": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/src/main/res/layout/artist_tabalbumlist.xml"
-    },
-    {
         "merged": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
         "source": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/layout/artist_tabalbumlist.xml",
+        "source": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/src/main/res/layout/artist_tabalbumlist.xml"
     },
     {
         "merged": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
@@ -184,12 +184,12 @@
         "source": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_navigation_item_header.xml"
     },
     {
-        "merged": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
-        "source": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_alert_dialog_button_bar_material.xml"
-    },
-    {
         "merged": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/layout/list_albums.xml",
         "source": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/src/main/res/layout/list_albums.xml"
+    },
+    {
+        "merged": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_alert_dialog_button_bar_material.xml"
     },
     {
         "merged": "/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
