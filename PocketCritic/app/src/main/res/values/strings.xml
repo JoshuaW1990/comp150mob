@@ -17,6 +17,8 @@
     <string name="title_activity_artist_scrolling">ArtistScrollingActivity</string>
 
     <string name="title_activity_list_albums">ListAlbumsActivity</string>
+    <string name="albums">Albums</string>
+    <string name="comments">Comments</string>
 
     <!-- Strings related to login -->
     <string name="loading">Loading…</string>

@@ -38,6 +38,8 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.MutableData;
+import com.google.firebase.database.Transaction;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
@@ -48,10 +50,8 @@ import java.util.Map;
 
 import cs.tufts.edu.pocketcritic.fragment.ArtistAlbumListFragment;
 import cs.tufts.edu.pocketcritic.fragment.ArtistCommentListFragment;
-import cs.tufts.edu.pocketcritic.fragment.ArtistGenreListFragment;
 import cs.tufts.edu.pocketcritic.model.Album;
 import cs.tufts.edu.pocketcritic.model.ArtistSimple;
-import cs.tufts.edu.pocketcritic.model.Genre;
 import cs.tufts.edu.pocketcritic.model.SingleArtist;
 import cs.tufts.edu.pocketcritic.support.CommonAdapter;
 import cs.tufts.edu.pocketcritic.support.PagerAdapter;
@@ -80,6 +80,14 @@ public class ArtistScrollingActivity extends AppCompatActivity {
     private static final String TAG = "ArtistInfo";
     private String userID;
 
+//    private TabLayout tabLayout;
+//    private ViewPager viewPager;
+//
+//
+//    private BaseFragmentPagerAdapter adapter;
+
+    private FloatingActionButton upvote;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -102,40 +110,49 @@ public class ArtistScrollingActivity extends AppCompatActivity {
         spotifyAlbumInterface = spotifyAbumApi.getService();
 
 
+//        tabLayout = (TabLayout) findViewById(R.id.artist_tablayout);
+//        viewPager = (ViewPager) findViewById(R.id.artist_pager);
+//
+//
+//
+//
+//        adapter = new BaseFragmentPagerAdapter(getSupportFragmentManager());
 
 
         searchDatabaseById();
 
-
-        FloatingActionButton upvote = (FloatingActionButton) findViewById(R.id.artist_upvote);
-        upvote.setOnClickListener(new View.OnClickListener() {
+        upvote = (FloatingActionButton) findViewById(R.id.artist_upvote);
+        userID = getUid();
+        final DatabaseReference myRef = database.getReference("artists").child(searchId);
+        myRef.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onClick(View view) {
-                FirebaseAuth mFirebaseAuth;
-                mFirebaseAuth = FirebaseAuth.getInstance();
-                FirebaseUser mFirebaseUser = mFirebaseAuth.getCurrentUser();
-                userID = mFirebaseUser.getUid();
-
-
-                DatabaseReference myRef = database.getReference("userLiked").child(userID).child(searchId);
-                ValueEventListener userRecordListener = new ValueEventListener() {
-                    @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
-                        if (!dataSnapshot.exists()) {
-                            writeUsersLike();
-                        }
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                if(!dataSnapshot.exists()) {
+                    upvote.setImageResource(R.drawable.ic_toggle_star_outline_24);
+                } else {
+                    ArtistSimple artistSimple = dataSnapshot.getValue(ArtistSimple.class);
+                    if (!artistSimple.stars.containsKey(getUid())) {
+                        upvote.setImageResource(R.drawable.ic_toggle_star_outline_24);
+                    } else {
+                        upvote.setImageResource(R.drawable.ic_toggle_star_24);
                     }
+                }
+            }
 
-                    @Override
-                    public void onCancelled(DatabaseError databaseError) {
-                        // Getting Post failed, log a message
-                        Log.w(TAG, "loadRecord:onCancelled", databaseError.toException());
-                        // ...
-                    }
-                };
-                myRef.addListenerForSingleValueEvent(userRecordListener);
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
             }
         });
+
+        upvote.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                DatabaseReference artRef = database.getReference("artists").child(searchId);
+                onStarClicked(artRef);
+            }
+        });
+
 
         FloatingActionButton postComment = (FloatingActionButton) findViewById(R.id.artist_fab_new_comment);
         postComment.setOnClickListener(new View.OnClickListener() {
@@ -149,36 +166,18 @@ public class ArtistScrollingActivity extends AppCompatActivity {
     }
 
 
-    private void writeUsersLike() {
-        // Add user like
-        DatabaseReference myRef = database.getReference("userLiked").child(userID).child(searchId);
-        myRef.setValue(0);
 
-        // Add popularity
-        myRef = database.getReference("artists").child(searchId).child("popularity");
-        myRef.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                Long popularity = (Long) dataSnapshot.getValue();
-                DatabaseReference tmpRef = database.getReference("artists").child(searchId).child("popularity");
-                tmpRef.setValue(popularity + 1);
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
-    }
 
     private void searchDatabaseById() {
         DatabaseReference myRef = database.getReference("artists").child(searchId);
         // Read from the database
-        myRef.addValueEventListener(new ValueEventListener() {
+        myRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if(dataSnapshot.exists()) {
                     ArtistSimple artist = dataSnapshot.getValue(ArtistSimple.class);
+                    System.out.println(artist.name);
+                    System.out.println(searchId);
                     initView(artist, searchId);
                 }
                 else {
@@ -219,45 +218,27 @@ public class ArtistScrollingActivity extends AppCompatActivity {
     private void writeDatatoDatabase(SingleArtist artist) {
         // Get the data to form the class of ArtistSimple
         String name = artist.getName();
-        int popularity = 0;
         String imageURL;
         if (artist.getImages().size() > 0) {
             imageURL = artist.getImages().get(0).getUrl();
         } else {
             imageURL = "None";
         }
-        ArtistSimple artistSimple = new ArtistSimple(name, imageURL, popularity);
-        // Get genre list of the artist
-        List<String> genres = artist.getGenres();
-        for (final String genreName : genres) {
-            artistSimple.genres.put(genreName,0);
-            final DatabaseReference myRef = database.getReference("artists").child(searchId).child("popularity");
-            myRef.addListenerForSingleValueEvent(new ValueEventListener() {
-                @Override
-                public void onDataChange(DataSnapshot dataSnapshot) {
-                    Long popularity = (Long) dataSnapshot.getValue();
-                    writePopularityToGenre(genreName, popularity);
-                }
+        ArtistSimple artistSimple = new ArtistSimple(name, imageURL);
 
-                @Override
-                public void onCancelled(DatabaseError databaseError) {
-
-                }
-            });
-        }
         // Write the data to the artists database
-        DatabaseReference myRef = database.getReference("artists").child(searchId);
-        myRef.setValue(artistSimple);
+        Map<String, Object> artistValue = artistSimple.toMap();
+
+        Map<String, Object> childUpdates = new HashMap<>();
+
+        childUpdates.put("/artists/" + searchId, artistValue);
+
+        DatabaseReference myRef = database.getReference();
+        myRef.updateChildren(childUpdates);
         initView(artistSimple, searchId);
     }
 
-    private void writePopularityToGenre(String genreName, Long popularity) {
-        // Use the listener to get the popularity
-        System.out.println("writePopularityToGenre");
-        DatabaseReference myRef = database.getReference().child("genre-artist").child(genreName).child(searchId);
-        System.out.println(genreName);
-        myRef.setValue(popularity);
-    }
+
 
 
     private void initView(ArtistSimple artist, String artistId) {
@@ -268,27 +249,73 @@ public class ArtistScrollingActivity extends AppCompatActivity {
         Picasso.with(this).load(artist.imageURL).into(imgView);
 
 
+
+
+
+
         TabLayout tabLayout = (TabLayout) findViewById(R.id.artist_tablayout);
         ViewPager viewPager = (ViewPager) findViewById(R.id.artist_pager);
 
+
         BaseFragmentPagerAdapter adapter = new BaseFragmentPagerAdapter(getSupportFragmentManager());
+
+
         adapter.addFragment(new ArtistAlbumListFragment(), "Albums", artist.name, false);  // may have bugs
         adapter.addFragment(new ArtistCommentListFragment(), "Comments", artistId, false);
-        //adapter.addFragment(new ArtistGenreListFragment(), "Genres", artistId, false);
+        System.out.println(viewPager);
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
+
+
 
 
     }
 
 
 
+    private void onStarClicked(DatabaseReference postRef) {
+        postRef.runTransaction(new Transaction.Handler() {
+            @Override
+            public Transaction.Result doTransaction(MutableData mutableData) {
+                ArtistSimple artistSimple = mutableData.getValue(ArtistSimple.class);
+                System.out.println("on Star click");
+                if (artistSimple == null) {
+                    return Transaction.success(mutableData);
+                }
+
+                if (artistSimple.stars.containsKey(getUid())) {
+                    // Unstar the post and remove self from stars
+                    artistSimple.popularity = artistSimple.popularity - 1;
+                    artistSimple.stars.remove(getUid());
+                } else {
+                    // Star the post and add self to stars
+                    artistSimple.popularity = artistSimple.popularity + 1;
+                    artistSimple.stars.put(getUid(), true);
+                }
+
+                // Set value and report transaction success
+                mutableData.setValue(artistSimple);
+                return Transaction.success(mutableData);
+            }
+
+            @Override
+            public void onComplete(DatabaseError databaseError, boolean b,
+                                   DataSnapshot dataSnapshot) {
+                // Transaction completed
+                Log.d(TAG, "postTransaction:onComplete:" + databaseError);
+            }
+        });
+    }
+
+    public String getUid() {
+        return FirebaseAuth.getInstance().getCurrentUser().getUid();
+    }
+
 
 
     public  class BaseFragmentPagerAdapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragments = new ArrayList<>();
         private final List<String> mFragmentTitles = new ArrayList<>();
-        private String databaseInfo;
 
         public BaseFragmentPagerAdapter(FragmentManager fm) {
             super(fm);
@@ -305,7 +332,6 @@ public class ArtistScrollingActivity extends AppCompatActivity {
             fragment.setArguments(bundle);
             mFragments.add(fragment);
             mFragmentTitles.add(title);
-            databaseInfo = data;
         }
 
         @Override

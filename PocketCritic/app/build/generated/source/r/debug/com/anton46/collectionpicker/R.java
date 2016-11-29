@@ -371,8 +371,8 @@ public final class R {
 		public static final int icon = 0x7f0c004c;
 		public static final int ifRoom = 0x7f0c003a;
 		public static final int image = 0x7f0c0049;
-		public static final int item_icon = 0x7f0c00ad;
-		public static final int item_name = 0x7f0c00ac;
+		public static final int item_icon = 0x7f0c00aa;
+		public static final int item_name = 0x7f0c00a9;
 		public static final int listMode = 0x7f0c000b;
 		public static final int list_item = 0x7f0c004b;
 		public static final int middle = 0x7f0c0035;
@@ -449,7 +449,7 @@ public final class R {
 		public static final int abc_shareactionprovider_share_with = 0x7f060010;
 		public static final int abc_shareactionprovider_share_with_application = 0x7f060011;
 		public static final int abc_toolbar_collapse_description = 0x7f060012;
-		public static final int app_name = 0x7f060037;
+		public static final int app_name = 0x7f060038;
 	}
 	public static final class style {
 		public static final int Base_TextAppearance_AppCompat = 0x7f08003a;

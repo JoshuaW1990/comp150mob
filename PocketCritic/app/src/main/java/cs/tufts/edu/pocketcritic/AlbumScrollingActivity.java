@@ -61,37 +61,37 @@ public class AlbumScrollingActivity extends AppCompatActivity {
 
         searchDatabaseById();
 
-        FloatingActionButton upvote = (FloatingActionButton) findViewById(R.id.upvote);
-        upvote.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FirebaseAuth mFirebaseAuth;
-                mFirebaseAuth = FirebaseAuth.getInstance();
-                FirebaseUser mFirebaseUser = mFirebaseAuth.getCurrentUser();
-                String userID = mFirebaseUser.getUid();
-
-                database = FirebaseDatabase.getInstance();
-                DatabaseReference myRef = database.getReference("users").child(userID).child("LikedArtists");
-                myRef.setValue(searchId);
-
-            }
-        });
-
-        FloatingActionButton downvote = (FloatingActionButton) findViewById(R.id.downvote);
-        downvote.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FirebaseAuth mFirebaseAuth;
-                mFirebaseAuth = FirebaseAuth.getInstance();
-                FirebaseUser mFirebaseUser = mFirebaseAuth.getCurrentUser();
-                String userID = mFirebaseUser.getUid();
-
-                database = FirebaseDatabase.getInstance();
-                DatabaseReference myRef = database.getReference("users").child(userID).child("DisLikedArtists");
-                myRef.setValue(searchId);
-
-            }
-        });
+//        FloatingActionButton upvote = (FloatingActionButton) findViewById(R.id.upvote);
+//        upvote.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                FirebaseAuth mFirebaseAuth;
+//                mFirebaseAuth = FirebaseAuth.getInstance();
+//                FirebaseUser mFirebaseUser = mFirebaseAuth.getCurrentUser();
+//                String userID = mFirebaseUser.getUid();
+//
+//                database = FirebaseDatabase.getInstance();
+//                DatabaseReference myRef = database.getReference("users").child(userID).child("LikedArtists");
+//                myRef.setValue(searchId);
+//
+//            }
+//        });
+//
+//        FloatingActionButton downvote = (FloatingActionButton) findViewById(R.id.downvote);
+//        downvote.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                FirebaseAuth mFirebaseAuth;
+//                mFirebaseAuth = FirebaseAuth.getInstance();
+//                FirebaseUser mFirebaseUser = mFirebaseAuth.getCurrentUser();
+//                String userID = mFirebaseUser.getUid();
+//
+//                database = FirebaseDatabase.getInstance();
+//                DatabaseReference myRef = database.getReference("users").child(userID).child("DisLikedArtists");
+//                myRef.setValue(searchId);
+//
+//            }
+//        });
 
     }
 

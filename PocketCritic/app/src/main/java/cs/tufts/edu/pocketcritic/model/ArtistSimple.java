@@ -11,18 +11,18 @@ import java.util.Map;
 public class ArtistSimple {
     public String imageURL;
     public String name;
-    public int popularity;
+    public int popularity = 0;
     public Map<String, Integer> genres = new HashMap<>();
+    public Map<String, Boolean> stars = new HashMap<>();
 
 
     public ArtistSimple() {
         // Default constructor
     }
 
-    public ArtistSimple(String name, String imageURL, int popularity) {
+    public ArtistSimple(String name, String imageURL) {
         this.imageURL = imageURL;
         this.name = name;
-        this.popularity = popularity;
     }
 
     public Map<String, Object> toMap() {
@@ -31,6 +31,7 @@ public class ArtistSimple {
         result.put("name", name);
         result.put("popularity", popularity);
         result.put("genres", genres);
+        result.put("stars", stars);
 
         return result;
     }
