@@ -1,23 +1,16 @@
 package cs.tufts.edu.pocketcritic;
 
-import android.os.Bundle;
-
 import android.content.Intent;
-
-import android.support.design.widget.FloatingActionButton;
+import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-
-import android.view.Window;
-import android.widget.ListView;
-
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
-
 import android.widget.ImageView;
+<<<<<<< HEAD
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
@@ -30,22 +23,25 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+=======
+import android.widget.ListView;
+import android.widget.Toast;
+
+>>>>>>> origin/newSpotify
 import com.squareup.picasso.Picasso;
 
+import java.util.List;
+
+import cs.tufts.edu.pocketcritic.model.Artist;
+import cs.tufts.edu.pocketcritic.support.CommonAdapter;
+import cs.tufts.edu.pocketcritic.support.SpotifyApi;
+import cs.tufts.edu.pocketcritic.support.SpotifyInterface;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-
 import rx.Observer;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
-
-
-import cs.tufts.edu.pocketcritic.support.SpotifyInterface;
-import cs.tufts.edu.pocketcritic.support.SpotifyApi;
-import cs.tufts.edu.pocketcritic.model.Artist;
-import cs.tufts.edu.pocketcritic.support.CommonAdapter;
-import cs.tufts.edu.pocketcritic.model.ArtistSimple;
 
 public class ListArtistsActivity extends AppCompatActivity {
 
@@ -76,6 +72,19 @@ public class ListArtistsActivity extends AppCompatActivity {
         userID = getUid();
 
         queryByRxJava();
+<<<<<<< HEAD
+=======
+        //query();
+
+//        query();
+//        System.out.println("print the artist list");
+//        for (ArtistSimple artist: artists) {
+//            System.out.println(artist.bandName);
+//        }
+
+        //displayListView();
+
+>>>>>>> origin/newSpotify
     }
 
     @Override
@@ -193,6 +202,7 @@ public class ListArtistsActivity extends AppCompatActivity {
                 holder.setText(R.id.artist_name, artist.name);
                 holder.setText(R.id.item_num_stars, Integer.toString(artist.popularity));
 
+<<<<<<< HEAD
                 if (artist.stars.containsKey(userID)) {
                     holder.setImage(R.id.item_star, R.drawable.ic_toggle_star_24, null);
                 } else {
@@ -203,6 +213,9 @@ public class ListArtistsActivity extends AppCompatActivity {
                 RelativeLayout relativeLayout = holder.getView(R.id.artist_relativeLayout);
                 relativeLayout.setClickable(true);
                 relativeLayout.setOnClickListener(new ListButtonOnClickListener(artist.id) {
+=======
+                imgView.setOnClickListener(new ListButtonOnClickListener(artist.getId()) {
+>>>>>>> origin/newSpotify
                     @Override
                     public void onClick(View view) {
                         Snackbar.make(view, this.idnumber, Snackbar.LENGTH_LONG)

@@ -133,8 +133,13 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
+<<<<<<< Updated upstream
         sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
         <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_03ef87a356b99aeb44cf3844f4fd3fbe5da9a4ec/classes.dex" />
+=======
+        sha1="4ee712bbcbd8633bb9a9c02de4a7c3b45c4c8b51">
+        <dex dex="/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_68c5713eb33382dda9ce0dcd662dfaf9fc6ba413/classes.dex" />
+>>>>>>> Stashed changes
     </item>
     <item
         is-multidex="true"
@@ -430,8 +435,13 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
+<<<<<<< Updated upstream
         sha1="d4c4b83de2f6412072d2a29b1b7a5b03edaad5ff">
         <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/io.reactivex-rxandroid-1.1.0_7505b9325f95d695890109e3f5c3b50adbb4ed83/classes.dex" />
+=======
+        sha1="b8b853902f8f8b127220617ece041038225de71b">
+        <dex dex="/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_31e8f04ab375c02b755521abf172d742931adb62/classes.dex" />
+>>>>>>> Stashed changes
     </item>
     <item
         is-multidex="true"
