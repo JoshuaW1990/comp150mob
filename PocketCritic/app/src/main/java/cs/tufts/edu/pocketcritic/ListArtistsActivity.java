@@ -18,11 +18,18 @@ import android.view.View;
 import android.view.View.OnClickListener;
 
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
 import retrofit2.Call;
@@ -45,9 +52,8 @@ public class ListArtistsActivity extends AppCompatActivity {
     private String queryString;
     private SpotifyApi spotifyApi;
     private SpotifyInterface spotifyInterface;
-
-
-//    public List< ArtistSimple > artists;
+    private FirebaseDatabase mDatabase;
+    private String userID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,8 +63,9 @@ public class ListArtistsActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         Intent intent = getIntent();
-        //artists = (List<Artist.ArtistsBean.ItemsBean>) intent.getSerializableExtra("artists");
-        queryString = (String) intent.getStringExtra("queryString");
+        queryString = intent.getStringExtra("queryString");
+
+        mDatabase = FirebaseDatabase.getInstance();
 
         System.out.println("come to artist list");
         System.out.println(queryString);
@@ -66,26 +73,9 @@ public class ListArtistsActivity extends AppCompatActivity {
         spotifyApi = SpotifyApi.getApi();
         spotifyInterface = spotifyApi.getService();
 
-        //artists = new ArrayList<ArtistSimple>();
+        userID = getUid();
+
         queryByRxJava();
-        //query();
-
-//        query();
-//        System.out.println("print the artist list");
-//        for (ArtistSimple artist: artists) {
-//            System.out.println(artist.bandName);
-//        }
-
-        //displayListView();
-
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
     }
 
     @Override
@@ -110,6 +100,8 @@ public class ListArtistsActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+
+
     private void queryByRxJava() {
         if (queryString.isEmpty()) {
             Toast.makeText(this, "Please input artist name", Toast.LENGTH_SHORT).show();
@@ -131,89 +123,97 @@ public class ListArtistsActivity extends AppCompatActivity {
                     public void onNext(Artist result) {
                         if (result != null) {
                             List<Artist.ArtistsBean.ItemsBean> artistList = result.getArtists().getItems();
-                            displayListView(artistList);
-
+                            queryDatabase(artistList);
                         }
                     }
                 });
     }
 
-    private void query() {
-        if (queryString.isEmpty()) {
-            Toast.makeText(this, "Please input artist name", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        Call<Artist> call = spotifyInterface.getResult(queryString, "artist");
-        call.enqueue(new Callback<Artist>() {
+    private void queryDatabase(final List<Artist.ArtistsBean.ItemsBean> artistList) {
+        final DatabaseReference myRef = mDatabase.getReference("artists");
+        myRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public void onResponse(Call<Artist> call, Response<Artist> response) {
-                if (response.isSuccessful()) {
-                    Artist result = response.body();
-                    if (result != null) {
-                        List< Artist.ArtistsBean.ItemsBean > artistList = result.getArtists().getItems();
-                        displayListView(artistList);
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                List<ArtistSimple> artistSimpleList = new ArrayList<ArtistSimple>();
+                for (final Artist.ArtistsBean.ItemsBean artist: artistList) {
+                    if (!dataSnapshot.child(artist.getId()).exists()) {
+                        String id = artist.getId();
+                        String name = artist.getName();
+                        String imageURL;
+                        if (artist.getImages().size() > 0) {
+                            imageURL = artist.getImages().get(0).getUrl();
+                        } else {
+                            imageURL = "None";
+                        }
+                        ArtistSimple artistSimple = new ArtistSimple(id, name, imageURL);
+                        myRef.child(artist.getId()).setValue(artistSimple);
+                        System.out.println("artist imageURL");
+                        System.out.println(imageURL);
+                        artistSimpleList.add(artistSimple);
+                    } else {
+                        if (!dataSnapshot.child(artist.getId()).child("id").exists()) {
+                            myRef.child(artist.getId()).child("id").setValue(artist.getId());
+                        }
+                        ArtistSimple artistSimple = dataSnapshot.child(artist.getId()).getValue(ArtistSimple.class);
+                        artistSimpleList.add(artistSimple);
                     }
                 }
+                System.out.println(artistSimpleList.size());
+                displayListView(artistSimpleList);
             }
 
             @Override
-            public void onFailure(Call<Artist> call, Throwable t) {
+            public void onCancelled(DatabaseError databaseError) {
 
             }
         });
     }
 
-//    private void setArtists(List<Artist.ArtistsBean.ItemsBean> artistList) {
-//        for (Artist.ArtistsBean.ItemsBean artist: artistList) {
-//            ArtistSimple tmpArtist = new ArtistSimple(artist.getName(),
-//                    artist.getImages().get(0).getUrl(), artist.getGenres(), artist.getId(), artist.getPopularity());
-//            //System.out.println(tmpArtist.bandName);
-//            this.artists.add(tmpArtist);
-//            System.out.println(tmpArtist.bandName);
-//            System.out.println(artists.size());
-//        }
-//    }
 
-    private void displayListView(List<Artist.ArtistsBean.ItemsBean> artistList) {
+
+
+
+
+    private void displayListView(List<ArtistSimple> artistList) {
+        if (artistList.size() > 0) {
+            System.out.println("Start to display the list view");
+        }
 
         ListView listView = (ListView) findViewById(R.id.artistList_listview);
         Picasso.with(this).setIndicatorsEnabled(false);
 
-        listView.setAdapter(new CommonAdapter< Artist.ArtistsBean.ItemsBean >(this, artistList, R.layout.artist_listview) {
+        listView.setAdapter(new CommonAdapter< ArtistSimple >(this, artistList, R.layout.item_artist_listview) {
             @Override
-            public void convert(ViewHolder holder, Artist.ArtistsBean.ItemsBean artist, int position) {
-                int size = artist.getImages().size();
-                if (size == 0) {
-                    holder.setImage(R.id.artist_img, R.drawable.androidicon, null);
+            public void convert(ViewHolder holder, ArtistSimple artist, int position) {
+                if (artist.imageURL == "None") {
+                    holder.setImage(R.id.artist_img, R.drawable.placeholder_image, null);
                 } else {
-                    holder.setImage(R.id.artist_img, artist.getImages().get(size - 1).getUrl(), null);
+                    holder.setImage(R.id.artist_img, artist.imageURL, null);
                 }
-                holder.setText(R.id.artist_name, artist.getName());
-                holder.setText(R.id.artist_rating, Integer.toString(artist.getPopularity()));
-                ImageView imgView = holder.getView(R.id.artist_img);
-                imgView.setClickable(true);
+                holder.setText(R.id.artist_name, artist.name);
+                holder.setText(R.id.item_num_stars, Integer.toString(artist.popularity));
+
+                if (artist.stars.containsKey(userID)) {
+                    holder.setImage(R.id.item_star, R.drawable.ic_toggle_star_24, null);
+                } else {
+                    holder.setImage(R.id.item_star, R.drawable.ic_toggle_star_outline_24, null);
+                }
 
 
-//                imgView.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View view) {
-//                        Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                                .setAction("Action", null).show();
-//                    }
-//                });
-
-                imgView.setOnClickListener(new ListButtonOnClickListener(artist.getId()) {
+                RelativeLayout relativeLayout = holder.getView(R.id.artist_relativeLayout);
+                relativeLayout.setClickable(true);
+                relativeLayout.setOnClickListener(new ListButtonOnClickListener(artist.id) {
                     @Override
                     public void onClick(View view) {
                         Snackbar.make(view, this.idnumber, Snackbar.LENGTH_LONG)
                                 .setAction("Action", null).show();
+
                         Intent intent = new Intent(ListArtistsActivity.this, ArtistScrollingActivity.class);
                         intent.putExtra("searchId", this.idnumber);
-
-
-                        //intent.putExtra("artists", "test");
+                        System.out.println("go to the scrolling view");
+                        System.out.println(this.idnumber);
                         startActivity(intent);
-                        System.out.println("On search success!");
+
                     }
                 });
 
@@ -221,6 +221,10 @@ public class ListArtistsActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private String getUid() {
+        return FirebaseAuth.getInstance().getCurrentUser().getUid();
     }
 
     public class ListButtonOnClickListener implements OnClickListener

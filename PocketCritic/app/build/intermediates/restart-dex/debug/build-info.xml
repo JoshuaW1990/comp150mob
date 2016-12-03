@@ -5,37 +5,56 @@
     density="hdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="32871689122596"
+    timestamp="229697539878124"
     token="-5786597304403162123"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="METHOD_ADDED" >
 
     <task
         name="javac"
-        duration="1088" />
+        duration="2249" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="95" />
+        duration="132" />
     <task
         name="verifier"
-        duration="3" />
+        duration="18" />
 
     <artifact
         location="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
         type="DEX" />
 
     <build
-        timestamp="32563793054969"
-        verifier="BINARY_MANIFEST_FILE_CHANGE" >
+        timestamp="228533238569088"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="32871689122596"
-        verifier="COLD_SWAP_REQUESTED" >
+        timestamp="229192704924219"
+        verifier="R_CLASS_CHANGE" >
+        <artifact
+            location="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="229697539878124"
+        verifier="METHOD_ADDED" >
         <artifact
             location="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
             type="DEX" />

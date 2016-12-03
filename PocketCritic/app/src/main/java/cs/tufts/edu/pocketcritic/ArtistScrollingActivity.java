@@ -80,11 +80,7 @@ public class ArtistScrollingActivity extends AppCompatActivity {
     private static final String TAG = "ArtistInfo";
     private String userID;
 
-//    private TabLayout tabLayout;
-//    private ViewPager viewPager;
-//
-//
-//    private BaseFragmentPagerAdapter adapter;
+
 
     private FloatingActionButton upvote;
 
@@ -109,14 +105,6 @@ public class ArtistScrollingActivity extends AppCompatActivity {
         spotifyAbumApi = SpotifyApiAlbum.getApi();
         spotifyAlbumInterface = spotifyAbumApi.getService();
 
-
-//        tabLayout = (TabLayout) findViewById(R.id.artist_tablayout);
-//        viewPager = (ViewPager) findViewById(R.id.artist_pager);
-//
-//
-//
-//
-//        adapter = new BaseFragmentPagerAdapter(getSupportFragmentManager());
 
 
         searchDatabaseById();
@@ -217,6 +205,7 @@ public class ArtistScrollingActivity extends AppCompatActivity {
 
     private void writeDatatoDatabase(SingleArtist artist) {
         // Get the data to form the class of ArtistSimple
+        String id = artist.getId();
         String name = artist.getName();
         String imageURL;
         if (artist.getImages().size() > 0) {
@@ -224,7 +213,7 @@ public class ArtistScrollingActivity extends AppCompatActivity {
         } else {
             imageURL = "None";
         }
-        ArtistSimple artistSimple = new ArtistSimple(name, imageURL);
+        ArtistSimple artistSimple = new ArtistSimple(id, name, imageURL);
 
         // Write the data to the artists database
         Map<String, Object> artistValue = artistSimple.toMap();

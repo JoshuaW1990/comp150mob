@@ -371,8 +371,8 @@ public final class R {
 		public static final int icon = 0x7f0c004c;
 		public static final int ifRoom = 0x7f0c003a;
 		public static final int image = 0x7f0c0049;
-		public static final int item_icon = 0x7f0c00aa;
-		public static final int item_name = 0x7f0c00a9;
+		public static final int item_icon = 0x7f0c00b2;
+		public static final int item_name = 0x7f0c00aa;
 		public static final int listMode = 0x7f0c000b;
 		public static final int list_item = 0x7f0c004b;
 		public static final int middle = 0x7f0c0035;
@@ -429,8 +429,8 @@ public final class R {
 		public static final int abc_screen_toolbar = 0x7f040016;
 		public static final int abc_search_dropdown_item_icons_2line = 0x7f040017;
 		public static final int abc_search_view = 0x7f040018;
-		public static final int item_layout = 0x7f04003a;
-		public static final int support_simple_spinner_dropdown_item = 0x7f04004d;
+		public static final int item_layout = 0x7f04003e;
+		public static final int support_simple_spinner_dropdown_item = 0x7f040051;
 	}
 	public static final class string {
 		public static final int abc_action_bar_home_description = 0x7f060000;

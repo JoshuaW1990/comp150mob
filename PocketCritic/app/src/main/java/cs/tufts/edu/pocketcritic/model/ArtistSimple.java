@@ -9,6 +9,7 @@ import java.util.Map;
  */
 
 public class ArtistSimple {
+    public String id;
     public String imageURL;
     public String name;
     public int popularity = 0;
@@ -20,13 +21,15 @@ public class ArtistSimple {
         // Default constructor
     }
 
-    public ArtistSimple(String name, String imageURL) {
+    public ArtistSimple(String id, String name, String imageURL) {
+        this.id = id;
         this.imageURL = imageURL;
         this.name = name;
     }
 
     public Map<String, Object> toMap() {
         HashMap<String, Object> result = new HashMap<>();
+        result.put("id", id);
         result.put("imageURL", imageURL);
         result.put("name", name);
         result.put("popularity", popularity);

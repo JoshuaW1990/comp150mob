@@ -1,4 +1,4 @@
-#Mon Nov 28 20:07:16 EST 2016
+#Sat Dec 03 00:54:00 EST 2016
 base.0=/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6809d9c4136058c2fafc3b5a224ab45d2ea220a6
 renamed.1=classes2.dex
 renamed.0=classes.dex
