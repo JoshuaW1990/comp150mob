@@ -773,11 +773,7 @@ int id artist_albumList 0x7f0c008f
 int id artist_album_img 0x7f0c0083
 int id artist_album_name 0x7f0c0084
 int id artist_collapsing_toolbar_layout 0x7f0c0088
-<<<<<<< Updated upstream
 int id artist_fab_new_comment 0x7f0c008d
-=======
-int id artist_fab_new_comment 0x7f0c008e
->>>>>>> Stashed changes
 int id artist_img 0x7f0c0085
 int id artist_name 0x7f0c0086
 int id artist_page_img 0x7f0c0089
@@ -789,11 +785,7 @@ int id artist_relativeLayout 0x7f0c00b0
 int id artist_star_layout 0x7f0c00b1
 int id artist_tablayout 0x7f0c008c
 int id artist_tag_layout 0x7f0c0091
-<<<<<<< Updated upstream
 int id artist_upvote 0x7f0c008e
-=======
-int id artist_upvote 0x7f0c008d
->>>>>>> Stashed changes
 int id auto 0x7f0c0021
 int id beginning 0x7f0c0034
 int id bottom 0x7f0c0022

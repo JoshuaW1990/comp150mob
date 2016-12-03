@@ -86,11 +86,7 @@ public class AlbumScrollingActivity extends AppCompatActivity {
 //
 //            }
 //        });
-<<<<<<< Updated upstream
 
-=======
-//
->>>>>>> Stashed changes
     }
 
     @Override

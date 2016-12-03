@@ -1,109 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-<<<<<<< Updated upstream
     abi="x86"
     api-level="24"
     density="hdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="229697539878124"
+    timestamp="247222201258518"
     token="-5786597304403162123"
-    verifier="METHOD_ADDED" >
-
-    <task
-        name="javac"
-<<<<<<< HEAD
-        duration="2249" />
-=======
-        duration="1088" />
-=======
-    abi="arm64-v8a,armeabi-v7a,armeabi"
-    api-level="23"
-    density="xxxhdpi"
-    format="8"
-    plugin-version="2.2.2"
-    timestamp="15212665770835"
-    token="-6413240218718524528"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="2169" />
->>>>>>> Stashed changes
->>>>>>> origin/newSpotify
+        duration="5217" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-<<<<<<< HEAD
-        duration="132" />
-=======
-<<<<<<< Updated upstream
-        duration="95" />
->>>>>>> origin/newSpotify
+        duration="2380" />
     <task
         name="verifier"
-        duration="18" />
+        duration="229" />
 
     <artifact
-        location="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
-        type="DEX" />
-
-    <build
-<<<<<<< HEAD
-        timestamp="228533238569088"
-        verifier="FULL_BUILD_REQUESTED" >
-=======
-        timestamp="32563793054969"
-        verifier="BINARY_MANIFEST_FILE_CHANGE" >
-=======
-        duration="126" />
-    <task
-        name="verifier"
-        duration="0" />
-
-    <artifact
-        location="/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/outputs/apk/app-debug.apk"
+        location="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="15212665770835"
+        timestamp="247222201258518"
         verifier="FULL_BUILD_REQUESTED" >
->>>>>>> Stashed changes
->>>>>>> origin/newSpotify
         <artifact
             location="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
-<<<<<<< Updated upstream
-    <build
-        timestamp="229192704924219"
-        verifier="R_CLASS_CHANGE" >
-        <artifact
-            location="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-            type="RESOURCES" />
-        <artifact
-            location="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="229697539878124"
-        verifier="METHOD_ADDED" >
-        <artifact
-            location="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
-            type="DEX" />
-    </build>
-=======
->>>>>>> Stashed changes
 
 </instant-run>

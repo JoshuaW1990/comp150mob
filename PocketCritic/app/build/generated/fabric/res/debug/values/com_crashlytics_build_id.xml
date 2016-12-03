@@ -6,13 +6,5 @@
 
   Do NOT modify, delete, or commit to source control!
 -->
-<<<<<<< HEAD
-<string tools:ignore="UnusedResources,TypographyDashes" name="com.crashlytics.android.build_id" translatable="false">ca82b2a6-5197-42b4-b6e1-7967071c9afe</string>
-=======
-<<<<<<< Updated upstream
-<string tools:ignore="UnusedResources,TypographyDashes" name="com.crashlytics.android.build_id" translatable="false">fdf2f7ab-d6bf-4485-8908-9ed366b0c550</string>
-=======
-<string tools:ignore="UnusedResources,TypographyDashes" name="com.crashlytics.android.build_id" translatable="false">ade5d899-e81a-41e8-8983-38982be1a266</string>
->>>>>>> Stashed changes
->>>>>>> origin/newSpotify
+<string tools:ignore="UnusedResources,TypographyDashes" name="com.crashlytics.android.build_id" translatable="false">3b96c80a-6e52-4d9e-b5b4-739b0a83ef56</string>
 </resources>

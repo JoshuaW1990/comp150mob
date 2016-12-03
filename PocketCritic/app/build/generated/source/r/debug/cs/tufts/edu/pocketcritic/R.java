@@ -2989,11 +2989,7 @@ containing a value of this type.
         public static final int artist_album_img=0x7f0c0083;
         public static final int artist_album_name=0x7f0c0084;
         public static final int artist_collapsing_toolbar_layout=0x7f0c0088;
-<<<<<<< Updated upstream
         public static final int artist_fab_new_comment=0x7f0c008d;
-=======
-        public static final int artist_fab_new_comment=0x7f0c008e;
->>>>>>> Stashed changes
         public static final int artist_img=0x7f0c0085;
         public static final int artist_name=0x7f0c0086;
         public static final int artist_page_img=0x7f0c0089;
@@ -3005,11 +3001,7 @@ containing a value of this type.
         public static final int artist_star_layout=0x7f0c00b1;
         public static final int artist_tablayout=0x7f0c008c;
         public static final int artist_tag_layout=0x7f0c0091;
-<<<<<<< Updated upstream
         public static final int artist_upvote=0x7f0c008e;
-=======
-        public static final int artist_upvote=0x7f0c008d;
->>>>>>> Stashed changes
         public static final int auto=0x7f0c0021;
         public static final int beginning=0x7f0c0034;
         public static final int bottom=0x7f0c0022;
