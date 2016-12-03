@@ -25,6 +25,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:alpha="0.85"
             android:id="@+id/account_email"
             android:alpha="0.85"
             android:layout_gravity="center_horizontal"
@@ -43,6 +44,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:alpha="0.85"
             android:id="@+id/account_password"
             android:alpha="0.85"
             android:background="#ffdddddd"

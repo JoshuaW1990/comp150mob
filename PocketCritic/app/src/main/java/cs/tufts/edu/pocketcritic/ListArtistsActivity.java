@@ -1,44 +1,32 @@
 package cs.tufts.edu.pocketcritic;
 
-import android.os.Bundle;
-
 import android.content.Intent;
-
-import android.support.design.widget.FloatingActionButton;
+import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-
-import android.view.Window;
-import android.widget.ListView;
-
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
-
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.Toast;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import com.squareup.picasso.Picasso;
 
+import java.util.List;
+
+import cs.tufts.edu.pocketcritic.model.Artist;
+import cs.tufts.edu.pocketcritic.support.CommonAdapter;
+import cs.tufts.edu.pocketcritic.support.SpotifyApi;
+import cs.tufts.edu.pocketcritic.support.SpotifyInterface;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-
 import rx.Observer;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
-
-
-import cs.tufts.edu.pocketcritic.support.SpotifyInterface;
-import cs.tufts.edu.pocketcritic.support.SpotifyApi;
-import cs.tufts.edu.pocketcritic.model.Artist;
-import cs.tufts.edu.pocketcritic.support.CommonAdapter;
-import cs.tufts.edu.pocketcritic.model.ArtistSimple;
 
 public class ListArtistsActivity extends AppCompatActivity {
 
@@ -78,14 +66,6 @@ public class ListArtistsActivity extends AppCompatActivity {
 
         //displayListView();
 
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
     }
 
     @Override
@@ -192,15 +172,6 @@ public class ListArtistsActivity extends AppCompatActivity {
                 holder.setText(R.id.artist_rating, Integer.toString(artist.getPopularity()));
                 ImageView imgView = holder.getView(R.id.artist_img);
                 imgView.setClickable(true);
-
-
-//                imgView.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View view) {
-//                        Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                                .setAction("Action", null).show();
-//                    }
-//                });
 
                 imgView.setOnClickListener(new ListButtonOnClickListener(artist.getId()) {
                     @Override

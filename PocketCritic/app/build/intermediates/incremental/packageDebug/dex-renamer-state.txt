@@ -1,5 +1,10 @@
+<<<<<<< Updated upstream
 #Mon Nov 28 20:07:16 EST 2016
 base.0=/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6809d9c4136058c2fafc3b5a224ab45d2ea220a6
+=======
+#Mon Nov 28 19:46:29 EST 2016
+base.0=/Users/Eric/comp150MOB_PocketCritic/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_68c5713eb33382dda9ce0dcd662dfaf9fc6ba413
+>>>>>>> Stashed changes
 renamed.1=classes2.dex
 renamed.0=classes.dex
 file.1=/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_df2c1186948d8ede4744e84e71a4922831575441/classes.dex

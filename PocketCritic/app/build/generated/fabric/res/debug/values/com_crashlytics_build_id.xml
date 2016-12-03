@@ -6,5 +6,9 @@
 
   Do NOT modify, delete, or commit to source control!
 -->
+<<<<<<< Updated upstream
 <string tools:ignore="UnusedResources,TypographyDashes" name="com.crashlytics.android.build_id" translatable="false">fdf2f7ab-d6bf-4485-8908-9ed366b0c550</string>
+=======
+<string tools:ignore="UnusedResources,TypographyDashes" name="com.crashlytics.android.build_id" translatable="false">ade5d899-e81a-41e8-8983-38982be1a266</string>
+>>>>>>> Stashed changes
 </resources>
