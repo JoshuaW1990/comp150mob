@@ -3059,7 +3059,6 @@ containing a value of this type.
         public static final int icon_only=0x7f0c003d;
         public static final int ifRoom=0x7f0c003a;
         public static final int image=0x7f0c0049;
-        public static final int include=0x7f0c0082;
         public static final int info=0x7f0c00c6;
         public static final int item_donwvote=0x7f0c00af;
         public static final int item_icon=0x7f0c00b2;
@@ -3100,6 +3099,7 @@ containing a value of this type.
         public static final int progress_circular=0x7f0c0006;
         public static final int progress_horizontal=0x7f0c0007;
         public static final int radio=0x7f0c005e;
+        public static final int ratingspinner=0x7f0c0082;
         public static final int right=0x7f0c0029;
         public static final int screen=0x7f0c001c;
         public static final int scroll=0x7f0c0018;
