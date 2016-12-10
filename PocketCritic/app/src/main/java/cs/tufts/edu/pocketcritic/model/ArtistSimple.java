@@ -2,6 +2,7 @@ package cs.tufts.edu.pocketcritic.model;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -13,7 +14,7 @@ public class ArtistSimple {
     public String imageURL;
     public String name;
     public int popularity = 0;
-    public Map<String, Integer> genres = new HashMap<>();
+    public List<String> genres = new ArrayList<>();
     public Map<String, Boolean> stars = new HashMap<>();
 
 

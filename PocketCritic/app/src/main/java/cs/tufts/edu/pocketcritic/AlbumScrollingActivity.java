@@ -8,9 +8,16 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -18,8 +25,15 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import cs.tufts.edu.pocketcritic.model.AlbumSimple;
+import cs.tufts.edu.pocketcritic.model.ArtistSimple;
 import cs.tufts.edu.pocketcritic.model.SingleAlbum;
+import cs.tufts.edu.pocketcritic.model.SingleArtist;
 import cs.tufts.edu.pocketcritic.support.SpotifyAlbumApi;
 import cs.tufts.edu.pocketcritic.support.SpotifyAlbumInterface;
 import retrofit2.Call;
@@ -33,6 +47,8 @@ public class AlbumScrollingActivity extends AppCompatActivity {
     private FirebaseDatabase database;
     private SpotifyAlbumApi spotifyAlbumApi;
     private SpotifyAlbumInterface spotifyAlbumInterface;
+    private Spinner rateSpinner;
+    private String userID;
     private static final String TAG = "ArtistInfo";
 
     @Override
@@ -51,41 +67,15 @@ public class AlbumScrollingActivity extends AppCompatActivity {
         spotifyAlbumApi = SpotifyAlbumApi.getApi();
         spotifyAlbumInterface = spotifyAlbumApi.getService();
 
+        userID = getUid();
+
+        rateSpinner = (Spinner) findViewById(R.id.album_rating_spinner);
+
 
 
         searchDatabaseById();
 
-//        FloatingActionButton upvote = (FloatingActionButton) findViewById(R.id.upvote);
-//        upvote.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                FirebaseAuth mFirebaseAuth;
-//                mFirebaseAuth = FirebaseAuth.getInstance();
-//                FirebaseUser mFirebaseUser = mFirebaseAuth.getCurrentUser();
-//                String userID = mFirebaseUser.getUid();
-//
-//                database = FirebaseDatabase.getInstance();
-//                DatabaseReference myRef = database.getReference("users").child(userID).child("LikedArtists");
-//                myRef.setValue(searchId);
-//
-//            }
-//        });
-//
-//        FloatingActionButton downvote = (FloatingActionButton) findViewById(R.id.downvote);
-//        downvote.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                FirebaseAuth mFirebaseAuth;
-//                mFirebaseAuth = FirebaseAuth.getInstance();
-//                FirebaseUser mFirebaseUser = mFirebaseAuth.getCurrentUser();
-//                String userID = mFirebaseUser.getUid();
-//
-//                database = FirebaseDatabase.getInstance();
-//                DatabaseReference myRef = database.getReference("users").child(userID).child("DisLikedArtists");
-//                myRef.setValue(searchId);
-//
-//            }
-//        });
+
 
     }
 
@@ -111,6 +101,7 @@ public class AlbumScrollingActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+
     private String generateQueryString(String str) {
         return str.replaceAll("\\s+","+");
     }
@@ -125,20 +116,12 @@ public class AlbumScrollingActivity extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if(dataSnapshot.exists()) {
-                    String value = dataSnapshot.getKey();
-                    Log.d(TAG, "Value is: " + value);
                     AlbumSimple album = dataSnapshot.getValue(AlbumSimple.class);
                     initView(album);
                 }
                 else {
-//                    Toast.makeText(ArtistScrollingActivity.this, "Not found",
-//                            Toast.LENGTH_SHORT).show();
-                    System.out.println("not foud");
                     searchSpotifyById();
-                    //System.out.println(singleartist.getName());
                 }
-                // This method is called once with the initial value and again
-                // whenever data at this location is updated.
 
             }
 
@@ -159,18 +142,7 @@ public class AlbumScrollingActivity extends AppCompatActivity {
                 if (response.isSuccessful()) {
                     SingleAlbum result = response.body();
                     if (result != null) {
-                        System.out.println(result.getName());
-                        DatabaseReference myRef = database.getReference("albums").child(searchId);
-                        String name = result.getName();
-                        String imageURL;
-                        if (result.getImages().size() > 0) {
-                            imageURL = result.getImages().get(0).getUrl();
-                        } else {
-                            imageURL = "None";
-                        }
-                        AlbumSimple album = new AlbumSimple(name, imageURL);
-                        myRef.setValue(album);
-                        initView(album);
+                        writeDatatoDatabase(result);
                     }
                 }
             }
@@ -182,22 +154,111 @@ public class AlbumScrollingActivity extends AppCompatActivity {
         });
     }
 
-    private void initView(AlbumSimple album) {
-        CollapsingToolbarLayout collapsingToolbar =
-                (CollapsingToolbarLayout) findViewById(R.id.album_collapsing_toolbar_layout);
-        //collapsingToolbar.setCollapsedTitleTextColor(Color.TRANSPARENT);
+    private void writeDatatoDatabase(SingleAlbum album) {
+        // Get the data to form the class of ArtistSimple
+        String id = album.getId();
+        String name = album.getName();
+        String imageURL;
+        if (album.getImages().size() > 0) {
+            imageURL = album.getImages().get(0).getUrl();
+        } else {
+            imageURL = "None";
+        }
+        String artist = album.getArtists().get(0).getName();
+        AlbumSimple albumSimple = new AlbumSimple(id, name, imageURL, artist);
 
+        // Write the data to the artists database
+        Map<String, Object> albumValue = albumSimple.toMap();
+
+        Map<String, Object> childUpdates = new HashMap<>();
+
+        childUpdates.put("/albums/" + searchId, albumValue);
+
+        DatabaseReference myRef = database.getReference();
+        myRef.updateChildren(childUpdates);
+        initView(albumSimple);
+    }
+
+    private void initView(AlbumSimple album) {
         TextView textView = (TextView) findViewById(R.id.album_page_name);
         textView.setText(album.name);
         ImageView imgView = (ImageView) findViewById(R.id.album_page_img);
         Picasso.with(this).load(album.imageURL).into(imgView);
 
+        List<String> list = new ArrayList<>();
+        list.add("Awful");
+        list.add("Poor");
+        list.add("Good");
+        list.add("Excellent");
+        list.add("Classic");
+
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>
+                (this, android.R.layout.simple_spinner_item,list);
+
+        dataAdapter.setDropDownViewResource
+                (android.R.layout.simple_spinner_dropdown_item);
+
+        rateSpinner.setAdapter(dataAdapter);
+
+        // Spinner item selection Listener
+        addListenerOnSpinnerItemSelection();
+
+        // Button click Listener
+        addListenerOnButton();
+
+    }
+
+    // Add spinner data
+
+    public void addListenerOnSpinnerItemSelection(){
+
+        rateSpinner.setOnItemSelectedListener(new AlbumRateOnItemSelectedListener());
+    }
+
+    //get the selected dropdown list value
+
+    public void addListenerOnButton() {
+
+        rateSpinner = (Spinner) findViewById(R.id.album_rating_spinner);
+
+        Button btnSubmit = (Button) findViewById(R.id.album_submit_rate);
+
+        btnSubmit.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                Toast.makeText(AlbumScrollingActivity.this,
+                        "On Button Click : " +
+                                "\n" + String.valueOf(rateSpinner.getSelectedItem()) ,
+                        Toast.LENGTH_LONG).show();
+            }
+
+        });
 
     }
 
 
+    private class AlbumRateOnItemSelectedListener implements AdapterView.OnItemSelectedListener {
 
+        public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
+            String item = parent.getItemAtPosition(pos).toString();
+            Toast.makeText(parent.getContext(),
+                    "OnItemSelectedListener : " + item,
+                    Toast.LENGTH_SHORT).show();
 
+        }
+
+        @Override
+        public void onNothingSelected(AdapterView<?> arg0) {
+            // TODO Auto-generated method stub
+        }
+
+    }
+
+    public String getUid() {
+        return FirebaseAuth.getInstance().getCurrentUser().getUid();
+    }
 
 
 

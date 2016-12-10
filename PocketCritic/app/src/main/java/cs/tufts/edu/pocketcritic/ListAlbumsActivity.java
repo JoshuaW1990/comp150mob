@@ -13,11 +13,21 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import cs.tufts.edu.pocketcritic.model.Album;
+import cs.tufts.edu.pocketcritic.model.AlbumSimple;
+import cs.tufts.edu.pocketcritic.model.Artist;
+import cs.tufts.edu.pocketcritic.model.ArtistSimple;
 import cs.tufts.edu.pocketcritic.support.CommonAdapter;
 import cs.tufts.edu.pocketcritic.support.SpotifyApiAlbum;
 import cs.tufts.edu.pocketcritic.support.SpotifyInterfaceAlbum;
@@ -30,6 +40,8 @@ public class ListAlbumsActivity extends AppCompatActivity {
     private String queryString;
     private SpotifyApiAlbum spotifyApi;
     private SpotifyInterfaceAlbum spotifyInterface;
+    private FirebaseDatabase mDatabase;
+    private String userID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,23 +54,18 @@ public class ListAlbumsActivity extends AppCompatActivity {
         //artists = (List<Artist.ArtistsBean.ItemsBean>) intent.getSerializableExtra("artists");
         queryString = intent.getStringExtra("queryString");
 
+        mDatabase = FirebaseDatabase.getInstance();
+
         System.out.println("come to artist list");
         System.out.println(queryString);
 
         spotifyApi = SpotifyApiAlbum.getApi();
         spotifyInterface = spotifyApi.getService();
 
+        userID = getUid();
+
         queryByRxJava();
 
-
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
     }
 
     @Override
@@ -104,34 +111,85 @@ public class ListAlbumsActivity extends AppCompatActivity {
                     public void onNext(Album result) {
                         if (result != null) {
                             List<Album.AlbumsBean.ItemsBean> albumList = result.getAlbums().getItems();
-                            displayListView(albumList);
+                            queryDatabase(albumList);
 
                         }
                     }
                 });
     }
 
-    private void displayListView(List<Album.AlbumsBean.ItemsBean> albumList) {
+    private void queryDatabase(final List<Album.AlbumsBean.ItemsBean> albumList) {
+        final DatabaseReference myRef = mDatabase.getReference("albums");
+        myRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                List<AlbumSimple> albumSimpleList = new ArrayList<AlbumSimple>();
+                for (final Album.AlbumsBean.ItemsBean album: albumList) {
+                    if (!dataSnapshot.child(album.getId()).exists()) {
+                        String id = album.getId();
+                        String name = album.getName();
+                        String imageURL;
+                        if (album.getImages().size() > 0) {
+                            imageURL = album.getImages().get(0).getUrl();
+                        } else {
+                            imageURL = "None";
+                        }
+                        String artist = album.getArtists().get(0).getName();
+                        AlbumSimple albumSimple = new AlbumSimple(id, name, imageURL, artist);
+                        myRef.child(album.getId()).setValue(albumSimple);
+                        System.out.println("album imageURL");
+                        System.out.println(imageURL);
+                        albumSimpleList.add(albumSimple);
+                    } else {
+                        if (!dataSnapshot.child(album.getId()).child("id").exists()) {
+                            myRef.child(album.getId()).child("id").setValue(album.getId());
+                        }
+                        if (!dataSnapshot.child(album.getId()).child("rate_num").exists()) {
+                            myRef.child(album.getId()).child("rate_num").setValue(0.0);
+                        }
+                        if (!dataSnapshot.child(album.getId()).child("average_rate").exists()) {
+                            myRef.child(album.getId()).child("average_rate").setValue(0.0);
+                        }
+                        if (!dataSnapshot.child(album.getId()).child("artist").exists()) {
+                            myRef.child(album.getId()).child("artist").setValue(album.getArtists().get(0).getName());
+                        }
+                        AlbumSimple albumSimple = dataSnapshot.child(album.getId()).getValue(AlbumSimple.class);
+                        albumSimpleList.add(albumSimple);
+                    }
+                }
+                System.out.println(albumSimpleList.size());
+                displayListView(albumSimpleList);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+    }
+
+    private void displayListView(List<AlbumSimple> albumList) {
 
         ListView listView = (ListView) findViewById(R.id.albumList_listview);
         Picasso.with(this).setIndicatorsEnabled(false);
 
-        listView.setAdapter(new CommonAdapter< Album.AlbumsBean.ItemsBean >(this, albumList, R.layout.album_listview) {
+        listView.setAdapter(new CommonAdapter< AlbumSimple >(this, albumList, R.layout.item_album_listview) {
             @Override
-            public void convert(ViewHolder holder, Album.AlbumsBean.ItemsBean album, int position) {
-                int size = album.getImages().size();
-                if (size == 0) {
+            public void convert(ViewHolder holder, AlbumSimple album, int position) {
+                if (album.imageURL == "None") {
                     holder.setImage(R.id.album_img, R.drawable.placeholder_image, null);
                 } else {
-                    holder.setImage(R.id.album_img, album.getImages().get(size - 1).getUrl(), null);
+                    holder.setImage(R.id.album_img, album.imageURL, null);
                 }
-                holder.setText(R.id.album_name, album.getName());
-                holder.setText(R.id.album_artist, album.getArtists().get(0).getName());
+                holder.setText(R.id.album_name, album.name);
+                holder.setText(R.id.album_artist, album.artist);
+
+                holder.setText(R.id.album_rating_score, Double.toString(album.average_rate));
 
                 ImageView imgView = holder.getView(R.id.album_img);
                 imgView.setClickable(true);
 
-                imgView.setOnClickListener(new ListButtonOnClickListener(album.getId()) {
+                imgView.setOnClickListener(new ListButtonOnClickListener(album.id) {
                     @Override
                     public void onClick(View view) {
                         Snackbar.make(view, this.idnumber, Snackbar.LENGTH_LONG)
@@ -149,6 +207,10 @@ public class ListAlbumsActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private String getUid() {
+        return FirebaseAuth.getInstance().getCurrentUser().getUid();
     }
 
     public class ListButtonOnClickListener implements View.OnClickListener

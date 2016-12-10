@@ -164,8 +164,6 @@ public class ArtistScrollingActivity extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if(dataSnapshot.exists()) {
                     ArtistSimple artist = dataSnapshot.getValue(ArtistSimple.class);
-                    System.out.println(artist.name);
-                    System.out.println(searchId);
                     initView(artist, searchId);
                 }
                 else {

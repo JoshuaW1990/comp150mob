@@ -46,7 +46,8 @@
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
                     android:gravity="center_horizontal"
-                    android:textColor="@android:color/holo_blue_light" />
+                    android:background="#ffdddddd"
+                    android:textColor="@android:color/holo_blue_dark" />
             </RelativeLayout>
 
             <android.support.v7.widget.Toolbar
@@ -59,31 +60,40 @@
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_album_scrolling"
-        android:id="@+id/include" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <!--<android.support.design.widget.FloatingActionButton-->
-        <!--android:id="@+id/upvote"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_margin="@dimen/fab_margin"-->
-        <!--app:layout_anchor="@+id/app_bar"-->
-        <!--app:srcCompat="@android:drawable/ic_input_add"-->
-        <!--app:backgroundTint="@android:color/white"-->
-        <!--app:rippleColor="@android:color/white"-->
-        <!--app:layout_anchorGravity="bottom|center_horizontal"-->
-        <!--android:layout_gravity="bottom|left" />-->
+        <TextView
+            android:text="Rating it! "
+            android:textSize="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
 
-    <!--<android.support.design.widget.FloatingActionButton-->
-        <!--android:id="@+id/downvote"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:clickable="true"-->
-        <!--app:fabSize="mini"-->
-        <!--app:srcCompat="@android:drawable/ic_delete"-->
-        <!--app:layout_anchor="@+id/include"-->
-        <!--app:layout_anchorGravity="top|center_horizontal"-->
-        <!--android:layout_gravity="bottom|right"-->
-        <!--app:backgroundTint="@android:color/white" />-->
+        <Spinner
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/album_rating_spinner"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:prompt="@string/rate_prompt"/>
+
+        <Button
+            android:text="Rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/album_submit_rate"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
 
 </android.support.design.widget.CoordinatorLayout>

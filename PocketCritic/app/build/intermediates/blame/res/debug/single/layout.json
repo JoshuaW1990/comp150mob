@@ -140,6 +140,10 @@
         "source": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_select_dialog_material.xml"
     },
     {
+        "merged": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/layout/include_average_rating.xml",
+        "source": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/res/layout/include_average_rating.xml"
+    },
+    {
         "merged": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/layout/artist_listview.xml",
         "source": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/res/layout/artist_listview.xml"
     },
@@ -214,6 +218,10 @@
     {
         "merged": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/layout/include_artist_album.xml",
         "source": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/res/layout/include_artist_album.xml"
+    },
+    {
+        "merged": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/layout/item_album_listview.xml",
+        "source": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/res/layout/item_album_listview.xml"
     },
     {
         "merged": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/layout/comments_listview.xml",

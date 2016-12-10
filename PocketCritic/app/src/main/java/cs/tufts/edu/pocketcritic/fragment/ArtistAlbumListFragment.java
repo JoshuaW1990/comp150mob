@@ -1,10 +1,13 @@
 package cs.tufts.edu.pocketcritic.fragment;
 
+import android.content.Intent;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -13,6 +16,8 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+import cs.tufts.edu.pocketcritic.AlbumScrollingActivity;
+import cs.tufts.edu.pocketcritic.ListAlbumsActivity;
 import cs.tufts.edu.pocketcritic.R;
 import cs.tufts.edu.pocketcritic.model.Album;
 import cs.tufts.edu.pocketcritic.support.CommonAdapter;
@@ -93,10 +98,45 @@ public class ArtistAlbumListFragment extends Fragment {
                 }
                 holder.setText(R.id.artist_album_name, album.getName());
 
+                ImageView imgView = holder.getView(R.id.artist_album_img);
+                imgView.setClickable(true);
+
+                imgView.setOnClickListener(new AlbumButtonOnClickListener(album.getId()) {
+                    @Override
+                    public void onClick(View view) {
+                        Snackbar.make(view, this.idnumber, Snackbar.LENGTH_LONG)
+                                .setAction("Action", null).show();
+                        Intent intent = new Intent(getActivity(), AlbumScrollingActivity.class);
+                        intent.putExtra("searchId", this.idnumber);
+
+
+                        //intent.putExtra("artists", "test");
+                        startActivity(intent);
+                        System.out.println("On search success!");
+                    }
+                });
+
             }
         });
 
     }
+
+    public class AlbumButtonOnClickListener implements View.OnClickListener
+    {
+
+        String idnumber;
+        public AlbumButtonOnClickListener(String idnumber) {
+            this.idnumber = idnumber;
+        }
+
+        @Override
+        public void onClick(View v)
+        {
+            //Do your stuff
+        }
+
+    };
+
 
 
 

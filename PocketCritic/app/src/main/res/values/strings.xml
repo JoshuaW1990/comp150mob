@@ -38,6 +38,15 @@
     <string name="signup">SIGN UP</string>
     <string name="password">Password</string>
     <string name="title_activity_album_scrolling">AlbumScrollingActivity</string>
+    <string name="rate_prompt">Rate for it</string>
+    <string-array name="rate_arrays">
+        <item>Rate It</item>
+        <item>Awful</item>
+        <item>Poor</item>
+        <item>Good</item>
+        <item>Excellent</item>
+        <item>Classic</item>
+    </string-array>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
