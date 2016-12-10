@@ -8,10 +8,14 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+<<<<<<< HEAD
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+=======
+import android.widget.ArrayAdapter;
+>>>>>>> origin/newSpotify
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -67,9 +71,17 @@ public class AlbumScrollingActivity extends AppCompatActivity {
         spotifyAlbumApi = SpotifyAlbumApi.getApi();
         spotifyAlbumInterface = spotifyAlbumApi.getService();
 
+<<<<<<< HEAD
         userID = getUid();
 
         rateSpinner = (Spinner) findViewById(R.id.album_rating_spinner);
+=======
+        Spinner dropdown = (Spinner)findViewById(R.id.ratingspinner);
+        String[] items = new String[]{"Awful", "Poor",
+                                     "Good", "Excellent", "Classic"};
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, items);
+        dropdown.setAdapter(adapter);
+>>>>>>> origin/newSpotify
 
 
 

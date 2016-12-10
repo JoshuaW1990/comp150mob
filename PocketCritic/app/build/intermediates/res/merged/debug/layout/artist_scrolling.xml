@@ -7,6 +7,7 @@
     android:fitsSystemWindows="true"
     tools:context="cs.tufts.edu.pocketcritic.ArtistScrollingActivity">
 
+
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
@@ -46,6 +47,7 @@
                     android:gravity="center_horizontal"
                     android:id="@+id/artist_page_name"
                     android:textSize="20sp"
+                    android:alpha="0.85"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
                     android:background="#ffdddddd"
@@ -66,13 +68,6 @@
 
     </android.support.design.widget.AppBarLayout>
 
-
-
-
-
-
-
-
     <android.support.v4.view.ViewPager
         android:id="@+id/artist_pager"
         android:layout_width="match_parent"
@@ -88,8 +83,11 @@
 
     </android.support.v4.view.ViewPager>
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/newSpotify
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/artist_fab_new_comment"
         android:layout_width="wrap_content"
@@ -109,7 +107,7 @@
         android:layout_margin="@dimen/fab_margin"
         app:layout_anchor="@+id/app_bar"
         app:srcCompat="@drawable/btn_rating_star_off_focused_holo_light"
-        app:backgroundTint="@android:color/background_light"
+        app:backgroundTint="@android:color/background_dark"
         app:layout_anchorGravity="bottom|right"
         android:layout_gravity="center_vertical|left" />
 
