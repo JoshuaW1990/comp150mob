@@ -83,11 +83,7 @@
 
     </android.support.v4.view.ViewPager>
 
-<<<<<<< HEAD
 
-
-=======
->>>>>>> origin/newSpotify
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/artist_fab_new_comment"
         android:layout_width="wrap_content"

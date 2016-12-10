@@ -46,10 +46,7 @@
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
                     android:gravity="center_horizontal"
-<<<<<<< HEAD
-=======
                     android:alpha="0.85"
->>>>>>> origin/newSpotify
                     android:background="#ffdddddd"
                     android:textColor="@android:color/holo_blue_dark" />
             </RelativeLayout>
@@ -68,30 +65,21 @@
         android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <TextView
-            android:text="Rating it! "
-=======
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp">
 
         <TextView
             android:text="Rate it: "
->>>>>>> origin/newSpotify
             android:textSize="20dp"
             android:layout_gravity="center_vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-<<<<<<< HEAD
             android:textColor="#000000"/>
 
         <Spinner
-            android:layout_width="80dp"
+            android:layout_width="160dp"
             android:layout_height="40dp"
             android:layout_marginLeft="10dp"
             android:id="@+id/album_rating_spinner"
@@ -109,19 +97,6 @@
 
     </LinearLayout>
 
-=======
-            android:textColor="#000000"
-         />
 
-        <Spinner
-            android:id="@+id/ratingspinner"
-            android:layout_width="80dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="10dp"
-            android:background="@android:drawable/btn_dropdown"
-            android:spinnerMode="dropdown"
-            />
-    </LinearLayout>
->>>>>>> origin/newSpotify
 
 </android.support.design.widget.CoordinatorLayout>
