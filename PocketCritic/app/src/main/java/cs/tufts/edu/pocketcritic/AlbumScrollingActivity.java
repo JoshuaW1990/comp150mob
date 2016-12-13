@@ -23,6 +23,8 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.MutableData;
+import com.google.firebase.database.Transaction;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
@@ -50,6 +52,7 @@ public class AlbumScrollingActivity extends AppCompatActivity {
     private SpotifyAlbumInterface spotifyAlbumInterface;
     private Spinner rateSpinner;
     private String userID;
+    private Map<String, Double> score = new HashMap<>();
     private static final String TAG = "ArtistInfo";
 
     @Override
@@ -70,6 +73,12 @@ public class AlbumScrollingActivity extends AppCompatActivity {
 
         userID = getUid();
         rateSpinner = (Spinner) findViewById(R.id.album_rating_spinner);
+
+        score.put("Awful", 0.0);
+        score.put("Poor", 1.0);
+        score.put("Good", 2.0);
+        score.put("Excellent", 3.0);
+        score.put("Classic", 4.0);
 
 
 
@@ -102,10 +111,6 @@ public class AlbumScrollingActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
-    private String generateQueryString(String str) {
-        return str.replaceAll("\\s+","+");
-    }
 
 
     private void searchDatabaseById() {
@@ -187,6 +192,7 @@ public class AlbumScrollingActivity extends AppCompatActivity {
         Picasso.with(this).load(album.imageURL).into(imgView);
 
         List<String> list = new ArrayList<>();
+        list.add("Rate It");
         list.add("Awful");
         list.add("Poor");
         list.add("Good");
@@ -200,12 +206,13 @@ public class AlbumScrollingActivity extends AppCompatActivity {
                 (android.R.layout.simple_spinner_dropdown_item);
 
         rateSpinner.setAdapter(dataAdapter);
+        rateSpinner.setSelection(dataAdapter.getPosition("Rate It"));
 
         // Spinner item selection Listener
         addListenerOnSpinnerItemSelection();
 
         // Button click Listener
-        addListenerOnButton();
+        addListenerOnButton(album);
 
     }
 
@@ -218,7 +225,7 @@ public class AlbumScrollingActivity extends AppCompatActivity {
 
     //get the selected dropdown list value
 
-    public void addListenerOnButton() {
+    public void addListenerOnButton(final AlbumSimple album) {
 
         rateSpinner = (Spinner) findViewById(R.id.album_rating_spinner);
 
@@ -228,11 +235,48 @@ public class AlbumScrollingActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+                database = FirebaseDatabase.getInstance();
+                DatabaseReference albumRef = database.getReference("albums").child(album.id);
 
-                Toast.makeText(AlbumScrollingActivity.this,
-                        "On Button Click : " +
-                                "\n" + String.valueOf(rateSpinner.getSelectedItem()) ,
-                        Toast.LENGTH_LONG).show();
+                albumRef.runTransaction(new Transaction.Handler() {
+                    @Override
+                    public Transaction.Result doTransaction(MutableData mutableData) {
+                        AlbumSimple albumSimple = mutableData.getValue(AlbumSimple.class);
+                        String item = String.valueOf(rateSpinner.getSelectedItem());
+                        if (item.equals("Rate It")) {
+                            Toast.makeText(AlbumScrollingActivity.this, "Pick a rate", Toast.LENGTH_SHORT).show();
+                        } else {
+                            if (albumSimple.stars.containsKey(userID)) {
+                                double  rateNum = albumSimple.rate_num;
+                                double averageRate = albumSimple.average_rate;
+                                averageRate = (averageRate * rateNum - albumSimple.stars.get(userID) + score.get(item)) / rateNum;
+                                albumSimple.average_rate = averageRate;
+                                albumSimple.rate_num = rateNum;
+
+                            } else {
+                                double  rateNum = albumSimple.rate_num;
+                                double averageRate = (rateNum * albumSimple.average_rate + score.get(item)) / (rateNum + 1.0);
+                                albumSimple.rate_num = rateNum + 1.0;
+                                albumSimple.average_rate = averageRate;
+                            }
+                            albumSimple.stars.put(userID, score.get(item));
+                            Toast.makeText(AlbumScrollingActivity.this,
+                                    "On Button Click : " +
+                                            "\n" + item ,
+                                    Toast.LENGTH_LONG).show();
+                        }
+                        mutableData.setValue(albumSimple);
+                        return Transaction.success(mutableData);
+                    }
+
+                    @Override
+                    public void onComplete(DatabaseError databaseError, boolean b, DataSnapshot dataSnapshot) {
+
+                    }
+                });
+
+
+
             }
 
         });

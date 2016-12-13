@@ -14,7 +14,7 @@ public class ArtistSimple {
     public String imageURL;
     public String name;
     public int popularity = 0;
-    public List<String> genres = new ArrayList<>();
+    public Map<String, Object> genres = new HashMap<>();
     public Map<String, Boolean> stars = new HashMap<>();
 
 
