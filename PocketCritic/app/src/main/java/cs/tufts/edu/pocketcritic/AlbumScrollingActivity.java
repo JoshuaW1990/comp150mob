@@ -52,6 +52,7 @@ public class AlbumScrollingActivity extends AppCompatActivity {
     private SpotifyAlbumInterface spotifyAlbumInterface;
     private Spinner rateSpinner;
     private String userID;
+    private ArrayAdapter<String> dataAdapter;
     private Map<String, Double> score = new HashMap<>();
     private static final String TAG = "ArtistInfo";
 
@@ -199,7 +200,7 @@ public class AlbumScrollingActivity extends AppCompatActivity {
         list.add("Excellent");
         list.add("Classic");
 
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>
+        dataAdapter = new ArrayAdapter<String>
                 (this, android.R.layout.simple_spinner_item,list);
 
         dataAdapter.setDropDownViewResource
@@ -224,7 +225,6 @@ public class AlbumScrollingActivity extends AppCompatActivity {
     }
 
     //get the selected dropdown list value
-
     public void addListenerOnButton(final AlbumSimple album) {
 
         rateSpinner = (Spinner) findViewById(R.id.album_rating_spinner);
@@ -237,50 +237,55 @@ public class AlbumScrollingActivity extends AppCompatActivity {
             public void onClick(View v) {
                 database = FirebaseDatabase.getInstance();
                 DatabaseReference albumRef = database.getReference("albums").child(album.id);
-
-                albumRef.runTransaction(new Transaction.Handler() {
-                    @Override
-                    public Transaction.Result doTransaction(MutableData mutableData) {
-                        AlbumSimple albumSimple = mutableData.getValue(AlbumSimple.class);
-                        String item = String.valueOf(rateSpinner.getSelectedItem());
-                        if (item.equals("Rate It")) {
-                            Toast.makeText(AlbumScrollingActivity.this, "Pick a rate", Toast.LENGTH_SHORT).show();
-                        } else {
-                            if (albumSimple.stars.containsKey(userID)) {
-                                double  rateNum = albumSimple.rate_num;
-                                double averageRate = albumSimple.average_rate;
-                                averageRate = (averageRate * rateNum - albumSimple.stars.get(userID) + score.get(item)) / rateNum;
-                                albumSimple.average_rate = averageRate;
-                                albumSimple.rate_num = rateNum;
-
-                            } else {
-                                double  rateNum = albumSimple.rate_num;
-                                double averageRate = (rateNum * albumSimple.average_rate + score.get(item)) / (rateNum + 1.0);
-                                albumSimple.rate_num = rateNum + 1.0;
-                                albumSimple.average_rate = averageRate;
-                            }
-                            albumSimple.stars.put(userID, score.get(item));
-                            Toast.makeText(AlbumScrollingActivity.this,
-                                    "On Button Click : " +
-                                            "\n" + item ,
-                                    Toast.LENGTH_LONG).show();
-                        }
-                        mutableData.setValue(albumSimple);
-                        return Transaction.success(mutableData);
-                    }
-
-                    @Override
-                    public void onComplete(DatabaseError databaseError, boolean b, DataSnapshot dataSnapshot) {
-
-                    }
-                });
-
-
+                String item = String.valueOf(rateSpinner.getSelectedItem());
+                if (item.equals("Rate It")) {
+                    Toast.makeText(AlbumScrollingActivity.this, "Pick a rate", Toast.LENGTH_SHORT).show();
+                } else {
+                    onRateSubmit(albumRef, item);
+                    rateSpinner.setSelection(dataAdapter.getPosition(item));
+                    Toast.makeText(AlbumScrollingActivity.this, "On Button Click : " + "\n" + item , Toast.LENGTH_LONG).show();
+                }
 
             }
 
         });
 
+    }
+
+    private void onRateSubmit(DatabaseReference albumRef, final String item) {
+        albumRef.runTransaction(new Transaction.Handler() {
+            @Override
+            public Transaction.Result doTransaction(MutableData mutableData) {
+                AlbumSimple albumSimple = mutableData.getValue(AlbumSimple.class);
+                System.out.println("on submit click");
+                if (albumSimple == null) {
+                    System.out.println("empty album object");
+                    return Transaction.success(mutableData);
+                }
+                if (albumSimple.stars.containsKey(userID)) {
+                    double  rateNum = albumSimple.rate_num;
+                    double averageRate = albumSimple.average_rate;
+                    averageRate = (averageRate * rateNum - albumSimple.stars.get(userID) + score.get(item)) / rateNum;
+                    albumSimple.average_rate = averageRate;
+                    albumSimple.rate_num = rateNum;
+                } else {
+                    double  rateNum = albumSimple.rate_num;
+                    double averageRate = (rateNum * albumSimple.average_rate + score.get(item)) / (rateNum + 1.0);
+                    albumSimple.rate_num = rateNum + 1.0;
+                    albumSimple.average_rate = averageRate;
+                }
+                albumSimple.stars.put(userID, score.get(item));
+
+                mutableData.setValue(albumSimple);
+                return Transaction.success(mutableData);
+            }
+
+            @Override
+            public void onComplete(DatabaseError databaseError, boolean b, DataSnapshot dataSnapshot) {
+
+                Log.d(TAG, "rateTransaction:onComplete:" + databaseError);
+            }
+        });
     }
 
 

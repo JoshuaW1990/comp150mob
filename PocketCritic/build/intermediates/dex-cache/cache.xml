@@ -264,11 +264,20 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="4df40545c9b875855f3dd9d4928e5d07f07c20ba">
+        <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-crash-9.6.1_88cb3dc0dfa8bbc30b892d4ed969e08fa1d4587b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="cb0c9b45dfa8a38964bdd050f3538a52f1eb3221">
+        sha1="72167d3f4d72232065925c3c6639e85731656cd5">
         <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_df2c1186948d8ede4744e84e71a4922831575441/classes.dex" />
     </item>
     <item
@@ -394,7 +403,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="2fe8cb0a9257e4148fcaa97393bde2779f1497c8">
+        sha1="848fafee4b7bc7cc7394e246889597db0fb2e131">
         <dex dex="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6809d9c4136058c2fafc3b5a224ab45d2ea220a6/classes.dex" />
     </item>
     <item
