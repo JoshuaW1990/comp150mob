@@ -9,17 +9,25 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import cs.tufts.edu.pocketcritic.AlbumScrollingActivity;
 import cs.tufts.edu.pocketcritic.ListAlbumsActivity;
 import cs.tufts.edu.pocketcritic.R;
 import cs.tufts.edu.pocketcritic.model.Album;
+import cs.tufts.edu.pocketcritic.model.AlbumSimple;
 import cs.tufts.edu.pocketcritic.support.CommonAdapter;
 import cs.tufts.edu.pocketcritic.support.SpotifyApiAlbum;
 import cs.tufts.edu.pocketcritic.support.SpotifyInterfaceAlbum;
@@ -37,12 +45,14 @@ public class ArtistAlbumListFragment extends Fragment {
     private String artistName;
     private SpotifyApiAlbum spotifyAbumApi;
     private SpotifyInterfaceAlbum spotifyAlbumInterface;
+    private FirebaseDatabase mDatabase;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.artist_tabalbumlist, container, false);
         artistName = getArguments().getString("searchInfo");
 
+        mDatabase = FirebaseDatabase.getInstance();
         spotifyAbumApi = SpotifyApiAlbum.getApi();
         spotifyAlbumInterface = spotifyAbumApi.getService();
 
@@ -75,33 +85,83 @@ public class ArtistAlbumListFragment extends Fragment {
                             List<Album.AlbumsBean.ItemsBean> albumList = result.getAlbums().getItems();
                             System.out.println("number of albums: ");
                             System.out.println(albumList.size());
-                            displayListView(albumList);
+                            queryDatabase(albumList);
 
                         }
                     }
                 });
     }
 
-    private void displayListView(List<Album.AlbumsBean.ItemsBean> albumList) {
+    private void queryDatabase(final List<Album.AlbumsBean.ItemsBean> albumList) {
+        final DatabaseReference myRef = mDatabase.getReference("albums");
+        myRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                List<AlbumSimple> albumSimpleList = new ArrayList<AlbumSimple>();
+                for (final Album.AlbumsBean.ItemsBean album: albumList) {
+                    if (!dataSnapshot.child(album.getId()).exists()) {
+                        String id = album.getId();
+                        String name = album.getName();
+                        String imageURL;
+                        if (album.getImages().size() > 0) {
+                            imageURL = album.getImages().get(0).getUrl();
+                        } else {
+                            imageURL = "None";
+                        }
+                        String artist = album.getArtists().get(0).getName();
+                        AlbumSimple albumSimple = new AlbumSimple(id, name, imageURL, artist);
+                        myRef.child(album.getId()).setValue(albumSimple);
+                        System.out.println("album imageURL");
+                        System.out.println(imageURL);
+                        albumSimpleList.add(albumSimple);
+                    } else {
+                        if (!dataSnapshot.child(album.getId()).child("id").exists()) {
+                            myRef.child(album.getId()).child("id").setValue(album.getId());
+                        }
+                        if (!dataSnapshot.child(album.getId()).child("rate_num").exists()) {
+                            myRef.child(album.getId()).child("rate_num").setValue(0.0);
+                        }
+                        if (!dataSnapshot.child(album.getId()).child("average_rate").exists()) {
+                            myRef.child(album.getId()).child("average_rate").setValue(0.0);
+                        }
+                        if (!dataSnapshot.child(album.getId()).child("artist").exists()) {
+                            myRef.child(album.getId()).child("artist").setValue(album.getArtists().get(0).getName());
+                        }
+                        AlbumSimple albumSimple = dataSnapshot.child(album.getId()).getValue(AlbumSimple.class);
+                        albumSimpleList.add(albumSimple);
+                    }
+                }
+                System.out.println(albumSimpleList.size());
+                displayListView(albumSimpleList);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+    }
+
+    private void displayListView(List<AlbumSimple> albumList) {
 
         ListView listView = (ListView) view.findViewById(R.id.artist_albumList);
         Picasso.with(getActivity()).setIndicatorsEnabled(false);
 
-        listView.setAdapter(new CommonAdapter< Album.AlbumsBean.ItemsBean >(getActivity(), albumList, R.layout.artist_albumlistview) {
+        listView.setAdapter(new CommonAdapter< AlbumSimple >(getActivity(), albumList, R.layout.artist_albumlistview) {
             @Override
-            public void convert(ViewHolder holder, Album.AlbumsBean.ItemsBean album, int position) {
-                int size = album.getImages().size();
-                if (size == 0) {
+            public void convert(ViewHolder holder, AlbumSimple album, int position) {
+                if (album.imageURL == "None") {
                     holder.setImage(R.id.artist_album_img, R.drawable.placeholder_image, null);
                 } else {
-                    holder.setImage(R.id.artist_album_img, album.getImages().get(size - 1).getUrl(), null);
+                    holder.setImage(R.id.artist_album_img, album.imageURL, null);
                 }
-                holder.setText(R.id.artist_album_name, album.getName());
+                holder.setText(R.id.artist_album_name, album.name);
+                holder.setText(R.id.artist_album_rating_score, Double.toString(album.average_rate));
 
-                ImageView imgView = holder.getView(R.id.artist_album_img);
-                imgView.setClickable(true);
+                RelativeLayout relativeLayout = holder.getView(R.id.artist_album_relativelayout);
+                relativeLayout.setClickable(true);
 
-                imgView.setOnClickListener(new AlbumButtonOnClickListener(album.getId()) {
+                relativeLayout.setOnClickListener(new AlbumButtonOnClickListener(album.id) {
                     @Override
                     public void onClick(View view) {
                         Snackbar.make(view, this.idnumber, Snackbar.LENGTH_LONG)

@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -186,10 +187,11 @@ public class ListAlbumsActivity extends AppCompatActivity {
 
                 holder.setText(R.id.album_rating_score, Double.toString(album.average_rate));
 
-                ImageView imgView = holder.getView(R.id.album_img);
-                imgView.setClickable(true);
+                RelativeLayout relativeLayout = holder.getView(R.id.album_relativelayout);
+                relativeLayout.setClickable(true);
 
-                imgView.setOnClickListener(new ListButtonOnClickListener(album.id) {
+
+                relativeLayout.setOnClickListener(new ListButtonOnClickListener(album.id) {
                     @Override
                     public void onClick(View view) {
                         Snackbar.make(view, this.idnumber, Snackbar.LENGTH_LONG)
