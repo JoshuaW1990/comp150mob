@@ -33,6 +33,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import cs.tufts.edu.pocketcritic.model.Album;
 import cs.tufts.edu.pocketcritic.model.AlbumSimple;
 import cs.tufts.edu.pocketcritic.model.ArtistSimple;
 import cs.tufts.edu.pocketcritic.model.SingleAlbum;
@@ -73,6 +74,7 @@ public class AlbumScrollingActivity extends AppCompatActivity {
         spotifyAlbumInterface = spotifyAlbumApi.getService();
 
         userID = getUid();
+        database = FirebaseDatabase.getInstance();
         rateSpinner = (Spinner) findViewById(R.id.album_rating_spinner);
 
         score.put("Awful", 0.0);
@@ -81,7 +83,81 @@ public class AlbumScrollingActivity extends AppCompatActivity {
         score.put("Excellent", 3.0);
         score.put("Classic", 4.0);
 
+        List<String> list = new ArrayList<>();
+        list.add("Rate It");
+        list.add("Awful");
+        list.add("Poor");
+        list.add("Good");
+        list.add("Excellent");
+        list.add("Classic");
 
+        dataAdapter = new ArrayAdapter<String>
+                (this, android.R.layout.simple_spinner_item,list);
+
+        dataAdapter.setDropDownViewResource
+                (android.R.layout.simple_spinner_dropdown_item);
+
+        rateSpinner.setAdapter(dataAdapter);
+
+        final DatabaseReference myRef = database.getReference("albums").child(searchId);
+
+        myRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                if (!dataSnapshot.exists()) {
+                    rateSpinner.setSelection(dataAdapter.getPosition("Rate It"));
+                } else {
+                    AlbumSimple albumSimple = dataSnapshot.getValue(AlbumSimple.class);
+                    if (!albumSimple.stars.containsKey(userID)) {
+                        rateSpinner.setSelection(dataAdapter.getPosition("Rate It"));
+                    } else {
+                        double rate = albumSimple.stars.get(userID);
+                        if (rate == 0.0) {
+                            rateSpinner.setSelection(dataAdapter.getPosition("Awful"));
+                        } else if (rate == 1.0) {
+                            rateSpinner.setSelection(dataAdapter.getPosition("Poor"));
+                        } else if (rate == 2.0) {
+                            rateSpinner.setSelection(dataAdapter.getPosition("Good"));
+                        } else if (rate == 3.0) {
+                            rateSpinner.setSelection(dataAdapter.getPosition("Excellent"));
+                        } else {
+                            rateSpinner.setSelection(dataAdapter.getPosition("Classic"));
+                        }
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+
+
+        // Spinner item selection Listener
+        addListenerOnSpinnerItemSelection();
+
+        // Button click Listener
+        Button btnSubmit = (Button) findViewById(R.id.album_submit_rate);
+
+        btnSubmit.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                DatabaseReference albumRef = database.getReference("albums").child(searchId);
+                String item = String.valueOf(rateSpinner.getSelectedItem());
+                if (item.equals("Rate It")) {
+                    Toast.makeText(AlbumScrollingActivity.this, "Pick a rate", Toast.LENGTH_SHORT).show();
+                } else {
+                    onRateSubmit(albumRef, item);
+                    rateSpinner.setSelection(dataAdapter.getPosition(item));
+                    Toast.makeText(AlbumScrollingActivity.this, "On Button Click : " + "\n" + item , Toast.LENGTH_LONG).show();
+                }
+
+            }
+
+        });
 
 
         searchDatabaseById();
@@ -115,7 +191,6 @@ public class AlbumScrollingActivity extends AppCompatActivity {
 
 
     private void searchDatabaseById() {
-        database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("albums").child(searchId);
 
         // Read from the database
@@ -192,29 +267,6 @@ public class AlbumScrollingActivity extends AppCompatActivity {
         ImageView imgView = (ImageView) findViewById(R.id.album_page_img);
         Picasso.with(this).load(album.imageURL).into(imgView);
 
-        List<String> list = new ArrayList<>();
-        list.add("Rate It");
-        list.add("Awful");
-        list.add("Poor");
-        list.add("Good");
-        list.add("Excellent");
-        list.add("Classic");
-
-        dataAdapter = new ArrayAdapter<String>
-                (this, android.R.layout.simple_spinner_item,list);
-
-        dataAdapter.setDropDownViewResource
-                (android.R.layout.simple_spinner_dropdown_item);
-
-        rateSpinner.setAdapter(dataAdapter);
-        rateSpinner.setSelection(dataAdapter.getPosition("Rate It"));
-
-        // Spinner item selection Listener
-        addListenerOnSpinnerItemSelection();
-
-        // Button click Listener
-        addListenerOnButton(album);
-
     }
 
     // Add spinner data
@@ -224,33 +276,7 @@ public class AlbumScrollingActivity extends AppCompatActivity {
         rateSpinner.setOnItemSelectedListener(new AlbumRateOnItemSelectedListener());
     }
 
-    //get the selected dropdown list value
-    public void addListenerOnButton(final AlbumSimple album) {
 
-        rateSpinner = (Spinner) findViewById(R.id.album_rating_spinner);
-
-        Button btnSubmit = (Button) findViewById(R.id.album_submit_rate);
-
-        btnSubmit.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                database = FirebaseDatabase.getInstance();
-                DatabaseReference albumRef = database.getReference("albums").child(album.id);
-                String item = String.valueOf(rateSpinner.getSelectedItem());
-                if (item.equals("Rate It")) {
-                    Toast.makeText(AlbumScrollingActivity.this, "Pick a rate", Toast.LENGTH_SHORT).show();
-                } else {
-                    onRateSubmit(albumRef, item);
-                    rateSpinner.setSelection(dataAdapter.getPosition(item));
-                    Toast.makeText(AlbumScrollingActivity.this, "On Button Click : " + "\n" + item , Toast.LENGTH_LONG).show();
-                }
-
-            }
-
-        });
-
-    }
 
     private void onRateSubmit(DatabaseReference albumRef, final String item) {
         albumRef.runTransaction(new Transaction.Handler() {
