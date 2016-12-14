@@ -132,7 +132,7 @@ ADDED from /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/
 	android:name
 		ADDED from /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:46:13-51
 activity#cs.tufts.edu.pocketcritic.NewCommentActivity
-ADDED from /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:49:9-65
+ADDED from /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:49:9-56
 	android:name
 		ADDED from /Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/AndroidManifest.xml:49:19-53
 uses-sdk

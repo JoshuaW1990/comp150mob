@@ -1,5 +1,6 @@
 package cs.tufts.edu.pocketcritic;
 
+import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
@@ -9,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import android.widget.RelativeLayout;
@@ -32,6 +34,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+import cs.tufts.edu.pocketcritic.fragment.LoginFragment;
 import cs.tufts.edu.pocketcritic.model.Artist;
 import cs.tufts.edu.pocketcritic.model.ArtistSimple;
 import cs.tufts.edu.pocketcritic.support.CommonAdapter;
@@ -61,6 +64,18 @@ public class ListArtistsActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         queryString = intent.getStringExtra("queryString");
+
+        Button logout = (Button) findViewById(R.id.artist_list_logout);
+
+        logout.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(ListArtistsActivity.this, "Logout", Toast.LENGTH_SHORT).show();
+                FirebaseAuth.getInstance().signOut();
+                Intent intent = new Intent(ListArtistsActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         mDatabase = FirebaseDatabase.getInstance();
 

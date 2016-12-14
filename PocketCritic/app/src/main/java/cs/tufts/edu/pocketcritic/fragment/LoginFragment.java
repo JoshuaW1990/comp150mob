@@ -248,11 +248,7 @@ public class LoginFragment extends Fragment
 
         // Go to Search fragment
 
-        TextView nav_username = (TextView) getActivity().findViewById(R.id.navhead_username);
-        TextView nav_email = (TextView) getActivity().findViewById(R.id.navhead_useremail);
 
-        nav_username.setText(username);
-        nav_email.setText(user_email);
 
         System.out.println("Success for login!");
 

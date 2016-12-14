@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
@@ -54,6 +55,18 @@ public class ListAlbumsActivity extends AppCompatActivity {
         Intent intent = getIntent();
         //artists = (List<Artist.ArtistsBean.ItemsBean>) intent.getSerializableExtra("artists");
         queryString = intent.getStringExtra("queryString");
+
+        Button logout = (Button) findViewById(R.id.album_list_logout);
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(ListAlbumsActivity.this, "Logout", Toast.LENGTH_SHORT).show();
+                FirebaseAuth.getInstance().signOut();
+                Intent intent = new Intent(ListAlbumsActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         mDatabase = FirebaseDatabase.getInstance();
 
@@ -185,7 +198,9 @@ public class ListAlbumsActivity extends AppCompatActivity {
                 holder.setText(R.id.album_name, album.name);
                 holder.setText(R.id.album_artist, album.artist);
 
+                long rate_num = (new Double(album.rate_num)).longValue();
                 holder.setText(R.id.album_rating_score, Double.toString(album.average_rate));
+                holder.setText(R.id.album_popularity_num, Long.toString(rate_num));
 
                 RelativeLayout relativeLayout = holder.getView(R.id.album_relativelayout);
                 relativeLayout.setClickable(true);
