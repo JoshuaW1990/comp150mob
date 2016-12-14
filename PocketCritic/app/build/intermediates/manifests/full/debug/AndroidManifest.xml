@@ -62,17 +62,6 @@
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="cs.tufts.edu.pocketcritic.NewCommentActivity" />
-        <activity
-            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-            android:exported="false"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
-        <service
-            android:name="com.google.firebase.crash.internal.service.FirebaseCrashReceiverService"
-            android:process=":background_crash" />
-        <service
-            android:name="com.google.firebase.crash.internal.service.FirebaseCrashSenderService"
-            android:process=":background_crash" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
@@ -92,6 +81,16 @@
             android:name="com.google.android.gms.measurement.AppMeasurementService"
             android:enabled="true"
             android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="cs.tufts.edu.pocketcritic.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
 
         <receiver
             android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
@@ -123,15 +122,17 @@
             </intent-filter>
         </service>
 
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
-
-        <provider
-            android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="cs.tufts.edu.pocketcritic.firebaseinitprovider"
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"
-            android:initOrder="100" />
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name="com.google.firebase.crash.internal.service.FirebaseCrashReceiverService"
+            android:process=":background_crash" />
+        <service
+            android:name="com.google.firebase.crash.internal.service.FirebaseCrashSenderService"
+            android:process=":background_crash" />
     </application>
 
 </manifest>
