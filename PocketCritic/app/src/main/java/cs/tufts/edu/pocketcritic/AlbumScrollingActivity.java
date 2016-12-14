@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
@@ -18,12 +20,14 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.MutableData;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.Transaction;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
@@ -33,9 +37,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import cs.tufts.edu.pocketcritic.fragment.ArtistCommentListFragment;
 import cs.tufts.edu.pocketcritic.model.Album;
 import cs.tufts.edu.pocketcritic.model.AlbumSimple;
 import cs.tufts.edu.pocketcritic.model.ArtistSimple;
+import cs.tufts.edu.pocketcritic.model.Comments;
 import cs.tufts.edu.pocketcritic.model.SingleAlbum;
 import cs.tufts.edu.pocketcritic.model.SingleArtist;
 import cs.tufts.edu.pocketcritic.support.SpotifyAlbumApi;
@@ -49,12 +55,18 @@ public class AlbumScrollingActivity extends AppCompatActivity {
 
     private String searchId;
     private FirebaseDatabase database;
+    private DatabaseReference mDatabase;
+
     private SpotifyAlbumApi spotifyAlbumApi;
     private SpotifyAlbumInterface spotifyAlbumInterface;
     private Spinner rateSpinner;
     private String userID;
     private ArrayAdapter<String> dataAdapter;
     private Map<String, Double> score = new HashMap<>();
+
+    private FirebaseRecyclerAdapter<Comments, CommentsViewHolder> mAdapter;
+    private RecyclerView mRecycler;
+    private LinearLayoutManager mManager;
     private static final String TAG = "ArtistInfo";
 
     @Override
@@ -75,13 +87,17 @@ public class AlbumScrollingActivity extends AppCompatActivity {
 
         userID = getUid();
         database = FirebaseDatabase.getInstance();
-        rateSpinner = (Spinner) findViewById(R.id.album_rating_spinner);
+        mDatabase = database.getReference();
 
-        score.put("Awful", 0.0);
-        score.put("Poor", 1.0);
-        score.put("Good", 2.0);
-        score.put("Excellent", 3.0);
-        score.put("Classic", 4.0);
+
+        // Spinner view
+        rateSpinner = (Spinner) findViewById(R.id.album_rating_spinner);
+        score.put("Rate It", 0.0);
+        score.put("Awful", 1.0);
+        score.put("Poor", 2.0);
+        score.put("Good", 3.0);
+        score.put("Excellent", 4.0);
+        score.put("Classic", 5.0);
 
         List<String> list = new ArrayList<>();
         list.add("Rate It");
@@ -112,13 +128,13 @@ public class AlbumScrollingActivity extends AppCompatActivity {
                         rateSpinner.setSelection(dataAdapter.getPosition("Rate It"));
                     } else {
                         double rate = albumSimple.stars.get(userID);
-                        if (rate == 0.0) {
+                        if (rate == 1.0) {
                             rateSpinner.setSelection(dataAdapter.getPosition("Awful"));
-                        } else if (rate == 1.0) {
-                            rateSpinner.setSelection(dataAdapter.getPosition("Poor"));
                         } else if (rate == 2.0) {
-                            rateSpinner.setSelection(dataAdapter.getPosition("Good"));
+                            rateSpinner.setSelection(dataAdapter.getPosition("Poor"));
                         } else if (rate == 3.0) {
+                            rateSpinner.setSelection(dataAdapter.getPosition("Good"));
+                        } else if (rate == 4.0) {
                             rateSpinner.setSelection(dataAdapter.getPosition("Excellent"));
                         } else {
                             rateSpinner.setSelection(dataAdapter.getPosition("Classic"));
@@ -148,11 +164,14 @@ public class AlbumScrollingActivity extends AppCompatActivity {
                 DatabaseReference albumRef = database.getReference("albums").child(searchId);
                 String item = String.valueOf(rateSpinner.getSelectedItem());
                 if (item.equals("Rate It")) {
+                    onRateSubmit(albumRef, item);
+                    rateSpinner.setSelection(dataAdapter.getPosition(item));
                     Toast.makeText(AlbumScrollingActivity.this, "Pick a rate", Toast.LENGTH_SHORT).show();
+
                 } else {
                     onRateSubmit(albumRef, item);
                     rateSpinner.setSelection(dataAdapter.getPosition(item));
-                    Toast.makeText(AlbumScrollingActivity.this, "On Button Click : " + "\n" + item , Toast.LENGTH_LONG).show();
+                    Toast.makeText(AlbumScrollingActivity.this, "Rate : " + "\n" + item , Toast.LENGTH_LONG).show();
                 }
 
             }
@@ -160,9 +179,31 @@ public class AlbumScrollingActivity extends AppCompatActivity {
         });
 
 
+        // collapsing view
         searchDatabaseById();
 
 
+        // recycler view
+        mRecycler = (RecyclerView) findViewById(R.id.album_page_recycler_view);
+        mRecycler.setHasFixedSize(true);
+
+        mManager = new LinearLayoutManager(this);
+        mManager.setReverseLayout(true);
+        mManager.setStackFromEnd(true);
+
+        mRecycler.setLayoutManager(mManager);
+
+        Query postsQuery = mDatabase.child("Post-album").child(searchId).limitToFirst(10);
+
+        mAdapter = new FirebaseRecyclerAdapter<Comments, CommentsViewHolder>(Comments.class, R.layout.comments_listview,
+                CommentsViewHolder.class, postsQuery) {
+            @Override
+            protected void populateViewHolder(final CommentsViewHolder viewHolder, final Comments model, final int position) {
+                // Bind Post to ViewHolder, setting OnClickListener for the star button
+                viewHolder.bindToComment(model);
+            }
+        };
+        mRecycler.setAdapter(mAdapter);
 
     }
 
@@ -289,19 +330,28 @@ public class AlbumScrollingActivity extends AppCompatActivity {
                     return Transaction.success(mutableData);
                 }
                 if (albumSimple.stars.containsKey(userID)) {
-                    double  rateNum = albumSimple.rate_num;
+                    double rateNum = albumSimple.rate_num;
                     double averageRate = albumSimple.average_rate;
-                    averageRate = (averageRate * rateNum - albumSimple.stars.get(userID) + score.get(item)) / rateNum;
+                    if (item.equals("Rate It")) {
+                        averageRate = (averageRate * rateNum - albumSimple.stars.get(userID) + score.get(item)) / rateNum;
+                        rateNum -= 1.0;
+                        albumSimple.stars.remove(userID);
+                    } else {
+                        averageRate = (averageRate * rateNum - albumSimple.stars.get(userID) + score.get(item)) / rateNum;
+                        albumSimple.stars.put(userID, score.get(item));
+                    }
                     albumSimple.average_rate = averageRate;
                     albumSimple.rate_num = rateNum;
                 } else {
                     double  rateNum = albumSimple.rate_num;
-                    double averageRate = (rateNum * albumSimple.average_rate + score.get(item)) / (rateNum + 1.0);
-                    albumSimple.rate_num = rateNum + 1.0;
-                    albumSimple.average_rate = averageRate;
+                    double averageRate = albumSimple.average_rate;
+                    if (!item.equals("Rate It")) {
+                        averageRate = (rateNum * albumSimple.average_rate + score.get(item)) / (rateNum + 1.0);
+                        albumSimple.rate_num = rateNum + 1.0;
+                        albumSimple.average_rate = averageRate;
+                        albumSimple.stars.put(userID, score.get(item));
+                    }
                 }
-                albumSimple.stars.put(userID, score.get(item));
-
                 mutableData.setValue(albumSimple);
                 return Transaction.success(mutableData);
             }
@@ -315,13 +365,10 @@ public class AlbumScrollingActivity extends AppCompatActivity {
     }
 
 
-    private class AlbumRateOnItemSelectedListener implements AdapterView.OnItemSelectedListener {
+        private class AlbumRateOnItemSelectedListener implements AdapterView.OnItemSelectedListener {
 
         public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
             String item = parent.getItemAtPosition(pos).toString();
-            Toast.makeText(parent.getContext(),
-                    "OnItemSelectedListener : " + item,
-                    Toast.LENGTH_SHORT).show();
 
         }
 
@@ -330,6 +377,26 @@ public class AlbumScrollingActivity extends AppCompatActivity {
             // TODO Auto-generated method stub
         }
 
+    }
+
+    private static class CommentsViewHolder extends RecyclerView.ViewHolder {
+        // each data item is just a string in this case
+        TextView mAuthorName;
+        TextView mCommentTitle;
+        TextView mCommentContent;
+
+        public CommentsViewHolder(View v) {
+            super(v);
+            mAuthorName = (TextView) v.findViewById(R.id.comment_author_name);
+            mCommentTitle = (TextView) v.findViewById(R.id.comment_title);
+            mCommentContent = (TextView) v.findViewById(R.id.comment_content);
+        }
+
+        public void bindToComment(Comments comment) {
+            mAuthorName.setText(comment.author);
+            mCommentTitle.setText(comment.title);
+            mCommentContent.setText(comment.content);
+        }
     }
 
     public String getUid() {

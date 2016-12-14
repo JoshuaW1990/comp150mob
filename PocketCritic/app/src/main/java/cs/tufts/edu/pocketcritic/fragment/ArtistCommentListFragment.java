@@ -33,10 +33,7 @@ import cs.tufts.edu.pocketcritic.model.Comments;
  */
 
 public class ArtistCommentListFragment extends Fragment {
-//    private RecyclerView mRecyclerView;
-//    private RecyclerView.Adapter mAdapter;
-//    private RecyclerView.LayoutManager mLayoutManager;
-//    private List<Comments> commentsList;
+
     private DatabaseReference mDatabase;
     private FirebaseRecyclerAdapter<Comments, CommentsViewHolder> mAdapter;
     private RecyclerView mRecycler;
@@ -48,23 +45,6 @@ public class ArtistCommentListFragment extends Fragment {
         View view = inflater.inflate(R.layout.artist_tabcomments, container, false);
 
         searchId = getArguments().getString("searchInfo");
-
-
-
-//        mRecyclerView = (RecyclerView) view.findViewById(R.id.artist_page_recycler_view);
-//
-//        // use this setting to improve performance if you know that changes
-//        // in content do not change the layout size of the RecyclerView
-//        mRecyclerView.setHasFixedSize(true);
-//
-//        // use a linear layout manager
-//        mLayoutManager = new LinearLayoutManager(getActivity());
-//        mRecyclerView.setLayoutManager(mLayoutManager);
-//
-//        // specify an adapter (see also next example)
-//        mAdapter = new MyAdapter(commentsList);
-//        mRecyclerView.setAdapter(mAdapter);
-
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
@@ -100,7 +80,7 @@ public class ArtistCommentListFragment extends Fragment {
     }
 
 
-    public static class CommentsViewHolder extends RecyclerView.ViewHolder {
+    private static class CommentsViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
         TextView mAuthorName;
         TextView mCommentTitle;
