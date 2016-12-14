@@ -1,6 +1,10 @@
 [
     {
+<<<<<<< HEAD
         "outputFile": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+=======
+        "outputFile": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+>>>>>>> newSpotify
         "map": [
             {
                 "to": {
@@ -12,9 +16,13 @@
                 },
                 "from": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-land/values-land.xml",
 =======
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-land/values-land.xml",
+>>>>>>> newSpotify
+=======
+                    "file": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-land/values-land.xml",
 >>>>>>> newSpotify
                     "position": {
                         "startLine": 2,
@@ -35,9 +43,13 @@
                 },
                 "from": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-land/values-land.xml",
 =======
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-land/values-land.xml",
+>>>>>>> newSpotify
+=======
+                    "file": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-land/values-land.xml",
 >>>>>>> newSpotify
                     "position": {
                         "startLine": 3,
@@ -58,9 +70,13 @@
                 },
                 "from": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-land/values-land.xml",
 =======
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-land/values-land.xml",
+>>>>>>> newSpotify
+=======
+                    "file": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-land/values-land.xml",
 >>>>>>> newSpotify
                     "position": {
                         "startLine": 4,
@@ -81,9 +97,13 @@
                 },
                 "from": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-land/values-land.xml",
 =======
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-land/values-land.xml",
+>>>>>>> newSpotify
+=======
+                    "file": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-land/values-land.xml",
 >>>>>>> newSpotify
                     "position": {
                         "startLine": 5,
@@ -105,9 +125,13 @@
                 },
                 "from": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/res/values-land/values-land.xml",
 =======
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/values-land/values-land.xml",
+>>>>>>> newSpotify
+=======
+                    "file": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/values-land/values-land.xml",
 >>>>>>> newSpotify
                     "position": {
                         "startLine": 2,

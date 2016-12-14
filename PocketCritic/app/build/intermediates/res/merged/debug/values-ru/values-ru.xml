@@ -20,6 +20,7 @@
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Открыть доступ пользователю %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Свернуть"</string>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <string name="com_facebook_device_auth_instructions">Откройте «&lt;b>facebook.com/device&lt;/b>» на своем смартфофне или компьютере и введите этот код:</string>
     <string name="com_facebook_image_download_unknown_error">При загрузке изображения возникла неожиданная ошибка.</string>
@@ -38,6 +39,8 @@
     <string name="com_facebook_send_button_text">Отправить</string>
     <string name="com_facebook_share_button_text">Поделиться</string>
     <string name="com_facebook_tooltip_default">Новинка! У вас все под контролем — выбирайте, какой информацией вы хотите поделиться с приложениями.</string>
+>>>>>>> newSpotify
+=======
 >>>>>>> newSpotify
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Включить"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"Для работы приложения \"<ns1:g id="APP_NAME">%1$s</ns1:g>\" требуется включить сервисы Google Play."</string>
@@ -60,8 +63,11 @@
     <string msgid="3441753203274453993" name="common_signin_button_text">"Войти"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Войти через аккаунт Google"</string>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <string name="messenger_send_button_text">Отпр</string>
+>>>>>>> newSpotify
+=======
 >>>>>>> newSpotify
     <string msgid="146198913615257606" name="search_menu_title">"Поиск"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">">999"</string>

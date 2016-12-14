@@ -1,6 +1,10 @@
 [
     {
+<<<<<<< HEAD
         "outputFile": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
+=======
+        "outputFile": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
+>>>>>>> newSpotify
         "map": [
             {
                 "to": {
@@ -12,9 +16,13 @@
                 },
                 "from": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-ldltr-v21/values-ldltr-v21.xml",
 =======
                     "file": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-ldltr-v21/values-ldltr-v21.xml",
+>>>>>>> newSpotify
+=======
+                    "file": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-ldltr-v21/values-ldltr-v21.xml",
 >>>>>>> newSpotify
                     "position": {
                         "startLine": 2,

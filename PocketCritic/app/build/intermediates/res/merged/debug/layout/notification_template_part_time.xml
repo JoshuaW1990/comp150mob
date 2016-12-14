@@ -17,6 +17,9 @@
 
 <DateTimeView android:id="@+id/time" xmlns:android="http://schemas.android.com/apk/res/android"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> newSpotify
     android:textAppearance="@style/TextAppearance.StatusBar.EventContent.Time"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -26,10 +29,13 @@
     android:gravity="center"
     android:paddingLeft="8dp"
     android:paddingStart="8dp"
+<<<<<<< HEAD
 =======
     android:textAppearance="@style/TextAppearance.AppCompat.Notification.Time"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:singleLine="true"
+>>>>>>> newSpotify
+=======
 >>>>>>> newSpotify
     />

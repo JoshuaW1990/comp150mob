@@ -36,6 +36,12 @@
     <style name="Base.Widget.AppCompat.RatingBar.Small" parent="android:Widget.Material.RatingBar.Small"/>
     <style name="Base.Widget.AppCompat.Spinner.Underlined" parent="android:Widget.Material.Spinner.Underlined"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <style name="CardView" parent="Base.CardView">
+        <item name="cardBackgroundColor">?android:attr/colorBackgroundFloating</item>
+    </style>
+>>>>>>> newSpotify
 =======
     <style name="CardView" parent="Base.CardView">
         <item name="cardBackgroundColor">?android:attr/colorBackgroundFloating</item>

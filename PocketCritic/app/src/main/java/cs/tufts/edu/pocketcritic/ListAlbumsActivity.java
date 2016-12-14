@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+<<<<<<< HEAD
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -18,6 +19,29 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 import cs.tufts.edu.pocketcritic.model.Album;
+=======
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.RelativeLayout;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Picasso;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import cs.tufts.edu.pocketcritic.model.Album;
+import cs.tufts.edu.pocketcritic.model.AlbumSimple;
+import cs.tufts.edu.pocketcritic.model.Artist;
+import cs.tufts.edu.pocketcritic.model.ArtistSimple;
+>>>>>>> newSpotify
 import cs.tufts.edu.pocketcritic.support.CommonAdapter;
 import cs.tufts.edu.pocketcritic.support.SpotifyApiAlbum;
 import cs.tufts.edu.pocketcritic.support.SpotifyInterfaceAlbum;
@@ -30,6 +54,11 @@ public class ListAlbumsActivity extends AppCompatActivity {
     private String queryString;
     private SpotifyApiAlbum spotifyApi;
     private SpotifyInterfaceAlbum spotifyInterface;
+<<<<<<< HEAD
+=======
+    private FirebaseDatabase mDatabase;
+    private String userID;
+>>>>>>> newSpotify
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,12 +71,30 @@ public class ListAlbumsActivity extends AppCompatActivity {
         //artists = (List<Artist.ArtistsBean.ItemsBean>) intent.getSerializableExtra("artists");
         queryString = intent.getStringExtra("queryString");
 
+<<<<<<< HEAD
+=======
+        Button logout = (Button) findViewById(R.id.album_list_logout);
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(ListAlbumsActivity.this, "Logout", Toast.LENGTH_SHORT).show();
+                FirebaseAuth.getInstance().signOut();
+                Intent intent = new Intent(ListAlbumsActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mDatabase = FirebaseDatabase.getInstance();
+
+>>>>>>> newSpotify
         System.out.println("come to artist list");
         System.out.println(queryString);
 
         spotifyApi = SpotifyApiAlbum.getApi();
         spotifyInterface = spotifyApi.getService();
 
+<<<<<<< HEAD
         queryByRxJava();
 
 
@@ -59,6 +106,12 @@ public class ListAlbumsActivity extends AppCompatActivity {
 //                        .setAction("Action", null).show();
 //            }
 //        });
+=======
+        userID = getUid();
+
+        queryByRxJava();
+
+>>>>>>> newSpotify
     }
 
     @Override
@@ -104,18 +157,77 @@ public class ListAlbumsActivity extends AppCompatActivity {
                     public void onNext(Album result) {
                         if (result != null) {
                             List<Album.AlbumsBean.ItemsBean> albumList = result.getAlbums().getItems();
+<<<<<<< HEAD
                             displayListView(albumList);
+=======
+                            queryDatabase(albumList);
+>>>>>>> newSpotify
 
                         }
                     }
                 });
     }
 
+<<<<<<< HEAD
     private void displayListView(List<Album.AlbumsBean.ItemsBean> albumList) {
+=======
+    private void queryDatabase(final List<Album.AlbumsBean.ItemsBean> albumList) {
+        final DatabaseReference myRef = mDatabase.getReference("albums");
+        myRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                List<AlbumSimple> albumSimpleList = new ArrayList<AlbumSimple>();
+                for (final Album.AlbumsBean.ItemsBean album: albumList) {
+                    if (!dataSnapshot.child(album.getId()).exists()) {
+                        String id = album.getId();
+                        String name = album.getName();
+                        String imageURL;
+                        if (album.getImages().size() > 0) {
+                            imageURL = album.getImages().get(0).getUrl();
+                        } else {
+                            imageURL = "None";
+                        }
+                        String artist = album.getArtists().get(0).getName();
+                        AlbumSimple albumSimple = new AlbumSimple(id, name, imageURL, artist);
+                        myRef.child(album.getId()).setValue(albumSimple);
+                        System.out.println("album imageURL");
+                        System.out.println(imageURL);
+                        albumSimpleList.add(albumSimple);
+                    } else {
+                        if (!dataSnapshot.child(album.getId()).child("id").exists()) {
+                            myRef.child(album.getId()).child("id").setValue(album.getId());
+                        }
+                        if (!dataSnapshot.child(album.getId()).child("rate_num").exists()) {
+                            myRef.child(album.getId()).child("rate_num").setValue(0.0);
+                        }
+                        if (!dataSnapshot.child(album.getId()).child("average_rate").exists()) {
+                            myRef.child(album.getId()).child("average_rate").setValue(0.0);
+                        }
+                        if (!dataSnapshot.child(album.getId()).child("artist").exists()) {
+                            myRef.child(album.getId()).child("artist").setValue(album.getArtists().get(0).getName());
+                        }
+                        AlbumSimple albumSimple = dataSnapshot.child(album.getId()).getValue(AlbumSimple.class);
+                        albumSimpleList.add(albumSimple);
+                    }
+                }
+                System.out.println(albumSimpleList.size());
+                displayListView(albumSimpleList);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+    }
+
+    private void displayListView(List<AlbumSimple> albumList) {
+>>>>>>> newSpotify
 
         ListView listView = (ListView) findViewById(R.id.albumList_listview);
         Picasso.with(this).setIndicatorsEnabled(false);
 
+<<<<<<< HEAD
         listView.setAdapter(new CommonAdapter< Album.AlbumsBean.ItemsBean >(this, albumList, R.layout.album_listview) {
             @Override
             public void convert(ViewHolder holder, Album.AlbumsBean.ItemsBean album, int position) {
@@ -128,12 +240,70 @@ public class ListAlbumsActivity extends AppCompatActivity {
                 holder.setText(R.id.album_name, album.getName());
                 holder.setText(R.id.album_artist, album.getArtists().get(0).getName());
 
+=======
+        listView.setAdapter(new CommonAdapter< AlbumSimple >(this, albumList, R.layout.item_album_listview) {
+            @Override
+            public void convert(ViewHolder holder, AlbumSimple album, int position) {
+                if (album.imageURL == "None") {
+                    holder.setImage(R.id.album_img, R.drawable.placeholder_image, null);
+                } else {
+                    holder.setImage(R.id.album_img, album.imageURL, null);
+                }
+                holder.setText(R.id.album_name, album.name);
+                holder.setText(R.id.album_artist, album.artist);
+
+                long rate_num = (new Double(album.rate_num)).longValue();
+                holder.setText(R.id.album_rating_score, Double.toString(album.average_rate));
+                holder.setText(R.id.album_popularity_num, Long.toString(rate_num));
+
+                RelativeLayout relativeLayout = holder.getView(R.id.album_relativelayout);
+                relativeLayout.setClickable(true);
+
+
+                relativeLayout.setOnClickListener(new ListButtonOnClickListener(album.id) {
+                    @Override
+                    public void onClick(View view) {
+                        Snackbar.make(view, this.idnumber, Snackbar.LENGTH_LONG)
+                                .setAction("Action", null).show();
+                        Intent intent = new Intent(ListAlbumsActivity.this, AlbumScrollingActivity.class);
+                        intent.putExtra("searchId", this.idnumber);
+
+
+                        //intent.putExtra("artists", "test");
+                        startActivity(intent);
+                        System.out.println("On search success!");
+                    }
+                });
+>>>>>>> newSpotify
 
             }
         });
 
     }
 
+<<<<<<< HEAD
+=======
+    private String getUid() {
+        return FirebaseAuth.getInstance().getCurrentUser().getUid();
+    }
+
+    public class ListButtonOnClickListener implements View.OnClickListener
+    {
+
+        String idnumber;
+        public ListButtonOnClickListener(String idnumber) {
+            this.idnumber = idnumber;
+        }
+
+        @Override
+        public void onClick(View v)
+        {
+            //Do your stuff
+        }
+
+    };
+
+>>>>>>> newSpotify
 
 
 

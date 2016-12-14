@@ -85,11 +85,16 @@
         <item name="android:textColorTertiary">@color/abc_secondary_text_material_dark</item>
         <item name="android:textColorTertiaryInverse">@color/abc_secondary_text_material_light</item>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <item name="android:textColorHint">@color/hint_foreground_material_dark</item>
         <item name="android:textColorHintInverse">@color/hint_foreground_material_light</item>
 =======
         <item name="android:textColorHint">@color/abc_hint_foreground_material_dark</item>
         <item name="android:textColorHintInverse">@color/abc_hint_foreground_material_light</item>
+>>>>>>> newSpotify
+=======
+        <item name="android:textColorHint">@color/hint_foreground_material_dark</item>
+        <item name="android:textColorHintInverse">@color/hint_foreground_material_light</item>
 >>>>>>> newSpotify
         <item name="android:textColorHighlight">@color/highlighted_text_material_dark</item>
         <item name="android:textColorHighlightInverse">@color/highlighted_text_material_light</item>
@@ -115,9 +120,15 @@
         <item name="android:actionModePasteDrawable">?actionModePasteDrawable</item>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         <item name="android:textSelectHandle">@drawable/abc_text_select_handle_middle_mtrl_alpha</item>
         <item name="android:textSelectHandleLeft">@drawable/abc_text_select_handle_left_mtrl_alpha</item>
         <item name="android:textSelectHandleRight">@drawable/abc_text_select_handle_right_mtrl_alpha</item>
+=======
+        <item name="android:textSelectHandle">@drawable/abc_text_select_handle_middle_mtrl_dark</item>
+        <item name="android:textSelectHandleLeft">@drawable/abc_text_select_handle_left_mtrl_dark</item>
+        <item name="android:textSelectHandleRight">@drawable/abc_text_select_handle_right_mtrl_dark</item>
+>>>>>>> newSpotify
 =======
         <item name="android:textSelectHandle">@drawable/abc_text_select_handle_middle_mtrl_dark</item>
         <item name="android:textSelectHandleLeft">@drawable/abc_text_select_handle_left_mtrl_dark</item>
@@ -150,11 +161,16 @@
         <item name="android:textColorPrimaryDisableOnly">@color/abc_primary_text_disable_only_material_light</item>
         <item name="android:textColorPrimaryInverseDisableOnly">@color/abc_primary_text_disable_only_material_dark</item>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <item name="android:textColorHint">@color/hint_foreground_material_light</item>
         <item name="android:textColorHintInverse">@color/hint_foreground_material_dark</item>
 =======
         <item name="android:textColorHint">@color/abc_hint_foreground_material_light</item>
         <item name="android:textColorHintInverse">@color/abc_hint_foreground_material_dark</item>
+>>>>>>> newSpotify
+=======
+        <item name="android:textColorHint">@color/hint_foreground_material_light</item>
+        <item name="android:textColorHintInverse">@color/hint_foreground_material_dark</item>
 >>>>>>> newSpotify
         <item name="android:textColorHighlight">@color/highlighted_text_material_light</item>
         <item name="android:textColorHighlightInverse">@color/highlighted_text_material_dark</item>
@@ -180,9 +196,15 @@
         <item name="android:actionModePasteDrawable">?actionModePasteDrawable</item>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         <item name="android:textSelectHandle">@drawable/abc_text_select_handle_middle_mtrl_alpha</item>
         <item name="android:textSelectHandleLeft">@drawable/abc_text_select_handle_left_mtrl_alpha</item>
         <item name="android:textSelectHandleRight">@drawable/abc_text_select_handle_right_mtrl_alpha</item>
+=======
+        <item name="android:textSelectHandle">@drawable/abc_text_select_handle_middle_mtrl_light</item>
+        <item name="android:textSelectHandleLeft">@drawable/abc_text_select_handle_left_mtrl_light</item>
+        <item name="android:textSelectHandleRight">@drawable/abc_text_select_handle_right_mtrl_light</item>
+>>>>>>> newSpotify
 =======
         <item name="android:textSelectHandle">@drawable/abc_text_select_handle_middle_mtrl_light</item>
         <item name="android:textSelectHandleLeft">@drawable/abc_text_select_handle_left_mtrl_light</item>

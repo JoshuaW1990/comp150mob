@@ -20,6 +20,7 @@
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Chia sẻ với %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Thu gọn"</string>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <string name="com_facebook_device_auth_instructions">Truy cập &lt;b>facebook.com/device&lt;/b> trên điện thoại thông minh hoặc máy tính và nhập mã sau:</string>
     <string name="com_facebook_image_download_unknown_error">Lỗi bất ngờ khi tải ảnh xuống.</string>
@@ -38,6 +39,8 @@
     <string name="com_facebook_send_button_text">Gửi</string>
     <string name="com_facebook_share_button_text">Chia sẻ</string>
     <string name="com_facebook_tooltip_default">Mới! Bạn đang có quyền kiểm soát - hãy chọn thông tin bạn muốn chia sẻ với các ứng dụng.</string>
+>>>>>>> newSpotify
+=======
 >>>>>>> newSpotify
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Bật"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> sẽ không hoạt động nếu bạn không bật dịch vụ của Google Play."</string>
@@ -60,8 +63,11 @@
     <string msgid="3441753203274453993" name="common_signin_button_text">"Đăng nhập"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Đăng nhập bằng Google"</string>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <string name="messenger_send_button_text">Gửi</string>
+>>>>>>> newSpotify
+=======
 >>>>>>> newSpotify
     <string msgid="146198913615257606" name="search_menu_title">"Tìm kiếm"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>

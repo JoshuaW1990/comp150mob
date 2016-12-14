@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <string name="com_facebook_device_auth_instructions">ನಿಮ್ಮ ಸ್ಮಾರ್ಟ್‌ ಫೋನ್‌ ಅಥವಾ ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ &lt;b>facebook.com/device&lt;/b> ಗೆ ಭೇಟಿ ನೀಡಿ ಮತ್ತು ಈ ಕೋಡ್‌ ಅನ್ನು ನಮೂದಿಸಿ:</string>
     <string name="com_facebook_image_download_unknown_error">ಚಿತ್ರವನ್ನು ಡೌನ್‌ಲೋಡ್‌ ಮಾಡುವಾಗ ಅನಿರೀಕ್ಷಿತ ದೋಷ ಕಂಡುಬಂದಿದೆ.</string>
@@ -19,6 +20,8 @@
     <string name="com_facebook_send_button_text">ಕಳುಹಿಸಿ</string>
     <string name="com_facebook_share_button_text">ಹಂಚಿಕೊಳ್ಳಿ</string>
     <string name="com_facebook_tooltip_default">ಹೊಸ! ನೀವು ನಿಯಂತ್ರಣದಲ್ಲಿರುವಿರಿ - ನೀವು ಅಪ್ಲಿಕೇಶನ್‌ಗಳನ್ನು ಬಳಸಿಕೊಂಡು ಹಂಚಿಕೊಳ್ಳಲು ಬಯಸುವ ವಿಷಯವನ್ನು ಆರಿಸಿ.</string>
+>>>>>>> newSpotify
+=======
 >>>>>>> newSpotify
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"ಸಕ್ರಿಯಗೊಳಿಸು"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"Google Play ಸೇವೆಗಳನ್ನು ನೀವು ಸಕ್ರಿಯಗೊಳಿಸದ ಹೊರತು <ns1:g id="APP_NAME">%1$s</ns1:g> ಕಾರ್ಯನಿರ್ವಹಿಸುವುದಿಲ್ಲ."</string>
@@ -41,7 +44,10 @@
     <string msgid="3441753203274453993" name="common_signin_button_text">"ಸೈನ್ ಇನ್"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Google ಮೂಲಕ ಸೈನ್ ಇನ್ ಮಾಡಿ"</string>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <string name="messenger_send_button_text">ಕಳುಹಿಸು</string>
+>>>>>>> newSpotify
+=======
 >>>>>>> newSpotify
 </resources>

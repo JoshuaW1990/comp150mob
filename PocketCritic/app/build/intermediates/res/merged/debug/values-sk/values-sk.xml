@@ -20,6 +20,7 @@
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Zdieľať pomocou %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Zbaliť"</string>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <string name="com_facebook_device_auth_instructions">Navštívte &lt;b>facebook.com/device&lt;/b> v smartfóne alebo počítači a zadajte tento kód:</string>
     <string name="com_facebook_image_download_unknown_error">Pri sťahovaní obrázka sa vyskytla neočakávaná chyba.</string>
@@ -38,6 +39,8 @@
     <string name="com_facebook_send_button_text">Odoslať</string>
     <string name="com_facebook_share_button_text">Zdieľať</string>
     <string name="com_facebook_tooltip_default">Novinka! Máte to pod kontrolou: vyberte, ktoré informácie chcete zdieľať s aplikáciami.</string>
+>>>>>>> newSpotify
+=======
 >>>>>>> newSpotify
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Povoliť"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"Aplikácia <ns1:g id="APP_NAME">%1$s</ns1:g> bude fungovať až po povolení služieb Google Play."</string>

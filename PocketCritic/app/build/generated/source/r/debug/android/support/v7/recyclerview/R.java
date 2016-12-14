@@ -9,6 +9,7 @@ package android.support.v7.recyclerview;
 public final class R {
 	public static final class attr {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		public static final int layoutManager = 0x7f0100e7;
 		public static final int reverseLayout = 0x7f0100e9;
 		public static final int spanCount = 0x7f0100e8;
@@ -38,6 +39,23 @@ public final class R {
 		public static final int[] RecyclerView = { 0x010100c4, 0x010100f1, 0x7f0100e7, 0x7f0100e8, 0x7f0100e9, 0x7f0100ea };
 =======
 		public static final int[] RecyclerView = { 0x010100c4, 0x010100f1, 0x7f0100f2, 0x7f0100f3, 0x7f0100f4, 0x7f0100f5 };
+>>>>>>> newSpotify
+=======
+		public static final int layoutManager = 0x7f0100fe;
+		public static final int reverseLayout = 0x7f010100;
+		public static final int spanCount = 0x7f0100ff;
+		public static final int stackFromEnd = 0x7f010101;
+	}
+	public static final class dimen {
+		public static final int item_touch_helper_max_drag_scroll_per_frame = 0x7f070077;
+		public static final int item_touch_helper_swipe_escape_max_velocity = 0x7f070078;
+		public static final int item_touch_helper_swipe_escape_velocity = 0x7f070079;
+	}
+	public static final class id {
+		public static final int item_touch_helper_previous_elevation = 0x7f0d0006;
+	}
+	public static final class styleable {
+		public static final int[] RecyclerView = { 0x010100c4, 0x010100f1, 0x7f0100fe, 0x7f0100ff, 0x7f010100, 0x7f010101 };
 >>>>>>> newSpotify
 		public static final int RecyclerView_android_descendantFocusability = 1;
 		public static final int RecyclerView_android_orientation = 0;

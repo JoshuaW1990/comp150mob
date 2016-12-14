@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #Sun Oct 16 18:28:13 EDT 2016
 =======
 #Wed Nov 09 22:26:10 EST 2016
@@ -9,3 +10,12 @@ renamed.0=classes.dex
 file.1=/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_fce7ad50144c158e4d51a88208020eb6c97044b0/classes.dex
 base.1=/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_fce7ad50144c158e4d51a88208020eb6c97044b0
 file.0=/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_28423a772a025ba313d0a19d527b042fe8cebd24/classes.dex
+=======
+#Wed Dec 14 16:30:59 EST 2016
+base.0=/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6809d9c4136058c2fafc3b5a224ab45d2ea220a6
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_df2c1186948d8ede4744e84e71a4922831575441/classes.dex
+base.1=/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_df2c1186948d8ede4744e84e71a4922831575441
+file.0=/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6809d9c4136058c2fafc3b5a224ab45d2ea220a6/classes.dex
+>>>>>>> newSpotify

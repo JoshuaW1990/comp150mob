@@ -20,6 +20,7 @@
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Dijeljenje sa: %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Sažmi"</string>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <string name="com_facebook_device_auth_instructions">Posjetite &lt;b>facebook.com/device&lt;/b> na pametnom telefonu ili računalu i unesite ovaj kôd:</string>
     <string name="com_facebook_image_download_unknown_error">Prilikom preuzimanja slike došlo je do neočekivane pogreške.</string>
@@ -38,6 +39,8 @@
     <string name="com_facebook_send_button_text">Pošalji</string>
     <string name="com_facebook_share_button_text">Dijeli</string>
     <string name="com_facebook_tooltip_default">Novo! Vi odlučujete – odaberite koje informacije želite podijeliti u aplikacijama.</string>
+>>>>>>> newSpotify
+=======
 >>>>>>> newSpotify
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Omogući"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> neće funkcionirati ako ne omogućite usluge Google Playa."</string>

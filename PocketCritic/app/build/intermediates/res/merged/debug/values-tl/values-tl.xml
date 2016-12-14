@@ -20,6 +20,7 @@
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Ibahagi sa/kay %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"I-collapse"</string>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <string name="com_facebook_device_auth_instructions">Puntahan ang &lt;b>facebook.com/device&lt;/b> sa iyong smartphone o computer at ilagay ang code na ito:</string>
     <string name="com_facebook_image_download_unknown_error">Hindi inaasahang error habang dina-download ang imahe.</string>
@@ -38,6 +39,8 @@
     <string name="com_facebook_send_button_text">Ipadala</string>
     <string name="com_facebook_share_button_text">Ibahagi</string>
     <string name="com_facebook_tooltip_default">Bago! Ikaw ang may kontrol - piliin kung anong impormasyon ang gusto mong ibahagi sa mga app.</string>
+>>>>>>> newSpotify
+=======
 >>>>>>> newSpotify
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"I-enable"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"Hindi gagana ang <ns1:g id="APP_NAME">%1$s</ns1:g> maliban kung ie-enable mo ang mga serbisyo ng Google Play."</string>
@@ -60,8 +63,11 @@
     <string msgid="3441753203274453993" name="common_signin_button_text">"Mag-sign in"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Mag-sign in sa Google"</string>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <string name="messenger_send_button_text">Ipadala</string>
+>>>>>>> newSpotify
+=======
 >>>>>>> newSpotify
     <string msgid="146198913615257606" name="search_menu_title">"Maghanap"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>

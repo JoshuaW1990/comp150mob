@@ -20,6 +20,7 @@
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%s के साथ साझा करें"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"संक्षिप्त करें"</string>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <string name="com_facebook_device_auth_instructions">अपने स्मार्टफ़ोन या कंप्यूटर पर &lt;b>facebook.com/device&lt;/b> पर जाएँ और यह कोड डालें:</string>
     <string name="com_facebook_image_download_unknown_error">एक चित्र डाउनलोड करते समय अनपेक्षित गलती हुई.</string>
@@ -38,6 +39,8 @@
     <string name="com_facebook_send_button_text">भेजें</string>
     <string name="com_facebook_share_button_text">साझा करें</string>
     <string name="com_facebook_tooltip_default">नया! आप नियंत्रण में हैं - चुनें कि आप एप्लिकेशन से कौन-सी जानकारी साझा करना चाहते हैं.</string>
+>>>>>>> newSpotify
+=======
 >>>>>>> newSpotify
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"सक्षम करें"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> तब तक कार्य नहीं करेगा जब तक आप Google Play सेवाओं को सक्षम नहीं करते."</string>
@@ -60,8 +63,11 @@
     <string msgid="3441753203274453993" name="common_signin_button_text">"प्रवेश करें"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Google के साथ प्रवेश करें"</string>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <string name="messenger_send_button_text">भेजें</string>
+>>>>>>> newSpotify
+=======
 >>>>>>> newSpotify
     <string msgid="146198913615257606" name="search_menu_title">"खोज"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>

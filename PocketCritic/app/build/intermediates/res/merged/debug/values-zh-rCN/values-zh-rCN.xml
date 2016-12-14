@@ -20,6 +20,7 @@
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"通过%s分享"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"收起"</string>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <string name="com_facebook_device_auth_instructions">请用智能手机或电脑访问 &lt;b>facebook.com/device&lt;/b>，然后输入验证码：</string>
     <string name="com_facebook_image_download_unknown_error">下载图片时出现意外错误。</string>
@@ -38,6 +39,8 @@
     <string name="com_facebook_send_button_text">发送</string>
     <string name="com_facebook_share_button_text">分享</string>
     <string name="com_facebook_tooltip_default">新增功能！一切任您掌控 — 选择您想通过应用分享的信息。</string>
+>>>>>>> newSpotify
+=======
 >>>>>>> newSpotify
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"启用"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"您必须先启用 Google Play 服务，然后才能运行<ns1:g id="APP_NAME">%1$s</ns1:g>。"</string>
@@ -60,8 +63,11 @@
     <string msgid="3441753203274453993" name="common_signin_button_text">"登录"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"使用 Google 帐号登录"</string>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <string name="messenger_send_button_text">发送</string>
+>>>>>>> newSpotify
+=======
 >>>>>>> newSpotify
     <string msgid="146198913615257606" name="search_menu_title">"搜索"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>

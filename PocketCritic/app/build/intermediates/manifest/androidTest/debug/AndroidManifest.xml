@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 <<<<<<< HEAD
+<<<<<<< HEAD
     package="cs.tufts.edu.pocketcritic.test">
 
     <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="24" />
 =======
+=======
+>>>>>>> newSpotify
     package="cs.tufts.edu.pocketcritic.test" >
 
     <uses-sdk
@@ -17,6 +20,9 @@
         android:handleProfiling="false"
         android:label="Tests for cs.tufts.edu.pocketcritic"
         android:targetPackage="cs.tufts.edu.pocketcritic" />
+<<<<<<< HEAD
+>>>>>>> newSpotify
+=======
 >>>>>>> newSpotify
 
     <application>
@@ -24,12 +30,16 @@
     </application>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     <instrumentation android:name="android.test.InstrumentationTestRunner"
                      android:targetPackage="cs.tufts.edu.pocketcritic"
                      android:handleProfiling="false"
                      android:functionalTest="false"
                      android:label="Tests for cs.tufts.edu.pocketcritic"/>
 </manifest>
+=======
+</manifest>
+>>>>>>> newSpotify
 =======
 </manifest>
 >>>>>>> newSpotify

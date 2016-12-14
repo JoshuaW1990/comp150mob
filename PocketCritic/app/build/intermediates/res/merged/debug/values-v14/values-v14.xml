@@ -20,9 +20,12 @@
         <item name="android:listPreferredItemPaddingRight">@dimen/abc_list_item_padding_horizontal_material</item>
     </style>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <style name="TextAppearance.AppCompat.Notification" parent="@android:style/TextAppearance.StatusBar.EventContent"/>
     <style name="TextAppearance.AppCompat.Notification.Title" parent="@android:style/TextAppearance.StatusBar.EventContent.Title"/>
+>>>>>>> newSpotify
+=======
 >>>>>>> newSpotify
     <style name="TextAppearance.StatusBar.EventContent" parent="@android:style/TextAppearance.StatusBar.EventContent"/>
     <style name="TextAppearance.StatusBar.EventContent.Info"/>

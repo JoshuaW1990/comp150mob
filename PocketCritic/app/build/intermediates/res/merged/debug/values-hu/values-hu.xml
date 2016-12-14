@@ -20,6 +20,7 @@
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Megosztás a következővel: %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Összecsukás"</string>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <string name="com_facebook_device_auth_instructions">Keresd fel a(z) &lt;b>facebook.com/device&lt;/b> oldalt a telefonodról vagy számítógépről, és írd be a következő kódot:</string>
     <string name="com_facebook_image_download_unknown_error">Váratlan hiba történt egy kép betöltése közben.</string>
@@ -38,6 +39,8 @@
     <string name="com_facebook_send_button_text">Küldés</string>
     <string name="com_facebook_share_button_text">Megosztás</string>
     <string name="com_facebook_tooltip_default">Újdonság! A döntés a kezedben van: kiválaszthatod, hogy milyen adatokat osztasz meg az alkalmazásokkal.</string>
+>>>>>>> newSpotify
+=======
 >>>>>>> newSpotify
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Engedélyezés"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"A(z) <ns1:g id="APP_NAME">%1$s</ns1:g> alkalmazás csak akkor működik, ha  engedélyezi a Google Play-szolgáltatásokat."</string>

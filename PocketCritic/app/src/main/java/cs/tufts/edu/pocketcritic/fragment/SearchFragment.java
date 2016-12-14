@@ -207,11 +207,19 @@ public class SearchFragment extends Fragment
 
         Intent intent = new Intent(getActivity(), ListArtistsActivity.class);
         intent.putExtra("queryString", queryString);
+<<<<<<< HEAD
 
 
         //intent.putExtra("artists", "test");
         startActivity(intent);
         System.out.println("On search success!");
+=======
+        System.out.println("On search success!");
+
+        //intent.putExtra("artists", "test");
+        startActivity(intent);
+
+>>>>>>> newSpotify
 
     }
 

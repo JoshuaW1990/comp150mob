@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <color name="notification_action_color_filter">@color/secondary_text_default_material_light</color>
     <dimen name="notification_content_margin_start">0dp</dimen>
     <dimen name="notification_main_column_padding_top">0dp</dimen>
     <dimen name="notification_media_narrow_margin">12dp</dimen>
+>>>>>>> newSpotify
+=======
 >>>>>>> newSpotify
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
@@ -233,6 +236,9 @@
     <style name="Base.Widget.AppCompat.Toolbar.Button.Navigation" parent="android:Widget.Material.Toolbar.Button.Navigation">
     </style>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> newSpotify
     <style name="Platform.AppCompat" parent="android:Theme.Material">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
@@ -265,6 +271,7 @@
     </style>
     <style name="Platform.ThemeOverlay.AppCompat.Dark"/>
     <style name="Platform.ThemeOverlay.AppCompat.Light"/>
+<<<<<<< HEAD
 =======
     <style name="Platform.AppCompat" parent="Platform.V21.AppCompat"/>
     <style name="Platform.AppCompat.Light" parent="Platform.V21.AppCompat.Light"/>
@@ -328,6 +335,8 @@
         <item name="android:textColor">@color/secondary_text_default_material_light</item>
         <item name="android:textSize">@dimen/notification_action_text_size</item>
     </style>
+>>>>>>> newSpotify
+=======
 >>>>>>> newSpotify
     <style name="Widget.Design.AppBarLayout" parent="Base.Widget.Design.AppBarLayout">
         <item name="android:stateListAnimator">@anim/design_appbar_state_list_animator</item>

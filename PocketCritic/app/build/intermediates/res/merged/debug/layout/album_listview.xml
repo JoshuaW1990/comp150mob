@@ -9,12 +9,15 @@
         android:layout_height="95dp"
         android:layout_margin="5dp"/>
 
+<<<<<<< HEAD
     <!--<TextView android:id="@+id/album_name"-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content"-->
         <!--android:textColor="#000000"-->
         <!--android:layout_gravity="center_horizontal"-->
         <!--android:textSize="20sp" />-->
+=======
+>>>>>>> newSpotify
 
     <LinearLayout
         android:orientation="vertical"
@@ -26,6 +29,10 @@
             android:layout_height="50dp"
             android:textColor="#000000"
             android:layout_gravity="center_horizontal"
+<<<<<<< HEAD
+=======
+            android:gravity="center_horizontal"
+>>>>>>> newSpotify
             android:textSize="20sp" />
 
         <TextView

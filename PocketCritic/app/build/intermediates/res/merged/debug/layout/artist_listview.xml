@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+<<<<<<< HEAD
     android:layout_height="100dp">
 
     <ImageView
         android:id="@+id/artist_img"
+=======
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/artist_img"
+        android:src="@drawable/placeholder_image"
+>>>>>>> newSpotify
         android:layout_width="95dp"
         android:layout_height="95dp"
         android:layout_margin="5dp"/>
@@ -19,6 +27,10 @@
             android:layout_height="50dp"
             android:textColor="#000000"
             android:layout_gravity="center_horizontal"
+<<<<<<< HEAD
+=======
+            android:gravity="center_vertical"
+>>>>>>> newSpotify
             android:textSize="20sp" />
 
         <LinearLayout
@@ -28,6 +40,7 @@
             android:layout_weight="2">
 
             <TextView
+<<<<<<< HEAD
                 android:text="popularity"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -43,6 +56,25 @@
                 android:layout_gravity="center_horizontal"
                 android:textSize="20sp"
                 android:layout_weight="1"/>
+=======
+                android:text="Popularity:"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textColor="#000000"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:layout_weight="1"/>
+
+            <TextView android:id="@+id/artist_rating"
+                android:layout_width="104dp"
+                android:layout_height="50dp"
+                android:textColor="@android:color/holo_blue_light"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:textSize="15sp" />
+>>>>>>> newSpotify
 
 
         </LinearLayout>

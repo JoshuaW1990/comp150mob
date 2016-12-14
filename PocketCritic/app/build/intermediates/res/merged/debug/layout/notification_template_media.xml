@@ -22,18 +22,24 @@
     android:orientation="horizontal"
     >
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> newSpotify
     <ImageView android:id="@+id/icon"
         android:layout_width="@dimen/notification_large_icon_width"
         android:layout_height="@dimen/notification_large_icon_width"
         android:scaleType="centerCrop"
         />
     <include layout="@layout/notification_template_lines"
+<<<<<<< HEAD
 =======
     <include layout="@layout/notification_template_icon_group"
         android:layout_width="@dimen/notification_large_icon_width"
         android:layout_height="@dimen/notification_large_icon_height"
     />
     <include layout="@layout/notification_template_lines_media"
+>>>>>>> newSpotify
+=======
 >>>>>>> newSpotify
         android:layout_width="0dp"
         android:layout_height="wrap_content"

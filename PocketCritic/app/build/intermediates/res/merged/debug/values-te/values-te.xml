@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <string name="com_facebook_device_auth_instructions">మీ స్మార్ట్‌ఫోన్ లేదా కంప్యూటర్‌లో &lt;b>facebook.com/device&lt;/b> సందర్శించి, ఈ కోడ్‌ను నమోదు చేయండి:</string>
     <string name="com_facebook_image_download_unknown_error">చిత్రాన్ని డౌన్‌లోడ్ చేస్తున్నప్పుడు ఊహించని లోపం ఏర్పడింది.</string>
@@ -19,6 +20,8 @@
     <string name="com_facebook_send_button_text">పంపు</string>
     <string name="com_facebook_share_button_text">భాగస్వామ్యం చేయండి</string>
     <string name="com_facebook_tooltip_default">సరికొత్తది! మీకు నియంత్రణ ఉంది - మీరు అప్లికేషన్‌లతో ఏ సమాచారాన్ని భాగస్వామ్యం చేయాలనుకుంటున్నారో ఎంచుకోండి.</string>
+>>>>>>> newSpotify
+=======
 >>>>>>> newSpotify
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"ప్రారంభించు"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"మీరు Google Play సేవలను ప్రారంభిస్తే మినహా <ns1:g id="APP_NAME">%1$s</ns1:g> పని చేయదు."</string>
@@ -41,7 +44,10 @@
     <string msgid="3441753203274453993" name="common_signin_button_text">"సైన్ ఇన్ చేయి"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Googleతో సైన్ ఇన్ చేయి"</string>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <string name="messenger_send_button_text">పంపు</string>
+>>>>>>> newSpotify
+=======
 >>>>>>> newSpotify
 </resources>

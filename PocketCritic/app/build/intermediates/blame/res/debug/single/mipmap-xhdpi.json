@@ -1,6 +1,11 @@
 [
     {
+<<<<<<< HEAD
         "merged": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
         "source": "/Users/junwang/Dropbox/github/comp150mob/PocketCritic/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+=======
+        "merged": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
+        "source": "/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+>>>>>>> newSpotify
     }
 ]

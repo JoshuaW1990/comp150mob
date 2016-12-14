@@ -1,0 +1,7 @@
+#Fri Nov 11 18:02:54 EST 2016
+base.0=/Users/junwang/Dropbox/github/comp150mob/TestWeb/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_47961b217225a08b78e69184005123b6ffca3541
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/junwang/Dropbox/github/comp150mob/TestWeb/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_2b4b502fa41950a9a9a519e03a09c61bc90d0dea/classes.dex
+base.1=/Users/junwang/Dropbox/github/comp150mob/TestWeb/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_2b4b502fa41950a9a9a519e03a09c61bc90d0dea
+file.0=/Users/junwang/Dropbox/github/comp150mob/TestWeb/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_47961b217225a08b78e69184005123b6ffca3541/classes.dex
