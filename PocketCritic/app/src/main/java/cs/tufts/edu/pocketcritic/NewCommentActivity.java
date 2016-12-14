@@ -97,7 +97,6 @@ public class NewCommentActivity extends AppCompatActivity {
                         // [START_EXCLUDE]
                         if (user == null) {
                             // User is null, error out
-                            Log.e(TAG, "User " + userId + " is unexpectedly null");
                             Toast.makeText(NewCommentActivity.this,
                                     "Error: could not fetch user.",
                                     Toast.LENGTH_SHORT).show();

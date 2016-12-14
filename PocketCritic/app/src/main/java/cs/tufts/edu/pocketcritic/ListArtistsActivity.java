@@ -79,8 +79,6 @@ public class ListArtistsActivity extends AppCompatActivity {
 
         mDatabase = FirebaseDatabase.getInstance();
 
-        System.out.println("come to artist list");
-        System.out.println(queryString);
 
         spotifyApi = SpotifyApi.getApi();
         spotifyInterface = spotifyApi.getService();
@@ -160,8 +158,6 @@ public class ListArtistsActivity extends AppCompatActivity {
                         }
                         ArtistSimple artistSimple = new ArtistSimple(id, name, imageURL);
                         myRef.child(artist.getId()).setValue(artistSimple);
-                        System.out.println("artist imageURL");
-                        System.out.println(imageURL);
                         artistSimpleList.add(artistSimple);
                     } else {
                         if (!dataSnapshot.child(artist.getId()).child("id").exists()) {
@@ -171,7 +167,6 @@ public class ListArtistsActivity extends AppCompatActivity {
                         artistSimpleList.add(artistSimple);
                     }
                 }
-                System.out.println(artistSimpleList.size());
                 displayListView(artistSimpleList);
             }
 
@@ -188,10 +183,6 @@ public class ListArtistsActivity extends AppCompatActivity {
 
 
     private void displayListView(List<ArtistSimple> artistList) {
-        if (artistList.size() > 0) {
-            System.out.println("Start to display the list view");
-        }
-
         ListView listView = (ListView) findViewById(R.id.artistList_listview);
         Picasso.with(this).setIndicatorsEnabled(false);
 
@@ -224,8 +215,6 @@ public class ListArtistsActivity extends AppCompatActivity {
 
                         Intent intent = new Intent(ListArtistsActivity.this, ArtistScrollingActivity.class);
                         intent.putExtra("searchId", this.idnumber);
-                        System.out.println("go to the scrolling view");
-                        System.out.println(this.idnumber);
                         startActivity(intent);
 
                     }

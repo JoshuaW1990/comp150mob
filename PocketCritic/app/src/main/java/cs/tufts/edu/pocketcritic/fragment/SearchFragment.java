@@ -81,8 +81,6 @@ public class SearchFragment extends Fragment
     }
 
     public void ArtistSearch() {
-        System.out.println("do search here by spotify");
-        System.out.println(searchInfo.getText().toString());
         queryString = generateQueryString(searchInfo.getText().toString());
 
         queryByRxJavaArtist();
@@ -91,8 +89,6 @@ public class SearchFragment extends Fragment
     }
 
     public void AlbumSearch() {
-        System.out.println("do search here by spotify");
-        System.out.println(searchInfo.getText().toString());
         queryString = generateQueryString(searchInfo.getText().toString());
 
         queryByRxJavaAlbum();
@@ -169,45 +165,13 @@ public class SearchFragment extends Fragment
 
 
 
-//    private void query() {
-//        String searchText = generateQueryString(searchInfo.getText().toString());
-//        System.out.println(searchText);
-//        if (searchText.isEmpty()) {
-//            Toast.makeText(getActivity(), "Please input artist name", Toast.LENGTH_SHORT).show();
-//            return;
-//        }
-//        Call<Artist> call = spotifyInterface.getResult(searchText, "artist");
-//        call.enqueue(new Callback<Artist>() {
-//            @Override
-//            public void onResponse(Call<Artist> call, Response<Artist> response) {
-//                if (response.isSuccessful()) {
-//                    Artist result = response.body();
-//                    if (result != null) {
-//                        List< Artist.ArtistsBean.ItemsBean > items = result.getArtists().getItems();
-//                        for (Artist.ArtistsBean.ItemsBean item: items) {
-//                            List<Artist.ArtistsBean.ItemsBean.ImagesBean> imageURLs = item.getImages();
-//                            for(Artist.ArtistsBean.ItemsBean.ImagesBean image: imageURLs) {
-//                                String imageURL = image.getUrl();
-//                                System.out.println(imageURL);
-//                            }
-//                        }
-//                    }
-//                }
-//            }
-//
-//            @Override
-//            public void onFailure(Call<Artist> call, Throwable t) {
-//
-//            }
-//        });
-//    }
+
 
 
     private void onSearchArtistSuccess() {
 
         Intent intent = new Intent(getActivity(), ListArtistsActivity.class);
         intent.putExtra("queryString", queryString);
-        System.out.println("On search success!");
 
         //intent.putExtra("artists", "test");
         startActivity(intent);
@@ -221,7 +185,7 @@ public class SearchFragment extends Fragment
         intent.putExtra("queryString", queryString);
 
         startActivity(intent);
-        System.out.println("On search success!");
+
 
     }
 
@@ -234,7 +198,6 @@ public class SearchFragment extends Fragment
         else if (id == R.id.search_searchAlbum)
         {
             AlbumSearch();
-            System.out.println("error when searching!");
         }
     }
 }

@@ -250,7 +250,6 @@ public class ArtistScrollingActivity extends AppCompatActivity {
 
         adapter.addFragment(new ArtistAlbumListFragment(), "Albums", artist.name, false);  // may have bugs
         adapter.addFragment(new ArtistCommentListFragment(), "Comments", artistId, false);
-        System.out.println(viewPager);
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
 
@@ -266,7 +265,6 @@ public class ArtistScrollingActivity extends AppCompatActivity {
             @Override
             public Transaction.Result doTransaction(MutableData mutableData) {
                 ArtistSimple artistSimple = mutableData.getValue(ArtistSimple.class);
-                System.out.println("on Star click");
                 if (artistSimple == null) {
                     return Transaction.success(mutableData);
                 }

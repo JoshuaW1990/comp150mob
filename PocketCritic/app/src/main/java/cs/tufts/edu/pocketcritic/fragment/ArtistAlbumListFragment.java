@@ -83,8 +83,6 @@ public class ArtistAlbumListFragment extends Fragment {
                     public void onNext(Album result) {
                         if (result != null) {
                             List<Album.AlbumsBean.ItemsBean> albumList = result.getAlbums().getItems();
-                            System.out.println("number of albums: ");
-                            System.out.println(albumList.size());
                             queryDatabase(albumList);
 
                         }
@@ -111,8 +109,6 @@ public class ArtistAlbumListFragment extends Fragment {
                         String artist = album.getArtists().get(0).getName();
                         AlbumSimple albumSimple = new AlbumSimple(id, name, imageURL, artist);
                         myRef.child(album.getId()).setValue(albumSimple);
-                        System.out.println("album imageURL");
-                        System.out.println(imageURL);
                         albumSimpleList.add(albumSimple);
                     } else {
                         if (!dataSnapshot.child(album.getId()).child("id").exists()) {
@@ -131,7 +127,6 @@ public class ArtistAlbumListFragment extends Fragment {
                         albumSimpleList.add(albumSimple);
                     }
                 }
-                System.out.println(albumSimpleList.size());
                 displayListView(albumSimpleList);
             }
 
@@ -172,7 +167,6 @@ public class ArtistAlbumListFragment extends Fragment {
 
                         //intent.putExtra("artists", "test");
                         startActivity(intent);
-                        System.out.println("On search success!");
                     }
                 });
 

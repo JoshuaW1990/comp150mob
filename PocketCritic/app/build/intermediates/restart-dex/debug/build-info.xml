@@ -5,33 +5,50 @@
     density="hdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="749560225476657"
+    timestamp="751783872799308"
     token="-5786597304403162123"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="6583" />
+        duration="1511" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="318" />
     <task
         name="instant-run-transform"
-        duration="1781" />
+        duration="157" />
     <task
         name="verifier"
-        duration="143" />
+        duration="17" />
 
     <artifact
-        location="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
+        location="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
     <build
-        timestamp="749560225476657"
+        timestamp="751077421502778"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="751649305447157"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="751783872799308"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/junwang/Documents/Github/comp150mob/PocketCritic/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

@@ -70,8 +70,6 @@ public class ListAlbumsActivity extends AppCompatActivity {
 
         mDatabase = FirebaseDatabase.getInstance();
 
-        System.out.println("come to artist list");
-        System.out.println(queryString);
 
         spotifyApi = SpotifyApiAlbum.getApi();
         spotifyInterface = spotifyApi.getService();
@@ -151,8 +149,6 @@ public class ListAlbumsActivity extends AppCompatActivity {
                         String artist = album.getArtists().get(0).getName();
                         AlbumSimple albumSimple = new AlbumSimple(id, name, imageURL, artist);
                         myRef.child(album.getId()).setValue(albumSimple);
-                        System.out.println("album imageURL");
-                        System.out.println(imageURL);
                         albumSimpleList.add(albumSimple);
                     } else {
                         if (!dataSnapshot.child(album.getId()).child("id").exists()) {
@@ -171,7 +167,6 @@ public class ListAlbumsActivity extends AppCompatActivity {
                         albumSimpleList.add(albumSimple);
                     }
                 }
-                System.out.println(albumSimpleList.size());
                 displayListView(albumSimpleList);
             }
 
@@ -217,7 +212,6 @@ public class ListAlbumsActivity extends AppCompatActivity {
 
                         //intent.putExtra("artists", "test");
                         startActivity(intent);
-                        System.out.println("On search success!");
                     }
                 });
 

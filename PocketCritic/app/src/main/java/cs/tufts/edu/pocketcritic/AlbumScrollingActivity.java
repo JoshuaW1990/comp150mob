@@ -79,8 +79,6 @@ public class AlbumScrollingActivity extends AppCompatActivity {
         Intent intent = getIntent();
         searchId = intent.getStringExtra("searchId");
 
-        System.out.println("come to artist page");
-        System.out.println(searchId);
 
         spotifyAlbumApi = SpotifyAlbumApi.getApi();
         spotifyAlbumInterface = spotifyAlbumApi.getService();
@@ -179,8 +177,7 @@ public class AlbumScrollingActivity extends AppCompatActivity {
         });
 
 
-        // collapsing view
-        searchDatabaseById();
+
 
 
         // recycler view
@@ -216,6 +213,9 @@ public class AlbumScrollingActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // collapsing view
+        searchDatabaseById();
 
     }
 
@@ -336,9 +336,7 @@ public class AlbumScrollingActivity extends AppCompatActivity {
             @Override
             public Transaction.Result doTransaction(MutableData mutableData) {
                 AlbumSimple albumSimple = mutableData.getValue(AlbumSimple.class);
-                System.out.println("on submit click");
                 if (albumSimple == null) {
-                    System.out.println("empty album object");
                     return Transaction.success(mutableData);
                 }
                 if (albumSimple.stars.containsKey(userID)) {

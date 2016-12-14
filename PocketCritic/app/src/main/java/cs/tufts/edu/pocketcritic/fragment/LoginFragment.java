@@ -250,7 +250,6 @@ public class LoginFragment extends Fragment
 
 
 
-        System.out.println("Success for login!");
 
     }
 
