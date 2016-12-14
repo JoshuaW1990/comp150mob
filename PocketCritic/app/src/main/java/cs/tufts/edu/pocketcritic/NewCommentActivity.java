@@ -28,6 +28,7 @@ public class NewCommentActivity extends AppCompatActivity {
     private static final String TAG = "NewCommentActivity";
     private static final String REQUIRED = "Required";
     private String searchId;
+    private String dataNode;
 
     // [START declare_database_ref]
     private DatabaseReference mDatabase;
@@ -43,7 +44,10 @@ public class NewCommentActivity extends AppCompatActivity {
         setContentView(R.layout.activity_new_comment);
 
         Intent intent = getIntent();
-        searchId = intent.getStringExtra("searchId");
+        String[] myStrings = intent.getStringArrayExtra("commentinfo");
+        searchId = myStrings[0];
+        dataNode = myStrings[1];
+
 
         // [START initialize_database_ref]
         mDatabase = FirebaseDatabase.getInstance().getReference();
@@ -132,12 +136,19 @@ public class NewCommentActivity extends AppCompatActivity {
     private void writeNewPost(String userId, String itemId, String username, String title, String body) {
         // Create new post at /user-posts/$userid/$postid and at
         // /posts/$postid simultaneously
-        String key = mDatabase.child("testPost").child(searchId).push().getKey();
+        String node;
+        if (dataNode.equals("albums")) {
+            node = "Post-album";
+        } else {
+            node = "testPost";
+        }
+        String key = mDatabase.child(node).child(searchId).push().getKey();
         Comments comment = new Comments(userId, username, title, body);
         Map<String, Object> commentValue = comment.toMap();
 
         Map<String, Object> childUpdates = new HashMap<>();
-        childUpdates.put("/testPost/" + itemId + "/" + key, commentValue);
+        String refNode = "/" + node + "/";
+        childUpdates.put(refNode + itemId + "/" + key, commentValue);
         childUpdates.put("/user-posts/" + userId + "/" + key, commentValue);
 
         mDatabase.updateChildren(childUpdates);

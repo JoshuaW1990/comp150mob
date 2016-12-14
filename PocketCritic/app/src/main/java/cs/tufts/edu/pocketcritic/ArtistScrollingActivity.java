@@ -147,7 +147,8 @@ public class ArtistScrollingActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ArtistScrollingActivity.this, NewCommentActivity.class);
-                intent.putExtra("searchId", searchId);
+                String [] info = {searchId, "artists"};
+                intent.putExtra("commentinfo", info);
                 startActivity(intent);
             }
         });

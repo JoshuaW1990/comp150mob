@@ -2,7 +2,7 @@ package cs.tufts.edu.pocketcritic;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -14,7 +14,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ArrayAdapter;
+
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -204,6 +204,18 @@ public class AlbumScrollingActivity extends AppCompatActivity {
             }
         };
         mRecycler.setAdapter(mAdapter);
+
+        // Floating button
+        FloatingActionButton postComment = (FloatingActionButton) findViewById(R.id.artist_fab_new_comment);
+        postComment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AlbumScrollingActivity.this, NewCommentActivity.class);
+                String [] info = {searchId, "albums"};
+                intent.putExtra("commentinfo", info);
+                startActivity(intent);
+            }
+        });
 
     }
 
