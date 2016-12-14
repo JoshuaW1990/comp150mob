@@ -48,12 +48,12 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <TextView
+            android:id="@+id/album_page_name"
             android:text="TextView"
             android:layout_width="match_parent"
             android:minWidth="100dp"
             android:layout_height="wrap_content"
             android:textSize="30sp"
-            android:id="@+id/album_page_name"
             android:gravity="center_horizontal"
             android:alpha="0.85"
             android:background="@color/blue"
